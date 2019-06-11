@@ -1,3 +1,18 @@
+labelDash <- function(title = "teste label", type = "success", position = "right") {
+  
+  labelType = paste0("label-", type)
+  labelPosition = paste0("float-", position)
+  classValue = paste("label", labelType, labelPosition)
+  
+  tags$span(class=classValue, title)
+}
+
+
+iboxToolsDash <- function(...) {
+  tags$div(class="ibox-tools",
+           list(...))
+}
+
 iboxTitleDash <- function(..., iboxTitle = "TESTE") {
   tags$div(class = "ibox-title",
            tags$h5(iboxTitle),

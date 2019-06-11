@@ -10,7 +10,9 @@ ui <- htmlTemplate(filename = "index.html",
                    contentDash = contentDash(
                      fluidRow(column(width = 4,
                                             iboxDash(
-                                              iboxTitleDash()
+                                              iboxTitleDash(
+                                                iboxToolsDash(labelDash())
+                                                )
                                             )
                                      )
                               )
