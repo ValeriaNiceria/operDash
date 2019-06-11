@@ -1,9 +1,22 @@
-menuItem <- function(idMenu = "link", nameMenu = "Link", link = NULL, style = NULL) {
-  
-  tags$ul(class="nav navbar-top-links", style=style,
-          tags$li(
-            tags$a(href=link, nameMenu, id=idMenu)
-            )
+menuItem <- function(idMenu = "link", nameMenu = "Link", link = NULL, icon = NULL) {
+      iconValue = if(!is.null(icon)) tags$i(class=icon)
+      
+        tags$li(
+          tags$a(href=link, iconValue, nameMenu, id=idMenu)
+          )
+}
+
+
+menuLeft <- function(...) {
+  tags$ul(class="nav  mr-auto",
+          list(...)
+  )
+}
+
+
+menuRight <- function(...) {
+  tags$ul(class="nav navbar-right",
+          list(...)
           )
 }
 
@@ -12,9 +25,9 @@ menuTopDash <- function(..., title_site, styleTitle = NULL, link_title = "#") {
     tags$div(class="row border-bottom white-bg",
              tags$nav(class="navbar navbar-expand-lg navbar-static-top", role="navigation",
                       tags$a(href=link_title, title_site, class="navbar-brand", style=styleTitle),
-                      tags$ul(class="nav navbar-nav mr-auto", 
-                              list(...)
-                      )
+                      tags$div(class="navbar-collapse collapse", id="navbar",
+                                 list(...)
+                               )
             )
     )
 }
@@ -23,10 +36,6 @@ menuTopDash <- function(..., title_site, styleTitle = NULL, link_title = "#") {
   # HTML(sprintf('
   #       <div class="row border-bottom white-bg">
   #              <nav class="navbar navbar-expand-lg navbar-static-top" role="navigation">
-  #              <!--<div class="navbar-header">-->
-  #              <!--<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">-->
-  #              <!--<i class="fa fa-reorder"></i>-->
-  #              <!--</button>-->
   #              
   #              <a href="#" class="navbar-brand">Inspinia</a>
   #              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-label="Toggle navigation">
