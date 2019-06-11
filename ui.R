@@ -1,1 +1,2 @@
-ui <- htmlTemplate(filename = "index.html")
+ui <- htmlTemplate(filename = "index.html",
+                   headerDash = headerDash())
