@@ -3,7 +3,7 @@ source("./interface_imports.R")
 ui <- htmlTemplate(filename = "index.html",
                    headDash = headerDash(),
                    
-                   menuDash = menuTopDash(title_site = "Dashboard",
+                   menuDash = menuDash(title_site = "Dashboard",
                                           menuLeft(
                                             menuItem(id = "test", nameMenu = "TESTE1"),
                                             menuItem(id = "test", nameMenu = "TESTE1", icon = "fa fa-sign-out")
