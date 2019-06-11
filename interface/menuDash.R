@@ -1,3 +1,7 @@
+menuItemDropdown <- function() {}
+  
+menuItem <- function() {}
+
 menuTopDash <- function(..., title_site) {
   
     tags$div(class = "row border-bottom white-bg",
@@ -5,6 +9,8 @@ menuTopDash <- function(..., title_site) {
                       tags$a(href = "#", title_site, class = "navbar-brand")
                       )
              )
+  
+}
   
   
   # HTML(sprintf('
@@ -75,4 +81,3 @@ menuTopDash <- function(..., title_site) {
   #              </nav>
   #              </div>
   #              '))
-}
