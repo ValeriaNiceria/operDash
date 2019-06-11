@@ -14,7 +14,16 @@ ui <- htmlTemplate(filename = "index.html",
                                                 iboxToolsDash(labelDash())
                                                 )
                                             )
-                                     )
+                                     ),
+                              
+                              column(width = 8,
+                                     iboxDash(
+                                       iboxTitleDash(
+                                         iboxToolsDash(collapseLink(),
+                                                       closeLink())
+                                       )
+                                      )
+                                    )
                               )
                      
                    ))

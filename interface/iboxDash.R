@@ -7,6 +7,16 @@ labelDash <- function(title = "teste label", type = "success", position = "right
   tags$span(class=classValue, title)
 }
 
+collapseLink <- function() {
+  tags$a(class="collapse-link",
+         tags$i(class="fa fa-chevron-up"))
+}
+
+closeLink <- function() {
+  tags$a(class="close-link",
+         tags$i(class="fa fa-times"))
+}
+
 
 iboxToolsDash <- function(...) {
   tags$div(class="ibox-tools",
