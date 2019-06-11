@@ -1,0 +1,1 @@
+ui <- htmlTemplate(filename = "index.html")
