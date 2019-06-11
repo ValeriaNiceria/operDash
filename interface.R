@@ -1,2 +1,4 @@
 source("./interface/headDash.R")
 source("./interface/menuDash.R")
+source("./interface/contentDash.R")
+source("./interface/iboxDash.R")
