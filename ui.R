@@ -7,6 +7,7 @@ ui <- htmlTemplate(filename = "index.html",
                                           menuItem(id = "test", nameMenu = "TESTE1"),
                                           menuItem(id = "test", nameMenu = "TESTE2")),
                    
+                   
                    contentDash = contentDash(
                      fluidRow(column(width = 4,
                                             iboxDash(
@@ -29,4 +30,9 @@ ui <- htmlTemplate(filename = "index.html",
                                     )
                               )
                      
-                   ))
+                   ),
+                   
+                   
+                   footerDash = footerDash()
+                   
+                   )
