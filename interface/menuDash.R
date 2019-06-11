@@ -1,15 +1,22 @@
-menuItemDropdown <- function() {}
+menuItem <- function(idMenu = "link", nameMenu = "Link", link = NULL, style = NULL) {
   
-menuItem <- function() {}
+  tags$ul(class = "nav navbar-top-links", style = style,
+          tags$li(
+            tags$a(href = link, nameMenu, id = idMenu)
+            )
+          )
+}
 
-menuTopDash <- function(..., title_site) {
-  
+
+menuTopDash <- function(..., title_site, styleTitle = NULL) {
     tags$div(class = "row border-bottom white-bg",
              tags$nav(class = "navbar navbar-expand-lg navbar-static-top", role="navigation",
-                      tags$a(href = "#", title_site, class = "navbar-brand")
+                      tags$a(href = "#", title_site, class = "navbar-brand", style = styleTitle),
+                      tags$ul(class = "nav navbar-nav mr-auto", 
+                              list(...)
                       )
-             )
-  
+            )
+    )
 }
   
   
