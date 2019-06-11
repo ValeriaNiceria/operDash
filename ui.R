@@ -21,6 +21,9 @@ ui <- htmlTemplate(filename = "index.html",
                                        iboxTitleDash(
                                          iboxToolsDash(collapseLink(),
                                                        closeLink())
+                                       ),
+                                       iboxContentDash(
+                                         
                                        )
                                       )
                                     )
