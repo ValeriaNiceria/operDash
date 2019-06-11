@@ -13,6 +13,7 @@ iboxToolsDash <- function(...) {
            list(...))
 }
 
+
 iboxTitleDash <- function(..., iboxTitle = "TESTE") {
   tags$div(class = "ibox-title",
            tags$h5(iboxTitle),
