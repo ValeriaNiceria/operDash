@@ -1,4 +1,4 @@
-source("./interface.R")
+source("./interface_imports.R")
 
 ui <- htmlTemplate(filename = "index.html",
                    headDash = headerDash(),
