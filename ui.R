@@ -1,2 +1,5 @@
+source("./templates.R")
+
 ui <- htmlTemplate(filename = "index.html",
-                   headerDash = headerDash())
+                   headerDash = headerDash(),
+                   menuTopDash = menuTopDash())
