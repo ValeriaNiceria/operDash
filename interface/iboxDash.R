@@ -1,5 +1,4 @@
 labelDash <- function(title = "teste label", type = "success", position = "right") {
-  
   labelType = paste0("label-", type)
   labelPosition = paste0("float-", position)
   classValue = paste("label", labelType, labelPosition)
