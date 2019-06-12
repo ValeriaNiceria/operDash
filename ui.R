@@ -60,6 +60,22 @@ ui <- htmlTemplate(filename = "index.html",
                        column(
                          width = 3,
                          widget(type = "danger")
+                       ),
+                       column(
+                         width = 2,
+                         widgetSimples(type = "warning")
+                       ),
+                       column(
+                         width = 2,
+                         widgetSimples(type = "primary")
+                       ),
+                       column(
+                         width = 2,
+                         widgetSimples(type = "info")
+                       ),
+                       column(
+                         width = 2,
+                         widgetSimples(type = "danger")
                        )
                      )
                      
