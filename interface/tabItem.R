@@ -10,3 +10,8 @@ tabItem <- function(tabName = NULL, ...) {
     ...
   )
 }
+
+
+# tabItems <- function(...) {
+#   div(class = "tab-content", ...)
+# }
