@@ -1,4 +1,4 @@
-labelDash <- function(title = "title", type = "success", position = "right") {
+label <- function(title = "title", type = "success", position = "right") {
   labelType = paste0("label-", type)
   labelPosition = paste0("float-", position)
   classValue = paste("label", labelType, labelPosition)
@@ -17,27 +17,27 @@ closeLink <- function() {
 }
 
 
-iboxToolsDash <- function(...) {
+iboxTools <- function(...) {
   tags$div(class="ibox-tools",
            list(...))
 }
 
 
-iboxTitleDash <- function(..., iboxTitle = "iboxTitle") {
+iboxTitle <- function(..., iboxTitle = "iboxTitle") {
   tags$div(class = "ibox-title",
            tags$h5(iboxTitle),
            list(...))
 }
 
 
-iboxContentDash <- function(...) {
+iboxContent <- function(...) {
   tags$div(class = "ibox-content",
            list(...)
            )
 }
 
 
-iboxDash <- function(...) {
+ibox <- function(...) {
   tags$div(class = "ibox",
            list(...)
            )

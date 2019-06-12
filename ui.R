@@ -19,23 +19,23 @@ ui <- htmlTemplate(filename = "index.html",
                    
                    contentDash = contentDash(
                      
-                     tabItems(
+                       # ibox
                        tabItem(tabName = "ibox",
                                fluidRow(column(width = 4,
-                                               iboxDash(
-                                                 iboxTitleDash(
-                                                   iboxToolsDash(labelDash())
+                                               ibox(
+                                                 iboxTitle(
+                                                   iboxTools(label())
                                                  )
                                                )
                                         ),
                                
                                        column(width = 8,
-                                              iboxDash(
-                                                iboxTitleDash(
-                                                  iboxToolsDash(collapseLink(),
+                                              ibox(
+                                                iboxTitle(
+                                                  iboxTools(collapseLink(),
                                                                 closeLink())
                                                 ),
-                                                iboxContentDash(
+                                                iboxContent(
                                                   
                                                 )
                                               )
@@ -43,9 +43,8 @@ ui <- htmlTemplate(filename = "index.html",
                                )  
                        ),
                        
-                       
+                       # Widgets 
                        tabItem(tabName = "widget",
-                               # Widgets - 1° Linha
                                fluidRow(
                                  column(
                                    width = 3,
@@ -61,7 +60,6 @@ ui <- htmlTemplate(filename = "index.html",
                                    widget(type = "warning"))
                                ),
                                
-                               # Widgets - 2° Linha
                                fluidRow(
                                  column(
                                    width = 3,
@@ -86,9 +84,7 @@ ui <- htmlTemplate(filename = "index.html",
                                )
                                
                             )  
-                        )
-                       
-                     ),
+                        ),
                    
                    
                    footerDash = footerDash()

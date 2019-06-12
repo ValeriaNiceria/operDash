@@ -1,8 +1,3 @@
-tabItems <- function(...) {
-  div(class = "tab-content", ...)
-}
-
-
 tabItem <- function(tabName = NULL, ...) {
   if (is.null(tabName))
     stop("Need tabName")
