@@ -1,0 +1,3 @@
+footerScriptsDash <- function() {
+  HTML(sprintf(''))
+}

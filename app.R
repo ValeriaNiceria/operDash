@@ -81,7 +81,6 @@ content = contentDash(
               widgetSimples(type = "danger")
             )
           )
-          
   )  
 )
 
@@ -94,11 +93,13 @@ ui <- htmlTemplate("./template/index.html",
 
                    contentDash = content,
                    
-                   
                    footerDash = footerDash()
                    
 )
 
-source("./server.R")
+
+server <- function(input, output, session) {
+  
+}
 
 shinyApp(ui, server)
