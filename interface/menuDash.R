@@ -1,9 +1,17 @@
-menuItem <- function(idMenu = "link", nameMenu = "Link", link = NULL, icon = NULL) {
-      iconValue = if(!is.null(icon)) tags$i(class=icon)
+menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
+      icon = if(!is.null(icon)) tags$i(class=icon)
       
-        tags$li(
-          tags$a(href=link, iconValue, nameMenu, id=idMenu)
-          )
+      isTabItem <- FALSE
+      if (!is.null(tabName)) {
+        isTabItem <- TRUE
+        href <- paste0("#shiny-tab-", tabName)
+      } else if (is.null(href)) {
+        href <- "#"
+      }
+      
+      tags$li(
+        tags$a(href=href, icon, text, `data-toggle` = if (isTabItem) "tab", `data-value` = if (!is.null(tabName)) tabName)
+      )
 }
 
 

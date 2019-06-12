@@ -5,14 +5,14 @@ ui <- htmlTemplate(filename = "index.html",
                    
                    menuDash = menuDash(title_site = "Dashboard",
                                           menuLeft(
-                                            menuItem(id = "test", nameMenu = "TESTE1"),
-                                            menuItem(id = "test", nameMenu = "TESTE1", icon = "fa fa-sign-out")
+                                            menuItem(text = "TESTE1", tabName = "test"),
+                                            menuItem(text = "TESTE1", icon = "fa fa-sign-out")
                                             ),
                                           
                                           menuRight(
-                                            menuItem(id = "test", nameMenu = "TESTE2", icon = "fa fa-sign-out"),
-                                            menuItem(id = "test", nameMenu = "TESTE2", icon = "fa fa-sign-out"),
-                                            menuItem(id = "test", nameMenu = "TESTE2", icon = "fa fa-sign-out")
+                                            menuItem(text = "TESTE2", icon = "fa fa-sign-out"),
+                                            menuItem(text = "TESTE2", icon = "fa fa-sign-out"),
+                                            menuItem(text = "TESTE2", icon = "fa fa-sign-out")
                                             )
                                           ),
                    
