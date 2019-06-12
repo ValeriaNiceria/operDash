@@ -1,6 +1,7 @@
 source("./interface_imports.R")
 
-ui <- htmlTemplate(filename = "index.html",
+ui <- htmlTemplate("./template/index.html",
+                   
                    headDash = headerDash(),
 
                    menuDash = menuDash(title_site = "Dashboard",
