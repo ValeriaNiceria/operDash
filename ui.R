@@ -6,7 +6,7 @@ ui <- htmlTemplate(filename = "index.html",
                    menuDash = menuDash(title_site = "Dashboard",
                                           menuLeft(
                                             menuItem(text = "ibox", tabName = "ibox"),
-                                            menuItem(text = "Widget", icon = "fa fa-sign-out", tabName = "widget")
+                                            menuItem(text = "Widget", icon = "fa fa-caret-right", tabName = "widget")
                                             ),
                                           
                                           menuRight(
