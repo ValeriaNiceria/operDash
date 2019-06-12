@@ -2,11 +2,12 @@ source("./interface_imports.R")
 
 ui <- htmlTemplate(filename = "index.html",
                    headDash = headerDash(),
-                   
+
                    menuDash = menuDash(title_site = "Dashboard",
                                           menuLeft(
                                             menuItem(text = "ibox", tabName = "ibox"),
-                                            menuItem(text = "Widget", icon = "fa fa-caret-right", tabName = "widget")
+                                            menuItem(text = "Widget", icon = "fa fa-th-large", tabName = "widget"),
+                                            menuDropdown(menuItem(text = "TESTE2", icon = "fa fa-sign-out"))
                                             ),
                                           
                                           menuRight(

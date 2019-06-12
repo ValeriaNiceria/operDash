@@ -29,6 +29,14 @@ menuRight <- function(...) {
 }
 
 
+menuDropdown <- function(..., text = "Link") {
+  tags$li(class="dropdown",
+          tags$a(`aria-expanded`="false", `role`="button", href="#", class="dropdown-toggle", `data-toggle`="dropdown", text),
+          tags$ul(`role`="menu", class="dropdown-menu",
+                  list(...)))
+}
+
+
 menuDash <- function(..., title_site = "title_site", styleTitle = NULL, link_title = "#") {
     tags$div(class="row border-bottom white-bg",
              tags$nav(class="navbar navbar-expand-lg navbar-static-top", role="navigation",
