@@ -1,4 +1,4 @@
-widget <- function(icon = "fa fa-cloud", textTop = "Text top", textSub = "Text Sub", type = "default") {
+widget <- function(icon = "fa fa-cloud", textTop = "textTop", textSub = "textSub", type = "default") {
   icon = paste(icon, "fa-5x")
   
   switch(type, 
@@ -34,7 +34,7 @@ widget <- function(icon = "fa fa-cloud", textTop = "Text top", textSub = "Text S
 }
 
 
-widgetSimples <- function(icon = "fa fa-user", text = "100", type = "default") {
+widgetSimples <- function(icon = "fa fa-user", text = "text", type = "default") {
   icon = paste(icon, "fa-3x")
   
   switch(type, 
