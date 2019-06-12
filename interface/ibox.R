@@ -19,28 +19,26 @@ closeLink <- function() {
 
 iboxTools <- function(...) {
   tags$div(class="ibox-tools",
-           list(...))
+           ...)
 }
 
 
 iboxTitle <- function(..., iboxTitle = "iboxTitle") {
   tags$div(class = "ibox-title",
            tags$h5(iboxTitle),
-           list(...))
+           ...)
 }
 
 
 iboxContent <- function(...) {
   tags$div(class = "ibox-content",
-           list(...)
-           )
+           ...)
 }
 
 
 ibox <- function(...) {
   tags$div(class = "ibox",
-           list(...)
-           )
+           ...)
 }
 
 
