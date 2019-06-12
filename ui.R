@@ -43,23 +43,23 @@ ui <- htmlTemplate(filename = "index.html",
                      fluidRow(
                        column(
                           width = 3,
-                          widgetDefault()),
+                          widget(type = "default")),
                         column(
                            width = 3,
-                           widgetPrimary()),
+                           widget(type = "primary")),
                         column(
                            width = 3,
-                           widgetInfo()),
+                           widget(type = "info")),
                         column(
                           width = 3,
-                          widgetWarning())
+                          widget(type = "warning"))
                      ),
                      
                      # Widgets - 2° Linha
                      fluidRow(
                        column(
                          width = 3,
-                         widgetDanger()
+                         widget(type = "danger")
                        )
                      )
                      
