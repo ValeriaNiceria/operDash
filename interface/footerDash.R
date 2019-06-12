@@ -1,4 +1,4 @@
-footerDash <- function(textLeft = "Copyright Example", textRight = "Text Right") {
+footerDash <- function(textLeft = "textLeft", textRight = "textRight") {
   tags$div(class="footer",
            tags$div(class="float-right", textRight),
            tags$div(textLeft)

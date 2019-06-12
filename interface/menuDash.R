@@ -21,7 +21,7 @@ menuRight <- function(...) {
 }
 
 
-menuDash <- function(..., title_site, styleTitle = NULL, link_title = "#") {
+menuDash <- function(..., title_site = "title_site", styleTitle = NULL, link_title = "#") {
     tags$div(class="row border-bottom white-bg",
              tags$nav(class="navbar navbar-expand-lg navbar-static-top", role="navigation",
                       tags$a(href=link_title, title_site, class="navbar-brand", style=styleTitle),
