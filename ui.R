@@ -37,7 +37,13 @@ ui <- htmlTemplate(filename = "index.html",
                                        )
                                       )
                                     )
-                              )
+                              ),
+                     
+                     fluidRow(column(
+                       width = 3,
+                       widgetPrimary()
+                     )
+                     )
                      
                    ),
                    
