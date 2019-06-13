@@ -1,5 +1,5 @@
 menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
-      icon = if(!is.null(icon)) tags$i(class=icon)
+      # icon = if(!is.null(icon)) tags$i(class=icon)
       
       isTabItem <- FALSE
       if (!is.null(tabName)) {

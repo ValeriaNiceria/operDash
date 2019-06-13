@@ -4,15 +4,15 @@ source("./imports.R")
 menuDash = menuDash(title_site = "Dashboard",
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
-                      menuItem(text = "Widget", icon = "fa fa-th-large", tabName = "widget"),
-                      menuItem(text = "Tab", icon = "fa fa-th-large", tabName = "tab"),
-                      menuDropdown(menuItem(text = "TESTE2", icon = "fa fa-sign-out"))
+                      menuItem(text = "Widget", icon = icon("th-large"), tabName = "widget"),
+                      menuItem(text = "Elements", icon = icon("flask"), tabName = "elements"),
+                      menuDropdown(menuItem(text = "TESTE2", icon = icon("sign-out")))
                     ),
                     
                     menuRight(
-                      menuItem(text = "TESTE2", icon = "fa fa-sign-out"),
-                      menuItem(text = "TESTE2", icon = "fa fa-sign-out"),
-                      menuItem(text = "TESTE2", icon = "fa fa-sign-out")
+                      menuItem(text = "TESTE2", icon = icon("sign-out")),
+                      menuItem(text = "TESTE2", icon = icon("sign-out")),
+                      menuItem(text = "TESTE2", icon = icon("sign-out"))
                     )
 )
 
@@ -81,8 +81,13 @@ content = contentDash(
               infoBox(type = "danger")
             )
           )
+  ),
+  
+  tabItem(tabName = "elements",
+          fluidRow()
   )
 )
+
 
 
 ui <- htmlTemplate("./template/index.html",
