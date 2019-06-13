@@ -7,13 +7,13 @@ menuDash = menuDash(title_site = "Dashboard",
                       menuItem(text = "Widget", icon = icon("th-large"), tabName = "widget"),
                       menuItem(text = "Elements", icon = icon("flask"), tabName = "elements"),
                       menuItem(text = "Panel", icon = icon("columns"), tabName = "panel"),
-                      menuDropdown(menuItem(text = "TESTE2", icon = icon("sign-out-alt")))
+                      menuDropdown(menuItem(text = "TESTE"))
                     ),
                     
                     menuRight(
-                      menuItem(text = "TESTE2", icon = icon("sign-out-alt")),
-                      menuItem(text = "TESTE2", icon = icon("sign-out-alt")),
-                      menuItem(text = "TESTE2", icon = icon("sign-out-alt"))
+                      menuItem(text = "TESTE2"),
+                      menuItem(text = "TESTE2"),
+                      menuItem(text = "Logout", icon = tags$i(class="fas fa-sign-out-alt"))
                     )
 )
 
