@@ -1,12 +1,18 @@
-infoMetric <- function(title = NULL, value = NULL, subTitle = NULL, percent = "0%", icon = NULL) {
+infoMetric <- function(title = NULL, value = NULL, subTitle = NULL, percent = "0%", colorPercent = "text-navy", icon = NULL, ...) {
+  # color percent - text-navy - text-danger
+  classTextPercent = paste("stat-percent font-bold", colorPercent)
+  
   tags$div(class="box",
            tags$div(class="ibox-content",
                     tags$h5(title),
                     tags$h1(class="no-margins", value),
-                    tags$div(class="stat-percent font-bold text-navy",
+                    tags$div(class=classTextPercent,
                              percent, icon),
                     tags$small(subTitle)
            )
+           
+           ...
+           
   )
 }
   
