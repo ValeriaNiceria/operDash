@@ -115,34 +115,40 @@ content = contentDash(
           fluidRow(
             column(
               width = 4,
-              panel()
+              panel(title = "Título")
             ),
             column(
               width = 4,
               panel(title = "Título",
-                    content = "conteúdo",
-                    type = "primary")
+                    body = "conteúdo",
+                    type = "primary",
+                    footer = "Rodapé")
             ),
             column(
               width = 4,
-              panel(type = "success")
+              panel(body = "conteúdo",
+                    type = "success")
             )
             
           ),
           fluidRow(
             column(
               width = 4,
-              panel(type = "info")
+              panel(title = "Título",
+                    body = "conteúdo",
+                type = "info")
             ),
             column(
               width = 4,
               panel(title = "Título",
-                    content = "conteúdo",
+                    body = "conteúdo",
                     type = "warning")
             ),
             column(
               width = 4,
-              panel(type = "danger")
+              panel(title = "Título",
+                    body = "conteúdo",
+                    type = "danger")
             )
             
           )
