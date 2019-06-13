@@ -9,7 +9,7 @@ infoMetric <- function(title = NULL, value = NULL, subTitle = NULL, percent = "0
                     tags$div(class=classTextPercent,
                              percent, icon),
                     tags$small(subTitle)
-           )
+           ),
            
            ...
            
