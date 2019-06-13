@@ -108,6 +108,12 @@ content = contentDash(
                               type = "danger",
                               size = "sm")
                   )
+          ),
+          fluidRow(
+            column(
+              width = 12,
+              jumbotron(tags$h1("Jumbotron"))
+            )
           )
   ),
   

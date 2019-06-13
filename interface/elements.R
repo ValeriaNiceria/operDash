@@ -10,3 +10,10 @@ appButton <- function(idButton = NULL, label = "label", icon = NULL, type = "pri
               id = idButton, 
               ...)
 }
+
+
+jumbotron <- function(...) {
+  tags$div(class="jumbotron",
+           ...
+           )
+}
