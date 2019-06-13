@@ -87,6 +87,22 @@ content = contentDash(
           fluidRow(column(
                     width = 2,
                     appButton()
+                  ),
+                  column(
+                    width = 2,
+                    appButton(type = "default")
+                  ),
+                  column(
+                    width = 2,
+                    appButton(type = "info")
+                  ),
+                  column(
+                    width = 2,
+                    appButton(type = "success")
+                  ),
+                  column(
+                    width = 2,
+                    appButton(type = "danger")
                   )
           )
   )
