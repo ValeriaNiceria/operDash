@@ -5,6 +5,7 @@ menuDash = menuDash(title_site = "Dashboard",
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
                       menuItem(text = "Widget", icon = "fa fa-th-large", tabName = "widget"),
+                      menuItem(text = "Tab", icon = "fa fa-th-large", tabName = "tab"),
                       menuDropdown(menuItem(text = "TESTE2", icon = "fa fa-sign-out"))
                     ),
                     
@@ -80,7 +81,7 @@ content = contentDash(
               infoBox(type = "danger")
             )
           )
-  )  
+  )
 )
 
 
