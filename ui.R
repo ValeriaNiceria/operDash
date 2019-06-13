@@ -51,38 +51,38 @@ content = contentDash(
           fluidRow(
             column(
               width = 3,
-              widget(type = "default")),
+              infoBox1(type = "default")),
             column(
               width = 3,
-              widget(type = "primary")),
+              infoBox1(type = "primary")),
             column(
               width = 3,
-              widget(type = "info")),
+              infoBox1(type = "info")),
             column(
               width = 3,
-              widget(type = "warning"))
+              infoBox1(type = "warning"))
           ),
           
           fluidRow(
             column(
               width = 3,
-              widget(type = "danger")
+              infoBox1(type = "danger")
             ),
             column(
               width = 2,
-              widgetSimples(type = "warning")
+              infoBox2(type = "warning")
             ),
             column(
               width = 2,
-              widgetSimples(type = "primary")
+              infoBox2(type = "primary")
             ),
             column(
               width = 2,
-              widgetSimples(type = "info")
+              infoBox2(type = "info")
             ),
             column(
               width = 2,
-              widgetSimples(type = "danger")
+              infoBox2(type = "danger")
             )
           )
   )  
