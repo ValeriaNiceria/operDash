@@ -4,7 +4,7 @@ source("./imports.R")
 menuDash = menuDash(title_site = "Dashboard",
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
-                      menuItem(text = "Widget", icon = icon("th-large"), tabName = "widget"),
+                      menuItem(text = "valueBox", icon = icon("th-large"), tabName = "valueBox"),
                       menuItem(text = "Elements", icon = icon("flask"), tabName = "elements"),
                       menuItem(text = "Panel", icon = icon("columns"), tabName = "panel"),
                       menuDropdown(menuItem(text = "TESTE"))
@@ -59,8 +59,8 @@ content = contentDash(
           )
   ),
   
-  # Widgets 
-  tabItem(tabName = "widget",
+  # valueBox 
+  tabItem(tabName = "valueBox",
           fluidRow(
             column(
               width = 3,
