@@ -66,7 +66,7 @@ content = contentDash(
               infoBox(type = "default")),
             column(
               width = 3,
-              infoBox1(type = "primary")),
+              infoBox(type = "primary")),
             column(
               width = 3,
               infoBox(type = "info")),
