@@ -1,3 +1,6 @@
+#########################
+# Carregando os pacotes #
+#########################
 library(shiny)
 library(shinyjqui)
 library(shinyWidgets)
@@ -8,6 +11,8 @@ library(htmlwidgets)
 library(styler)
 library(shinyEffects)
 library(dplyr)
+
+
 
 
 
