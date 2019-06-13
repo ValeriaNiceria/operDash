@@ -1,4 +1,19 @@
-infoBox <- function(icon = "fa fa-cloud", textTop = "textTop", textSub = "textSub", type = "default") {
+infoMetric <- function(title = NULL, value = NULL, subTitle = NULL, percent = "0%", icon = NULL) {
+  tags$div(class="box",
+           tags$div(class="ibox-content",
+                    tags$h5(title),
+                    tags$h1(class="no-margins", value),
+                    tags$div(class="stat-percent font-bold text-navy",
+                             percent, icon),
+                    tags$small(subTitle)
+           )
+  )
+}
+  
+  
+
+
+valueBox <- function(icon = "fa fa-cloud", textTop = "textTop", textSub = "textSub", type = "default") {
   icon = paste(icon, "fa-5x")
   
   switch(type, 
