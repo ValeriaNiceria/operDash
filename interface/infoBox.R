@@ -17,6 +17,16 @@ infoMetric <- function(title = NULL, value = NULL, subTitle = NULL, percent = "0
 }
   
   
+infoProgress <- function(title = NULL, value = "33%", colorProgress = NULL, subTitle = NULL) {
+  tags$div(class="ibox",
+           tags$div(class="ibox-content",
+                    tags$h5(title),
+                    tags$h2(value),
+                    tags$div(class="progress progress-mini")
+                      
+           )
+  )
+}
 
 
 valueBox <- function(icon = "fa fa-cloud", textTop = "textTop", textSub = "textSub", type = "default") {
