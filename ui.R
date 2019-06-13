@@ -6,6 +6,7 @@ menuDash = menuDash(title_site = "Dashboard",
                       menuItem(text = "Box", tabName = "box"),
                       menuItem(text = "Widget", icon = icon("th-large"), tabName = "widget"),
                       menuItem(text = "Elements", icon = icon("flask"), tabName = "elements"),
+                      menuItem(text = "Panel", icon = icon("columns"), tabName = "panel"),
                       menuDropdown(menuItem(text = "TESTE2", icon = icon("sign-out-alt")))
                     ),
                     
@@ -108,7 +109,44 @@ content = contentDash(
                               size = "sm")
                   )
           )
-  )
+  ),
+  
+  tabItem(tabName = "panel",
+          fluidRow(
+            column(
+              width = 4,
+              panel()
+            ),
+            column(
+              width = 4,
+              panel(title = "Título",
+                    content = "conteúdo",
+                    type = "primary")
+            ),
+            column(
+              width = 4,
+              panel(type = "success")
+            )
+            
+          ),
+          fluidRow(
+            column(
+              width = 4,
+              panel(type = "info")
+            ),
+            column(
+              width = 4,
+              panel(title = "Título",
+                    content = "conteúdo",
+                    type = "warning")
+            ),
+            column(
+              width = 4,
+              panel(type = "danger")
+            )
+            
+          )
+ )
 )
 
 
