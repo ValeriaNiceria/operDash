@@ -6,13 +6,13 @@ menuDash = menuDash(title_site = "Dashboard",
                       menuItem(text = "Box", tabName = "box"),
                       menuItem(text = "Widget", icon = icon("th-large"), tabName = "widget"),
                       menuItem(text = "Elements", icon = icon("flask"), tabName = "elements"),
-                      menuDropdown(menuItem(text = "TESTE2", icon = icon("sign-out")))
+                      menuDropdown(menuItem(text = "TESTE2", icon = icon("sign-out-alt")))
                     ),
                     
                     menuRight(
-                      menuItem(text = "TESTE2", icon = icon("sign-out")),
-                      menuItem(text = "TESTE2", icon = icon("sign-out")),
-                      menuItem(text = "TESTE2", icon = icon("sign-out"))
+                      menuItem(text = "TESTE2", icon = icon("sign-out-alt")),
+                      menuItem(text = "TESTE2", icon = icon("sign-out-alt")),
+                      menuItem(text = "TESTE2", icon = icon("sign-out-alt"))
                     )
 )
 
@@ -84,7 +84,11 @@ content = contentDash(
   ),
   
   tabItem(tabName = "elements",
-          fluidRow()
+          fluidRow(column(
+                    width = 2,
+                    appButton()
+                  )
+          )
   )
 )
 
