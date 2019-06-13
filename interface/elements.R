@@ -1,4 +1,12 @@
-appButton <- function(label = "label", icon = NULL, type = "primary") {
-  classButton <- paste0("btn btn-w-m btn-", type)
-  tags$button(class=classButton, type="button", label)
+appButton <- function(idButton = NULL, label = "label", icon = NULL, type = "primary", size = "lg", ...) {
+  
+  typeButton <- paste0("btn btn-w-m btn-", type)
+  sizeButton <- paste0("btn-", size)
+  classButton <- paste(typeButton, sizeButton)
+  
+  tags$button(class=classButton,
+              type="button",
+              label,
+              id = idButton, 
+              ...)
 }
