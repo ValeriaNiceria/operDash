@@ -102,7 +102,10 @@ content = contentDash(
                   ),
                   column(
                     width = 2,
-                    appButton(type = "danger")
+                    appButton(idButton="danger",
+                              label = "Danger",
+                              type = "danger",
+                              size = "sm")
                   )
           )
   )
