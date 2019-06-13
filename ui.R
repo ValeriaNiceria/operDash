@@ -163,7 +163,7 @@ content = contentDash(
 
 
 
-ui <- htmlTemplate("./template/index.html",
+ui <- htmlTemplate("./interface/index.html",
                    
                    headDash = headerDash(),
                    
