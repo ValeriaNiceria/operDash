@@ -8639,3 +8639,8 @@ body.md-skin {
 .wrapper {
   margin-top: 3%;
 }
+
+
+.tab-pane:not(.active) {
+    display: none;
+}
