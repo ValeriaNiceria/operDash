@@ -39,8 +39,10 @@ menuDropdown <- function(..., text = "Link") {
 
 menuDash <- function(..., title_site = "title_site", styleTitle = NULL, link_title = "#") {
     tags$div(class="row border-bottom white-bg",
-             tags$nav(class="navbar navbar-expand-lg navbar-static-top", role="navigation",
+             tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top", `role`="navigation",
                       tags$a(href=link_title, title_site, class="navbar-brand", style=styleTitle),
+                      tags$button(class="navbar-toggler", `type`="button", `data-toggle`="collapse", `data-target`="#navbar", `aria-expanded`="false",
+                                  tags$i(class="fa fa-reorder")),
                       tags$div(class="navbar-collapse collapse", id="navbar",
                                  list(...)
                                )

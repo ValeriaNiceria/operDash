@@ -1,14 +1,4 @@
-/*
- *
- *   INSPINIA - Responsive Admin Theme
- *   version 2.8
- *
- */
-
 $(document).ready(function () {
-
-    // Fast fix bor position issue with Propper.js
-    // Will be fixed in Bootstrap 4.1 - https://github.com/twbs/bootstrap/pull/24092
     Popper.Defaults.modifiers.computeStyle.gpuAcceleration = false;
 
 
@@ -109,14 +99,6 @@ $(document).ready(function () {
         return false;
     });
 
-    // Append config box / Only for demo purpose
-    // Uncomment on server mode to enable XHR calls
-    //$.get("skin-config.html", function (data) {
-    //    if (!$('body').hasClass('no-skin-config'))
-    //        $('body').append(data);
-    //});
-
-    // Minimalize menu
     $('.navbar-minimalize').on('click', function (event) {
         event.preventDefault();
         $("body").toggleClass("mini-navbar");
@@ -206,8 +188,7 @@ $(window).bind("resize", function () {
     }
 });
 
-// Local Storage functions
-// Set proper body class and plugins based on user configuration
+
 $(document).ready(function () {
     if (localStorageSupport()) {
 
@@ -255,12 +236,10 @@ $(document).ready(function () {
     }
 });
 
-// check if browser support HTML5 local storage
 function localStorageSupport() {
     return (('localStorage' in window) && window['localStorage'] !== null)
 }
 
-// For demo purpose - animation css script
 function animationHover(element, animation) {
     element = $(element);
     element.hover(
