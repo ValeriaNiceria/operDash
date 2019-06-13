@@ -3,7 +3,7 @@ source("./interface_imports.R")
 
 menuDash = menuDash(title_site = "Dashboard",
                     menuLeft(
-                      menuItem(text = "ibox", tabName = "ibox"),
+                      menuItem(text = "Box", tabName = "box"),
                       menuItem(text = "Widget", icon = "fa fa-th-large", tabName = "widget"),
                       menuDropdown(menuItem(text = "TESTE2", icon = "fa fa-sign-out"))
                     ),
@@ -18,13 +18,13 @@ menuDash = menuDash(title_site = "Dashboard",
 
 content = contentDash(
   # ibox
-  tabItem(tabName = "ibox",
+  tabItem(tabName = "box",
           fluidRow(column(width = 4,
-                          ibox(
-                            iboxTitle(
-                              iboxTools(label())
+                          box(
+                            boxTitle(
+                              boxTools(label())
                             ),
-                            iboxContent(
+                            boxContent(
                               numericInput(inputId ='n', 
                                            label = 'Number of obs', 
                                            value = 100)
@@ -33,17 +33,28 @@ content = contentDash(
           ),
           
           column(width = 8,
-                 ibox(
-                   iboxTitle(
-                     iboxTools(collapseLink(),
+                 box(
+                   boxTitle(
+                     boxTools(collapseLink(),
                                closeLink())
                    ),
-                   iboxContent(
+                   boxContent(
                      plotOutput('plot')
                    )
                  )
           )
-          )  
+          ),
+          
+          fluidRow(
+            column(
+              width = 12,
+              box(
+                boxContent(
+                  
+                )
+              )
+            )
+          )
   ),
   
   # Widgets 
