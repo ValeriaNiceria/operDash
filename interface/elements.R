@@ -7,19 +7,24 @@ appButton <- function(idButton = NULL, label = "label", icon = NULL, type = "pri
   tags$button(class=classButton,
               type="button",
               label,
-              id = idButton, 
-              ...)
+              id = idButton,
+              
+              ...
+              
+              )
 }
 
 
 jumbotron <- function(...) {
   tags$div(class="jumbotron",
+           
            ...
+           
            )
 }
 
 
-alert <- function(message = NULL, type = "success", ...) {
+alert <- function(..., message = NULL, type = "success") {
   # type = success - info - warning - danger
   classAlert = paste0("alert alert-", type, " alert-dismissable")
   tags$div(class=classAlert, 
@@ -27,6 +32,8 @@ alert <- function(message = NULL, type = "success", ...) {
                        `data-dismiss`="alert",
                        class="close",
                        type="button", icon("times")),
-           message
+           message,
+           
+           ...
   )
 }
