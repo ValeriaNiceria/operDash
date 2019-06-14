@@ -36,7 +36,7 @@ infoProgress <- function(..., title = NULL, value = "33%", colorProgress = NULL,
 }
 
 
-valueBox <- function(icon = "fa fa-cloud", textTop = "textTop", textSub = "textSub", type = "default") {
+valueBox <- function(..., icon = "fa fa-cloud", textTop = "textTop", textSub = "textSub", type = "default") {
   icon = paste(icon, "fa-5x")
   
   switch(type, 
@@ -67,6 +67,8 @@ valueBox <- function(icon = "fa fa-cloud", textTop = "textTop", textSub = "textS
                     tags$div(class="col-8 text-right",
                              tags$span(textTop),
                              tags$h2(class="font-bold", textSub))
-           )
+           ),
+           
+           ...
   )
 }
