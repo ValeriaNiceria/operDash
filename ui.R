@@ -256,15 +256,24 @@ content = contentDash(
 )
 
 
+# content <- tags$div(
+#   headerDash(), 
+#   menuDash, 
+#   content,
+#   footerDash()
+# )
+# 
+# ui <- bootstrapPage(content)
+
 
 ui <- htmlTemplate("./interface/index.html",
-                   
+
                    headDash = headerDash(),
-                   
+
                    menuDash = menuDash,
-                   
+
                    contentDash = content,
-                   
+
                    footerDash = footerDash()
-                   
+
 )
