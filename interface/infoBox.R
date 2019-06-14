@@ -17,8 +17,8 @@ infoMetric <- function(title = NULL, value = NULL, subTitle = NULL, percent = "0
 }
   
   
-infoProgress <- function(..., title = NULL, value = "33%", colorProgress = NULL, subTitle = NULL) {
-  styleProgress = paste0("width:", value)
+infoProgress <- function(..., title = NULL, value = "33", colorProgress = NULL, subTitle = NULL) {
+  styleProgress = paste0("width:", value, "%")
   classProgress = paste("progress-bar")
   tags$div(class="ibox",
            tags$div(class="ibox-content",

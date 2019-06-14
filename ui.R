@@ -160,6 +160,35 @@ content = contentDash(
                 )
               )
             )
+          ),
+          fluidRow(
+            column(
+              width = 12,
+              box(
+                boxContent(
+                  progressBar(
+                    type = "success",
+                    animated = TRUE,
+                    value = 75
+                  ),
+                  progressBar(
+                    type = "info",
+                    animated = FALSE,
+                    value = 45
+                  ),
+                  progressBar(
+                    type = "warning",
+                    animated = FALSE,
+                    value = 63
+                  ),
+                  progressBar(
+                    type = "danger",
+                    animated = TRUE,
+                    value = 88
+                  )
+                )
+              )
+            )
           )
   ),
   

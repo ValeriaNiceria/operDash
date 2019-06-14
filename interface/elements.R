@@ -37,3 +37,19 @@ alert <- function(..., message = NULL, type = "success") {
            ...
   )
 }
+
+
+
+progressBar <- function(type = "success", animated = FALSE, min = "0", value = "45", max = "100") {
+  classProgress = paste0("progress-bar progress-bar-striped", if (isTRUE(animated)) " progress-bar-animate", " progress-bar-", type)
+  stypeProgress = paste0("width:", value, "%")
+  tags$div(class="progress",
+           tags$div(class=classProgress,
+                    style=stypeProgress,
+                    role="progressbar",
+                    `aria-valuenow`=value,
+                    `aria-valuemin`=min,
+                    `aria-valuemax`=max
+                    )
+           )
+}
