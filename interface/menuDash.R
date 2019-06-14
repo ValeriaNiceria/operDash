@@ -9,8 +9,10 @@ menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
         href <- "#"
       }
       
+      idMenu = paste0("tab-", tabName)
+      
       tags$li(
-        tags$a(href=href, icon, text, `data-toggle` = if (isTabItem) "tab", `data-value` = if (!is.null(tabName)) tabName)
+        tags$a(href=href, icon, text, `data-toggle` = if (isTabItem) "tab", `data-value` = if (!is.null(tabName)) tabName, id = idMenu)
       )
 }
 

@@ -5,7 +5,7 @@ tabItem <- function(tabName = NULL, ...) {
   
   tags$div(
     role = "tabpanel",
-    class = "tab-pane",
+    class = "tab-pane  container-fluid",
     id = paste0("shiny-tab-", tabName),
     ...
   )
