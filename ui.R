@@ -88,6 +88,12 @@ content = contentDash(
                          subTitle = "Total income", 
                          percent = "77%", 
                          icon = icon("bolt"))
+            ),
+            column(
+              width = 3,
+              infoProgress(title = "Título",
+                           value = "56%",
+                           subTitle = "Sub título")
             )
           )
   ),
