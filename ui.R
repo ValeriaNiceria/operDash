@@ -256,7 +256,13 @@ content = contentDash(
 )
 
 footerScripts <- function() {
-  tags$script(scr="js/operDash.js")
+  HTML('
+       <script src="js/popper.min.js"></script>
+       <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+       <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+       <script src="js/operDash.js"></script>
+       ')
 }
 
 
@@ -271,7 +277,6 @@ content <- tags$div(id="wrapper",
 )
 
 ui <- bootstrapPage(content)
-# ui <- fluidPage(content)
 
 
 # ui <- htmlTemplate("./interface/index.html",
