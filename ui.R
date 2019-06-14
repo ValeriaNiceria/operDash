@@ -255,26 +255,33 @@ content = contentDash(
  )
 )
 
+footerScripts <- function() {
+  tags$script(scr="js/operDash.js")
+}
 
-# content <- tags$div(
-#   headerDash(),
-#   menuDash,
-#   content,
-#   footerDash()
-# )
 
-# ui <- bootstrapPage(content)
+content <- tags$div(id="wrapper",
+                    tags$div(id="page-wrapper", class="gray-bg",
+                             headerDash(),
+                             menuDash,
+                             content,
+                             footerDash(),
+                             footerScripts()
+                    )
+)
+
+ui <- bootstrapPage(content)
 # ui <- fluidPage(content)
 
 
-ui <- htmlTemplate("./interface/index.html",
-
-                   headDash = headerDash(),
-
-                   menuDash = menuDash,
-
-                   contentDash = content,
-
-                   footerDash = footerDash()
-
-)
+# ui <- htmlTemplate("./interface/index.html",
+# 
+#                    headDash = headerDash(),
+# 
+#                    menuDash = menuDash,
+# 
+#                    contentDash = content,
+# 
+#                    footerDash = footerDash()
+# 
+# )
