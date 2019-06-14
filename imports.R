@@ -4,7 +4,6 @@
 library(shiny)
 library(shinyjqui)
 library(shinyWidgets)
-library(shinyAce)
 library(shinyjs)
 library(htmltools)
 library(htmlwidgets)
