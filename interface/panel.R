@@ -21,7 +21,7 @@ panelCollapse <- function() {
 
 collapsePanel <- function(...) {
   tags$div(class="panel-body",
-           tags$div("panel-group", id="accordion", 
+           tags$div(class="panel-group", id="accordion", 
                     
                     ...
                     
