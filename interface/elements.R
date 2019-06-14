@@ -30,7 +30,7 @@ alert <- function(..., message = NULL, type = "success") {
   tags$div(class=classAlert, 
            tags$button(`aria-hidden`="true",
                        `data-dismiss`="alert",
-                       class="close",
+                       class="close m-r",
                        type="button", icon("times")),
            message,
            
