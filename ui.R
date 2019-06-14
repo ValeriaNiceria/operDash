@@ -139,6 +139,27 @@ content = contentDash(
                 )
               )
             )
+          ),
+          fluidRow(
+            column(
+              width = 12,
+              box(
+                boxContent(
+                  alert(message = "Alert message success", 
+                        type = "success"
+                        ),
+                  alert(message = "Alert message info", 
+                        type = "info"
+                  ),
+                  alert(message = "Alert message warning", 
+                        type = "warning"
+                  ),
+                  alert(message = "Alert message danger", 
+                        type = "danger"
+                  )
+                )
+              )
+            )
           )
   ),
   
