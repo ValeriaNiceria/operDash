@@ -93,34 +93,45 @@ content = contentDash(
   ),
   
   tabItem(tabName = "elements",
-          fluidRow(column(
-                    width = 2,
-                    appButton()
-                  ),
-                  column(
-                    width = 2,
-                    appButton(type = "default")
-                  ),
-                  column(
-                    width = 2,
-                    appButton(type = "info")
-                  ),
-                  column(
-                    width = 2,
-                    appButton(type = "success")
-                  ),
-                  column(
-                    width = 2,
-                    appButton(idButton="danger",
-                              label = "Danger",
-                              type = "danger",
-                              size = "sm")
-                  )
+          fluidRow(
+            column(
+              width = 12,
+              box(
+                fluidRow(column(
+                  width = 2,
+                  appButton()
+                ),
+                column(
+                  width = 2,
+                  appButton(type = "default")
+                ),
+                column(
+                  width = 2,
+                  appButton(type = "info")
+                ),
+                column(
+                  width = 2,
+                  appButton(type = "success")
+                ),
+                column(
+                  width = 2,
+                  appButton(idButton="danger",
+                            label = "Danger",
+                            type = "danger",
+                            size = "sm")
+                )
+                )
+              )
+            )
           ),
           fluidRow(
             column(
               width = 12,
-              jumbotron(tags$h1("Jumbotron"))
+              box(
+                boxContent(
+                  jumbotron(tags$h1("Jumbotron"))
+                )
+              )
             )
           )
   ),
