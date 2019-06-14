@@ -257,13 +257,14 @@ content = contentDash(
 
 
 # content <- tags$div(
-#   headerDash(), 
-#   menuDash, 
+#   headerDash(),
+#   menuDash,
 #   content,
 #   footerDash()
 # )
-# 
+
 # ui <- bootstrapPage(content)
+# ui <- fluidPage(content)
 
 
 ui <- htmlTemplate("./interface/index.html",
