@@ -14,11 +14,6 @@ panel <- function(title = NULL, body = NULL, footer = NULL, type = "default", ..
 }
 
 
-panelCollapse <- function() {
-  
-}
-
-
 collapsePanel <- function(...) {
   tags$div(class="panel-body",
            tags$div(class="panel-group", id="accordion", 
