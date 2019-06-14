@@ -92,7 +92,7 @@ content = contentDash(
             column(
               width = 3,
               infoProgress(title = "Título",
-                           value = "56%",
+                           value = "56",
                            subTitle = "Sub título")
             )
           )
@@ -134,9 +134,7 @@ content = contentDash(
             column(
               width = 12,
               box(
-                boxContent(
                   jumbotron(tags$h1("Jumbotron"))
-                )
               )
             )
           ),
@@ -235,7 +233,7 @@ content = contentDash(
           ),
           fluidRow(
             column(
-              width = 6,
+              width = 12,
               box(
                 boxContent(
                   collapsePanel(

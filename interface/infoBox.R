@@ -23,7 +23,7 @@ infoProgress <- function(..., title = NULL, value = "33", colorProgress = NULL, 
   tags$div(class="ibox",
            tags$div(class="ibox-content",
                     tags$h5(title),
-                    tags$h2(value),
+                    tags$h2(paste0(value, "%")),
                     tags$div(class="progress progress-mini",
                              tags$div(style=styleProgress, class=classProgress)
                              ),
