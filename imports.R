@@ -16,16 +16,16 @@ library(dplyr)
 
 
 ####################################
-# Caminho das funções de interface #
+# Caminho das funções de R #
 ####################################
-source("./interface/pageDash.R")
-source("./interface/headDash.R")
-source("./interface/menuDash.R")
-source("./interface/contentDash.R")
-source("./interface/tabItem.R")
-source("./interface/footerDash.R")
-source("./interface/box.R")
-source("./interface/infoBox.R")
-source("./interface/elements.R")
-source("./interface/tabBox.R")
-source("./interface/panel.R")
+source("./R/pageDash.R")
+source("./R/headDash.R")
+source("./R/menuDash.R")
+source("./R/contentDash.R")
+source("./R/tabItem.R")
+source("./R/footerDash.R")
+source("./R/box.R")
+source("./R/infoBox.R")
+source("./R/elements.R")
+source("./R/tabBox.R")
+source("./R/panel.R")
