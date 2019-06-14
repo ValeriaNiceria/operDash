@@ -1,5 +1,4 @@
 headerDash <- function(..., title = "Dashboard Shiny") {
-
   tags$head(
     tags$title(title),
     tags$link(rel="stylesheet", type="text/css", href="css/bootstrap.min.css"),
@@ -7,9 +6,6 @@ headerDash <- function(..., title = "Dashboard Shiny") {
     tags$link(rel="stylesheet", type="text/css", href="css/animate.css"),
     tags$link(rel="stylesheet", type="text/css", href="css/customer.css"),
     tags$script(src="js/init.js"),
-    list(...)
+    ...
   )
-  
-  # lapply(list(...), function(x) tagList(fluidRow(x), br()))
-  
 }

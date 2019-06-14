@@ -2,13 +2,13 @@
 # Carregando os pacotes #
 #########################
 library(shiny)
-library(shinyjqui)
 library(shinyWidgets)
 library(shinyjs)
+library(shinyjqui)
+library(shinyEffects)
 library(htmltools)
 library(htmlwidgets)
 library(styler)
-library(shinyEffects)
 library(dplyr)
 
 
@@ -18,6 +18,7 @@ library(dplyr)
 ####################################
 # Caminho das funções de interface #
 ####################################
+source("./interface/pageDash.R")
 source("./interface/headDash.R")
 source("./interface/menuDash.R")
 source("./interface/contentDash.R")
