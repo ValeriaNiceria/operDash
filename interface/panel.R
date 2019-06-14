@@ -17,3 +17,38 @@ panel <- function(title = NULL, body = NULL, footer = NULL, type = "default", ..
 panelCollapse <- function() {
   
 }
+
+
+collapsePanel <- function(...) {
+  tags$div(class="panel-body",
+           tags$div("panel-group", id="accordion", 
+                    
+                    ...
+                    
+                    )
+           )
+}
+
+
+collapsePanelItem <- function(..., title = NULL, id = NULL, content = NULL) {
+  href = paste0("#", id)
+  tags$div(class="panel panel-default",
+           tags$div(class="panel-heading",
+                    tags$h5(class="panel-title",
+                            tags$a(`data-toggle`="collapse", 
+                                   `data-parent`="#accordion",
+                                   href = href,
+                                   class="collapsed",
+                                   `aria-expanded`="false",
+                                   title)
+                            )
+                    ),
+           tags$div(id = id,
+                    class="panel-collapse in collapse",
+                    tags$div(class="panel-body",
+                             content)
+                    ),
+           ...
+           
+           )
+}
