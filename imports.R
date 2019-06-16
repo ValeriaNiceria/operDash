@@ -3,12 +3,8 @@
 #########################
 library(shiny)
 library(shinyWidgets)
-library(shinyjs)
-library(shinyjqui)
-library(shinyEffects)
 library(htmltools)
 library(htmlwidgets)
-library(styler)
 library(dplyr)
 
 
