@@ -6,6 +6,7 @@ library(shinyWidgets)
 library(htmltools)
 library(htmlwidgets)
 library(dplyr)
+library(highcharter)
 
 
 

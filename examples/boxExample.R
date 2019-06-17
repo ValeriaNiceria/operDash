@@ -20,7 +20,7 @@ boxExample <-
                               closeLink())
                    ),
                    boxContent(
-                     plotOutput('plot')
+                     highchartOutput('plot')
                    )
                  )
           )
