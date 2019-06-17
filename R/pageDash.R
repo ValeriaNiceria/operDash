@@ -21,5 +21,5 @@ content <-  tags$div(id="wrapper",
   )
 
 
-bootstrapPage(content, title = title)
+bootstrapPage(content, title = title, theme = "css/bootstrap.min.css")
 }

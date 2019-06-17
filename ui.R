@@ -8,6 +8,11 @@ navbar <- navbarDash(brand = "operDash",
                       menuItem(text = "Elements", icon = icon("flask"), tabName = "elements"),
                       menuItem(text = "Panel", icon = icon("columns"), tabName = "panel"),
                       menuDropdown(menuItem(text = "TESTE"))
+                      # menuDropdown(text = "Elements", icon = icon("flask"), 
+                      #              menuItem(text = "Buttons", tabName = "buttons"),
+                      #              menuItem(text = "Jumbotron", tabName = "jumbotron"),
+                      #              menuItem(text = "Alert Message", tabName = "alertMessage"),
+                      #              menuItem(text = "Progress", tabName = "progress"))
                     ),
                     
                     menuRight(

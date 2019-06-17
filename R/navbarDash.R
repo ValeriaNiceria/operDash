@@ -35,13 +35,14 @@ menuRight <- function(...) {
 }
 
 
-menuDropdown <- function(..., text = "Link") {
+menuDropdown <- function(..., text = "Link", icon = NULL) {
   tags$li(class="dropdown",
           tags$a(`aria-expanded`="false",
                  `role`="button", 
                  href="#", 
                  class="dropdown-toggle", 
                  `data-toggle`="dropdown", 
+                 icon, 
                  text),
           tags$ul(`role`="menu", 
                   class="dropdown-menu",
