@@ -3,7 +3,9 @@ boxExample <-
           fluidRow(column(width = 4,
                           box(
                             boxTitle(
-                              boxTools(label())
+                              color = "#00a7d0",
+                              boxTools(collapseLink(),
+                                       label(label = "testando"))
                             ),
                             boxContent(
                               numericInput(inputId ='n', 
@@ -16,29 +18,26 @@ boxExample <-
           column(width = 8,
                  box(
                    boxTitle(
-                     boxTools(collapseLink(),
-                              closeLink())
+                     boxTools(closeLink(),
+                              collapseLink())
                    ),
                    boxContent(
                      highchartOutput('plot')
                    )
                  )
           )
-          ),
-          
-          fluidRow(
-            column(
-              width = 12,
-              box(
-                boxContent(
-                  tabsetPanel(
-                    tabPanel("barChart", highchartOutput("barChart")),
-                    tabPanel("Treemap", highchartOutput("treemap")),
-                    tabPanel("Scatterplot", highchartOutput("scatterplot")),
-                    tabPanel("Table", dataTableOutput("tablePokemon"))
-                  )
-                )
-              )
-            )
           )
+          
+          # fluidRow(
+          #   column(
+          #     width = 12,
+          #     box(
+          #       boxContent(
+          #         # tabsetPanel(
+          #         #   tabPanel("barChart", highchartOutput("barChart"))
+          #         # )
+          #       )
+          #     )
+          #   )
+          # )
   )
