@@ -26,3 +26,14 @@ source("./R/tabBox.R")
 source("./R/panel.R")
 source("./R/footerDash.R")
 source("./R/footerScriptsDash.R")
+
+
+
+
+####################################
+###     Caminho dos exemplos     ###
+####################################
+source("./examples/boxExample.R", encoding = 'UTF-8')
+source("./examples/valueBoxExample.R", encoding = 'UTF-8')
+source("./examples/elementsExample.R", encoding = 'UTF-8')
+source("./examples/panelExample.R", encoding = 'UTF-8')
