@@ -17,7 +17,17 @@ navbar <- navbarDash(brand = "operDash",
                     
                     menuRight(
                       menuItem(text = "TESTE2"),
-                      menuItem(text = "TESTE2"),
+                      
+                      # Notification dropdown
+                      notification(icon = icon("envelope"),
+                                   label = "10",
+                                   notificationItem(
+                                     icon = icon("user", class="fa-3x"),
+                                     title = "novo usuário",
+                                     message = "Foi criado novo usuário", 
+                                     time = "14:41")
+                                   ),
+                      
                       menuItem(text = "Logout", icon = tags$i(class="fas fa-sign-out-alt"))
                     )
 )
@@ -40,7 +50,7 @@ body <- bodyDash(
 
 ui <- pageDash(
   title = "operDash",
-  header = headerDash(),
+  header = headDash(),
   navbar = navbar,
   body = body,
   footer = footerDash(),

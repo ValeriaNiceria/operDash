@@ -22,14 +22,14 @@ menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
 
 
 menuLeft <- function(...) {
-  tags$ul(class="nav  mr-auto",
+  tags$ul(class="nav navbar-top-links mr-auto",
           list(...)
   )
 }
 
 
 menuRight <- function(...) {
-  tags$ul(class="nav navbar-right",
+  tags$ul(class="nav navbar-top-links navbar-right",
           list(...)
           )
 }
@@ -43,7 +43,8 @@ menuDropdown <- function(..., text = "Link", icon = NULL) {
                  class="dropdown-toggle", 
                  `data-toggle`="dropdown", 
                  icon, 
-                 text),
+                 text, 
+                 icon("caret-down")),
           tags$ul(`role`="menu", 
                   class="dropdown-menu",
                   list(...)))
