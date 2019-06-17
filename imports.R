@@ -15,7 +15,7 @@ library(dplyr)
 # Caminho das funções de interface #
 ####################################
 source("./R/pageDash.R")
-source("./R/headDash.R")
+source("./R/headerDash.R")
 source("./R/navbarDash.R")
 source("./R/bodyDash.R")
 source("./R/tabItem.R")
