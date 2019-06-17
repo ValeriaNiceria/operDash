@@ -67,12 +67,12 @@ elementsExample <-
                 boxContent(
                   progressBar(
                     type = "success",
-                    animated = TRUE,
+                    animated = FALSE,
                     value = 75
                   ),
                   progressBar(
                     type = "info",
-                    animated = FALSE,
+                    animated = TRUE,
                     value = 45
                   ),
                   progressBar(
