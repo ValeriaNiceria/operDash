@@ -31,7 +31,12 @@ boxExample <-
               width = 12,
               box(
                 boxContent(
-                  
+                  tabsetPanel(
+                    tabPanel("barChart", highchartOutput("barChart")),
+                    tabPanel("Treemap", highchartOutput("treemap")),
+                    tabPanel("Scatterplot", highchartOutput("scatterplot")),
+                    tabPanel("Table", dataTableOutput("tablePokemon"))
+                  )
                 )
               )
             )

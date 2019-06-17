@@ -7,6 +7,8 @@ library(htmltools)
 library(htmlwidgets)
 library(dplyr)
 library(highcharter)
+require(data.table)
+require(DT)
 
 
 
