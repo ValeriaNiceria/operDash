@@ -1,7 +1,7 @@
 source("./imports.R")
 
 
-menuDash = menuDash(title_site = "Dashboard",
+navbar <- navbarDash(brand = "operDash",
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
                       menuItem(text = "valueBox", icon = icon("th-large"), tabName = "valueBox"),
@@ -18,7 +18,7 @@ menuDash = menuDash(title_site = "Dashboard",
 )
 
 
-content = contentDash(
+body <- bodyDash(
   # ibox
   tabItem(tabName = "box",
           fluidRow(column(width = 4,
@@ -255,38 +255,12 @@ content = contentDash(
  )
 )
 
-footerScripts <- function() {
-  HTML('
-       <script src="js/popper.min.js"></script>
-       <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-       <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-       <script src="js/operDash.js"></script>
-       ')
-}
-
-
-content <- tags$div(id="wrapper",
-                    tags$div(id="page-wrapper", class="gray-bg",
-                             headerDash(),
-                             menuDash,
-                             content,
-                             footerDash(),
-                             footerScripts()
-                    )
+ui <- pageDash(
+  title = "operDash",
+  header = headerDash(),
+  navbar = navbar,
+  body = body,
+  footer = footerDash(),
+  footerScripts = footerScriptsDash()
 )
-
-ui <- bootstrapPage(content)
-
-
-# ui <- htmlTemplate("./interface/index.html",
-# 
-#                    headDash = headerDash(),
-# 
-#                    menuDash = menuDash,
-# 
-#                    contentDash = content,
-# 
-#                    footerDash = footerDash()
-# 
-# )

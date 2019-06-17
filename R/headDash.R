@@ -1,6 +1,5 @@
-headerDash <- function(..., title = "Dashboard Shiny") {
+headerDash <- function(...) {
   tags$head(
-    tags$title(title),
     tags$link(rel="stylesheet", type="text/css", href="css/bootstrap.min.css"),
     tags$link(rel="stylesheet", type="text/css", href="font-awesome/css/font-awesome.css"),
     tags$link(rel="stylesheet", type="text/css", href="css/animate.css"),
