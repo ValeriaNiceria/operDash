@@ -7,6 +7,8 @@ navbar <- navbarDash(brand = "operDash",
                       menuItem(text = "valueBox", icon = icon("th-large"), tabName = "valueBox"),
                       menuItem(text = "Elements", icon = icon("flask"), tabName = "elements"),
                       menuItem(text = "Panel", icon = icon("columns"), tabName = "panel"),
+                      menuItem(text = "Carousel", tabName = "carousel"),
+                      
                       menuDropdown(menuItem(text = "TESTE"))
                       # menuDropdown(text = "Elements", icon = icon("flask"), 
                       #              menuItem(text = "Buttons", tabName = "buttons"),
@@ -49,7 +51,10 @@ body <- bodyDash(
   elementsExample,
   
   # Panel
-  panelExample
+  panelExample,
+  
+  # Carousel
+  carouselExample
 )
 
 
