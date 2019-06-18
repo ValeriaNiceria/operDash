@@ -10,24 +10,44 @@ elementsExample <-
                 ),
                 column(
                   width = 2,
-                  appButton(type = "default")
+                  appButton(status = "default")
                 ),
                 column(
                   width = 2,
-                  appButton(type = "info")
+                  appButton(status = "info")
                 ),
                 column(
                   width = 2,
-                  appButton(type = "success")
+                  appButton(status = "success")
                 ),
                 column(
                   width = 2,
                   appButton(idButton="danger",
                             label = "Danger",
-                            type = "danger",
-                            size = "sm")
+                            status = "danger",
+                            size_lg = FALSE)
                 )
                 )
+              )
+            )
+          ),
+          fluidRow(
+            column(
+              width = 12,
+              box(
+                appCircleButton(icon = icon("check")),
+                
+                appCircleButton(icon = icon("check"),
+                                status = "default",
+                                size_lg = TRUE),
+                
+                appCircleButton(icon = icon("check"),
+                                status = "info",
+                                size_lg = TRUE),
+                
+                appCircleButton(icon = icon("check"),
+                                status = "danger",
+                                size_lg = FALSE)
               )
             )
           ),
