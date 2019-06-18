@@ -1,5 +1,5 @@
 carouselDash <- function(...) {
-  tags$div(id="carouselExampleControls", class="carousel slide", `data-ride`="carousel",
+  tags$div(id="carouselImageControls", class="carousel slide", `data-ride`="carousel",
            tags$div(class="carousel-inner",
                     
                     ...
@@ -7,7 +7,7 @@ carouselDash <- function(...) {
                     ),
            
            tags$a(class="carousel-control-prev", 
-                  href="#carouselExampleControls", 
+                  href="#carouselImageControls", 
                   role="button", 
                   `data-slide`="prev",
                   tags$span(class="carousel-control-prev-icon", 
@@ -17,7 +17,7 @@ carouselDash <- function(...) {
            ),
            
            tags$a(class="carousel-control-next", 
-                  href="#carouselExampleControls", 
+                  href="#carouselImageControls", 
                   role="button", 
                   `data-slide`="next",
                   tags$span(class="carousel-control-next-icon", 
@@ -25,7 +25,7 @@ carouselDash <- function(...) {
                   tags$span(class="sr-only", 
                             "Next")
            )
-           )
+        )
 }
 
 
