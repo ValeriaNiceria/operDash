@@ -5,7 +5,6 @@ footerScriptsDash <- function(...) {
     tags$script(src="js/plugins/slimscroll/jquery.slimscroll.min.js"),
     tags$script(src="js/operDash.js"),
     tags$script(src="js/pace/pace.min.js"),
-    tags$script(src="js/slick/slick.min.js"),
     
     tags$script(src="js/end.js"),
     ...
