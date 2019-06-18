@@ -1,12 +1,28 @@
 carouselDash <- function(title = NULL, ...) {
-  tags$div(class="row justify-content-md-center",
-           tags$div(class="col-lg-10",
-                    tags$div(class="ibox",
-                             tags$h4(class="text-center m", title),
-                             tags$div(class="slick_demo_1",
-                                      ...
-                                      )
-                             )
+  tags$div(id="carouselImageControls", class="carousel slide", `data-ride`="carousel",
+           tags$div(class="carousel-inner",
+                    
+                    ...,
+                    
+                    tags$a(class="carousel-control-prev", 
+                           href="#carouselImageControls", 
+                           role="button", 
+                           `data-slide`="prev",
+                           tags$span(class="carousel-control-prev-icon", 
+                                     `aria-hidden`="true"),
+                           tags$span(class="sr-only", 
+                                     "Previous")
+                           ),
+                    
+                    tags$a(class="carousel-control-prev", 
+                           href="#carouselImageControls", 
+                           role="button", 
+                           `data-slide`="next",
+                           tags$span(class="carousel-control-next-icon", 
+                                     `aria-hidden`="true"),
+                           tags$span(class="sr-only", 
+                                     "Next")
+                    )
                     )
            )
 }
