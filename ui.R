@@ -56,8 +56,18 @@ body <- bodyDash(
 ui <- pageDash(
   title = "operDash",
   header = headDash(),
-  navbar = navbar,
+  sidebar = sidebarDash(img_src = "img/user.jpeg"),
   body = body,
   footer = footerDash(),
   footerScripts = footerScriptsDash()
 )
+
+
+# ui <- pageNavbarDash(
+#   title = "operDash",
+#   header = headDash(),
+#   navbar = navbar,
+#   body = body,
+#   footer = footerDash(),
+#   footerScripts = footerScriptsDash()
+# )
