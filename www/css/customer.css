@@ -8644,3 +8644,10 @@ body.md-skin {
 .tab-pane:not(.active) {
     display: none;
 }
+
+
+pre.R {
+    background-color: #283b4f;
+    color: white;
+    border-radius: 10px;
+}
