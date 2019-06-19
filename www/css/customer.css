@@ -8651,3 +8651,29 @@ pre.R {
     color: white;
     border-radius: 10px;
 }
+
+
+
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  display: none;
+  position: absolute;
+  top: 20px;
+  width: 550px;
+  z-index: 100;
+  padding: 20px;
+  text-decoration: none;
+  font: 14px normal;
+  border: 1px solid #283b4f;
+  background: #283b4f;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px grey;
+}
+[data-tooltip]:hover:before {
+  display: inline-block;
+}
