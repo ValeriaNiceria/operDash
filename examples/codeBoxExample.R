@@ -59,5 +59,23 @@ label(
   ...
 )
 </pre>
+'),
+
+  tags$h2(class="font-bold", "Exemplo"),
+HTML('
+<pre class="R">
+box(
+  boxTitle(
+    color = "#00a7d0",
+    boxTools(closeLink(), collapseLink(), label(label = "testando"))
+  ),
+  boxContent(
+     numericInput(inputId ="n", 
+       label = "Number of obs", 
+       value = 100
+     )
+  )
+)
+</pre>
 ')
 )
