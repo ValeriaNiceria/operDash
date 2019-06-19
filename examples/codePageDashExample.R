@@ -13,7 +13,5 @@ pageDash(
   ...
 )
 </pre>
-'),
-
-    tags$h2(class="font-bold", "Exemplo:")
+')
 )

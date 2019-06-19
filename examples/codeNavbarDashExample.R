@@ -1,6 +1,6 @@
 codeNavbarDashExample <-
 tabItem(tabName = "navbarDash",
-    tags$h3(class="font-bold", "pageDash()"),
+    tags$h3(class="font-bold", "navbarDash()"),
 HTML('
 <pre class="R">
 navbarDash(
@@ -36,6 +36,31 @@ menuDropdown(
 </pre>
 '),
 
+    tags$h3(class="font-bold", "notification()"),
+    tags$small("status => default, primary, info, warning, success, danger"),
+HTML('
+<pre class="R">
+notification(
+  icon = icon("envelope"),
+  label = "10",
+  status = "warning",
+  ...
+)
+</pre>
+'),
+
+    tags$h3(class="font-bold", "notificationItem()"),
+HTML('
+<pre class="R">
+notificationItem(
+  icon = icon("user", class="fa-3x"),
+  title = "Usuário logado",
+  message = "Novo usuário",
+  time = "12:50"
+  ...
+)
+</pre>
+'),
 
     tags$h2(class="font-bold", "Exemplo:"),
 HTML('
@@ -54,6 +79,18 @@ navbar = navbarDash(brand = "operDash",
     )
   ),
   menuRight(
+    notification(icon = icon("envelope"), label = "1",
+                 notificationItem(
+                   icon = icon("user", class="fa-3x"),
+                   title = "novo usuário",
+                   message = "Foi um criado novo usuário", 
+                   time = "14:41"),
+                 notificationItem(
+                   icon = icon("user", class="fa-3x"),
+                   title = "novo usuário",
+                   message = "Foi um criado novo usuário", 
+                   time = "14:41")
+                 ),
     menuItem(text = "Logout", 
             icon = tags$i(class="fas fa-sign-out-alt"), 
             tabName = "logout")

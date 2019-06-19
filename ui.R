@@ -27,12 +27,12 @@ navbar <- navbarDash(brand = "operDash",
                                    notificationItem(
                                      icon = icon("user", class="fa-3x"),
                                      title = "novo usuário",
-                                     message = "Foi criado novo usuário", 
+                                     message = "Foi um criado novo usuário", 
                                      time = "14:41"),
                                    notificationItem(
                                      icon = icon("user", class="fa-3x"),
                                      title = "novo usuário",
-                                     message = "Foi criado novo usuário", 
+                                     message = "Foi um criado novo usuário", 
                                      time = "14:41")
                                    ),
                       
