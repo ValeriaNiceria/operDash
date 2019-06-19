@@ -1,4 +1,4 @@
-pageDashExample <- 
+codePageDashExample <- 
 tabItem(tabName = "pageDash",
         tags$h3(class="text-center font-bold", "pageDash()"),
 HTML('
