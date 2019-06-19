@@ -13,5 +13,19 @@ pageDash(
   ...
 )
 </pre>
+'),
+
+    tags$h3(class="font-bold", "headDash()"),
+HTML('
+<pre class="R">
+headDash(...)
+</pre>
+'),
+
+tags$h3(class="font-bold", "footerScriptsDash()"),
+HTML('
+<pre class="R">
+footerScriptsDash(...)
+</pre>
 ')
 )
