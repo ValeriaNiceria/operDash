@@ -17,9 +17,10 @@ infoMetric <- function(title = NULL, value = NULL, subTitle = NULL, percent = "0
 }
   
   
-infoProgress <- function(..., title = NULL, value = "33", colorProgress = NULL, subTitle = NULL) {
+infoProgress <- function(title = NULL, value = "33", status = NULL, subTitle = NULL, ...) {
   styleProgress = paste0("width:", value, "%")
-  classProgress = paste("progress-bar")
+  classProgress = "progress-bar"
+  classProgress = if (!is.null(status)) paste0(classProgress, " progress-bar-", status)
   tags$div(class="ibox",
            tags$div(class="ibox-content",
                     tags$h5(title),
@@ -36,10 +37,10 @@ infoProgress <- function(..., title = NULL, value = "33", colorProgress = NULL, 
 }
 
 
-valueBox <- function(..., icon = "fa fa-cloud", textTop = "textTop", textSub = "textSub", type = "default") {
-  icon = paste(icon, "fa-5x")
-  
-  switch(type, 
+valueBox <- function(icon = NULL, textTop = "textTop", textSub = "textSub", status = "default", ...) {
+  icon = if (is.null(icon)) icon("cloud", class="fa-5x")
+
+  switch(status, 
          default={
            widgetClass = "widget style1"
          },
@@ -63,7 +64,7 @@ valueBox <- function(..., icon = "fa fa-cloud", textTop = "textTop", textSub = "
   tags$div(class=widgetClass,
            tags$div(class="row",
                     tags$div(class="col-4",
-                             tags$i(class=icon)),
+                             icon),
                     tags$div(class="col-8 text-right",
                              tags$span(textTop),
                              tags$h2(class="font-bold", textSub))

@@ -12,13 +12,8 @@ navbar <- navbarDash(brand = "operDash",
                                    menuItem(text = "pageDash", tabName = "codePageDash"),
                                    menuItem(text = "navbarDash", tabName = "codeNavbarDash"),
                                    menuItem(text = "bodyDash", tabName = "codeBodyDash"),
-                                   menuItem(text = "box", tabName = "codeBox"))
-                      # menuDropdown(text = "Elements", icon = icon("flask"), 
-                      #              menuItem(text = "Buttons", tabName = "buttons"),
-                      #              menuItem(text = "Jumbotron", tabName = "jumbotron"),
-                      #              menuItem(text = "Alert Message", tabName = "alertMessage"),
-                      #              menuItem(text = "Progress", tabName = "progress"))
-                    ),
+                                   menuItem(text = "box", tabName = "codeBox"),
+                                   menuItem(text = "valueBox", tabName = "codeValueBox"))),
                     
                     menuRight(
                       menuItem(text = "TESTE2"),
@@ -67,7 +62,10 @@ body <- bodyDash(
   codeBodyDashExample,
   
   # box
-  codeBoxExample
+  codeBoxExample,
+  
+  # valueBox
+  codeValueBoxExample
 )
 
 

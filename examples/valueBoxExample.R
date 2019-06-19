@@ -3,22 +3,22 @@ valueBoxExample <-
           fluidRow(
             column(
               width = 3,
-              valueBox(type = "default")),
+              valueBox(status = "default")),
             column(
               width = 3,
-              valueBox(type = "primary")),
+              valueBox(status = "primary")),
             column(
               width = 3,
-              valueBox(type = "info")),
+              valueBox(status = "info")),
             column(
               width = 3,
-              valueBox(type = "warning"))
+              valueBox(status = "warning"))
           ),
           
           fluidRow(
             column(
               width = 3,
-              valueBox(type = "danger")
+              valueBox(status = "danger")
             ),
             column(
               width = 3,
