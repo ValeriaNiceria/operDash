@@ -22,17 +22,18 @@ valueBoxExample <-
             ),
             column(
               width = 3,
-              infoMetric(title = "Income", 
-                         value = "999,99", 
+              infoMetric(title = "Income",
                          subTitle = "Total income", 
+                         value = "999,99", 
                          percent = "77%", 
                          icon = icon("bolt"))
             ),
             column(
               width = 3,
               infoProgress(title = "Título",
+                           subTitle = "Sub título",
                            value = "56",
-                           subTitle = "Sub título")
+                           status = "primary")
             )
           )
   )

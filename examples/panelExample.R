@@ -9,13 +9,13 @@ panelExample <-
               width = 4,
               panel(title = "Título",
                     body = "conteúdo",
-                    type = "primary",
+                    status = "primary",
                     footer = "Rodapé")
             ),
             column(
               width = 4,
               panel(body = "conteúdo",
-                    type = "success")
+                    status = "success")
             )
             
           ),
@@ -24,19 +24,19 @@ panelExample <-
               width = 4,
               panel(title = "Título",
                     body = "conteúdo",
-                    type = "info")
+                    status = "info")
             ),
             column(
               width = 4,
               panel(title = "Título",
                     body = "conteúdo",
-                    type = "warning")
+                    status = "warning")
             ),
             column(
               width = 4,
               panel(title = "Título",
                     body = "conteúdo",
-                    type = "danger")
+                    status = "danger")
             )
             
           )

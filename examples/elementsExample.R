@@ -65,16 +65,16 @@ elementsExample <-
               box(
                 boxContent(
                   alert(message = "Alert message success", 
-                        type = "success"
+                        status = "success"
                   ),
                   alert(message = "Alert message info", 
-                        type = "info"
+                        status = "info"
                   ),
                   alert(message = "Alert message warning", 
-                        type = "warning"
+                        status = "warning"
                   ),
                   alert(message = "Alert message danger", 
-                        type = "danger"
+                        status = "danger"
                   )
                 )
               )
@@ -86,22 +86,22 @@ elementsExample <-
               box(
                 boxContent(
                   progressBar(
-                    type = "success",
+                    status = "success",
                     animated = FALSE,
                     value = 75
                   ),
                   progressBar(
-                    type = "info",
+                    status = "info",
                     animated = TRUE,
                     value = 45
                   ),
                   progressBar(
-                    type = "warning",
+                    status = "warning",
                     animated = FALSE,
                     value = 63
                   ),
                   progressBar(
-                    type = "danger",
+                    status = "danger",
                     animated = TRUE,
                     value = 88
                   )

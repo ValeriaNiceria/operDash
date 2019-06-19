@@ -1,4 +1,4 @@
-infoMetric <- function(title = NULL, value = NULL, subTitle = NULL, percent = "0%", colorPercent = "text-navy", icon = NULL, ...) {
+infoMetric <- function(title = NULL, subTitle = NULL, value = NULL, percent = "0%", colorPercent = "text-navy", icon = NULL, ...) {
   # color percent - text-navy - text-danger
   classTextPercent = paste("stat-percent font-bold", colorPercent)
   
@@ -17,7 +17,7 @@ infoMetric <- function(title = NULL, value = NULL, subTitle = NULL, percent = "0
 }
   
   
-infoProgress <- function(title = NULL, value = "33", status = NULL, subTitle = NULL, ...) {
+infoProgress <- function(title = NULL, subTitle = NULL, value = "33", status = NULL, ...) {
   styleProgress = paste0("width:", value, "%")
   classProgress = "progress-bar"
   classProgress = if (!is.null(status)) paste0(classProgress, " progress-bar-", status)

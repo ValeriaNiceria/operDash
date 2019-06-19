@@ -14,7 +14,8 @@ navbar <- navbarDash(brand = "operDash",
                                    menuItem(text = "bodyDash", tabName = "codeBodyDash"),
                                    menuItem(text = "box", tabName = "codeBox"),
                                    menuItem(text = "valueBox", tabName = "codeValueBox"),
-                                   menuItem(text = "elements", tabName = "codeElements"))),
+                                   menuItem(text = "elements", tabName = "codeElements"),
+                                   menuItem(text = "panel", tabName = "codePanel"))),
                     
                     menuRight(
                       menuItem(text = "TESTE2"),
@@ -69,7 +70,10 @@ body <- bodyDash(
   codeValueBoxExample,
   
   # Elements
-  codeElementsExample
+  codeElementsExample,
+  
+  # Panel
+  codePanelExample
 )
 
 

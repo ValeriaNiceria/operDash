@@ -18,9 +18,9 @@ HTML('
 <pre class="R">
 infoProgress(
     title = "Título",
+    subTitle = "Sub",
     value = "56",
     status = "danger",
-    subTitle = "Sub",
     ...
 )
 </pre>
@@ -32,8 +32,8 @@ HTML('
 <pre class="R">
 infoMetric(
     title = "Título",
-    value = "56",
     subTitle = "Sub",
+    value = "56",
     percent = "60%",
     colorPercent = "text-navy",
     icon = icon("bolt"),
