@@ -37,7 +37,7 @@ menuDropdown(
 '),
 
 
-    tags$h1(class="text-center font-bold", "Exemplo"),
+    tags$h2(class="text-center font-bold", "Exemplo"),
 HTML('
 <pre class="R">
 navbar = navbarDash(brand = "operDash",
