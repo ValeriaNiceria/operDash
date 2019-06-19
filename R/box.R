@@ -1,9 +1,9 @@
-label <- function(label = "label", type = "success", position = "right") {
-  labelType = paste0("label-", type)
-  labelPosition = paste0("float-", position)
-  classValue = paste("label", labelType, labelPosition)
+label <- function(label = "label", status = "success", float = "right", ...) {
+  labelType = paste0("label-", status)
+  labelFloat = paste0("float-", float)
+  classValue = paste("label", labelType, labelFloat)
   
-  tags$span(class=classValue, label)
+  tags$span(class=classValue, label, ...)
 }
 
 collapseLink <- function() {
@@ -24,10 +24,10 @@ boxTools <- function(...) {
 }
 
 
-boxTitle <- function(..., iboxTitle = "iboxTitle", color = NULL) {
+boxTitle <- function(..., title = "iboxTitle", color = NULL) {
   colorTitle = if(!is.null(color)) paste0("color: white; background-color:", color)
   tags$div(class = "ibox-title", style=colorTitle,
-           tags$h5(iboxTitle),
+           tags$h5(title),
            ...
            )
 }
