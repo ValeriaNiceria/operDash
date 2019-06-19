@@ -1,5 +1,5 @@
 codeNavbarDashExample <-
-tabItem(tabName = "navbarDash",
+tabItem(tabName = "codeNavbarDash",
     tags$h3(class="font-bold", "navbarDash()"),
 HTML('
 <pre class="R">

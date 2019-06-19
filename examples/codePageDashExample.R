@@ -1,5 +1,5 @@
 codePageDashExample <- 
-tabItem(tabName = "pageDash",
+tabItem(tabName = "codePageDash",
         tags$h3(class="font-bold", "pageDash()"),
 HTML('
 <pre class="R">
