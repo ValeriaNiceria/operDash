@@ -1,0 +1,21 @@
+---
+title: "operDash"
+author: "Valéria Nicéria"
+date: "`r Sys.Date()`"
+knit: "bookdown::render_book"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+# bookdown::render_book('index.Rmd', 'bookdown::gitbook')
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## pageDash
+
+
+```
+operDash()
+```
+

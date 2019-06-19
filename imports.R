@@ -7,7 +7,6 @@ library(htmltools)
 library(htmlwidgets)
 library(dplyr)
 library(highcharter)
-library(r2d3)
 
 
 
