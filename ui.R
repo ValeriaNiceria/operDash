@@ -9,6 +9,10 @@ navbar <- navbarDash(brand = "operDash",
                       menuItem(text = "Panel", icon = icon("columns"), tabName = "panel"),
                       menuItem(text = "Timeline", icon = icon("stream"), tabName = "timeline"),
                       
+                      menuDropdown(text = "Elements", icon = icon("flask"),
+                                   menuItem(text = "Buttons", tabName = "buttonsElement")
+                                   ),
+                      
                       menuDropdown(text = "Dash", icon = icon("laptop-code"), 
                                    menuItem(text = "pageDash", tabName = "codePageDash"),
                                    menuItem(text = "navbarDash", tabName = "codeNavbarDash"),
@@ -22,8 +26,6 @@ navbar <- navbarDash(brand = "operDash",
                   
                     
                     menuRight(
-                      menuItem(text = "TESTE2"),
-                      
                       # Notification dropdown
                       notification(icon = icon("envelope"),
                                    label = "1",
@@ -73,6 +75,9 @@ body <- bodyDash(
   
   # timeline
   timelineExample,
+  
+  # Elements - buttons
+  buttonsElement,
   
   # Dash - Code
   # code pageDash

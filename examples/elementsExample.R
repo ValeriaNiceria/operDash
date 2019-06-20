@@ -28,8 +28,7 @@ elementsExample <-
                   width = 2,
                   appButton(idButton="danger",
                             label = "Danger",
-                            status = "danger",
-                            size_lg = FALSE)
+                            status = "danger")
                 )
                 )
               )
@@ -49,15 +48,15 @@ elementsExample <-
                 
                 appCircleButton(icon = icon("check"),
                                 status = "default",
-                                size_lg = TRUE),
+                                lg = TRUE),
                 
                 appCircleButton(icon = icon("check"),
                                 status = "info",
-                                size_lg = TRUE),
+                                lg = TRUE),
                 
                 appCircleButton(icon = icon("check"),
                                 status = "danger",
-                                size_lg = FALSE)
+                                lg = FALSE)
               )
             )
           ),

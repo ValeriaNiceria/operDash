@@ -1,9 +1,7 @@
-appButton <- function(id = NULL, label = "label", icon = NULL, status = "primary", size_lg = TRUE, ...) {
-  size <- ifelse(size_lg, "btn-lg", "")
-  statusButton <- paste0("btn btn-w-m btn-", status)
-  classButton <- paste(statusButton, size)
+appButton <- function(id = NULL, label = "label", icon = NULL, status = "default", ...) {
+  statusButton <- paste0("btn btn-w-m btn-lg btn-", status)
   
-  tags$button(class=classButton,
+  tags$button(class=statusButton,
               type="button",
               icon,
               label,
@@ -15,8 +13,8 @@ appButton <- function(id = NULL, label = "label", icon = NULL, status = "primary
 }
 
 
-appCircleButton <- function(id = NULL, icon = NULL, status = "primary", size_lg = FALSE, ...) {
-  size <- ifelse(size_lg, "btn-lg", "")
+appCircleButton <- function(id = NULL, icon = NULL, status = "default", lg = FALSE, ...) {
+  size <- ifelse(lg, "btn-lg", "")
   classButton <- paste0("btn btn-", status, " btn-circle ", size)
   tags$button(class=classButton, type="button", id = id,
               icon, ...)
