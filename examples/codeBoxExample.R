@@ -12,7 +12,8 @@ HTML('
 <pre class="R">
 boxTitle(
   title = "Título box",
-  color = "#00a7d0",
+  background = "#00a7d0",
+  colorText = "#fff",
   ...
 )
 </pre>
@@ -57,9 +58,9 @@ collapseLink()
 '),
 
     tags$h3(class="font-bold", "label()"),
-    tags$small("status => default, primary, info, success, warning, danger"),
+    tags$small(strong("status =>"), span(class="bg-muted", "default"), span(class="bg-primary", "primary"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
     tags$br(),
-    tags$small("float => left, right"),
+    tags$small(strong("float => "), "left, right"),
 HTML('
 <pre class="R">
 label(
@@ -80,7 +81,7 @@ box(
     boxTools(closeLink(), collapseLink(), infoLink(icon = icon("info"), message = "Mensagem de informação"), label(label = "testando"))
   ),
   boxContent(
-     numericInput(inputId ="n", 
+     numericInput(inputId = "n", 
        label = "Number of obs", 
        value = 100
      )

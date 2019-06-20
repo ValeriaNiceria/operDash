@@ -35,7 +35,7 @@ jumbotron(...)
 '),
 
     tags$h3(class="font-bold", "alert()"),
-    tags$small("status => success - info - warning - danger"),
+    tags$small(strong("status =>"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
 HTML('
 <pre class="R">
 alert(
@@ -47,7 +47,7 @@ alert(
 '),
 
     tags$h3(class="font-bold", "progressBar()"),
-    tags$small("status => success - info - warning - danger"),
+    tags$small(strong("status =>"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
 HTML('
 <pre class="R">
 progressBar(

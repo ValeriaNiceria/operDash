@@ -33,9 +33,11 @@ boxTools <- function(...) {
 }
 
 
-boxTitle <- function(..., title = "iboxTitle", color = NULL) {
-  colorTitle = if(!is.null(color)) paste0("color: white; background-color:", color)
-  tags$div(class = "ibox-title", style=colorTitle,
+boxTitle <- function(..., title = "iboxTitle", background = NULL, colorText = NULL) {
+  background = if(!is.null(background)) paste0("background-color:", background, ";")
+  colorText = if(!is.null(colorText)) paste0("color:", colorText, ";")
+  colorBox = paste0(background, colorText)
+  tags$div(class = "ibox-title", style=colorBox,
            tags$h5(title),
            ...
            )

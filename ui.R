@@ -7,6 +7,7 @@ navbar <- navbarDash(brand = "operDash",
                       menuItem(text = "valueBox", icon = icon("th-large"), tabName = "valueBox"),
                       menuItem(text = "Elements", icon = icon("flask"), tabName = "elements"),
                       menuItem(text = "Panel", icon = icon("columns"), tabName = "panel"),
+                      menuItem(text = "Timeline", icon = icon("stream"), tabName = "timeline"),
                       
                       menuDropdown(text = "Dash", icon = icon("laptop-code"), 
                                    menuItem(text = "pageDash", tabName = "codePageDash"),
@@ -15,7 +16,8 @@ navbar <- navbarDash(brand = "operDash",
                                    menuItem(text = "box", tabName = "codeBox"),
                                    menuItem(text = "valueBox", tabName = "codeValueBox"),
                                    menuItem(text = "elements", tabName = "codeElements"),
-                                   menuItem(text = "panel", tabName = "codePanel"))),
+                                   menuItem(text = "panel", tabName = "codePanel"),
+                                   menuItem(text = "timeline", tabName = "codeTimeline"))),
                     
                     menuRight(
                       menuItem(text = "TESTE2"),
@@ -53,27 +55,34 @@ body <- bodyDash(
   # Panel
   panelExample,
   
+  # timeline
+  timelineExample,
+  
   # Dash - Code
-  # pageDash
+  # code pageDash
   codePageDashExample,
   
-  # navbarDash
+  # code navbarDash
   codeNavbarDashExample,
   
-  # bodyDash
+  # code bodyDash
   codeBodyDashExample,
   
-  # box
+  # code box
   codeBoxExample,
   
   # valueBox
   codeValueBoxExample,
   
-  # Elements
+  # code Elements
   codeElementsExample,
   
-  # Panel
-  codePanelExample
+  # code Panel
+  codePanelExample,
+  
+  # code Timeline
+  codeTimelineExample
+  
 )
 
 
