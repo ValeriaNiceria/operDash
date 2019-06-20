@@ -32,6 +32,16 @@ boxTools(...)
 </pre>
 '),
 
+tags$h3(class="font-bold", "infoLink()"),
+HTML('
+<pre class="R">
+infoLink(
+  icon = icon("info"),
+  message = "Mensagem de informação"
+)
+</pre>
+'),
+
     tags$h3(class="font-bold", "closeLink()"),
 HTML('
 <pre class="R">
@@ -67,7 +77,7 @@ HTML('
 box(
   boxTitle(
     color = "#00a7d0",
-    boxTools(closeLink(), collapseLink(), label(label = "testando"))
+    boxTools(closeLink(), collapseLink(), infoLink(icon = icon("info"), message = "Mensagem de informação"), label(label = "testando"))
   ),
   boxContent(
      numericInput(inputId ="n", 

@@ -8663,15 +8663,18 @@ pre.R {
   display: none;
   position: absolute;
   top: 20px;
-  width: 550px;
+  right: 1px;
+  min-width: 350px;
   z-index: 100;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
-  font: 14px normal;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
   border: 1px solid #283b4f;
   background: #283b4f;
   color: white;
   border-radius: 5px;
+  text-align: left;
   box-shadow: 3px 3px 10px grey;
 }
 [data-tooltip]:hover:before {

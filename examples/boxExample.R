@@ -20,7 +20,7 @@ boxExample <-
                    boxTitle(
                      boxTools(closeLink(),
                               collapseLink(),
-                              infoLink(message = "TESTANDO"))
+                              infoLink(message = "Mensagem de info para o usuário"))
                    ),
                    boxContent(
                      highchartOutput('plot')
