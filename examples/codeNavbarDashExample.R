@@ -1,6 +1,11 @@
 codeNavbarDashExample <-
 tabItem(tabName = "codeNavbarDash",
-    tags$h3(class="font-bold", "navbarDash()"),
+        fluidRow(
+          column(
+            width = 12,
+            box(
+              boxTitle(title = "navbarDash()", boxTools(collapseLink())),
+              boxContent(
 HTML('
 <pre class="R">
 navbarDash(
@@ -10,9 +15,17 @@ navbarDash(
   ...
 )
 </pre>
-'),
-
-    tags$h3(class="font-bold", "menuItem()"),
+')
+              )
+            )
+          )
+        ),
+fluidRow(
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "menuItem()", boxTools(collapseLink())),
+      boxContent(
 HTML('
 <pre class="R">
 menuItem(
@@ -22,10 +35,15 @@ menuItem(
   href = "http..."
 )
 </pre>
-'),
-
-
-    tags$h3(class="font-bold", "menuDropdown()"),
+')
+      )
+    )
+  ),
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "menuDropdown()", boxTools(collapseLink())),
+      boxContent(
 HTML('
 <pre class="R">
 menuDropdown(
@@ -34,10 +52,18 @@ menuDropdown(
   ...
 )
 </pre>
-'),
-
-    tags$h3(class="font-bold", "notification()"),
-    tags$small(strong("status =>"), span(class="bg-muted", "default"), span(class="bg-primary", "primary"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
+')
+      )
+    )
+  )
+),
+fluidRow(
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "notification()", boxTools(collapseLink())),
+      boxContent(
+        tags$small(strong("status =>"), span(class="bg-muted", "default"), span(class="bg-primary", "primary"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
 HTML('
 <pre class="R">
 notification(
@@ -47,9 +73,15 @@ notification(
   ...
 )
 </pre>
-'),
-
-    tags$h3(class="font-bold", "notificationItem()"),
+')
+      )
+    )
+  ),
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "notificationItem()", boxTools(collapseLink())),
+      boxContent(
 HTML('
 <pre class="R">
 notificationItem(
@@ -60,16 +92,24 @@ notificationItem(
   ...
 )
 </pre>
-'),
-
-    tags$h2(class="font-bold", "Exemplo:"),
-HTML('
+')
+      )
+    )
+  )
+),
+  fluidRow(
+    column(
+      width = 12,
+      box(
+        boxTitle(title = "Exemplo:", boxTools(collapseLink())),
+        boxContent(
+          HTML('
 <pre class="R">
 navbar = navbarDash(brand = "operDash",
   menuLeft(
     menuItem(text = "Home", 
-            icon = icon("home"), 
-            tabName = "home"),
+      icon = icon("home"), 
+      tabName = "home"),
     
     menuDropdown(text = "Lista", icon = icon("list"),
       menuItem(
@@ -80,22 +120,27 @@ navbar = navbarDash(brand = "operDash",
   ),
   menuRight(
     notification(icon = icon("envelope"), label = "1",
-                 notificationItem(
-                   icon = icon("user", class="fa-3x"),
-                   title = "novo usuário",
-                   message = "Foi um criado novo usuário", 
-                   time = "14:41"),
-                 notificationItem(
-                   icon = icon("user", class="fa-3x"),
-                   title = "novo usuário",
-                   message = "Foi um criado novo usuário", 
-                   time = "14:41")
-                 ),
+      notificationItem(
+        icon = icon("user", class="fa-3x"),
+        title = "novo usuário",
+        message = "Foi um criado novo usuário", 
+        time = "14:41"),
+      notificationItem(
+        icon = icon("user", class="fa-3x"),
+        title = "novo usuário",
+        message = "Foi um criado novo usuário", 
+        time = "14:41")
+    ),
     menuItem(text = "Logout", 
-            icon = tags$i(class="fas fa-sign-out-alt"), 
-            tabName = "logout")
+      icon = tags$i(class="fas fa-sign-out-alt"), 
+      tabName = "logout")
   )
 )
 </pre>
 ')
+        )
+      )
+    )
+  )
+
 )
