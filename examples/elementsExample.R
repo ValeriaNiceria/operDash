@@ -6,6 +6,7 @@ elementsExample <-
           fluidRow(
             column(
               width = 12,
+              h3(class="font-bold", "appButton()"),
               box(
                 fluidRow(column(
                   width = 2,
@@ -35,11 +36,14 @@ elementsExample <-
             )
           ),
           
+          
+          
           # circleButton()
           
           fluidRow(
             column(
               width = 12,
+              h3(class="font-bold", "circleButton()"),
               box(
                 appCircleButton(icon = icon("check")),
                 
@@ -58,19 +62,28 @@ elementsExample <-
             )
           ),
           
+          
+          
           # jumbotron()
           
           fluidRow(
             column(
               width = 12,
+              h3(class="font-bold", "jumbotron()"),
               box(
                 jumbotron(tags$h1("Jumbotron"))
               )
             )
           ),
+          
+          
+          
+          # alert()
+          
           fluidRow(
             column(
               width = 12,
+              h3(class="font-bold", "alert()"),
               box(
                 boxContent(
                   alert(message = "Alert message success", 
@@ -90,11 +103,14 @@ elementsExample <-
             )
           ),
           
+          
+          
           # progressBar
           
           fluidRow(
             column(
               width = 12,
+              h3(class="font-bold", "progressBar()"),
               box(
                 boxContent(
                   progressBar(
@@ -122,10 +138,13 @@ elementsExample <-
             )
           ),
           
+          
+          
           # carousel
           fluidRow(
             column(
               width = 6,
+              h3(class="font-bold", "carouselBlock( carouselItem() )"),
               box(
                 boxContent(
                   carouselBlock(
