@@ -59,5 +59,30 @@ progressBar(
   ...
 )
 </pre>
+'),
+
+    tags$h3(class="font-bold", "carouselBlock( carouselItem() )"),
+HTML('
+<pre class="R">
+carouselBlock(id = "myCarousel", ...)
+
+carouselItem(src="img/teste.png",
+            alt = "Imagem teste",
+            title = "Título imagem carousel",
+            subTitle = "Subtítulo")
+</pre>
+'),
+
+
+tags$h2(class="font-bold", "Exemplo carouselBlock( carouselItem() )"),
+HTML('
+<pre class="R">
+carouselBlock(
+  carouselItem(src = "https://www.w3schools.com/bootstrap/chicago.jpg", 
+              title = "Título",
+              subTitle = "Testando"),
+  carouselItem(src = "https://www.w3schools.com/bootstrap/la.jpg")
+)
+</pre>
 ')
 )
