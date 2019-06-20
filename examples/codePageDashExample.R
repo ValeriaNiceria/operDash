@@ -1,7 +1,12 @@
 codePageDashExample <- 
 tabItem(tabName = "codePageDash",
-        tags$h3(class="font-bold", "pageDash()"),
-HTML('
+        fluidRow(
+          column(
+            width = 12,
+            box(
+              boxTitle(title = "pageDash()", boxTools(collapseLink())),
+              boxContent(
+                HTML('
 <pre class="R">
 pageDash(
   title = "operDash",
@@ -13,19 +18,38 @@ pageDash(
   ...
 )
 </pre>
-'),
+')
+              )
+            )
+          )
+),
 
-    tags$h3(class="font-bold", "headDash()"),
+fluidRow(
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "headDash()", boxTools(collapseLink())),
+      boxContent(
 HTML('
 <pre class="R">
 headDash(...)
 </pre>
-'),
-
-tags$h3(class="font-bold", "footerScriptsDash()"),
+')
+      )
+    )
+  ),
+  column(
+  width = 6,
+  box(
+    boxTitle(title = "footerScriptsDash()", boxTools(collapseLink())),
+    boxContent(
 HTML('
 <pre class="R">
 footerScriptsDash(...)
 </pre>
 ')
+      )
+    )
+  )
+)
 )
