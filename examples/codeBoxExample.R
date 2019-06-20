@@ -1,13 +1,27 @@
 codeBoxExample <- 
 tabItem(tabName = "codeBox",
-    tags$h3(class="font-bold", "box()"),
+        fluidRow(
+          column(
+            width = 12,
+            box(
+              boxTitle(title = "box()", boxTools(collapseLink())),
+              boxContent(
 HTML('
 <pre class="R">
 box(...)
 </pre>
-'),
+')
+              )
+            )
+          )
+        ),
 
-    tags$h3(class="font-bold", "boxTitle()"),
+fluidRow(
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "boxTitle()", boxTools(collapseLink())),
+      boxContent(
 HTML('
 <pre class="R">
 boxTitle(
@@ -17,23 +31,47 @@ boxTitle(
   ...
 )
 </pre>
-'),
-
-    tags$h3(class="font-bold", "boxContent()"),
+')
+        )
+      )
+    ),
+  column(
+      width = 6,
+      box(
+        boxTitle(title = "boxContent()", boxTools(collapseLink())),
+        boxContent(
 HTML('
 <pre class="R">
 boxContent(...)
 </pre>
-'),
-
-    tags$h3(class="font-bold", "boxTools()"),
+')
+        )
+      )
+    )
+  ),
+  
+  fluidRow(
+    column(
+      width = 12,
+      box(
+        boxTitle(title = "boxTools()", boxTools(collapseLink())),
+        boxContent(
 HTML('
 <pre class="R">
 boxTools(...)
 </pre>
-'),
+')
+        )
+      )
+    )
+  ),
 
-tags$h3(class="font-bold", "infoLink()"),
+  fluidRow(
+    column(
+      width = 3,
+      box(
+        boxTitle(title = "infoLink()", boxTools(collapseLink())),
+        boxContent(
 HTML('
 <pre class="R">
 infoLink(
@@ -41,26 +79,45 @@ infoLink(
   message = "Mensagem de informação"
 )
 </pre>
-'),
-
-    tags$h3(class="font-bold", "closeLink()"),
+') 
+        )
+      )
+    ),
+    column(
+      width = 3,
+      box(
+        boxTitle(title = "closeLink()", boxTools(collapseLink())),
+        boxContent(
 HTML('
 <pre class="R">
 closeLink()
 </pre>
-'),
-
-    tags$h3(class="font-bold", "collapseLink()"),
+')
+        )
+      )
+    ),
+    column(
+      width = 3,
+      box(
+        boxTitle(title = "collapseLink()", boxTools(collapseLink())),
+        boxContent(
 HTML('
 <pre class="R">
 collapseLink()
 </pre>
-'),
-
-    tags$h3(class="font-bold", "label()"),
-    tags$small(strong("status =>"), span(class="bg-muted", "default"), span(class="bg-primary", "primary"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
-    tags$br(),
-    tags$small(strong("float => "), "left, right"),
+')
+        )
+      )
+    ),
+    column(
+      width = 3,
+      box(
+        boxTitle(title = "label()", boxTools(collapseLink())),
+        boxContent(
+          tags$small(strong("status =>"), span(class="bg-muted", "default"), span(class="bg-primary", "primary"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
+          tags$br(),
+          tags$small(strong("float => "), "left, right"),
+          
 HTML('
 <pre class="R">
 label(
@@ -70,7 +127,12 @@ label(
   ...
 )
 </pre>
-'),
+')
+        )
+      )
+    )
+  ),
+
 
   tags$h2(class="font-bold", "Exemplo"),
 HTML('
