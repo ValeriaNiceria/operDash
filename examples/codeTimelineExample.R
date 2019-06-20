@@ -25,7 +25,8 @@ HTML('
 <pre class="R">
 box(
   boxContent(
-    timelineItem(
+    timelineBlock(
+      timelineItem(
        icon = icon("briefcase"),
        statusIcon = "primary",
        title = "Título",
@@ -38,6 +39,7 @@ box(
                       br(), 
                       icon("clock"), 
                       small("11:40"))
+      )
     )
   )
 )

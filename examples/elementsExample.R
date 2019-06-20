@@ -1,5 +1,8 @@
 elementsExample <- 
   tabItem(tabName = "elements",
+          
+          # appButton()
+          
           fluidRow(
             column(
               width = 12,
@@ -31,6 +34,9 @@ elementsExample <-
               )
             )
           ),
+          
+          # circleButton()
+          
           fluidRow(
             column(
               width = 12,
@@ -51,6 +57,9 @@ elementsExample <-
               )
             )
           ),
+          
+          # jumbotron()
+          
           fluidRow(
             column(
               width = 12,
@@ -80,6 +89,9 @@ elementsExample <-
               )
             )
           ),
+          
+          # progressBar
+          
           fluidRow(
             column(
               width = 12,
@@ -108,5 +120,25 @@ elementsExample <-
                 )
               )
             )
+          ),
+          
+          # carousel
+          fluidRow(
+            column(
+              width = 6,
+              box(
+                boxContent(
+                  carouselBlock(
+                    carouselItem(src = "https://www.w3schools.com/bootstrap/chicago.jpg", 
+                                 title = "Título",
+                                 subTitle = "Testando"),
+                    carouselItem(src = "https://www.w3schools.com/bootstrap/la.jpg")
+                  )
+                )
+              )
+              
+            )
           )
+          
+          
   )

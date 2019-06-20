@@ -78,7 +78,10 @@ HTML('
 box(
   boxTitle(
     color = "#00a7d0",
-    boxTools(closeLink(), collapseLink(), infoLink(icon = icon("info"), message = "Mensagem de informação"), label(label = "testando"))
+    boxTools(closeLink(), 
+            collapseLink(), 
+            infoLink(icon = icon("info"), message = "Mensagem de informação"), 
+            label(label = "testando"))
   ),
   boxContent(
      numericInput(inputId = "n", 

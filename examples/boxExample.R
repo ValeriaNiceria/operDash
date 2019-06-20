@@ -3,6 +3,7 @@ boxExample <-
           fluidRow(column(width = 4,
                           box(
                             boxTitle(
+                              colorText = "white",
                               background = "#00a7d0",
                               boxTools(collapseLink(),
                                        label(label = "testando"))

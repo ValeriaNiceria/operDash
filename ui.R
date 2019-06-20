@@ -17,7 +17,9 @@ navbar <- navbarDash(brand = "operDash",
                                    menuItem(text = "valueBox", tabName = "codeValueBox"),
                                    menuItem(text = "elements", tabName = "codeElements"),
                                    menuItem(text = "panel", tabName = "codePanel"),
-                                   menuItem(text = "timeline", tabName = "codeTimeline"))),
+                                   menuItem(text = "timeline", tabName = "codeTimeline")),
+                      menuDropdown(text = "Graphs", icon = icon("chart-line"))),
+                  
                     
                     menuRight(
                       menuItem(text = "TESTE2"),
@@ -36,6 +38,20 @@ navbar <- navbarDash(brand = "operDash",
                                      message = "Foi um criado novo usuário", 
                                      time = "14:41")
                                    ),
+                      
+                      notification(icon = icon("envelope"),
+                                   label = "1",
+                                   notificationItem(
+                                     icon = icon("user", class="fa-3x"),
+                                     title = "novo usuário",
+                                     message = "Foi um criado novo usuário", 
+                                     time = "14:41"),
+                                   notificationItem(
+                                     icon = icon("user", class="fa-3x"),
+                                     title = "novo usuário",
+                                     message = "Foi um criado novo usuário", 
+                                     time = "14:41")
+                      ),
                       
                       menuItem(text = "Logout", icon = tags$i(class="fas fa-sign-out-alt"))
                     )
