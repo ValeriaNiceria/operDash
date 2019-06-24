@@ -13,7 +13,8 @@ navbar <- navbarDash(brand = "operDash",
                                    menuItem(text = "progressBar", tabName = "progressBarElement"),
                                    menuItem(text = "Carousel", tabName = "carouselElement"),
                                    menuItem(text = "Panel", tabName = "panelElement"),
-                                   menuItem(text = "Timeline", tabName = "timelineElement")
+                                   menuItem(text = "Timeline", tabName = "timelineElement"),
+                                   menuItem(text = "Profile", tabName = "profileElement")
                                    ),
                       
                       menuDropdown(text = "Dash", icon = icon("laptop-code"), 
@@ -24,8 +25,7 @@ navbar <- navbarDash(brand = "operDash",
                                    menuItem(text = "valueBox", tabName = "codeValueBox"),
                                    menuItem(text = "elements", tabName = "codeElements"),
                                    menuItem(text = "panel", tabName = "codePanel"),
-                                   menuItem(text = "timeline", tabName = "codeTimeline")),
-                      # menuDropdown(text = "Graphs", icon = icon("chart-line"))),
+                                   menuItem(text = "timeline", tabName = "codeTimeline"))),
                   
                     
                     menuRight(
@@ -90,6 +90,9 @@ body <- bodyDash(
   
   # Elements - Timeline
   timelineElement,
+  
+  # Elements - Profile
+  profileElement,
   
   # Dash - Code
   # code pageDash
