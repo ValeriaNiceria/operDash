@@ -14,7 +14,8 @@ profile(
   title = "Título",
   subTitle = "Subtítulo",
   src = "img/user.jpeg",
-  content = "conteúdo"
+  content = "conteúdo",
+  ...
 )
 </pre>
 ')
