@@ -8672,6 +8672,8 @@ pre.R {
   font-size: 13px;
   border: 1px solid #283b4f;
   background: #283b4f;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
   color: white;
   border-radius: 5px;
   text-align: left;
