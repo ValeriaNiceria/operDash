@@ -20,8 +20,9 @@ closeLink <- function() {
 infoLink <- function(icon = NULL, message = NULL, ...) {
   icon = if (is.null(icon)) icon("info")
      tags$a(class="wm-tooltip float-right",
-            `data-tooltip`=message,
-            icon
+            `data-tooltip`= message,
+            icon,
+            ...
       )
 }
 

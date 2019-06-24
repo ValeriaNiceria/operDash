@@ -68,7 +68,7 @@ boxTools(...)
 
   fluidRow(
     column(
-      width = 3,
+      width = 8,
       box(
         boxTitle(title = "infoLink()", boxTools(collapseLink())),
         boxContent(
@@ -76,7 +76,8 @@ HTML('
 <pre class="R">
 infoLink(
   icon = icon("info"),
-  message = "Mensagem de informação"
+  message = "Mensagem de informação",
+  ...
 )
 </pre>
 ') 
@@ -84,7 +85,7 @@ infoLink(
       )
     ),
     column(
-      width = 3,
+      width = 4,
       box(
         boxTitle(title = "closeLink()", boxTools(collapseLink())),
         boxContent(
@@ -95,22 +96,12 @@ closeLink()
 ')
         )
       )
-    ),
+    )
+  ),
+
+  fluidRow(
     column(
-      width = 3,
-      box(
-        boxTitle(title = "collapseLink()", boxTools(collapseLink())),
-        boxContent(
-HTML('
-<pre class="R">
-collapseLink()
-</pre>
-')
-        )
-      )
-    ),
-    column(
-      width = 3,
+      width = 8,
       box(
         boxTitle(title = "label()", boxTools(collapseLink())),
         boxContent(
@@ -128,13 +119,30 @@ label(
 )
 </pre>
 ')
-        )
-      )
-    )
+          )
+          )
+        ),
+        column(
+          width = 4,
+          box(
+            boxTitle(title = "collapseLink()", boxTools(collapseLink())),
+            boxContent(
+HTML('
+<pre class="R">
+collapseLink()
+</pre>
+')
+              )
+            )
+          )
   ),
 
-
-  tags$h2(class="font-bold", "Exemplo"),
+  fluidRow(
+    column(
+      width = 12,
+      box(
+        boxTitle(title = "Exemplo", boxTools(collapseLink())),
+        boxContent(
 HTML('
 <pre class="R">
 box(
@@ -154,4 +162,9 @@ box(
 )
 </pre>
 ')
+        )
+      )
+    )
+  )
+
 )
