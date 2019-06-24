@@ -10,6 +10,7 @@ tabItem(tabName = "codeValueBox",
 HTML('
 <pre class="R">
 valueBox(
+  width = 12,
   icon = icon("cloud"),
   textTop = "Topo",
   textSub = "Sub",
@@ -31,6 +32,7 @@ valueBox(
 HTML('
 <pre class="R">
 infoProgress(
+  width = 12,
   title = "Título",
   subTitle = "Sub",
   value = "56",
@@ -53,6 +55,7 @@ infoProgress(
 HTML('
 <pre class="R">
 infoMetric(
+  width = 12,
   title = "Título",
   subTitle = "Sub",
   value = "56",
