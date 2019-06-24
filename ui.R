@@ -25,7 +25,7 @@ navbar <- navbarDash(brand = "operDash",
                                    menuItem(text = "elements", tabName = "codeElements"),
                                    menuItem(text = "panel", tabName = "codePanel"),
                                    menuItem(text = "timeline", tabName = "codeTimeline")),
-                      menuDropdown(text = "Graphs", icon = icon("chart-line"))),
+                      # menuDropdown(text = "Graphs", icon = icon("chart-line"))),
                   
                     
                     menuRight(
