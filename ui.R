@@ -5,7 +5,6 @@ navbar <- navbarDash(brand = "operDash",
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
                       menuItem(text = "valueBox", icon = icon("th-large"), tabName = "valueBox"),
-                      menuItem(text = "Timeline", icon = icon("stream"), tabName = "timeline"),
                       
                       menuDropdown(text = "Elements", icon = icon("flask"),
                                    menuItem(text = "Buttons", tabName = "buttonsElement"),
@@ -13,7 +12,8 @@ navbar <- navbarDash(brand = "operDash",
                                    menuItem(text = "Alert", tabName = "alertElement"),
                                    menuItem(text = "progressBar", tabName = "progressBarElement"),
                                    menuItem(text = "Carousel", tabName = "carouselElement"),
-                                   menuItem(text = "Panel", icon = icon("columns"), tabName = "panelElement")
+                                   menuItem(text = "Panel", tabName = "panelElement"),
+                                   menuItem(text = "Timeline", tabName = "timelineElement")
                                    ),
                       
                       menuDropdown(text = "Dash", icon = icon("laptop-code"), 
@@ -70,9 +70,6 @@ body <- bodyDash(
   # valueBox 
   valueBoxExample,
   
-  # timeline
-  timelineExample,
-  
   # Elements - buttons
   buttonsElement,
   
@@ -90,6 +87,9 @@ body <- bodyDash(
   
   # Elements - Panel
   panelElement,
+  
+  # Elements - Timeline
+  timelineElement,
   
   # Dash - Code
   # code pageDash
