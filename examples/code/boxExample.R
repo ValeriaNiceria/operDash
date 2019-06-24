@@ -25,6 +25,7 @@ fluidRow(
 HTML('
 <pre class="R">
 boxTitle(
+  info = ...,
   title = "Título box",
   background = "#00a7d0",
   colorText = "#fff",
@@ -77,6 +78,7 @@ HTML('
 infoLink(
   icon = icon("info"),
   message = "Mensagem de informação",
+  position = "right",
   ...
 )
 </pre>

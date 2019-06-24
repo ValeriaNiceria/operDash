@@ -17,13 +17,14 @@ closeLink <- function() {
 }
 
 
-infoLink <- function(icon = NULL, message = NULL, ...) {
+infoLink <- function(icon = NULL, message = NULL, position = "right", ...) {
   icon = if (is.null(icon)) icon("info")
-     tags$a(class="wm-tooltip float-right",
-            `data-tooltip`= message,
-            icon,
-            ...
-      )
+  classTooltip = paste0("tooltip--", position)
+  tags$a(class=classTooltip,
+          `data-tooltip`= message,
+          icon,
+          ...
+    )
 }
 
 
@@ -34,11 +35,12 @@ boxTools <- function(...) {
 }
 
 
-boxTitle <- function(..., title = "iboxTitle", background = NULL, colorText = NULL) {
+boxTitle <- function(..., info = NULL, title = "iboxTitle", background = NULL, colorText = NULL) {
   background = if(!is.null(background)) paste0("background-color:", background, ";")
   colorText = if(!is.null(colorText)) paste0("color:", colorText, ";")
   colorBox = paste0(background, colorText)
   tags$div(class = "ibox-title", style=colorBox,
+           info,
            tags$h5(title),
            ...
            )

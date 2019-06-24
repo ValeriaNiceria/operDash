@@ -8653,40 +8653,58 @@ pre.R {
 }
 
 
-
-[data-tooltip] {
+[class^="tooltip"] {
   position: relative;
-  cursor: pointer;
 }
-[data-tooltip]:before {
-  content: attr(data-tooltip);
-  display: none;
+[class^="tooltip"]:after {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
-  top: 20px;
-  right: 1px;
-  min-width: 350px;
-  z-index: 100;
-  padding: 10px;
-  text-decoration: none;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  border: 1px solid #283b4f;
+  content: attr(data-tooltip);
+  padding: 6px 10px;
+  top: 1.4em;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-2px);
+          transform: translateX(-50%) translateY(-2px);
   background: #283b4f;
-  opacity: 0.8;
-  filter: alpha(opacity=80); /* For IE8 and earlier */
   color: white;
-  border-radius: 5px;
-  text-align: left;
-  box-shadow: 3px 3px 10px grey;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  white-space: nowrap;
+  z-index: 2;
+  border-radius: 2px;
+  transition: opacity 0.8s cubic-bezier(0.64, 0.09, 0.08, 1), -webkit-transform 0.8s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: opacity 0.8s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.8s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: opacity 0.8s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.8s cubic-bezier(0.64, 0.09, 0.08, 1), -webkit-transform 0.8s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
-[data-tooltip]:hover:before {
-  display: inline-block;
+[class^="tooltip"]:hover:after {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(-50%) translateY(0);
+          transform: translateX(-50%) translateY(0);
 }
 
-a.dropdown-toggle.count-info {
-  padding-bottom: 0px;
-  padding-left: 20px;
-  width: 55px;
+.tooltip--left:after {
+  top: -4px;
+  left: 0;
+  -webkit-transform: translateX(-112%) translateY(0);
+          transform: translateX(-112%) translateY(0);
+}
+.tooltip--left:hover:after {
+  -webkit-transform: translateX(-110%) translateY(0);
+          transform: translateX(-110%) translateY(0);
+}
+
+.tooltip--right:after {
+  top: -4px;
+  left: 100%;
+  -webkit-transform: translateX(12%) translateY(0);
+          transform: translateX(12%) translateY(0);
+}
+.tooltip--right:hover:after {
+  -webkit-transform: translateX(10%) translateY(0);
+          transform: translateX(10%) translateY(0);
 }
 
 

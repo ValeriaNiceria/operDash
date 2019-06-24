@@ -5,6 +5,8 @@ boxExample <-
               width = 4,
               box(
                 boxTitle(
+                  info = infoLink(position = "right",
+                                  message = "Mensagem de info para o usuário"),
                   colorText = "white",
                   background = "#00a7d0",
                   boxTools(collapseLink(),
@@ -23,7 +25,8 @@ boxExample <-
                boxTitle(
                  boxTools(closeLink(),
                           collapseLink(),
-                          infoLink(message = "Mensagem de info para o usuário"))
+                          infoLink(position = "left",
+                                   message = "Mensagem de info para o usuário"))
                ),
                boxContent(
                  highchartOutput('plot')
@@ -41,6 +44,8 @@ fluidRow(
     width = 4,
     box(
       boxTitle(
+        info = infoLink(position = "right",
+                        message = "Mensagem de info para o usuário"),
         colorText = "white",
         background = "#00a7d0",
         boxTools(
@@ -64,7 +69,8 @@ fluidRow(
         boxTools(
           closeLink(),
           collapseLink(),
-          infoLink(message = "Mensagem de info para o usuário")
+          infoLink(position = "left",
+                   message = "Mensagem de info para o usuário")
         )
       ),
       boxContent(
