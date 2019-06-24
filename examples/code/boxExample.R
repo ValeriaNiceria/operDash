@@ -73,6 +73,7 @@ boxTools(...)
       box(
         boxTitle(title = "infoLink()", boxTools(collapseLink())),
         boxContent(
+          tags$small(strong("position => "), "left, right"),
 HTML('
 <pre class="R">
 infoLink(
