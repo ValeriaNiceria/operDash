@@ -42,3 +42,16 @@ infoMetric(
 </pre>
 ')
 )
+
+
+# fluidRow(
+#   column(
+#     width = 12,
+#     box(
+#       boxTitle(title = "Exemplo", boxTools(collapseLink())),
+#       boxContent(
+#         
+#       )
+#     )
+#   )
+# )

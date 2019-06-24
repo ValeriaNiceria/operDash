@@ -1,14 +1,26 @@
 codeBodyDashExample <-
 tabItem(tabName = "codeBodyDash",
-    tags$h3(class="font-bold", "bodyDash()"),
+        fluidRow(
+          column(
+            width = 12,
+            box(
+              boxTitle(title = "bodyDash()", boxTools(collapseLink())),
+              boxContent(
 HTML('
 <pre class="R">
 bodyDash(...)
 </pre>
-'),
-
-
-    tags$h3(class="font-bold", "tabItem()"),
+')
+              )
+            )
+          )
+        ),
+        fluidRow(
+          column(
+            width = 12,
+            box(
+              boxTitle(title = "tabItem()", boxTools(collapseLink())),
+              boxContent(
 HTML('
 <pre class="R">
 tabItem(
@@ -16,28 +28,29 @@ tabItem(
   ...
 )
 </pre>
-'),
-
-    tags$h2(class="font-bold", "Exemplo:"),
+')
+              )
+            )
+          )
+        ),
+        fluidRow(
+          column(
+            width = 12,
+            box(
+              boxTitle(title = "Exemplo", boxTools(collapseLink())),
+              boxContent(
 HTML('
 <pre class="R">
 body = bodyDash(
-  tabItem(tabName = "home",
+  tabItem(
+    tabName = "home",
     ...  
   )
 )
 </pre>
 ')
+              )
+            )
+          )
+        )
 )
-
-# fluidRow(
-#   column(
-#     width = 12,
-#     box(
-#       boxTitle(title = "Exemplo", boxTools(collapseLink())),
-#       boxContent(
-#         
-#       )
-#     )
-#   )
-# )
