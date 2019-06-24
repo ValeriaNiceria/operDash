@@ -1,5 +1,5 @@
-valueBoxExample <- 
-  tabItem(tabName = "valueBox",
+valueBoxElement <- 
+  tabItem(tabName = "valueBoxElement",
           fluidRow(
             column(
               width = 3,

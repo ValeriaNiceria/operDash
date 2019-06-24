@@ -4,9 +4,9 @@ source("./imports.R")
 navbar <- navbarDash(brand = "operDash",
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
-                      menuItem(text = "valueBox", icon = icon("th-large"), tabName = "valueBox"),
                       
                       menuDropdown(text = "Elements", icon = icon("flask"),
+                                   menuItem(text = "valueBox", tabName = "valueBoxElement"),
                                    menuItem(text = "Buttons", tabName = "buttonsElement"),
                                    menuItem(text = "Jumbotron", tabName = "jumbotronElement"),
                                    menuItem(text = "Alert", tabName = "alertElement"),
@@ -67,8 +67,8 @@ body <- bodyDash(
   # Box
   boxExample,
   
-  # valueBox 
-  valueBoxExample,
+  # Elements - valueBox 
+  valueBoxElement,
   
   # Elements - buttons
   buttonsElement,

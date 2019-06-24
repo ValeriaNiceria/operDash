@@ -38,7 +38,7 @@ source("./R/footerScriptsDash.R", encoding = "UTF-8")
 ###     Caminho dos exemplos     ###
 ####################################
 source("./examples/boxExample.R", encoding = "UTF-8")
-source("./examples/valueBoxExample.R", encoding = "UTF-8")
+source("./examples/valueBoxElement.R", encoding = "UTF-8")
 source("./examples/buttonsElements.R", encoding = "UTF-8")
 source("./examples/jumbotronElement.R", encoding = "UTF-8")
 source("./examples/alertElement.R", encoding = "UTF-8")
