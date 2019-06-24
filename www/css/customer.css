@@ -8696,3 +8696,33 @@ a.dropdown-toggle.count-info {
 .carousel-indicators {
   display: none;
 }
+
+
+.accordion {
+  background-color: #DCDCDD;
+  color: #333;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc; 
+  text-align: left;
+  outline: none;
+  font-size: inherit;
+  font-size: 15px;
+  transition: 0.4s;
+}
+    
+.active-accordion, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel-accordion {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}

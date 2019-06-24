@@ -14,7 +14,8 @@ navbar <- navbarDash(brand = "operDash",
                                    menuItem(text = "Carousel", tabName = "carouselElement"),
                                    menuItem(text = "Panel", tabName = "panelElement"),
                                    menuItem(text = "Timeline", tabName = "timelineElement"),
-                                   menuItem(text = "Profile", tabName = "profileElement")
+                                   menuItem(text = "Profile", tabName = "profileElement"),
+                                   menuItem(text = "Accordion", tabName = "accordionElement")
                                    ),
                       
                       menuDropdown(text = "Dash", icon = icon("laptop-code"), 
@@ -95,6 +96,9 @@ body <- bodyDash(
   
   # Elements - Profile
   profileElement,
+  
+  # Elements - accordion
+  accordionElement,
   
   # Dash - Code
   # code pageDash

@@ -2,7 +2,7 @@ codePanelExample <-
 tabItem(tabName = "codePanel",
         fluidRow(
           column(
-            width = 12,
+            width = 6,
             box(
               boxTitle(title = "panel()", boxTools(collapseLink())),
               boxContent(
@@ -14,6 +14,24 @@ panel(
   body = "Corpo",
   footer = "Rodapé",
   status = "danger",
+  ...
+)
+</pre>
+')
+              )
+            )
+          ),
+          column(
+            width = 6,
+            box(
+              boxTitle(title = "accordionItem()", boxTools(collapseLink())),
+              boxContent(
+HTML('
+<pre class="R">
+accordionItem(
+  width = 12, 
+  title = "Título", 
+  content = "Conteúdo teste", 
   ...
 )
 </pre>

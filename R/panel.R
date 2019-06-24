@@ -12,3 +12,14 @@ panel <- function(title = NULL, body = NULL, footer = NULL, status = "default", 
            ...
            )
 }
+
+
+accordionItem <- function(width = 12, title = NULL, content = NULL, ...) {
+  width = paste0("col-lg-", width)
+  tags$div(class=width,
+           tags$button(class="accordion font-bold", title),
+           tags$div(class="panel-accordion", content),
+           ...
+  )
+   
+}
