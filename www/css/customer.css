@@ -8708,6 +8708,12 @@ pre.R {
 }
 
 
+a.dropdown-toggle.count-info {
+  padding-bottom: 0px;
+  padding-left: 20px;
+  width: 55px;
+}
+
 .navbar-brand {
   height: 51px;
 }
