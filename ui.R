@@ -11,7 +11,8 @@ navbar <- navbarDash(brand = "operDash",
                       
                       menuDropdown(text = "Elements", icon = icon("flask"),
                                    menuItem(text = "Buttons", tabName = "buttonsElement"),
-                                   menuItem(text = "Jumbotron", tabName = "jumbotronElement")
+                                   menuItem(text = "Jumbotron", tabName = "jumbotronElement"),
+                                   menuItem(text = "Alert", tabName = "alertElement")
                                    ),
                       
                       menuDropdown(text = "Dash", icon = icon("laptop-code"), 
@@ -82,6 +83,9 @@ body <- bodyDash(
   
   # Elements - jumbotron
   jumbotronElement,
+  
+  # Elements - alert
+  alertElement,
   
   # Dash - Code
   # code pageDash
