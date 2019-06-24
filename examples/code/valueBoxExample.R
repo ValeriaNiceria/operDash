@@ -1,6 +1,11 @@
 codeValueBoxExample <-
 tabItem(tabName = "codeValueBox",
-    tags$h3(class="font-bold", "valueBox()"),
+        fluidRow(
+          column(
+            width = 12,
+            box(
+              boxTitle(title = "valueBox()", boxTools(collapseLink())),
+              boxContent(
 HTML('
 <pre class="R">
 valueBox(
@@ -10,37 +15,59 @@ valueBox(
   status = "danger"
 )
 </pre>
-'),
-
-    tags$h3(class="font-bold", "infoProgress()"),
-    tags$small(strong("status =>"), span(class="bg-primary", "primary"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
+')
+              )
+            )
+          )
+        ),
+        fluidRow(
+          column(
+            width = 12,
+            box(
+              boxTitle(title = "infoProgress()", boxTools(collapseLink())),
+              boxContent(
+                tags$small(strong("status =>"), span(class="bg-primary", "primary"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
 HTML('
 <pre class="R">
 infoProgress(
-    title = "Título",
-    subTitle = "Sub",
-    value = "56",
-    status = "danger",
-    ...
-)
-</pre>
-'),
-
-    tags$h3(class="font-bold", "infoMetric()"),
-    tags$small("colorPercent => text-navy, text-danger"),
-HTML('
-<pre class="R">
-infoMetric(
-    title = "Título",
-    subTitle = "Sub",
-    value = "56",
-    percent = "60%",
-    colorPercent = "text-navy",
-    icon = icon("bolt"),
-    ...
+  title = "Título",
+  subTitle = "Sub",
+  value = "56",
+  status = "danger",
+  ...
 )
 </pre>
 ')
+              )
+            )
+          )
+        ),
+        fluidRow(
+          column(
+            width = 12,
+            box(
+              boxTitle(title = "infoMetric()", boxTools(collapseLink())),
+              boxContent(
+                tags$small(strong("colorPercent => "), span(class="bg-primary", "text-navy"), span(class="bg-danger", "text-danger")),
+HTML('
+<pre class="R">
+infoMetric(
+  title = "Título",
+  subTitle = "Sub",
+  value = "56",
+  percent = "60%",
+  colorPercent = "text-navy",
+  icon = icon("bolt"),
+  ...
+)
+</pre>
+')
+              )
+            )
+          )
+        )
+
+    
 )
 
 
@@ -50,7 +77,7 @@ infoMetric(
 #     box(
 #       boxTitle(title = "Exemplo", boxTools(collapseLink())),
 #       boxContent(
-#         
+# 
 #       )
 #     )
 #   )
