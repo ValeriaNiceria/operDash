@@ -1,6 +1,13 @@
 codeElementsExample <-
 tabItem(tabName = "codeElements",
-    tags$h3(class="font-bold", "appButton()"),
+        
+fluidRow(
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "appButton()", boxTools(collapseLink())),
+      boxContent(
+        tags$small(strong("status =>"), span(class="bg-primary", "primary"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
 HTML('
 <pre class="R">
 appButton(
@@ -12,30 +19,52 @@ appButton(
   ...
 )
 </pre>
-'),
-
-    tags$h3(class="font-bold", "appCircleButton()"),
+')
+      )
+    )
+  ),
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "appCircleButton()", boxTools(collapseLink())),
+      boxContent(
+        tags$small(strong("status =>"), span(class="bg-primary", "primary"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
 HTML('
 <pre class="R">
 appCircleButton(
-    id = "botao",
-    icon = icon("check"),
-    status = "danger",
-    size_lg = TRUE,
-    ...
+  id = "botao",
+  icon = icon("check"),
+  status = "danger",
+  size_lg = TRUE,
+  ...
 )
 </pre>
-'),
+')
+      )
+    )
+  )
+),
 
-    tags$h3(class="font-bold", "jumbotron()"),
+fluidRow(
+  column(
+    width = 4,
+    box(
+      boxTitle(title = "jumbotron()", boxTools(collapseLink())),
+      boxContent(
 HTML('
 <pre class="R">
 jumbotron(...)
 </pre>
-'),
-
-    tags$h3(class="font-bold", "alert()"),
-    tags$small(strong("status =>"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
+')
+      )
+    )
+  ),
+  column(
+    width = 8,
+    box(
+      boxTitle(title = "alert()", boxTools(collapseLink())),
+      boxContent(
+        tags$small(strong("status =>"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
 HTML('
 <pre class="R">
 alert(
@@ -44,10 +73,19 @@ alert(
   ...
 )
 </pre>
-'),
-
-    tags$h3(class="font-bold", "progressBar()"),
-    tags$small(strong("status =>"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
+')
+        )
+      )
+    )
+),
+    
+fluidRow(
+  column(
+    width = 12,
+    box(
+      boxTitle(title = "progressBar()", boxTools(collapseLink())),
+      boxContent(
+        tags$small(strong("status =>"), span(class="bg-success", "success"), span(class="bg-info", "info"), span(class="bg-warning", "warning"), span(class="bg-danger", "danger")),
 HTML('
 <pre class="R">
 progressBar(
@@ -59,30 +97,55 @@ progressBar(
   ...
 )
 </pre>
-'),
+')
+      )
+    )
+  )
+),
 
-    tags$h3(class="font-bold", "carouselBlock( carouselItem() )"),
+fluidRow(
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "carouselBlock()", boxTools(collapseLink())),
+      boxContent(
 HTML('
 <pre class="R">
 carouselBlock(id = "myCarousel", ...)
-
-carouselItem(src="img/teste.png",
-            alt = "Imagem teste",
-            title = "Título imagem carousel",
-            subTitle = "Subtítulo")
 </pre>
-'),
-
-
-tags$h2(class="font-bold", "Exemplo carouselBlock( carouselItem() )"),
+')
+      )
+    )
+  ),
+  column(
+    width = 6,
+    box(
+      boxTitle(title = "carouselItem()", boxTools(collapseLink())),
+      boxContent(
 HTML('
 <pre class="R">
-carouselBlock(
-  carouselItem(src = "https://www.w3schools.com/bootstrap/chicago.jpg", 
-              title = "Título",
-              subTitle = "Testando"),
-  carouselItem(src = "https://www.w3schools.com/bootstrap/la.jpg")
+carouselItem(
+  src="img/teste.png",
+  alt = "Imagem teste",
+  title = "Título imagem carousel",
+  subTitle = "Subtítulo"
 )
 </pre>
 ')
+      )
+    )
+  )
 )
+)
+
+# fluidRow(
+#   column(
+#     width = 12,
+#     box(
+#       boxTitle(title = "Exemplo", boxTools(collapseLink())),
+#       boxContent(
+# 
+#       )
+#     )
+#   )
+# )
