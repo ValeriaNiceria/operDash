@@ -18,7 +18,7 @@ tabItem(tabName = "buttonsElement",
         ),
         column(
           width = 6,
-          HTML('
+HTML('
 <pre class="R">
 appButton(),
 
