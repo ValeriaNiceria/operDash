@@ -29,6 +29,7 @@ source("./R/panel.R", encoding = "UTF-8")
 source("./R/notifications.R", encoding = "UTF-8")
 source("./R/timeline.R", encoding = "UTF-8")
 source("./R/profile.R", encoding = "UTF-8")
+source("./R/loginDash.R", encoding = "UTF-8")
 source("./R/footerDash.R", encoding = "UTF-8")
 source("./R/footerScriptsDash.R", encoding = "UTF-8")
 
