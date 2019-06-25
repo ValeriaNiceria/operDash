@@ -40,7 +40,7 @@ boxTitle <- function(..., info = NULL, title = "iboxTitle", background = NULL, c
   colorText = if(!is.null(colorText)) paste0("color:", colorText, ";")
   colorBox = paste0(background, colorText)
   tags$div(class = "ibox-title", style=colorBox,
-           info,
+           if (!is.null(info)) tags$span(style="margin-right: 6px;", info),
            tags$h5(title),
            ...
            )
