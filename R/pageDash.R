@@ -1,51 +1,63 @@
+#' @title Dashboard Page
+#' @name pageDash
+#'
+#'
+#' @param title A title to display in the browser's title bar.
+#' @param head A head created by \code{headDash}.
+#' @param navbar A navbar created by \code{navbarDash}.
+#' @param body A body created by \code{bodyDash}.
+#' @param footer A footer created by \code{footerDash}.
+#' @param footerScripts A footerScripts created by \code{footerScriptsDash}.
+#' @param ... Items to put in the dashboard page.
+#'
+#'
+#'
+#' @seealso \code{\link{headDash}}, \code{\link{navbarDash}},
+#'   \code{\link{bodyDash}}, \code{\link{footerDash}},
+#'   \code{\link{footerScriptsDash}}.
+#'
+#' @examples
+#' # Basic dashboard page template
+#' library(shiny)
+#'
+#' shinyApp(
+#'   ui = pageDash(
+#'     title = "operDash example",
+#'     header = headDash(),
+#'     body = bodyDash(),
+#'     footer = footerDash(),
+#'     footerScripts = footerScriptsDash()
+#'     title = "Dashboard example"
+#'   ),
+#'   server = function(input, output) { }
+#' )
+#' }
+#'
+#' @export
+
+
+
 pageDash <- function(title = "Dashboard Shiny",
-                     header = NULL,
+                     head = NULL,
                      navbar = NULL,
-                     sidebar = NULL,
                      body = NULL,
                      footer = NULL,
                      footerScripts = NULL,
                      ...) {
 
-  if (!is.null(navbar)) {
     content = tags$div(id="wrapper",
                        tags$div(id="page-wrapper", class="gray-bg",
-                                header,
+                                head,
                                 navbar,
                                 body,
                                 footer,
                                 footerScripts,
-                                
+
                                 ...
-                                
+
                        )
     )
-  } else {
-    content = tags$div(id="wrapper",
-                       header,
-                       sidebar,
-                       body,
-                       footer,
-                       footerScripts,
-                       
-                       ...
-    )
-  }
-  
+
 
   bootstrapPage(content, title = title)
-}
-
-
-
-pageSidebarDash <- function(title = "Dashboard Shiny",
-                           header = NULL,
-                           sidebar = NULL,
-                           body = NULL,
-                           footer = NULL,
-                           footerScripts = NULL,
-                           ...) {
-  
-  
-  
 }
