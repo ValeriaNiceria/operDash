@@ -23,7 +23,7 @@
 #' shinyApp(
 #'   ui = pageDash(
 #'     title = "operDash example",
-#'     header = headDash(),
+#'     head = headDash(),
 #'     body = bodyDash(),
 #'     footer = footerDash(),
 #'     footerScripts = footerScriptsDash()

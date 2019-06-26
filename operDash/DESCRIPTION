@@ -1,0 +1,9 @@
+Package: operDash
+Title: operDash
+Version: 0.0.0.9000
+Authors@R: person("Valéria", "Nicéria", email = "valerianiceria@gmail.com", role = c("aut", "cre"))
+Description: Dashboard shiny.
+Depends: R (>= 3.6.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
