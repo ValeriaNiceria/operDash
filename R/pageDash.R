@@ -58,6 +58,9 @@ pageDash <- function(title = "Dashboard Shiny",
                        )
     )
 
-
-  bootstrapPage(content, title = title)
+    addDeps(
+      tags$body(
+        shiny::bootstrapPage(content, title = title)
+      )
+    )
 }

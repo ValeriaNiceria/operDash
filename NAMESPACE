@@ -1,8 +1,3 @@
-import(shiny)
-import(shinyWidgets)
-import(htmltools)
-import(htmlwidgets)
-
 export(pageDash)
 export(headDash)
 export(bodyDash)
@@ -15,3 +10,9 @@ export(menuDropdown)
 export(navbarDash)
 export(notification)
 export(notificationItem)
+
+import(shiny)
+import(shinyWidgets)
+import(htmltools)
+import(htmlwidgets)
+
