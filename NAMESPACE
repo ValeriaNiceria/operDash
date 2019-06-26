@@ -2,3 +2,6 @@ import(shiny)
 import(shinyWidgets)
 import(htmltools)
 import(htmlwidgets)
+
+export(pageDash)
+export(bodyDash)
