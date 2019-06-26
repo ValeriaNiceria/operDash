@@ -5,7 +5,6 @@
 #' @param ... Items to put in the dashboard body.
 #'
 #'
-#'
 #' @export
 
 

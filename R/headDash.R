@@ -1,3 +1,13 @@
+#' @title Dashboard head
+#' @name headDash
+#'
+#'
+#' @param ... Items to put in the dashboard head.
+#'
+#'
+#' @export
+
+
 headDash <- function(...) {
   tags$head(
     tags$link(rel="stylesheet", type="text/css", href="css/bootstrap.min.css"),
