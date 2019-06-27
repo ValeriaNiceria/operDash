@@ -13,16 +13,17 @@ appendDependencies <- function(x, value) {
 # Add dashboard dependencies to a tag object
 addDeps <- function(x) {
 
-  oper_css <- "customer.css"
-  oper_js <- "operDash.js"
+  oper_css <- "css/customer.css"
+  oper_js <- "js/operDash.js"
   bootstrap_css <- "bootstrap.min.css"
   bootstrap_js <- "bootstrap.js"
   animate_css <- "animate.css"
-  init_js <- "init.js"
-  poper_js <- "popper.min.js"
-  metismenu_js <- "jquery.slimscroll.min.js"
-  pace_js <- "pace.min.js"
-  end_js <- "end.js"
+  init_js <- "js/init.js"
+  poper_js <- "js/popper.min.js"
+  metismenu_js <- "js/metis_menu/jquery.slimscroll.min.js"
+  slimscroll_js <- "js/slimscroll/jquery.slimscroll.min.js"
+  pace_js <- "js/pace/pace.min.js"
+  end_js <- "js/end.js"
 
 
   dashboardDeps <- list(
@@ -46,40 +47,9 @@ addDeps <- function(x) {
       name = "oper",
       version = "0.1.0",
       src = c(file = system.file("oper-0.1.0", package = "operDash")),
-      stylesheet = oper_css
-    ),
-    # init
-    htmltools::htmlDependency(
-      name = "init",
-      version = "0.1.0",
-      src = c(file = system.file("init-0.1.0", package = "operDash")),
+      stylesheet = oper_css,
       script = init_js
     )
-    # bootstrap
-    # htmltools::htmlDependency("operDash",
-    #   as.character(utils::packageVersion("operDash")),
-    #   src = c(file = system.file("bootstrap", package = "operDash")),
-    #   script = bootstrap_js,
-    #   stylesheet = bootstrap_css
-    # ),
-    # # animate
-    # htmltools::htmlDependency(
-    #   src = c(file = system.file("animate", package = "operDash")),
-    #   stylesheet = animate_css
-    # ),
-    # # operDash
-    # htmltools::htmlDependency(
-    #   src = c(file = system.file("oper", package = "operDash")),
-    #   script = oper_js,
-    #   stylesheet = oper_js
-    # ),
-    # # animate
-    # htmltools::htmlDependency(
-    #   name = "animate",
-    #   version = "3.5.0",
-    #   src = c(file = system.file("animate-3.5.0", package = "gentelellaShiny")),
-    #   stylesheet = animate_css
-    # )
   )
 
   appendDependencies(x, dashboardDeps)
