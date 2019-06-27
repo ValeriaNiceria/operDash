@@ -17,7 +17,7 @@ footerScriptsDash <- function(...) {
     # includeScript(system.file("oper-0.1.0/js/operDash.js", package = "operDash")),
     # includeScript(system.file("oper-0.1.0/js/pace/pace.min.js", package = "operDash")),
     # includeScript(system.file("oper-0.1.0/js/end.js", package = "operDash")),
-    htmltools::tags$script(src="inst/assets/js/popper.min.js"),
+    tags$script(src="inst/assets/js/popper.min.js"),
     tags$script(src="inst/assets/js/plugins/metisMenu/jquery.metisMenu.js"),
     tags$script(src="inst/assets/js/slimscroll/jquery.slimscroll.min.js"),
     tags$script(src="inst/assets/js/operDash.js"),
