@@ -19,13 +19,37 @@ footerScriptsDash <- function(...) {
 
 
   tagList(
-    tags$script(src= poper_js),
-    tags$script(src= metismenu_js),
-    tags$script(src= slimscroll_js),
-    tags$script(src= oper_js),
-    tags$script(src = pace_js),
-
-    tags$script(src= end_js),
+    shiny::includeScript(
+      system.file(poper_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(metismenu_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(slimscroll_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(oper_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(pace_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(end_js,
+                  package = "operDash")
+    ),
+    # tags$script(src= poper_js),
+    # tags$script(src= metismenu_js),
+    # tags$script(src= slimscroll_js),
+    # tags$script(src= oper_js),
+    # tags$script(src = pace_js),
+    #
+    # tags$script(src= end_js),
     ...
   )
 
