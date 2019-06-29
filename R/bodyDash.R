@@ -9,10 +9,10 @@
 
 
 bodyDash <- function(...) {
-  tags$div(class="wrapper wrapper-content",
-            tags$div(class = "tab-content",
+  shiny::tags$div(class="wrapper wrapper-content",
+                  shiny::tags$div(class = "tab-content",
 
-              ...
+                      ...
 
               )
 

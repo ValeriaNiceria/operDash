@@ -30,8 +30,8 @@ menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
 
       idMenu = paste0("tab-", tabName)
 
-      tags$li(
-        tags$a(href=href,
+      shiny::tags$li(
+        shiny::tags$a(href=href,
                icon, text,
                `data-toggle` = if (isTabItem) "tab",
                `data-value` = if (!is.null(tabName)) tabName,
@@ -50,7 +50,7 @@ menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
 #' @export
 
 menuLeft <- function(...) {
-  tags$ul(class="nav navbar-top-links mr-auto",
+  shiny::tags$ul(class="nav navbar-top-links mr-auto",
           list(...)
   )
 }
@@ -66,7 +66,7 @@ menuLeft <- function(...) {
 #' @export
 
 menuRight <- function(...) {
-  tags$ul(class="nav navbar-top-links navbar-right",
+  shiny::tags$ul(class="nav navbar-top-links navbar-right",
           list(...)
           )
 }
@@ -159,20 +159,20 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 #' @export
 
 navbarDash <- function(..., brand = "brand", styleBrand = NULL, linkBrand = "#") {
-    tags$div(class="row border-bottom white-bg",
-             tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top",
+  shiny::tags$div(class="row border-bottom white-bg",
+                  shiny::tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top",
                       `role`="navigation",
-                      tags$a(href=linkBrand,
+                      shiny::tags$a(href=linkBrand,
                              brand,
                              class="navbar-brand",
                              style=styleBrand),
-                      tags$button(class="navbar-toggler",
+                      shiny::tags$button(class="navbar-toggler",
                                   `type`="button",
                                   `data-toggle`="collapse",
                                   `data-target`="#navbar",
                                   `aria-expanded`="false",
                                   tags$i(class="fa fa-reorder")),
-                      tags$div(class="navbar-collapse collapse",
+                      shiny::tags$div(class="navbar-collapse collapse",
                                id="navbar",
                                  list(...)
                                )
