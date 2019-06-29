@@ -16,11 +16,11 @@ headDash <- function(...) {
   animate_css <- "animate-3.5.0/animate.css"
   init_js <- "oper-0.1.0/js/init.js"
 
-  tags$head(
-    tags$link(rel="stylesheet", type="text/css", href=bootstrap_css),
-    tags$link(rel="stylesheet", type="text/css", href=animate_css),
-    tags$link(rel="stylesheet", type="text/css", href=oper_css),
-    tags$script(src=init_js),
+  shiny::tags$head(
+    shiny::tags$link(rel="stylesheet", type="text/css", href=bootstrap_css),
+    shiny::tags$link(rel="stylesheet", type="text/css", href=animate_css),
+    shiny::tags$link(rel="stylesheet", type="text/css", href=oper_css),
+    shiny::tags$script(src=init_js),
     ...
   )
 }

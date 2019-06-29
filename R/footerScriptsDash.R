@@ -18,14 +18,14 @@ footerScriptsDash <- function(...) {
   end_js <- "oper-0.1.0/js/end.js"
 
 
-  tagList(
-    tags$script(src= poper_js),
-    tags$script(src= metismenu_js),
-    tags$script(src= slimscroll_js),
-    tags$script(src= oper_js),
-    tags$script(src = pace_js),
+  shiny::tagList(
+    shiny::tags$script(src= poper_js),
+    shiny::tags$script(src= metismenu_js),
+    shiny::tags$script(src= slimscroll_js),
+    shiny::tags$script(src= oper_js),
+    shiny::tags$script(src = pace_js),
 
-    tags$script(src= end_js),
+    shiny::tags$script(src= end_js),
     ...
   )
 

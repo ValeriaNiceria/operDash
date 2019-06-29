@@ -13,11 +13,9 @@
 #'
 #'
 #' @seealso \code{\link{headDash}}, \code{\link{navbarDash}},
-#'   \code{\link{bodyDash}}, \code{\link{footerDash}},
-#'   \code{\link{footerScriptsDash}}.
+#'   \code{\link{bodyDash}}, \code{\link{footerDash}}, \code{\link{footerScriptsDash}}.
 #'
 #' @examples
-#' # Basic dashboard page template
 #' library(shiny)
 #'
 #' shinyApp(
@@ -46,15 +44,15 @@ pageDash <- function(title = "Dashboard Shiny",
                      ...) {
 
 
-  content = tags$div(id="wrapper",
-                     tags$div(id="page-wrapper", class="gray-bg",
-                              head,
-                              navbar,
-                              body,
-                              footer,
-                              footerScripts,
+  content = shiny::tags$div(id="wrapper",
+                            shiny::tags$div(id="page-wrapper", class="gray-bg",
+                                head,
+                                navbar,
+                                body,
+                                footer,
+                                footerScripts,
 
-                              ...
+                                ...
 
                      )
   )
