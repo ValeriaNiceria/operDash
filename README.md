@@ -1,3 +1,3 @@
-# operDash <img src="https://github.com/ValeriaNiceria/operDash/inst/www/img/operDash.png" width="200px" align="right"/>
+# operDash <img src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/operDash.png" width="200px" align="right"/>
 
 dashboard shiny
