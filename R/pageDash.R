@@ -46,49 +46,19 @@ pageDash <- function(title = "Dashboard Shiny",
                      ...) {
 
 
-    shiny::tags$html(
-      # Head --------------------------------------------------------------------
-      shiny::tags$head(
-        shiny::tags$meta(
-          name = "viewport",
-          content = "width=device-width, initial-scale=1.0"
-        )
-      ),
-      # Body --------------------------------------------------------------------
-      addDeps(
-        tags$div(id="wrapper",
-                 tags$div(id="page-wrapper", class="gray-bg",
-                          navbar,
-                          body,
+  content = tags$div(id="wrapper",
+                     tags$div(id="page-wrapper", class="gray-bg",
+                              head,
+                              navbar,
+                              body,
+                              footer,
+                              footerScripts,
 
-                          # Footer --------------------------------------------------------------------
-                          addDepsFooter(footer)
-                 )
-        )
-      )
-    )
+                              ...
 
-    # content = tags$div(id="wrapper",
-    #                    tags$div(id="page-wrapper", class="gray-bg",
-    #                             head,
-    #                             navbar,
-    #                             body,
-    #                             footer,
-    #                             footerScripts,
-    #
-    #                             ...
-    #
-    #                    )
-    # )
-    #
-    # addDeps(
-    #   tags$body(
-    #     shiny::bootstrapPage(content, title = title)
-    #   )
-    # )
+                     )
+  )
 
-
-
-    # bootstrapPage(content, title = title)
+  shiny::bootstrapPage(content, title = title)
 
 }
