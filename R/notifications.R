@@ -12,17 +12,17 @@
 #' @export
 
 notificationItem <- function(icon = NULL, title = NULL, message = NULL, time = NULL, ...) {
-  tags$li(
-    tags$div(class="dropdown-messages-box",
-             tags$div(class="dropdown-item float-left",
+  shiny::tags$li(
+    shiny::tags$div(class="dropdown-messages-box",
+                    shiny::tags$div(class="dropdown-item float-left",
                       icon),
-             tags$div(class="media-body",
-                      tags$small(class="float-right", icon("clock"), time),
-                      tags$h3(title),
-                      tags$p(class="text-muted", message)
+                    shiny::tags$div(class="media-body",
+                                    shiny::tags$small(class="float-right", icon("clock"), time),
+                                    shiny::tags$h3(title),
+                                    shiny::tags$p(class="text-muted", message)
                       )
              ),
-    tags$li(class="dropdown-divider")
+    shiny::tags$li(class="dropdown-divider")
 
   )
 }
@@ -60,16 +60,16 @@ notificationItem <- function(icon = NULL, title = NULL, message = NULL, time = N
 
 notification <- function(..., icon = NULL, label = NULL, status = "warning") {
   labelClass <- paste0("label label-", status)
-  tags$li(class="dropdown",
-          tags$a(class="dropdown-toggle count-info",
+  shiny::tags$li(class="dropdown",
+                 shiny::tags$a(class="dropdown-toggle count-info",
                  `data-toggle`="dropdown",
                  href="#",
                  `aria-expanded`="false",
                  icon,
-                 tags$span(class=labelClass, label)
+                 shiny::tags$span(class=labelClass, label)
                  ),
 
-          tags$ul(class="dropdown-menu dropdown-alerts",
+                 shiny::tags$ul(class="dropdown-menu dropdown-alerts",
                   ...
                   )
 

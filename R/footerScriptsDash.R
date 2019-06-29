@@ -10,20 +10,40 @@
 
 
 footerScriptsDash <- function(...) {
-  tagList(
-    # includeScript(system.file("oper-0.1.0/js/popper.min.js", package = "operDash")),
-    # includeScript(system.file("oper-0.1.0/js/plugins/metisMenu/jquery.metisMenu.js", package = "operDash")),
-    # includeScript(system.file("oper-0.1.0/js/slimscroll/jquery.slimscroll.min.js", package = "operDash")),
-    # includeScript(system.file("oper-0.1.0/js/operDash.js", package = "operDash")),
-    # includeScript(system.file("oper-0.1.0/js/pace/pace.min.js", package = "operDash")),
-    # includeScript(system.file("oper-0.1.0/js/end.js", package = "operDash")),
-    htmltools::tags$script(src="inst/assets/js/popper.min.js"),
-    tags$script(src="inst/assets/js/plugins/metisMenu/jquery.metisMenu.js"),
-    tags$script(src="inst/assets/js/slimscroll/jquery.slimscroll.min.js"),
-    tags$script(src="inst/assets/js/operDash.js"),
-    tags$script(src="inst/assets/js/pace/pace.min.js"),
+  oper_js <- "oper-0.1.0/js/operDash.js"
+  poper_js <- "oper-0.1.0/js/popper.min.js"
+  metismenu_js <- "oper-0.1.0/js/metis_menu/jquery.metisMenu.js"
+  slimscroll_js <- "oper-0.1.0/js/slimscroll/jquery.slimscroll.min.js"
+  pace_js <- "oper-0.1.0/js/pace/pace.min.js"
+  end_js <- "oper-0.1.0/js/end.js"
 
-    tags$script(src="inst/assets/js/end.js"),
+
+  tagList(
+    shiny::includeScript(
+      system.file(poper_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(metismenu_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(slimscroll_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(oper_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(pace_js,
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file(end_js,
+                  package = "operDash")
+    ),
+
     ...
   )
 

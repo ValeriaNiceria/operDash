@@ -5,7 +5,7 @@ appendDependencies <- function(x, value) {
 
   old <- attr(x, "html_dependencies", TRUE)
 
-  htmlDependencies(x) <- c(old, value)
+  htmltools::htmlDependencies(x) <- c(old, value)
   x
 }
 
@@ -19,11 +19,6 @@ addDeps <- function(x) {
   bootstrap_js <- "bootstrap.js"
   animate_css <- "animate.css"
   init_js <- "js/init.js"
-  poper_js <- "js/popper.min.js"
-  metismenu_js <- "js/metis_menu/jquery.slimscroll.min.js"
-  slimscroll_js <- "js/slimscroll/jquery.slimscroll.min.js"
-  pace_js <- "js/pace/pace.min.js"
-  end_js <- "js/end.js"
 
 
   dashboardDeps <- list(

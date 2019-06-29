@@ -27,6 +27,5 @@ Dashboard Page
 }
 \seealso{
 \code{\link{headDash}}, \code{\link{navbarDash}},
-  \code{\link{bodyDash}}, \code{\link{footerDash}},
-  \code{\link{footerScriptsDash}}.
+  \code{\link{bodyDash}}, \code{\link{footerDash}}, \code{\link{footerScriptsDash}}.
 }
