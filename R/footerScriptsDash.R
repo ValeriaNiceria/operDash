@@ -43,13 +43,7 @@ footerScriptsDash <- function(...) {
       system.file(end_js,
                   package = "operDash")
     ),
-    # tags$script(src= poper_js),
-    # tags$script(src= metismenu_js),
-    # tags$script(src= slimscroll_js),
-    # tags$script(src= oper_js),
-    # tags$script(src = pace_js),
-    #
-    # tags$script(src= end_js),
+
     ...
   )
 

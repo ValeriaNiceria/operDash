@@ -45,68 +45,19 @@ pageDash <- function(title = "Dashboard Shiny",
                      footerScripts = NULL,
                      ...) {
 
-  oper_js <- "oper-0.1.0/js/operDash.js"
-  poper_js <- "oper-0.1.0/js/popper.min.js"
-  metismenu_js <- "oper-0.1.0/js/metis_menu/jquery.metisMenu.js"
-  slimscroll_js <- "oper-0.1.0/js/slimscroll/jquery.slimscroll.min.js"
-  pace_js <- "oper-0.1.0/js/pace/pace.min.js"
-  end_js <- "oper-0.1.0/js/end.js"
-
   content = tags$div(id="wrapper",
                      tags$div(id="page-wrapper", class="gray-bg",
+                              head,
                               navbar,
                               body,
-                              footer
-                     ),
-                     shiny::includeScript(
-                       system.file(poper_js,
-                                   package = "operDash")
-                     ),
-                     shiny::includeScript(
-                       system.file(metismenu_js,
-                                   package = "operDash")
-                     ),
-                     shiny::includeScript(
-                       system.file(slimscroll_js,
-                                   package = "operDash")
-                     ),
-                     shiny::includeScript(
-                       system.file(oper_js,
-                                   package = "operDash")
-                     ),
-                     shiny::includeScript(
-                       system.file(pace_js,
-                                   package = "operDash")
-                     ),
-                     shiny::includeScript(
-                       system.file(end_js,
-                                   package = "operDash")
+                              footer,
+                              footerScripts,
+
+                              ...
+
                      )
   )
 
-
-  shiny::tags$html(
-    # Head --------------------------------------------------------------------
-    head,
-
-    content
-
-  )
-
-
-  # content = tags$div(id="wrapper",
-  #                    tags$div(id="page-wrapper", class="gray-bg",
-  #                             head,
-  #                             navbar,
-  #                             body,
-  #                             footer,
-  #                             footerScripts,
-  #
-  #                             ...
-  #
-  #                    )
-  # )
-  #
-  # shiny::bootstrapPage(content, title = title)
+  shiny::bootstrapPage(content, title = title)
 
 }
