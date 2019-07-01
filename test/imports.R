@@ -13,30 +13,6 @@ library(highcharter)
 
 
 
-
-####################################
-# Caminho das funções de interface #
-####################################
-# source("./R/pageDash.R", encoding = "UTF-8")
-# source("./R/headDash.R", encoding = "UTF-8")
-# source("./R/navbarDash.R", encoding = "UTF-8")
-# source("./R/sidebarDash.R", encoding = "UTF-8")
-# source("./R/bodyDash.R", encoding = "UTF-8")
-# source("./R/tabItem.R", encoding = "UTF-8")
-# source("./R/box.R", encoding = "UTF-8")
-# source("./R/infoBox.R", encoding = "UTF-8")
-# source("./R/elements.R", encoding = "UTF-8")
-# source("./R/carousel.R", encoding = "UTF-8")
-# source("./R/tabBox.R", encoding = "UTF-8")
-# source("./R/panel.R", encoding = "UTF-8")
-# source("./R/notifications.R", encoding = "UTF-8")
-# source("./R/timeline.R", encoding = "UTF-8")
-# source("./R/footerDash.R", encoding = "UTF-8")
-# source("./R/footerScriptsDash.R", encoding = "UTF-8")
-
-
-
-
 ####################################
 ###     Caminho dos exemplos     ###
 ####################################

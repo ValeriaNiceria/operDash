@@ -118,12 +118,15 @@ body <- bodyDash(
 
 )
 
+#
+# ui <- pageDash(
+#   title = "operDash",
+#   head = headDash(),
+#   navbar = navbar,
+#   body = body,
+#   footer = footerDash(),
+#   footerScripts = footerScriptsDash()
+# )
 
-ui <- pageDash(
-  title = "operDash",
-  head = headDash(),
-  navbar = navbar,
-  body = body,
-  footer = footerDash(),
-  footerScripts = footerScriptsDash()
-)
+
+ui <- pageSidebarDash()
