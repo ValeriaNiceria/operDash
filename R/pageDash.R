@@ -69,7 +69,7 @@ pageDash <- function(title = "Dashboard Shiny",
 #'
 #' @export
 
-pageDashS <- function(...) {
+pageSidebarDash <- function(...) {
 
   shiny::tags$html(
 
@@ -158,6 +158,7 @@ pageDashS <- function(...) {
         )
       ),
 
+      # Footer script ===============================
       shiny::includeScript(
         system.file("oper-0.1.0/js/popper.min.js",
                     package = "operDash")

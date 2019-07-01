@@ -129,4 +129,4 @@ body <- bodyDash(
 # )
 
 
-ui <- pageDashS()
+ui <- pageSidebarDash()

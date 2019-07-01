@@ -2,9 +2,10 @@
 % Please edit documentation in R/pageDash.R
 \name{pageDashS}
 \alias{pageDashS}
+\alias{pageSidebarDash}
 \title{Dashboard Page}
 \usage{
-pageDashS(...)
+pageSidebarDash(...)
 }
 \description{
 Dashboard Page

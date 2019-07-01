@@ -34,7 +34,7 @@ export(accordionItem)
 export(profile)
 export(timelineBlock)
 export(timelineItem)
-export(pageDashS)
+export(pageSidebarDash)
 
 
 
