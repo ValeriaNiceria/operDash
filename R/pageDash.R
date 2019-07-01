@@ -80,7 +80,7 @@ pageDashS <- function(...) {
                     package = "operDash")
       ),
       shiny::includeCSS(
-        system.file("font-awesome-4.7.0/font-awesome.css",
+        system.file("font-awesome-4.7.0/css/font-awesome.css",
                     package = "operDash")
       ),
       shiny::includeCSS(
@@ -113,7 +113,7 @@ pageDashS <- function(...) {
               shiny::tags$li(
                 class="nav-header",
                 shiny::tags$div(
-                  class="dropdown profile-element",
+                  class="dropdown profile-element avatar-menu",
                   shiny::tags$img(
                     alt="image",
                     class="rounded-circle",
