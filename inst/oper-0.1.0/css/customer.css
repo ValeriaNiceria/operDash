@@ -8734,16 +8734,16 @@ a.dropdown-toggle.count-info {
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
-  border-color: #ccc; 
+  border-color: #ccc;
   text-align: left;
   outline: none;
   font-size: inherit;
   font-size: 15px;
   transition: 0.4s;
 }
-    
+
 .active-accordion, .accordion:hover {
-  background-color: #ccc; 
+  background-color: #ccc;
 }
 
 .panel-accordion {
@@ -8751,4 +8751,17 @@ a.dropdown-toggle.count-info {
   display: none;
   background-color: white;
   overflow: hidden;
+}
+
+
+.avatar-menu {
+  text-align: center;
+}
+
+.avatar-menu img {
+  width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
 }
