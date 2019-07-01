@@ -70,7 +70,7 @@ pageSidebarDash <- function(..., sidebar = NULL) {
                     package = "operDash")
       ),
       shiny::includeCSS(
-        system.file("font-awesome-4.7.0/css/font-awesome.min.css",
+        system.file("font-awesome-4.7.0/css/font-awesome.css",
                     package = "operDash")
       ),
       shiny::includeCSS(
