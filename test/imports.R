@@ -2,9 +2,9 @@
 # Carregando os pacotes #
 #########################
 library(shiny)
-library(devtools)
-devtools::install_github("ValeriaNiceria/operDash")
-# library(operDash)
+# library(devtools)
+# devtools::install_github("ValeriaNiceria/operDash")
+library(operDash)
 # library(shinyWidgets)
 # library(htmltools)
 # library(htmlwidgets)
