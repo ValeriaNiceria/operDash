@@ -129,4 +129,13 @@ body <- bodyDash(
 # )
 
 
-ui <- pageSidebarDash()
+ui <- pageSidebarDash(
+
+  sidebar = sidebarDash(
+    sidebarItem(
+      label = "TESTANDO",
+      tabName = "teste"
+    )
+  )
+
+)

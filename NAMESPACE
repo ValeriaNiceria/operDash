@@ -35,6 +35,8 @@ export(profile)
 export(timelineBlock)
 export(timelineItem)
 export(pageSidebarDash)
+export(sidebarDash)
+export(sidebarItem)
 
 
 

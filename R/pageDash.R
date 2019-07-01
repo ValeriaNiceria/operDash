@@ -64,12 +64,12 @@ pageDash <- function(title = "Dashboard Shiny",
 
 
 #' @title Dashboard Page
-#' @name pageDashS
+#' @name pageSidebarDash
 #'
 #'
 #' @export
 
-pageSidebarDash <- function(...) {
+pageSidebarDash <- function(..., sidebar = NULL) {
 
   shiny::tags$html(
 
@@ -85,7 +85,7 @@ pageSidebarDash <- function(...) {
                     package = "operDash")
       ),
       shiny::includeCSS(
-        system.file("font-awesome-4.7.0/css/font-awesome.css",
+        system.file("fontawesome-4.7.0/css/fontawesome.min.css",
                     package = "operDash")
       ),
       shiny::includeCSS(
@@ -126,7 +126,10 @@ pageSidebarDash <- function(...) {
                   class="logo-element",
                   "oper"
                 )
-              )
+              ),
+
+              sidebar
+
             )
           )
         ),
