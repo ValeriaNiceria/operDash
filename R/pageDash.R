@@ -15,21 +15,6 @@
 #' @seealso \code{\link{headDash}}, \code{\link{navbarDash}},
 #'   \code{\link{bodyDash}}, \code{\link{footerDash}}, \code{\link{footerScriptsDash}}.
 #'
-#' @examples
-#' library(shiny)
-#'
-#' shinyApp(
-#'   ui = pageDash(
-#'     title = "operDash example",
-#'     head = headDash(),
-#'     body = bodyDash(),
-#'     footer = footerDash(),
-#'     footerScripts = footerScriptsDash()
-#'     title = "Dashboard example"
-#'   ),
-#'   server = function(input, output) { }
-#' )
-#' }
 #'
 #' @export
 
@@ -85,7 +70,7 @@ pageSidebarDash <- function(..., sidebar = NULL) {
                     package = "operDash")
       ),
       shiny::includeCSS(
-        system.file("fontawesome-4.7.0/css/fontawesome.min.css",
+        system.file("font-awesome-4.7.0/css/font-awesome.min.css",
                     package = "operDash")
       ),
       shiny::includeCSS(
