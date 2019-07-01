@@ -1,9 +1,7 @@
 #' @name tabItem
 #'
-#'
-#' @param tabName.
+#' @param tabName name to tab.
 #' @param ... Items to put in the dashboard body.
-#'
 #'
 #' @export
 
