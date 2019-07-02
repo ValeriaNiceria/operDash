@@ -25,7 +25,7 @@ carouselBlock <- function(..., id = "myCarousel") {
 
   shiny::tags$div(id=id, class="carousel slide", `data-ride`="carousel",
 
-                  shiny::tags$ol(class="carousel-indicators",
+           shiny::tags$ol(class="carousel-indicators",
               generateIndicators(indicators)
            ),
 
