@@ -33,37 +33,29 @@ sidebarDash <- function(...) {
 #' @export
 
 sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
-  isTabItem <- FALSE
-  if (!is.null(tabName)) {
-    isTabItem <- TRUE
-    href <- paste0("#shiny-tab-", tabName)
-  } else if (is.null(href)) {
-    href <- "#"
-  }
-
   icon <- if (is.null(icon)) icon("link")
 
-  id = paste0("tab-", tabName)
+  print(paste("icon", icon))
 
-    shiny::tags$a(class="tab-link",
-                  id = paste0("#shiny-tab-", tabName, "_tab_id"),
-                  href = "javascript:void(0)",
-                  onclick = paste0(
-                    "$('.tab-pane').hide();",
-                    "$('.tab-pane').trigger('hide');",
-                    "$('.tab-pane').trigger('hidden');",
-                    "$('.tab-link').removeClass('active');",
-                    "$('#shiny-tab-", tabName, "').show();",
-                    "$('#shiny-tab-", tabName, "').trigger('show');",
-                    "$('#shiny-tab-", tabName, "').trigger('shown');",
-                    "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
-                  ),
-                  icon,
-                  shiny::tags$span(
-                    class="nav-label",
-                    label
-                  )
+  shiny::tags$a(class="tab-link",
+                id = paste0("#shiny-tab-", tabName, "_tab_id"),
+                href = "javascript:void(0)",
+                onclick = paste0(
+                  "$('.tab-pane').hide();",
+                  "$('.tab-pane').trigger('hide');",
+                  "$('.tab-pane').trigger('hidden');",
+                  "$('.tab-link').removeClass('active');",
+                  "$('#shiny-tab-", tabName, "').show();",
+                  "$('#shiny-tab-", tabName, "').trigger('show');",
+                  "$('#shiny-tab-", tabName, "').trigger('shown');",
+                  "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
+                ),
+                icon,
+                shiny::tags$span(
+                  class="nav-label",
+                  label
                 )
+              )
 }
 
 

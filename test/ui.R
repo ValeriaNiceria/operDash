@@ -134,6 +134,7 @@ ui <- pageSidebarDash(
   sidebar = sidebarDash(
     sidebarItem(
       label = "TESTANDO",
+      icon = icon("user"),
       tabName = "teste"
     )
   )
