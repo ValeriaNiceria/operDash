@@ -18,6 +18,7 @@ server <- function(input, output, session) {
 
   })
 
+
   # output$barChart <- renderHighchart({
   #   pokemon%>%
   #     count(type_1)%>%
