@@ -35,7 +35,7 @@ sidebarDash <- function(...) {
 sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
   print(paste("icon", icon))
 
-  icon <- if (is.null(icon)) icon("link")
+  icon <- if (is.null(icon)) icon("link") else icon
 
   shiny::tags$li(
     shiny::tags$a(class="tab-link",
