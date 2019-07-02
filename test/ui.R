@@ -137,6 +137,26 @@ ui <- pageSidebarDash(
       icon = tags$i(class="fa fa-user"),
       tabName = "teste"
     )
+  ),
+
+  body = bodyDash(
+    tabItem(
+      tabName = "teste",
+      fluidRow(
+        column(
+          width = 4,
+          sliderInput(inputId = "bins",
+                      label = "Number of bins:",
+                      min = 1,
+                      max = 50,
+                      value = 30)
+        ),
+        column(
+          width = 8,
+          plotOutput(outputId = "distPlot")
+        )
+      )
+    )
   )
 
 )

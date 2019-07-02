@@ -4,7 +4,7 @@
 \alias{pageSidebarDash}
 \title{Dashboard Page}
 \usage{
-pageSidebarDash(..., sidebar = NULL)
+pageSidebarDash(..., sidebar = NULL, body = NULL)
 }
 \description{
 Dashboard Page

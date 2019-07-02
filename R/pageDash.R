@@ -33,7 +33,9 @@ pageDash <- function(title = "Dashboard Shiny",
                             shiny::tags$div(id="page-wrapper", class="gray-bg",
                                 head,
                                 navbar,
-                                body,
+                                shiny::tags$div(
+                                  class="wrapper wrapper-content",
+                                  body),
                                 footer,
                                 footerScripts,
 
@@ -54,7 +56,7 @@ pageDash <- function(title = "Dashboard Shiny",
 #'
 #' @export
 
-pageSidebarDash <- function(..., sidebar = NULL) {
+pageSidebarDash <- function(..., sidebar = NULL, body = NULL) {
 
   shiny::tags$html(
 
@@ -141,7 +143,7 @@ pageSidebarDash <- function(..., sidebar = NULL) {
             shiny::tags$div(
               class="wrapper wrapper-content",
 
-              ...
+              body
 
 
             )
@@ -149,6 +151,10 @@ pageSidebarDash <- function(..., sidebar = NULL) {
         ),
 
         # Footer script ===============================
+        shiny::includeScript(
+          system.file("jquery-3.1.1/jquery.min.js",
+                      package = "operDash")
+        ),
         shiny::includeScript(
           system.file("oper-0.1.0/js/popper.min.js",
                       package = "operDash")
