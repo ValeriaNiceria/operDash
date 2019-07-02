@@ -41,7 +41,7 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, href = NULL) 
     href <- "#"
   }
 
-  icon <- ifelse(icon == NULL, icon("link"), icon)
+  icon <- ifelse(is.null(icon), icon("link"), icon)
 
   idMenu = paste0("tab-", tabName)
 
@@ -55,4 +55,9 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, href = NULL) 
                     label
                   )
                 )
+}
+
+
+sidebarDropdown <- function() {
+
 }

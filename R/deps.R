@@ -19,6 +19,7 @@ addDeps <- function(x) {
   bootstrap_js <- "bootstrap.js"
   animate_css <- "animate.css"
   init_js <- "js/init.js"
+  fontawesome_css <- "https://use.fontawesome.com/releases/v5.5.0/css/"
 
 
   dashboardDeps <- list(
@@ -27,8 +28,15 @@ addDeps <- function(x) {
       name = "bootstrap",
       version = "4.1.0",
       src = c(file = system.file("bootstrap-4.1.0", package = "operDash")),
-      script = bootstrap_js,
-      stylesheet = bootstrap_css
+      stylesheet = bootstrap_css,
+      script = bootstrap_js
+    ),
+    # font-awesome
+    htmltools::htmlDependency(
+      name = "fontawesome",
+      version = as.character(utils::packageVersion("operDash")),
+      src = c(href = fontawesome_css),
+      stylesheet = "all.css"
     ),
     # animate
     htmltools::htmlDependency(
@@ -42,8 +50,7 @@ addDeps <- function(x) {
       name = "oper",
       version = "0.1.0",
       src = c(file = system.file("oper-0.1.0", package = "operDash")),
-      stylesheet = oper_css,
-      script = init_js
+      stylesheet = oper_css
     )
   )
 
