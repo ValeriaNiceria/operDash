@@ -41,7 +41,7 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
     href <- "#"
   }
 
-  icon <- ifelse(is.null(icon), shiny::tags$i(class="fa fa-link"), icon)
+  icon <- ifelse(is.null(icon), icon("link"), icon)
 
   id = paste0("tab-", tabName)
 
@@ -58,11 +58,10 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
                     "$('#shiny-tab-", tabName, "').trigger('shown');",
                     "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
                   ),
-                  icon
-                  # shiny::tags$span(
-                  #   class="nav-label",
-                  #   label
-                  # )
+                  shiny::tags$span(
+                    class="nav-label",
+                    label
+                  )
                 )
 }
 
