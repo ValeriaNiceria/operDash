@@ -16,7 +16,7 @@ sidebarDash <- function(...) {
       shiny::tags$li(
         class = class,
 
-        itens[[1]]
+        itens[[i]]
       )
 
     })
