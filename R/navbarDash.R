@@ -157,6 +157,8 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 
 navbarDash <- function(..., brandText = NULL, brandImg = NULL, styleBrand = NULL, linkBrand = "#") {
 
+  brand = NULL
+
   if (!is.null(brandImg)) {
     brand = shiny::tags$a(href=linkBrand,
                           brand,
