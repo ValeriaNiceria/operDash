@@ -2,19 +2,19 @@
 % Please edit documentation in R/navbarDash.R
 \name{menuDropdown}
 \alias{menuDropdown}
-\title{Dashboard Menu Dropdown}
+\title{Menu Dropdown}
 \usage{
 menuDropdown(text = "Link", icon = NULL, ...)
 }
 \arguments{
-\item{text}{The menu text.}
+\item{text}{Um texto para o dropdown}
 
-\item{icon}{The menu icon.}
+\item{icon}{Um icone para o dropdown}
 
-\item{...}{Items to put in the dropdown menu, using menuItem.}
+\item{...}{Itens que serao adicionados no dropdown, use o menuItem}
 }
 \description{
-Dashboard Menu Dropdown
+Menu Dropdown
 }
 \examples{
 menuDropdown(
