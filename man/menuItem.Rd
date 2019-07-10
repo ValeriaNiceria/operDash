@@ -2,21 +2,21 @@
 % Please edit documentation in R/navbarDash.R
 \name{menuItem}
 \alias{menuItem}
-\title{Dashboard Menu Item}
+\title{Menu Item}
 \usage{
 menuItem(text = "Link", icon = NULL, tabName = NULL, href = NULL)
 }
 \arguments{
-\item{text}{The menu text.}
+\item{text}{O texto que será exibido}
 
-\item{icon}{The menu icon.}
+\item{icon}{O icone que será exibido no menuItem}
 
-\item{tabName}{A name the tabItem.}
+\item{tabName}{O mesmo nome que será utilizado no tabItem}
 
-\item{href}{A link.}
+\item{href}{Um link}
 }
 \description{
-Dashboard Menu Item
+Menu Item
 }
 \examples{
 menuItem(

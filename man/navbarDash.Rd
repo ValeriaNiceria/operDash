@@ -4,24 +4,23 @@
 \alias{navbarDash}
 \title{Dashboard navbarDash}
 \usage{
-navbarDash(..., brandText = NULL, brandImg = NULL, styleBrand = NULL,
-  linkBrand = "#")
+navbarDash(..., brandText = NULL, brandImg = NULL, linkBrand = "#")
 }
 \arguments{
-\item{...}{Items to put in the menu.}
+\item{...}{Itens que serão adicionados no menu}
 
-\item{styleBrand}{Customer the CSS brand}
+\item{brandText}{Um texto que será exibido como brand no menu}
 
-\item{linkBrand}{A link to brand}
+\item{brandImg}{Uma imagem que será utilizada como brand no menu}
 
-\item{brand}{The brand}
+\item{linkBrand}{Um link para brand, utilizada no menu}
 }
 \description{
 Dashboard navbarDash
 }
 \examples{
 
-navbar = navbarDash(brand = "operDash",
+navbar = navbarDash(brandText = "operDash",
                    menuLeft(
                      menuItem(text = "Home",
                               icon = icon("home"),
