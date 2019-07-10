@@ -158,8 +158,8 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 #'
 #' @export
 
-navbarDash <- function(..., brand = "brand", styleBrand = NULL, linkBrand = "#", background = "#fff") {
-  shiny::tags$div(class="row border-bottom", tags$style(paste("background-color:", background)),
+navbarDash <- function(..., brand = "brand", styleBrand = NULL, linkBrand = "#", bgHex = "#fff") {
+  shiny::tags$div(class="row border-bottom", tags$style(paste("background:", bgHex)),
                   shiny::tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top",
                       `role`="navigation",
                       shiny::tags$a(href=linkBrand,
