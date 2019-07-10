@@ -155,15 +155,22 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 #'
 #' @export
 
-navbarDash <- function(..., brand = "brand", styleBrand = NULL, linkBrand = "#") {
+navbarDash <- function(..., brandText = NULL, brandImg = NULL, styleBrand = NULL, linkBrand = "#") {
+
+  brand = NULL
+
+  if (!is.null(brandImg)) {
+    brand = shiny::tags$a(href=linkBrand,
+                          brand,
+                          class="navbar-brand",
+                          style=styleBrand)
+  } else {
+    brand = brandImg
+  }
 
   shiny::tags$div(class="row border-bottom",
-                  shiny::tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top",
-                      `role`="navigation",
-                      shiny::tags$a(href=linkBrand,
-                             brand,
-                             class="navbar-brand",
-                             style=styleBrand),
+                  shiny::tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top",`role`="navigation",
+                      brand,
                       shiny::tags$button(class="navbar-toggler",
                                   `type`="button",
                                   `data-toggle`="collapse",

@@ -1,7 +1,7 @@
 source("./imports.R")
 
 
-navbar <- navbarDash(brand = "operDash",
+navbar <- navbarDash(brandImg = img(src="shiny.png"),
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
 
