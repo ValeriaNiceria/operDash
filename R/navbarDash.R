@@ -2,8 +2,8 @@
 #' @name menuItem
 #'
 #'
-#' @param text O texto que será exibido
-#' @param icon O icone que será exibido no menuItem
+#' @param text O texto que sera exibido
+#' @param icon O icone que sera exibido no menuItem
 #' @param tabName O mesmo nome que será utilizado no tabItem
 #' @param href Um link
 #'
@@ -44,7 +44,7 @@ menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
 #' @name menuLeft
 #'
 #'
-#' @param ... Itens que serão adicionados a esquerda do menu.
+#' @param ... Itens que serao adicionados a esquerda do menu.
 #'
 #'
 #' @export
@@ -60,7 +60,7 @@ menuLeft <- function(...) {
 #' @name menuRight
 #'
 #'
-#' @param ... Itens que serão adicionados a direta do menu
+#' @param ... Itens que serao adicionados a direta do menu
 #'
 #'
 #' @export
@@ -78,7 +78,7 @@ menuRight <- function(...) {
 #'
 #' @param text Um texto para o dropdown
 #' @param icon Um icone para o dropdown
-#' @param ... Itens que serão adicionados no dropdown, use o menuItem
+#' @param ... Itens que serao adicionados no dropdown, use o menuItem
 #'
 #'
 #' @examples
@@ -109,10 +109,10 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 #' @title Dashboard navbarDash
 #' @name navbarDash
 #'
-#' @param brandText Um texto que será exibido como brand no menu
-#' @param brandImg  Uma imagem que será utilizada como brand no menu
+#' @param brandText Um texto que sera exibido como brand no menu
+#' @param brandImg  Uma imagem que sera utilizada como brand no menu
 #' @param linkBrand Um link para brand, utilizada no menu
-#' @param ...  Itens que serão adicionados no menu
+#' @param ...  Itens que serao adicionados no menu
 #'
 #'
 #' @seealso \code{\link{menuDropdown}}, \code{\link{menuItem}},

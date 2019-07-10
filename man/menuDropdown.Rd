@@ -11,7 +11,7 @@ menuDropdown(text = "Link", icon = NULL, ...)
 
 \item{icon}{Um icone para o dropdown}
 
-\item{...}{Itens que serão adicionados no dropdown, use o menuItem}
+\item{...}{Itens que serao adicionados no dropdown, use o menuItem}
 }
 \description{
 Menu Dropdown

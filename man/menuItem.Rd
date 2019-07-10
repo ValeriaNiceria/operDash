@@ -7,9 +7,9 @@
 menuItem(text = "Link", icon = NULL, tabName = NULL, href = NULL)
 }
 \arguments{
-\item{text}{O texto que será exibido}
+\item{text}{O texto que sera exibido}
 
-\item{icon}{O icone que será exibido no menuItem}
+\item{icon}{O icone que sera exibido no menuItem}
 
 \item{tabName}{O mesmo nome que será utilizado no tabItem}
 
