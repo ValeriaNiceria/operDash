@@ -109,7 +109,6 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 #' @title Dashboard navbarDash
 #' @name navbarDash
 #'
-#'
 #' @param brand The brand
 #' @param styleBrand Customer the CSS brand
 #' @param linkBrand A link to brand
@@ -154,17 +153,12 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 #' )
 #')
 #'
-#'
-#'
 #' @export
 
-navbarDash <- function(..., brand = "brand", styleBrand = NULL, linkBrand = "#", bg = "#fff", textColor = "#676a6c") {
-
-  background_color = paste0("background:", bg, ";")
-  color_text = paste0("color:", textColor, ";")
+navbarDash <- function(..., brand = "brand", styleBrand = NULL, linkBrand = "#") {
 
   shiny::tags$div(class="row border-bottom",
-                  shiny::tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top", style = paste(background_color, color_text),
+                  shiny::tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top",
                       `role`="navigation",
                       shiny::tags$a(href=linkBrand,
                              brand,

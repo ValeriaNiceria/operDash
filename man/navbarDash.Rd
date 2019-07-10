@@ -4,8 +4,7 @@
 \alias{navbarDash}
 \title{Dashboard navbarDash}
 \usage{
-navbarDash(..., brand = "brand", styleBrand = NULL, linkBrand = "#",
-  bg = "#fff", textColor = "#676a6c")
+navbarDash(..., brand = "brand", styleBrand = NULL, linkBrand = "#")
 }
 \arguments{
 \item{...}{Items to put in the menu.}
@@ -52,8 +51,6 @@ menuRight(
           tabName = "logout")
 )
 )
-
-
 
 }
 \seealso{
