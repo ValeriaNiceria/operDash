@@ -22,7 +22,10 @@ sidebarDash <- function(...) {
     })
   }
 
-  generateItensMenu(itens)
+  tags$div(
+    generateItensMenu(itens)
+  )
+
 
 }
 
