@@ -118,50 +118,50 @@ body <- bodyDash(
 
 )
 
-#
-# ui <- pageDash(
-#   title = "operDash",
-#   head = headDash(),
-#   navbar = navbar,
-#   body = body,
-#   footer = footerDash(),
-#   footerScripts = footerScriptsDash()
-# )
 
-
-ui <- pageSidebarDash(
-
-  sidebar = sidebarDash(
-    sidebarItem(
-      label = "TESTANDO",
-      icon = tags$i(class="fa fa-user"),
-      tabName = "teste"
-    ),
-    sidebarItem(
-      label = "HOME",
-      icon = tags$i(class="fa fa-home"),
-      tabName = "home"
-    )
-  ),
-
-  body = bodyDash(
-    tabItem(
-      tabName = "teste",
-      fluidRow(
-        column(
-          width = 4,
-          sliderInput(inputId = "bins",
-                      label = "Number of bins:",
-                      min = 1,
-                      max = 50,
-                      value = 30)
-        ),
-        column(
-          width = 8,
-          plotOutput(outputId = "distPlot")
-        )
-      )
-    )
-  )
-
+ui <- pageDash(
+  title = "operDash",
+  head = headDash(),
+  navbar = navbar,
+  body = body,
+  footer = footerDash(),
+  footerScripts = footerScriptsDash()
 )
+
+
+# ui <- pageSidebarDash(
+#
+#   sidebar = sidebarDash(
+#     sidebarItem(
+#       label = "TESTANDO",
+#       icon = tags$i(class="fa fa-user"),
+#       tabName = "teste"
+#     ),
+#     sidebarItem(
+#       label = "HOME",
+#       icon = tags$i(class="fa fa-home"),
+#       tabName = "home"
+#     )
+#   ),
+#
+#   body = bodyDash(
+#     tabItem(
+#       tabName = "teste",
+#       fluidRow(
+#         column(
+#           width = 4,
+#           sliderInput(inputId = "bins",
+#                       label = "Number of bins:",
+#                       min = 1,
+#                       max = 50,
+#                       value = 30)
+#         ),
+#         column(
+#           width = 8,
+#           plotOutput(outputId = "distPlot")
+#         )
+#       )
+#     )
+#   )
+#
+# )

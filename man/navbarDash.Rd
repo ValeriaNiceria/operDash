@@ -4,7 +4,8 @@
 \alias{navbarDash}
 \title{Dashboard navbarDash}
 \usage{
-navbarDash(..., brand = "brand", styleBrand = NULL, linkBrand = "#")
+navbarDash(..., brand = "brand", styleBrand = NULL, linkBrand = "#",
+  background = "#fff")
 }
 \arguments{
 \item{...}{Items to put in the menu.}
