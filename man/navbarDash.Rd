@@ -5,7 +5,7 @@
 \title{Dashboard navbarDash}
 \usage{
 navbarDash(..., brand = "brand", styleBrand = NULL, linkBrand = "#",
-  bgHex = "#fff")
+  bg = "#fff", textColor = "#676a6c")
 }
 \arguments{
 \item{...}{Items to put in the menu.}
