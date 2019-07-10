@@ -160,12 +160,12 @@ navbarDash <- function(..., brandText = NULL, brandImg = NULL, styleBrand = NULL
   brand = NULL
 
   if (!is.null(brandImg)) {
+    brand = brandImg
+  } else {
     brand = shiny::tags$a(href=linkBrand,
-                          brand,
+                          brandText,
                           class="navbar-brand",
                           style=styleBrand)
-  } else {
-    brand = brandImg
   }
 
   shiny::tags$div(class="row border-bottom",
