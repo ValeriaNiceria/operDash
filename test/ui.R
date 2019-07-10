@@ -1,7 +1,7 @@
 source("./imports.R")
 
 
-navbar <- navbarDash(brand = "operDash", bg = "red",
+navbar <- navbarDash(brand = "operDash",
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
 
