@@ -1,11 +1,11 @@
-#' @title Menu Item
+#' @title Dashboard Menu Item
 #' @name menuItem
 #'
 #'
-#' @param text O texto que sera exibido
-#' @param icon O icone que sera exibido no menuItem
-#' @param tabName O mesmo nome que será utilizado no tabItem
-#' @param href Um link
+#' @param text The menu text.
+#' @param icon The menu icon.
+#' @param tabName A name the tabItem.
+#' @param href A link.
 #'
 #'
 #' @examples
@@ -40,11 +40,11 @@ menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
 }
 
 
-#' @title Base do menu a esquerda
+#' @title Menu Left Base
 #' @name menuLeft
 #'
 #'
-#' @param ... Itens que serao adicionados a esquerda do menu.
+#' @param ... Items to put in the left menu.
 #'
 #'
 #' @export
@@ -56,11 +56,11 @@ menuLeft <- function(...) {
 }
 
 
-#' @title Base do menu a direita
+#' @title Menu Right Base
 #' @name menuRight
 #'
 #'
-#' @param ... Itens que serao adicionados a direta do menu
+#' @param ... Items to put in the left menu.
 #'
 #'
 #' @export
@@ -72,13 +72,13 @@ menuRight <- function(...) {
 }
 
 
-#' @title Menu Dropdown
+#' @title Dashboard Menu Dropdown
 #' @name menuDropdown
 #'
 #'
-#' @param text Um texto para o dropdown
-#' @param icon Um icone para o dropdown
-#' @param ... Itens que serao adicionados no dropdown, use o menuItem
+#' @param text The menu text.
+#' @param icon The menu icon.
+#' @param ... Items to put in the dropdown menu, using menuItem.
 #'
 #'
 #' @examples
@@ -109,10 +109,10 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 #' @title Dashboard navbarDash
 #' @name navbarDash
 #'
-#' @param brandText Um texto que sera exibido como brand no menu
-#' @param brandImg  Uma imagem que sera utilizada como brand no menu
-#' @param linkBrand Um link para brand, utilizada no menu
-#' @param ...  Itens que serao adicionados no menu
+#' @param brandText The brand text
+#' @param brandImg The brand image
+#' @param linkBrand A link to brand
+#' @param ... Items to put in the menu.
 #'
 #'
 #' @seealso \code{\link{menuDropdown}}, \code{\link{menuItem}},
@@ -121,7 +121,7 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 #'
 #' @examples
 #'
-#'navbar = navbarDash(brandText = "operDash",
+#'navbar = navbarDash(brand = "operDash",
 #'                    menuLeft(
 #'                      menuItem(text = "Home",
 #'                               icon = icon("home"),
