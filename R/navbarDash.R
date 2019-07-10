@@ -160,8 +160,8 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 
 navbarDash <- function(..., brand = "brand", styleBrand = NULL, linkBrand = "#", bg = "#fff", textColor = "#676a6c") {
 
-  background_color = paste("background:", bg)
-  color_text = paste("color:", textColor)
+  background_color = paste0("background:", bg, ";")
+  color_text = paste0("color:", textColor, ";")
 
   shiny::tags$div(class="row border-bottom",
                   shiny::tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top", style = paste(background_color, color_text),
