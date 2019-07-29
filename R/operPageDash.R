@@ -16,10 +16,6 @@ operPage <- function(..., title = "", sidebar = NULL, navbar = NULL) {
                     package = "operDash")
       ),
       shiny::includeCSS(
-        system.file("font-awesome-5.3.1/css/font-awesome.css",
-                    package = "operDash")
-      ),
-      shiny::includeCSS(
         system.file("animate-3.5.0/animate.css",
                     package = "operDash")
       ),
@@ -34,28 +30,59 @@ operPage <- function(..., title = "", sidebar = NULL, navbar = NULL) {
     ),
 
     # Body --------------------------------
-    shiny::tags$body(class="pace-done mini-navbar",
-                     # shiny::tags$div(id="wrapper",
-                     #                 ...
-                     #                 )
+    shiny::tags$body(
+      class="pace-done mini-navbar",
+      shiny::tags$div(
+        id="wrapper",
+        shiny::tags$nav(
+          class="navbar-default navbar-static-side",
+          role="navigation",
+          shiny::tags$div(
+            class="sidebar-collapse",
+            shiny::tags$ul(
+              class="nav metismenu",
+              id="side-menu",
+              shiny::tags$li(
+                class="nav-header",
+                shiny::tags$div(
+                  class="dropdown profile-element avatar-menu",
+                  shiny::tags$img(
+                    alt="image",
+                    class="rounded-circle",
+                    src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg",
+                    width = "60px"
+                  )
+                ),
+                shiny::tags$div(
+                  class="logo-element",
+                  "oper"
+                )
+              )
+
+              # sidebar
+
+            )
+          )
+        ),
 
 
-                     shiny::tags$div(id="page-wrapper", class="gray-bg",
-                       shiny::tags$div(class="row border-bottom",
-                         shiny::tags$nav(class="navbar navbar-static-top white-bg", role="navigation", style="margin-bottom: 0",
-                           shiny::tags$div(class="navbar-header",
-                             shiny::tags$a(class="navbar-minimalize minimalize-styl-2 btn btn-primary",href="#",
-                                           shiny::tags$i(class="fa fa-bars")
-                             )
-                           )
-                         )
-                       ),
-                       shiny::tags$div(class="wrapper wrapper-content",
+       shiny::tags$div(id="page-wrapper", class="gray-bg",
+         shiny::tags$div(class="row border-bottom",
+           shiny::tags$nav(class="navbar navbar-static-top white-bg", role="navigation", style="margin-bottom: 0",
+             shiny::tags$div(class="navbar-header",
+               shiny::tags$a(class="navbar-minimalize minimalize-styl-2 btn btn-primary",href="#",
+                             shiny::icon("bars")
+               )
+             )
+           )
+         ),
+         shiny::tags$div(class="wrapper wrapper-content",
 
-                         ...
+           ...
 
-                       )
-                     )
+         )
+       )
+      )
     ),
 
     # Footer script ===============================
