@@ -11,6 +11,8 @@ sidebarDash <- function(...) {
   generateItensMenu <- function(itens) {
     lapply(1:length(itens), FUN = function(i) {
 
+      print(itens[[i]])
+
       class <- ifelse(i == 1, "active", NULL)
 
       shiny::tags$li(
@@ -22,7 +24,7 @@ sidebarDash <- function(...) {
     })
   }
 
-  tags$div(
+  tagList(
     generateItensMenu(itens)
   )
 
@@ -37,7 +39,7 @@ sidebarDash <- function(...) {
 
 sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
 
-  icon <- if (is.null(icon)) icon("link") else icon
+  icon <- ifelse(is.null(icon), icon("link"), icon)
 
   shiny::tags$a(class="tab-link",
                 id = paste0("#shiny-tab-", tabName, "_tab_id"),

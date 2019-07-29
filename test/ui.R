@@ -1,7 +1,7 @@
 source("./imports.R")
 
 
-navbar <- navbarDash(brandImg = img(src="shiny.png", style = "width = 10px"),
+navbar <- navbarDash(brandText = "operDash",
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
 
@@ -138,9 +138,9 @@ ui <- pageDash(
 #       tabName = "teste"
 #     ),
 #     sidebarItem(
-#       label = "HOME",
-#       icon = tags$i(class="fa fa-home"),
-#       tabName = "home"
+#       label = "TESTANDO",
+#       icon = tags$i(class="fa fa-user"),
+#       tabName = "teste"
 #     )
 #   ),
 #

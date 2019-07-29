@@ -170,7 +170,7 @@ navbarDash <- function(...,
                           class="navbar-brand")
   }
 
-  shiny::tags$div(class="row border-bottom",
+  shiny::tags$div(class="row border-bottom white-bg",
                   shiny::tags$nav(class="navbar navbar-expand-lg navbar-static-top navbar-fixed-top",`role`="navigation",
                       brand,
                       shiny::tags$button(class="navbar-toggler",
