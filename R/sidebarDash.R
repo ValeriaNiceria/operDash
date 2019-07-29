@@ -11,13 +11,8 @@ sidebarDash <- function(...) {
   generateItensMenu <- function(itens) {
     lapply(1:length(itens), FUN = function(i) {
 
-      print(itens[[i]])
-
-      class <- ifelse(i == 1, "active", NULL)
-
       shiny::tags$li(
-        class = class,
-
+        class = if (i == 1) "active" else NULL,
         itens[[i]]
       )
 
