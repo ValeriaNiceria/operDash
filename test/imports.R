@@ -7,7 +7,7 @@ library(devtools)
 library(operDash)
 # library(shinyWidgets)
 # library(htmltools)
-# library(htmlwidgets)
+library(htmlwidgets)
 library(dplyr)
 library(highcharter)
 

@@ -132,54 +132,99 @@ body <- bodyDash(
 # ui <- operPage(
 #   title = "operDash",
 #   navbar = navbar,
-#   body = body
+#   body = bodyDash(
+#     boxExample
+#   )
 # )
+
+
+
+
+# ui <- operPage(
+#   sidebar = sidebarDash(
+#     sidebarItem(label = "Testando", tabName = "teste"),
+#     sidebarItem(label = "Ola", icon = icon('link'), tabName = "oi")
+#   ),
 #
+#   body = bodyDash(
+#     tabItem(
+#       tabName = "teste",
+#       fluidRow(
+#         column(
+#           width = 4,
+#           sliderInput(inputId = "bins",
+#                       label = "Number of bins:",
+#                       min = 1,
+#                       max = 50,
+#                       value = 30)
+#         ),
+#         column(
+#           width = 8,
+#           plotOutput(outputId = "distPlot")
+#         )
+#       )
+#     ),
+#
+#     tabItem(
+#       tabName = "oi",
+#       fluidRow(
+#         column(
+#           width = 4,
+#           sliderInput(inputId = "bins",
+#                       label = "Number of bins:",
+#                       min = 1,
+#                       max = 100,
+#                       value = 70)
+#         ),
+#         column(
+#           width = 8,
+#           h1("Testando")
+#         )
+#       )
+#     )
+#   )
+#
+# )
 
 
 
-ui <- operPage(
+ui =  operPage(
   sidebar = sidebarDash(
-    sidebarItem(label = "Testando", tabName = "teste"),
-    sidebarItem(label = "Ola", icon = icon('link'), tabName = "oi")
+    sidebarItem(label = "Box", icon = icon("box"), tabName = "box")
   ),
 
-  body = bodyDash(
-    tabItem(
-      tabName = "teste",
-      fluidRow(
-        column(
-          width = 4,
-          sliderInput(inputId = "bins",
-                      label = "Number of bins:",
-                      min = 1,
-                      max = 50,
-                      value = 30)
+  body = fluidRow(
+    column(
+      width = 4,
+      box(
+        boxTitle(
+          info = infoLink(position = "right",
+                          message = "Mensagem de info para o usuário"),
+          colorText = "white",
+          background = "#00a7d0",
+          boxTools(collapseLink(),
+                   label(label = "testando"))
         ),
-        column(
-          width = 8,
-          plotOutput(outputId = "distPlot")
+        boxContent(
+          numericInput(inputId ='n',
+                       label = 'Number of obs',
+                       value = 100)
         )
       )
     ),
-
-    tabItem(
-      tabName = "oi",
-      fluidRow(
-        column(
-          width = 4,
-          sliderInput(inputId = "bins",
-                      label = "Number of bins:",
-                      min = 1,
-                      max = 100,
-                      value = 70)
+    column(
+      width = 8,
+      box(
+        boxTitle(
+          boxTools(closeLink(),
+                   collapseLink(),
+                   infoLink(position = "left",
+                            message = "Mensagem de info para o usuário"))
         ),
-        column(
-          width = 8,
-          h1("Testando")
+        boxContent(
+          highchartOutput('plot')
         )
       )
     )
   )
-
 )
