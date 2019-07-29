@@ -1,11 +1,34 @@
+#' @title Dashboard Page
+#' @name operPage
+#'
+#'
+#' @param title Um título que será utilizado no display do browser
+#' @param sidebar Um menu lateral \code{sidebarDash}.
+#' @param navbar Um menu Top \code{navbarDash}.
+#' @param body O conteúdo da página \code{bodyDash}.
+#' @param ... Itens adicionais.
+#'
+#'
+#'
+#' @seealso \code{\link{sidebarDash}}, \code{\link{navbarDash}}, \code{\link{bodyDash}}.
+#'
+#'
+#' @export
+
+
 operPage <- function(title = "", sidebar = NULL, navbar = NULL, body = NULL) {
 
   if (!is.null(sidebar)) {
-    bodyContent = sidebarPage(sidebar, body)
+    sidebarPage(title, sidebar, body)
   } else {
-    bodyContent = navbarPage(navbar, body)
+    navbarPage(title, navbar, body)
   }
 
+}
+
+
+
+sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
 
   shiny::tags$html(
 
@@ -32,7 +55,70 @@ operPage <- function(title = "", sidebar = NULL, navbar = NULL, body = NULL) {
 
     # Body --------------------------------
 
-    bodyContent,
+    shiny::tags$body(
+      class="pace-done mini-navbar",
+      shiny::tags$div(
+        id="wrapper",
+        shiny::tags$nav(
+          class="navbar-default navbar-static-side",
+          role="navigation",
+          shiny::tags$div(
+            class="sidebar-collapse",
+            shiny::tags$ul(
+              class="nav metismenu",
+              id="side-menu",
+              shiny::tags$li(
+                class="nav-header",
+                shiny::tags$div(
+                  class="dropdown profile-element avatar-menu",
+                  shiny::tags$img(
+                    alt="image",
+                    class="rounded-circle",
+                    src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg",
+                    width = "60px"
+                  )
+                ),
+                shiny::tags$div(
+                  class="logo-element",
+                  "oper"
+                )
+              ),
+
+              sidebar
+
+            )
+          )
+        ),
+
+
+        shiny::tags$div(
+          id="page-wrapper",
+          class="gray-bg",
+          shiny::tags$div(
+            class="row border-bottom",
+            shiny::tags$nav(
+              class="navbar navbar-static-top white-bg",
+              role="navigation",
+              style="margin-bottom: 0",
+              shiny::tags$div(
+                class="navbar-header",
+                shiny::tags$a(
+                  class="navbar-minimalize minimalize-styl-2 btn btn-primary",
+                  href="#",
+                  shiny::icon("bars")
+                )
+              )
+            )
+          ),
+          shiny::tags$div(
+            class="wrapper wrapper-content",
+
+            content
+
+          )
+        )
+      )
+    ),
 
     # Footer script ---------------------------
     shiny::includeScript(
@@ -77,75 +163,22 @@ operPage <- function(title = "", sidebar = NULL, navbar = NULL, body = NULL) {
 
 
 
-sidebarPage <- function(sidebar = NULL, content = NULL) {
 
-  shiny::tags$body(
-    class="pace-done mini-navbar",
+navbarPage <- function(navbar = NULL, content = NULL) {
+  shiny::tags$div(
+    id="wrapper",
     shiny::tags$div(
-      id="wrapper",
-      shiny::tags$nav(
-        class="navbar-default navbar-static-side",
-        role="navigation",
-        shiny::tags$div(
-          class="sidebar-collapse",
-          shiny::tags$ul(
-            class="nav metismenu",
-            id="side-menu",
-            shiny::tags$li(
-              class="nav-header",
-              shiny::tags$div(
-                class="dropdown profile-element avatar-menu",
-                shiny::tags$img(
-                  alt="image",
-                  class="rounded-circle",
-                  src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg",
-                  width = "60px"
-                )
-              ),
-              shiny::tags$div(
-                class="logo-element",
-                "oper"
-              )
-            ),
+      id="page-wrapper",
+      class="gray-bg",
 
-            sidebar
-
-          )
-        )
-      ),
-
+      navbar,
 
       shiny::tags$div(
-        id="page-wrapper",
-        class="gray-bg",
-        shiny::tags$div(
-          class="row border-bottom",
-          shiny::tags$nav(
-            class="navbar navbar-static-top white-bg",
-            role="navigation",
-            style="margin-bottom: 0",
-            shiny::tags$div(
-              class="navbar-header",
-              shiny::tags$a(class="navbar-minimalize minimalize-styl-2 btn btn-primary",
-                            href="#",
-                            shiny::icon("bars")
-                            )
-              )
-            )
-          ),
-        shiny::tags$div(class="wrapper wrapper-content",
+        class="wrapper wrapper-content",
 
-                        content
+        content
 
-                        )
       )
     )
   )
-}
-
-
-
-
-navbarPage <- function(navbar = NULL, content = NULL) {
-
 }
