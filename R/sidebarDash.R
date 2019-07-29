@@ -23,7 +23,6 @@ sidebarDash <- function(...) {
     generateItensMenu(itens)
   )
 
-
 }
 
 #' @title SidebarItem
@@ -38,9 +37,9 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
                 id = paste0("#shiny-tab-", tabName, "_tab_id"),
                 href = "javascript:void(0)",
                 onclick = paste0(
-                  "$('.tab-pane').hide();",
-                  "$('.tab-pane').trigger('hide');",
-                  "$('.tab-pane').trigger('hidden');",
+                  "$('.shiny-oper-tab-content').hide();",
+                  "$('.shiny-oper-tab-content').trigger('hide');",
+                  "$('.shiny-oper-tab-content').trigger('hidden');",
                   "$('.tab-link').removeClass('active');",
                   "$('#shiny-tab-", tabName, "').show();",
                   "$('#shiny-tab-", tabName, "').trigger('show');",
