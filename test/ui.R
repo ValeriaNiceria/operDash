@@ -164,18 +164,23 @@ body <- bodyDash(
 
 
 ui <- operPage(
-  fluidRow(
-    column(
-      width = 4,
-      sliderInput(inputId = "bins",
-                  label = "Number of bins:",
-                  min = 1,
-                  max = 50,
-                  value = 30)
-    ),
-    column(
-      width = 8,
-      plotOutput(outputId = "distPlot")
-    )
-  )
+  sidebar = sidebarDash(
+    sidebarItem(label = "Testando", tabName = "teste")
+  ),
+
+  body =
+      fluidRow(
+        column(
+          width = 4,
+          sliderInput(inputId = "bins",
+                      label = "Number of bins:",
+                      min = 1,
+                      max = 50,
+                      value = 30)
+        ),
+        column(
+          width = 8,
+          plotOutput(outputId = "distPlot")
+        )
+      )
 )

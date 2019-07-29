@@ -1,9 +1,9 @@
-operPage <- function(..., title = "", sidebar = NULL, navbar = NULL) {
+operPage <- function(title = "", sidebar = NULL, navbar = NULL, body = NULL) {
 
   if (!is.null(sidebar)) {
-
+    bodyContent = sidebarPage(sidebar, body)
   } else {
-
+    bodyContent = navbarPage(navbar, body)
   }
 
 
@@ -26,66 +26,15 @@ operPage <- function(..., title = "", sidebar = NULL, navbar = NULL) {
       shiny::tags$meta(
         name="viewport",
         content="width=device-width, initial-scale=1.0"
-      )
+      ),
+      shiny::tags$title(title)
     ),
 
     # Body --------------------------------
-    shiny::tags$body(
-      class="pace-done mini-navbar",
-      shiny::tags$div(
-        id="wrapper",
-        shiny::tags$nav(
-          class="navbar-default navbar-static-side",
-          role="navigation",
-          shiny::tags$div(
-            class="sidebar-collapse",
-            shiny::tags$ul(
-              class="nav metismenu",
-              id="side-menu",
-              shiny::tags$li(
-                class="nav-header",
-                shiny::tags$div(
-                  class="dropdown profile-element avatar-menu",
-                  shiny::tags$img(
-                    alt="image",
-                    class="rounded-circle",
-                    src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg",
-                    width = "60px"
-                  )
-                ),
-                shiny::tags$div(
-                  class="logo-element",
-                  "oper"
-                )
-              )
 
-              # sidebar
+    bodyContent,
 
-            )
-          )
-        ),
-
-
-       shiny::tags$div(id="page-wrapper", class="gray-bg",
-         shiny::tags$div(class="row border-bottom",
-           shiny::tags$nav(class="navbar navbar-static-top white-bg", role="navigation", style="margin-bottom: 0",
-             shiny::tags$div(class="navbar-header",
-               shiny::tags$a(class="navbar-minimalize minimalize-styl-2 btn btn-primary",href="#",
-                             shiny::icon("bars")
-               )
-             )
-           )
-         ),
-         shiny::tags$div(class="wrapper wrapper-content",
-
-           ...
-
-         )
-       )
-      )
-    ),
-
-    # Footer script ===============================
+    # Footer script ---------------------------
     shiny::includeScript(
       system.file("jquery-3.1.1/jquery.min.js",
                   package = "operDash")
@@ -123,5 +72,80 @@ operPage <- function(..., title = "", sidebar = NULL, navbar = NULL) {
                   package = "operDash")
     )
   )
+
+}
+
+
+
+sidebarPage <- function(sidebar = NULL, content = NULL) {
+
+  shiny::tags$body(
+    class="pace-done mini-navbar",
+    shiny::tags$div(
+      id="wrapper",
+      shiny::tags$nav(
+        class="navbar-default navbar-static-side",
+        role="navigation",
+        shiny::tags$div(
+          class="sidebar-collapse",
+          shiny::tags$ul(
+            class="nav metismenu",
+            id="side-menu",
+            shiny::tags$li(
+              class="nav-header",
+              shiny::tags$div(
+                class="dropdown profile-element avatar-menu",
+                shiny::tags$img(
+                  alt="image",
+                  class="rounded-circle",
+                  src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg",
+                  width = "60px"
+                )
+              ),
+              shiny::tags$div(
+                class="logo-element",
+                "oper"
+              )
+            ),
+
+            sidebar
+
+          )
+        )
+      ),
+
+
+      shiny::tags$div(
+        id="page-wrapper",
+        class="gray-bg",
+        shiny::tags$div(
+          class="row border-bottom",
+          shiny::tags$nav(
+            class="navbar navbar-static-top white-bg",
+            role="navigation",
+            style="margin-bottom: 0",
+            shiny::tags$div(
+              class="navbar-header",
+              shiny::tags$a(class="navbar-minimalize minimalize-styl-2 btn btn-primary",
+                            href="#",
+                            shiny::icon("bars")
+                            )
+              )
+            )
+          ),
+        shiny::tags$div(class="wrapper wrapper-content",
+
+                        content
+
+                        )
+      )
+    )
+  )
+}
+
+
+
+
+navbarPage <- function(navbar = NULL, content = NULL) {
 
 }

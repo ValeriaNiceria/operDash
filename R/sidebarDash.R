@@ -39,8 +39,6 @@ sidebarDash <- function(...) {
 
 sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
 
-  icon <- ifelse(is.null(icon), icon("link"), icon)
-
   shiny::tags$a(class="tab-link",
                 id = paste0("#shiny-tab-", tabName, "_tab_id"),
                 href = "javascript:void(0)",
