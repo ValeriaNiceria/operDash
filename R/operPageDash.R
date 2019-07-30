@@ -135,10 +135,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
     ),
 
     # Footer script ---------------------------
-    shiny::includeScript(
-      system.file("jquery-3.1.1/jquery.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-3.1.1/jquery.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("oper-0.1.0/js/popper.min.js",
                   package = "operDash")
@@ -163,10 +163,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
       system.file("oper-0.1.0/js/pace/pace.min.js",
                   package = "operDash")
     ),
-    shiny::includeScript(
-      system.file("jquery-ui-1.12.1/jquery-ui.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-ui-1.12.1/jquery-ui.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("oper-0.1.0/js/end.js",
                   package = "operDash")
@@ -244,10 +244,10 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
     ),
 
     # Footer script ---------------------------
-    shiny::includeScript(
-      system.file("jquery-3.1.1/jquery.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-3.1.1/jquery.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("oper-0.1.0/js/popper.min.js",
                   package = "operDash")
@@ -272,10 +272,10 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
       system.file("oper-0.1.0/js/pace/pace.min.js",
                   package = "operDash")
     ),
-    shiny::includeScript(
-      system.file("jquery-ui-1.12.1/jquery-ui.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-ui-1.12.1/jquery-ui.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("oper-0.1.0/js/end.js",
                   package = "operDash")
