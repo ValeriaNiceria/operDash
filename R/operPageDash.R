@@ -170,6 +170,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
     shiny::includeScript(
       system.file("oper-0.1.0/js/end.js",
                   package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-link.js",
+                  package = "operDash")
     )
   )
 
@@ -278,6 +282,10 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
     # ),
     shiny::includeScript(
       system.file("oper-0.1.0/js/end.js",
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-link.js",
                   package = "operDash")
     )
 
