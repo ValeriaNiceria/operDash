@@ -8764,3 +8764,8 @@ a.dropdown-toggle.count-info {
   border: 2px solid #fff;
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
 }
+
+
+.shiny-oper-tab-content > .active {
+    display: block;
+}

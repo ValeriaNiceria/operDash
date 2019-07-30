@@ -7,20 +7,20 @@
 navbarDash(..., brandText = NULL, brandImg = NULL, linkBrand = "#")
 }
 \arguments{
-\item{...}{Itens que serao adicionados no menu}
+\item{...}{Items to put in the menu.}
 
-\item{brandText}{Um texto que sera exibido como brand no menu}
+\item{brandText}{The brand text}
 
-\item{brandImg}{Uma imagem que sera utilizada como brand no menu}
+\item{brandImg}{The brand image}
 
-\item{linkBrand}{Um link para brand, utilizada no menu}
+\item{linkBrand}{A link to brand}
 }
 \description{
 Dashboard navbarDash
 }
 \examples{
 
-navbar = navbarDash(brandText = "operDash",
+navbar = navbarDash(brand = "operDash",
                    menuLeft(
                      menuItem(text = "Home",
                               icon = icon("home"),

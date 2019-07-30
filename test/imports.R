@@ -3,11 +3,12 @@
 #########################
 library(shiny)
 library(devtools)
-devtools::install_github("ValeriaNiceria/operDash", force = TRUE)
+# devtools::install_github("ValeriaNiceria/operDash", force = TRUE)
 library(operDash)
 # library(shinyWidgets)
 # library(htmltools)
-# library(htmlwidgets)
+library(magrittr)
+library(htmlwidgets)
 library(dplyr)
 library(highcharter)
 

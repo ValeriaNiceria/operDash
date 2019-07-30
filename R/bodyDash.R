@@ -10,7 +10,7 @@
 
 bodyDash <- function(...) {
 
-  shiny::tags$div(class = "tab-content",
+  shiny::tags$div(class = "col-lg-12",
 
       ...
 

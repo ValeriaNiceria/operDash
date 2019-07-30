@@ -1,7 +1,7 @@
 source("./imports.R")
 
 
-navbar <- navbarDash(brandImg = img(src="shiny.png", style = "width = 10px"),
+navbar <- navbarDash(brandText = "operDash",
                     menuLeft(
                       menuItem(text = "Box", tabName = "box"),
 
@@ -119,29 +119,31 @@ body <- bodyDash(
 )
 
 
-ui <- pageDash(
-  title = "operDash",
-  head = headDash(),
-  navbar = navbar,
-  body = body,
-  footer = footerDash(),
-  footerScripts = footerScriptsDash()
-)
+# ui <- pageDash(
+#   title = "operDash",
+#   head = headDash(),
+#   navbar = navbar,
+#   body = body,
+#   footer = footerDash(),
+#   footerScripts = footerScriptsDash()
+# )
 
 
-# ui <- pageSidebarDash(
-#
+# ui <- operPage(
+#   title = "operDash",
+#   navbar = navbar,
+#   body = bodyDash(
+#     boxExample
+#   )
+# )
+
+
+
+
+# ui <- operPage(
 #   sidebar = sidebarDash(
-#     sidebarItem(
-#       label = "TESTANDO",
-#       icon = tags$i(class="fa fa-user"),
-#       tabName = "teste"
-#     ),
-#     sidebarItem(
-#       label = "HOME",
-#       icon = tags$i(class="fa fa-home"),
-#       tabName = "home"
-#     )
+#     sidebarItem(label = "Testando", tabName = "teste"),
+#     sidebarItem(label = "Ola", icon = icon('link'), tabName = "oi")
 #   ),
 #
 #   body = bodyDash(
@@ -161,7 +163,68 @@ ui <- pageDash(
 #           plotOutput(outputId = "distPlot")
 #         )
 #       )
+#     ),
+#
+#     tabItem(
+#       tabName = "oi",
+#       fluidRow(
+#         column(
+#           width = 4,
+#           sliderInput(inputId = "bins",
+#                       label = "Number of bins:",
+#                       min = 1,
+#                       max = 100,
+#                       value = 70)
+#         ),
+#         column(
+#           width = 8,
+#           h1("Testando")
+#         )
+#       )
 #     )
 #   )
 #
 # )
+
+
+
+ui =  operPage(
+  sidebar = sidebarDash(
+    sidebarItem(label = "Box", icon = icon("box"), tabName = "box")
+  ),
+
+  body = fluidRow(
+    column(
+      width = 4,
+      box(
+        boxTitle(
+          info = infoLink(position = "right",
+                          message = "Mensagem de info para o usuário"),
+          colorText = "white",
+          background = "#00a7d0",
+          boxTools(collapseLink(),
+                   label(label = "testando"))
+        ),
+        boxContent(
+          numericInput(inputId ='n',
+                       label = 'Number of obs',
+                       value = 100)
+        )
+      )
+    ),
+    column(
+      width = 8,
+      box(
+        boxTitle(
+          boxTools(closeLink(),
+                   collapseLink(),
+                   infoLink(position = "left",
+                            message = "Mensagem de info para o usuário"))
+        ),
+        boxContent(
+          highchartOutput('plot')
+        )
+      )
+    )
+  )
+)

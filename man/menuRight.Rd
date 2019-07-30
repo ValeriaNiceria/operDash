@@ -2,13 +2,13 @@
 % Please edit documentation in R/navbarDash.R
 \name{menuRight}
 \alias{menuRight}
-\title{Base do menu a direita}
+\title{Menu Right Base}
 \usage{
 menuRight(...)
 }
 \arguments{
-\item{...}{Itens que serao adicionados a direta do menu}
+\item{...}{Items to put in the left menu.}
 }
 \description{
-Base do menu a direita
+Menu Right Base
 }

@@ -11,21 +11,17 @@ sidebarDash <- function(...) {
   generateItensMenu <- function(itens) {
     lapply(1:length(itens), FUN = function(i) {
 
-      class <- ifelse(i == 1, "active", NULL)
-
       shiny::tags$li(
-        class = class,
-
+        class = if (i == 1) "active" else NULL,
         itens[[i]]
       )
 
     })
   }
 
-  tags$div(
+  tagList(
     generateItensMenu(itens)
   )
-
 
 }
 
@@ -37,15 +33,13 @@ sidebarDash <- function(...) {
 
 sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
 
-  icon <- if (is.null(icon)) icon("link") else icon
-
   shiny::tags$a(class="tab-link",
                 id = paste0("#shiny-tab-", tabName, "_tab_id"),
                 href = "javascript:void(0)",
                 onclick = paste0(
-                  "$('.tab-pane').hide();",
-                  "$('.tab-pane').trigger('hide');",
-                  "$('.tab-pane').trigger('hidden');",
+                  "$('.shiny-oper-tab-content').hide();",
+                  "$('.shiny-oper-tab-content').trigger('hide');",
+                  "$('.shiny-oper-tab-content').trigger('hidden');",
                   "$('.tab-link').removeClass('active');",
                   "$('#shiny-tab-", tabName, "').show();",
                   "$('#shiny-tab-", tabName, "').trigger('show');",
