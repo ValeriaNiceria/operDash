@@ -26,6 +26,21 @@ operPage <- function(title = "", sidebar = NULL, navbar = NULL, body = NULL) {
 }
 
 
+#' @title Dashboard Page
+#' @name sidebarPage
+#'
+#'
+#' @param title Um título que será utilizado no display do browser
+#' @param sidebar Um menu lateral \code{sidebarDash}.
+#' @param body O conteúdo da página \code{bodyDash}.
+#' @param ... Itens adicionais.
+#'
+#'
+#' @seealso \code{\link{sidebarDash}}, \code{\link{navbarDash}}, \code{\link{bodyDash}}.
+#'
+#'
+#' @export
+
 
 sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
 
@@ -120,10 +135,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
     ),
 
     # Footer script ---------------------------
-    shiny::includeScript(
-      system.file("jquery-3.1.1/jquery.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-3.1.1/jquery.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("oper-0.1.0/js/popper.min.js",
                   package = "operDash")
@@ -148,10 +163,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
       system.file("oper-0.1.0/js/pace/pace.min.js",
                   package = "operDash")
     ),
-    shiny::includeScript(
-      system.file("jquery-ui-1.12.1/jquery-ui.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-ui-1.12.1/jquery-ui.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("oper-0.1.0/js/end.js",
                   package = "operDash")
@@ -161,6 +176,22 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
 }
 
 
+
+
+#' @title Dashboard Page
+#' @name navbarPage
+#'
+#'
+#' @param title Um título que será utilizado no display do browser
+#' @param navbar Um menu Top \code{navbarDash}.
+#' @param body O conteúdo da página \code{bodyDash}.
+#' @param ... Itens adicionais.
+#'
+#'
+#' @seealso \code{\link{sidebarDash}}, \code{\link{navbarDash}}, \code{\link{bodyDash}}.
+#'
+#'
+#' @export
 
 
 navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
@@ -213,10 +244,10 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
     ),
 
     # Footer script ---------------------------
-    shiny::includeScript(
-      system.file("jquery-3.1.1/jquery.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-3.1.1/jquery.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("oper-0.1.0/js/popper.min.js",
                   package = "operDash")
@@ -241,10 +272,10 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
       system.file("oper-0.1.0/js/pace/pace.min.js",
                   package = "operDash")
     ),
-    shiny::includeScript(
-      system.file("jquery-ui-1.12.1/jquery-ui.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-ui-1.12.1/jquery-ui.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("oper-0.1.0/js/end.js",
                   package = "operDash")

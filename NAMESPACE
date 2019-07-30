@@ -1,3 +1,4 @@
+importFrom("utils", "capture.output")
 export(pageDash)
 export(headDash)
 export(bodyDash)
@@ -38,8 +39,10 @@ export(pageSidebarDash)
 export(sidebarDash)
 export(sidebarItem)
 
-import(shiny)
-importFrom(htmltools,withTags)
+export(operPage)
+
+# import(shiny)
+# importFrom(htmltools,withTags)
 
 # import(htmltools)
 # import(htmlwidgets)
