@@ -9,7 +9,6 @@
 #' @param ... Itens adicionais.
 #'
 #'
-#'
 #' @seealso \code{\link{sidebarDash}}, \code{\link{navbarDash}}, \code{\link{bodyDash}}.
 #'
 #'
