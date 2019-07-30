@@ -1,3 +1,4 @@
+importFrom("utils", "capture.output")
 export(pageDash)
 export(headDash)
 export(bodyDash)
@@ -37,6 +38,8 @@ export(timelineItem)
 export(pageSidebarDash)
 export(sidebarDash)
 export(sidebarItem)
+
+export(operPage)
 
 # import(shiny)
 # importFrom(htmltools,withTags)
