@@ -146,44 +146,44 @@ body <- bodyDash(
 #     sidebarItem(label = "Ola", icon = icon('link'), tabName = "oi")
 #   ),
 #
-#   body = bodyDash(
-#     tabItem(
-#       tabName = "teste",
-#       fluidRow(
-#         column(
-#           width = 4,
-#           sliderInput(inputId = "bins",
-#                       label = "Number of bins:",
-#                       min = 1,
-#                       max = 50,
-#                       value = 30)
-#         ),
-#         column(
-#           width = 8,
-#           plotOutput(outputId = "distPlot")
-#         )
-#       )
-#     ),
-#
-#     tabItem(
-#       tabName = "oi",
-#       fluidRow(
-#         column(
-#           width = 4,
-#           sliderInput(inputId = "bins",
-#                       label = "Number of bins:",
-#                       min = 1,
-#                       max = 100,
-#                       value = 70)
-#         ),
-#         column(
-#           width = 8,
-#           h1("Testando")
-#         )
-#       )
-#     )
-#   )
-#
+  # body = bodyDash(
+  #   tabItem(
+  #     tabName = "teste",
+  #     fluidRow(
+  #       column(
+  #         width = 4,
+  #         sliderInput(inputId = "bins",
+  #                     label = "Number of bins:",
+  #                     min = 1,
+  #                     max = 50,
+  #                     value = 30)
+  #       ),
+  #       column(
+  #         width = 8,
+  #         plotOutput(outputId = "distPlot")
+  #       )
+  #     )
+  #   ),
+  #
+  #   tabItem(
+  #     tabName = "oi",
+  #     fluidRow(
+  #       column(
+  #         width = 4,
+  #         sliderInput(inputId = "bins",
+  #                     label = "Number of bins:",
+  #                     min = 1,
+  #                     max = 100,
+  #                     value = 70)
+  #       ),
+  #       column(
+  #         width = 8,
+  #         h1("Testando")
+  #       )
+  #     )
+  #   )
+  # )
+
 # )
 
 
@@ -194,36 +194,60 @@ ui =  operPage(
     sidebarItem(label = "Teste", tabName = "teste")
   ),
 
-  body = fluidRow(
-    column(
-      width = 4,
-      box(
-        boxTitle(
-          info = infoLink(position = "right",
-                          message = "Mensagem de info para o usuário"),
-          colorText = "white",
-          background = "#00a7d0",
-          boxTools(collapseLink(),
-                   label(label = "testando"))
+
+  body = bodyDash(
+    tabItem(
+      tabName = "box",
+      fluidRow(
+        column(
+          width = 4,
+          box(
+            boxTitle(
+              info = infoLink(position = "right",
+                              message = "Mensagem de info para o usuário"),
+              colorText = "white",
+              background = "#00a7d0",
+              boxTools(collapseLink(),
+                       label(label = "testando"))
+            ),
+            boxContent(
+              numericInput(inputId ='n',
+                           label = 'Number of obs',
+                           value = 100)
+            )
+          )
         ),
-        boxContent(
-          numericInput(inputId ='n',
-                       label = 'Number of obs',
-                       value = 100)
+        column(
+          width = 8,
+          box(
+            boxTitle(
+              boxTools(closeLink(),
+                       collapseLink(),
+                       infoLink(position = "left",
+                                message = "Mensagem de info para o usuário"))
+            ),
+            boxContent(
+              highchartOutput('plot')
+            )
+          )
         )
       )
     ),
-    column(
-      width = 8,
-      box(
-        boxTitle(
-          boxTools(closeLink(),
-                   collapseLink(),
-                   infoLink(position = "left",
-                            message = "Mensagem de info para o usuário"))
+
+    tabItem(
+      tabName = "teste",
+      fluidRow(
+        column(
+          width = 4,
+          sliderInput(inputId = "bins",
+                      label = "Number of bins:",
+                      min = 1,
+                      max = 100,
+                      value = 70)
         ),
-        boxContent(
-          highchartOutput('plot')
+        column(
+          width = 8,
+          h1("Testando")
         )
       )
     )
