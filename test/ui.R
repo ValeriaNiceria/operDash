@@ -190,7 +190,8 @@ body <- bodyDash(
 
 ui =  operPage(
   sidebar = sidebarDash(
-    sidebarItem(label = "Box", icon = icon("box"), tabName = "box")
+    sidebarItem(label = "Box", icon = icon("box"), tabName = "box"),
+    sidebarItem(label = "Teste", tabName = "teste")
   ),
 
   body = fluidRow(
