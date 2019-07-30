@@ -189,6 +189,9 @@ body <- bodyDash(
 
 
 ui =  operPage(
+
+  title = "Dashboard Oper",
+
   sidebar = sidebarDash(
     sidebarItem(label = "Box", icon = icon("box"), tabName = "box"),
     sidebarItem(label = "Teste", tabName = "teste")
