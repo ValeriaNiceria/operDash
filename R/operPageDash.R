@@ -3,10 +3,10 @@
 #'
 #'
 #' @param title Um título que será utilizado no display do browser
-#' @param sidebar Um menu lateral \code{sidebarDash}.
-#' @param navbar Um menu Top \code{navbarDash}.
+#' @param sidebar Um menu lateral \code{sidebarDash}
+#' @param navbar Um menu Top \code{navbarDash}
 #' @param headScript Script que será adicionado no head da página
-#' @param body O conteúdo da página \code{bodyDash}.
+#' @param body O conteúdo da página \code{bodyDash}
 #' @param footerScript Script que será adicionado no footer da página
 #'
 #'
