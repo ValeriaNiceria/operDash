@@ -8776,3 +8776,17 @@ a.dropdown-toggle.count-info {
     color: white;
     display: none;
 }
+
+
+.logo-element img {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+
+
+.logo-element:hover {
+  background-color: #293846;
+}

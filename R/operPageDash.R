@@ -244,6 +244,11 @@ navbarPage <- function(title = NULL, navbar = NULL, headScript = NULL, content =
       system.file("js/shiny-oper-link.js",
                   package = "operDash")
     ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-logo-element.js",
+                  package = "operDash")
+    ),
+
 
     footerScript
 
