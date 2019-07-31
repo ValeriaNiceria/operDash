@@ -1,3 +1,17 @@
+#' @title Carousel Block
+#' @name carouselBlock
+#'
+#'
+#' @param id idetificação para o bloco
+#' @param ... itens que serão adicionados \code{carouselItem}
+#'
+#'
+#' @seealso \code{\link{carouselItem}}
+#'
+#'
+#' @export
+
+
 carouselBlock <- function(..., id = "myCarousel") {
 
   indicators <- list(...)
@@ -49,17 +63,27 @@ carouselBlock <- function(..., id = "myCarousel") {
                   shiny::tags$span(class="sr-only", "Next")
            )
         )
-
-
 }
 
 
-carouselItem <- function(imgSrc = NULL, alt = "", title = NULL, subTitle = NULL) {
+
+#' @title Carousel Item
+#' @name carouselItem
+#'
+#'
+#' @param imgSrc caminho da imagem
+#' @param title título para o item do carousel
+#' @param subTitle subtitulo para o item do carousel
+#'
+#'
+#' @export
+
+
+carouselItem <- function(imgSrc = NULL, title = NULL, subTitle = NULL) {
   shiny::tagList(
     shiny::tags$img(
       class="d-block w-100",
-      src=imgSrc,
-      alt=alt
+      src=imgSrc
     ),
     shiny::tags$div(
       class="carousel-caption d-none d-md-block",

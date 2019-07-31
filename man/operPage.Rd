@@ -10,13 +10,13 @@ operPage(title = "", sidebar = NULL, navbar = NULL,
 \arguments{
 \item{title}{Um título que será utilizado no display do browser}
 
-\item{sidebar}{Um menu lateral \code{sidebarDash}.}
+\item{sidebar}{Um menu lateral \code{sidebarDash}}
 
-\item{navbar}{Um menu Top \code{navbarDash}.}
+\item{navbar}{Um menu Top \code{navbarDash}}
 
 \item{headScript}{Script que será adicionado no head da página}
 
-\item{body}{O conteúdo da página \code{bodyDash}.}
+\item{body}{O conteúdo da página \code{bodyDash}}
 
 \item{footerScript}{Script que será adicionado no footer da página}
 }
