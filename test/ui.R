@@ -119,91 +119,83 @@ body <- bodyDash(
 )
 
 
-# ui <- pageDash(
+
+# ui <- operPage(
 #   title = "operDash",
-#   head = headDash(),
 #   navbar = navbar,
-#   body = body,
-#   footer = footerDash(),
-#   footerScripts = footerScriptsDash()
+#   body = body
 # )
 
 
-ui <- operPage(
-  title = "operDash",
-  navbar = navbar,
-  body = body
+
+
+
+ui =  operPage(
+
+  title = "Dashboard Oper",
+
+  sidebar = sidebarDash(
+    brand = h1('testando'),
+    sidebarItem(label = "Box", icon = icon("box"), tabName = "box"),
+    sidebarItem(label = "Teste", tabName = "teste")
+  ),
+
+
+  body = bodyDash(
+    tabItem(
+      tabName = "box",
+      fluidRow(
+        column(
+          width = 4,
+          box(
+            boxTitle(
+              info = infoLink(position = "right",
+                              message = "Mensagem de info para o usuário"),
+              colorText = "white",
+              background = "#00a7d0",
+              boxTools(collapseLink(),
+                       label(label = "testando"))
+            ),
+            boxContent(
+              numericInput(inputId ='n',
+                           label = 'Number of obs',
+                           value = 100)
+            )
+          )
+        ),
+        column(
+          width = 8,
+          box(
+            boxTitle(
+              boxTools(closeLink(),
+                       collapseLink(),
+                       infoLink(position = "left",
+                                message = "Mensagem de info para o usuário"))
+            ),
+            boxContent(
+              highchartOutput('plot')
+            )
+          )
+        )
+      )
+    ),
+
+    tabItem(
+      tabName = "teste",
+      fluidRow(
+        column(
+          width = 4,
+          sliderInput(inputId = "bins",
+                      label = "Number of bins:",
+                      min = 1,
+                      max = 100,
+                      value = 70)
+        ),
+        column(
+          width = 8,
+          h1("Testando")
+        )
+      )
+    )
+  )
 )
-
-
-
-
-
-# ui =  operPage(
-#
-#   title = "Dashboard Oper",
-#
-#   sidebar = sidebarDash(
-#     sidebarItem(label = "Box", icon = icon("box"), tabName = "box"),
-#     sidebarItem(label = "Teste", tabName = "teste")
-#   ),
-#
-#
-#   body = bodyDash(
-#     tabItem(
-#       tabName = "box",
-#       fluidRow(
-#         column(
-#           width = 4,
-#           box(
-#             boxTitle(
-#               info = infoLink(position = "right",
-#                               message = "Mensagem de info para o usuário"),
-#               colorText = "white",
-#               background = "#00a7d0",
-#               boxTools(collapseLink(),
-#                        label(label = "testando"))
-#             ),
-#             boxContent(
-#               numericInput(inputId ='n',
-#                            label = 'Number of obs',
-#                            value = 100)
-#             )
-#           )
-#         ),
-#         column(
-#           width = 8,
-#           box(
-#             boxTitle(
-#               boxTools(closeLink(),
-#                        collapseLink(),
-#                        infoLink(position = "left",
-#                                 message = "Mensagem de info para o usuário"))
-#             ),
-#             boxContent(
-#               highchartOutput('plot')
-#             )
-#           )
-#         )
-#       )
-#     ),
-#
-#     tabItem(
-#       tabName = "teste",
-#       fluidRow(
-#         column(
-#           width = 4,
-#           sliderInput(inputId = "bins",
-#                       label = "Number of bins:",
-#                       min = 1,
-#                       max = 100,
-#                       value = 70)
-#         ),
-#         column(
-#           width = 8,
-#           h1("Testando")
-#         )
-#       )
-#     )
-#   )
-# )

@@ -4,7 +4,7 @@
 #'
 #' @export
 
-sidebarDash <- function(...) {
+sidebarDash <- function(..., imgSrc = NULL, brand = NULL) {
 
   itens <- list(...)
 
@@ -19,8 +19,46 @@ sidebarDash <- function(...) {
     })
   }
 
-  tagList(
-    generateItensMenu(itens)
+  link_img = "https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg"
+  imgSrc <- if (is.null(imgSrc)) link_img else imgSrc
+
+  shiny::tags$nav(
+    class="navbar-default navbar-static-side",
+    role="navigation",
+    shiny::tags$div(
+      class="sidebar-collapse",
+
+      shiny::tags$div(
+        class="oper-brand",
+
+        brand
+
+      ),
+
+      shiny::tags$ul(
+        class="nav metismenu",
+        id="side-menu",
+        shiny::tags$li(
+          class="nav-header",
+          shiny::tags$div(
+            class="dropdown profile-element avatar-menu",
+            shiny::tags$img(
+              alt="image",
+              class="rounded-circle",
+              src=imgSrc,
+              width = "60px"
+            )
+          ),
+          shiny::tags$div(
+            class="logo-element",
+            "oper"
+          )
+        ),
+
+        generateItensMenu(itens)
+
+      )
+    )
   )
 
 }
