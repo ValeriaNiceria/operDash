@@ -95,11 +95,6 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
                 shiny::tags$span(
                   class="nav-label",
                   label
-                ),
-
-                shiny::span(
-                  class="label-nav-oper",
-                  icon, label
                 )
               )
 
