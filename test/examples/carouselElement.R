@@ -1,4 +1,4 @@
-carouselElement <- 
+carouselElement <-
 tabItem(tabName = "carouselElement",
         fluidRow(
           column(
@@ -6,14 +6,14 @@ tabItem(tabName = "carouselElement",
             box(
               boxContent(
                 carouselBlock(
-                  carouselItem(src = "https://www.w3schools.com/bootstrap/chicago.jpg", 
+                  carouselItem(imgSrc = "https://www.w3schools.com/bootstrap/chicago.jpg",
                                title = "Título",
                                subTitle = "Testando"),
-                  carouselItem(src = "https://www.w3schools.com/bootstrap/la.jpg")
+                  carouselItem(imgSrc = "https://www.w3schools.com/bootstrap/la.jpg")
                 )
               )
             )
-            
+
           ),
           column(
           width = 6,
@@ -26,12 +26,12 @@ fluidRow(
       boxContent(
         carouselBlock(
           carouselItem(
-            src = "https://www.w3schools.com/bootstrap/chicago.jpg", 
+            imgSrc = "https://www.w3schools.com/bootstrap/chicago.jpg",
             title = "Título",
             subTitle = "Testando"
           ),
           carouselItem(
-            src = "https://www.w3schools.com/bootstrap/la.jpg"
+            imgSrc = "https://www.w3schools.com/bootstrap/la.jpg"
           )
         )
       )

@@ -62,36 +62,9 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
       class="pace-done mini-navbar",
       shiny::tags$div(
         id="wrapper",
-        shiny::tags$nav(
-          class="navbar-default navbar-static-side",
-          role="navigation",
-          shiny::tags$div(
-            class="sidebar-collapse",
-            shiny::tags$ul(
-              class="nav metismenu",
-              id="side-menu",
-              shiny::tags$li(
-                class="nav-header",
-                shiny::tags$div(
-                  class="dropdown profile-element avatar-menu",
-                  shiny::tags$img(
-                    alt="image",
-                    class="rounded-circle",
-                    src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg",
-                    width = "60px"
-                  )
-                ),
-                shiny::tags$div(
-                  class="logo-element",
-                  "oper"
-                )
-              ),
 
-              sidebar
 
-            )
-          )
-        ),
+        sidebar,
 
 
         shiny::tags$div(
@@ -162,6 +135,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
     ),
     shiny::includeScript(
       system.file("js/shiny-oper-link.js",
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-brand.js",
                   package = "operDash")
     ),
 
@@ -267,6 +244,11 @@ navbarPage <- function(title = NULL, navbar = NULL, headScript = NULL, content =
       system.file("js/shiny-oper-link.js",
                   package = "operDash")
     ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-logo-element.js",
+                  package = "operDash")
+    ),
+
 
     footerScript
 

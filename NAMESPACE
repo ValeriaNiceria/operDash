@@ -1,4 +1,4 @@
-importFrom("utils", "capture.output")
+# importFrom("utils", "capture.output")
 export(operPage)
 export(bodyDash)
 export(footerDash)
@@ -35,9 +35,3 @@ export(timelineBlock)
 export(timelineItem)
 export(sidebarDash)
 export(sidebarItem)
-
-# import(shiny)
-# importFrom(htmltools,withTags)
-
-# import(htmltools)
-# import(htmlwidgets)

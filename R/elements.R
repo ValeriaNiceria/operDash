@@ -36,8 +36,8 @@ alert <- function(..., message = NULL, status = "success") {
   shiny::tags$div(class=classAlert,
                   shiny::tags$button(`aria-hidden`="true",
                        `data-dismiss`="alert",
-                       class="close m-r",
-                       type="button", icon("times")),
+                       class="close",
+                       type="button", "×"),
            message,
 
            ...

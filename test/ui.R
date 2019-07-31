@@ -119,15 +119,6 @@ body <- bodyDash(
 )
 
 
-# ui <- pageDash(
-#   title = "operDash",
-#   head = headDash(),
-#   navbar = navbar,
-#   body = body,
-#   footer = footerDash(),
-#   footerScripts = footerScriptsDash()
-# )
-
 
 ui <- operPage(
   title = "operDash",
@@ -144,6 +135,7 @@ ui <- operPage(
 #   title = "Dashboard Oper",
 #
 #   sidebar = sidebarDash(
+#     brand = h1('testando'),
 #     sidebarItem(label = "Box", icon = icon("box"), tabName = "box"),
 #     sidebarItem(label = "Teste", tabName = "teste")
 #   ),
