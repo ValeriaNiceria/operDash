@@ -5,8 +5,9 @@
 #' @param title Um título que será utilizado no display do browser
 #' @param sidebar Um menu lateral \code{sidebarDash}.
 #' @param navbar Um menu Top \code{navbarDash}.
+#' @param headScript Script que será adicionado no head da página
 #' @param body O conteúdo da página \code{bodyDash}.
-#' @param ... Itens adicionais.
+#' @param footerScript Script que será adicionado no footer da página
 #'
 #'
 #' @seealso \code{\link{sidebarDash}}, \code{\link{navbarDash}}, \code{\link{bodyDash}}.
@@ -15,19 +16,19 @@
 #' @export
 
 
-operPage <- function(title = "", sidebar = NULL, navbar = NULL, body = NULL) {
+operPage <- function(title = "", sidebar = NULL, navbar = NULL, headScript = NULL, body = NULL, footerScript = NULL) {
 
   if (!is.null(sidebar)) {
-    sidebarPage(title, sidebar, body)
+    sidebarPage(title, sidebar, headScript, body, footerScript)
   } else {
-    navbarPage(title, navbar, body)
+    navbarPage(title, navbar, headScript, body, footerScript)
   }
 
 }
 
 
 
-sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
+sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content = NULL, footerScript = NULL) {
 
   shiny::tags$html(
 
@@ -49,7 +50,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
         name="viewport",
         content="width=device-width, initial-scale=1.0"
       ),
-      shiny::tags$title(title)
+      shiny::tags$title(title),
+
+      headScript
+
     ),
 
     # Body --------------------------------
@@ -159,7 +163,9 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
     shiny::includeScript(
       system.file("js/shiny-oper-link.js",
                   package = "operDash")
-    )
+    ),
+
+    footerScript
   )
 
 }
@@ -167,7 +173,7 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
 
 
 
-navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
+navbarPage <- function(title = NULL, navbar = NULL, headScript = NULL, content = NULL, footerScript = NULL) {
 
   shiny::tags$html(
 
@@ -193,7 +199,10 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
         name="viewport",
         content="width=device-width, initial-scale=1.0"
       ),
-      shiny::tags$title(title)
+      shiny::tags$title(title),
+
+      headScript
+
     ),
 
     # Body ---------------------------
@@ -257,7 +266,9 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
     shiny::includeScript(
       system.file("js/shiny-oper-link.js",
                   package = "operDash")
-    )
+    ),
+
+    footerScript
 
   )
 
