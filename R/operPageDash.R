@@ -199,6 +199,7 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
     # Body ---------------------------
     shiny::tags$div(
       id="wrapper",
+      class="gray-bg",
       shiny::tags$div(
         id="page-wrapper",
         class="gray-bg",
@@ -207,7 +208,7 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
 
         shiny::tags$div(
           class="wrapper wrapper-content",
-          shiny::tags$body(
+          shiny::tags$body(style = "margin-top: 1%; ",
 
             content
 
