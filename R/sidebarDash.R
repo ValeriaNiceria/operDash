@@ -74,7 +74,14 @@ sidebarDash <- function(..., imgSrc = NULL, brand = NULL) {
 #'
 #' @export
 
-sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
+sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, ...) {
+
+  subItem <- list(...)
+  tamanhoSubItem <- length(subItem)
+
+  if (tamanhoSubItem > 0) {
+
+  }
 
   icon <- if (is.null(icon)) icon("link") else icon
 
@@ -100,7 +107,7 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
 
 }
 
-
-sidebarDropdown <- function() {
+sibebarSubItem <- function() {
 
 }
+
