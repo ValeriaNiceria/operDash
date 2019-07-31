@@ -81,9 +81,6 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
   shiny::tags$a(class="tab-link",
                 id = paste0("#shiny-tab-", tabName, "_tab_id"),
                 href = "javascript:void(0)",
-                `data-toggle`="tooltip",
-                `data-placement`="right",
-                `data-original-title`="Tooltip on right",
                 onclick = paste0(
                   "$('.shiny-oper-tab-content').hide();",
                   "$('.shiny-oper-tab-content').trigger('hide');",
@@ -98,8 +95,14 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL) {
                 shiny::tags$span(
                   class="nav-label",
                   label
+                ),
+
+                shiny::span(
+                  class="label-nav-oper",
+                  icon, label
                 )
               )
+
 }
 
 
