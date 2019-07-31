@@ -44,7 +44,8 @@ menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
       shiny::tags$li(
         shiny::tags$a(
           href=href,
-          id = if(isTabItem) id,
+          id = if(isTabItem) id else NULL,
+          onclick = if(isTabItem) onclick else NULL,
           icon,
           text)
       )

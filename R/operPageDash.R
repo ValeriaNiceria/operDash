@@ -26,21 +26,6 @@ operPage <- function(title = "", sidebar = NULL, navbar = NULL, body = NULL) {
 }
 
 
-#' @title Dashboard Page
-#' @name sidebarPage
-#'
-#'
-#' @param title Um título que será utilizado no display do browser
-#' @param sidebar Um menu lateral \code{sidebarDash}.
-#' @param body O conteúdo da página \code{bodyDash}.
-#' @param ... Itens adicionais.
-#'
-#'
-#' @seealso \code{\link{sidebarDash}}, \code{\link{navbarDash}}, \code{\link{bodyDash}}.
-#'
-#'
-#' @export
-
 
 sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
 
@@ -182,22 +167,6 @@ sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL) {
 
 
 
-#' @title Dashboard Page
-#' @name navbarPage
-#'
-#'
-#' @param title Um título que será utilizado no display do browser
-#' @param navbar Um menu Top \code{navbarDash}.
-#' @param body O conteúdo da página \code{bodyDash}.
-#' @param ... Itens adicionais.
-#'
-#'
-#' @seealso \code{\link{sidebarDash}}, \code{\link{navbarDash}}, \code{\link{bodyDash}}.
-#'
-#'
-#' @export
-
-
 navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
 
   shiny::tags$html(
@@ -230,6 +199,7 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
     # Body ---------------------------
     shiny::tags$div(
       id="wrapper",
+      class="gray-bg",
       shiny::tags$div(
         id="page-wrapper",
         class="gray-bg",
@@ -238,7 +208,7 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL) {
 
         shiny::tags$div(
           class="wrapper wrapper-content",
-          shiny::tags$body(
+          shiny::tags$body(style = "margin-top: 1%; ",
 
             content
 

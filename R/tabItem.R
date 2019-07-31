@@ -27,7 +27,7 @@ tabItem <- function(tabName = NULL, ...) {
     tags$div(
       class="col-lg-12 shiny-oper-tab-content",
       id = paste0("shiny-tab-", tabName),
-      style = "visibility:hidden",
+      style = "visibility:hidden; display: none;",
 
       ...
 
