@@ -8765,11 +8765,9 @@ a.dropdown-toggle.count-info {
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
-
 .shiny-oper-tab-content > .active {
     display: block;
 }
-
 
 .oper-brand {
     text-align: center;
