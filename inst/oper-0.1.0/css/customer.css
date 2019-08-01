@@ -8807,6 +8807,10 @@ li a.dropdown-user-option {
     color: white;
 }
 
+li a.dropdown-user-option:hover {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
 
 h4.name-user {
   margin-top: 12px;
