@@ -8765,6 +8765,14 @@ a.dropdown-toggle.count-info {
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
+.img-user-options {
+  width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
 .shiny-oper-tab-content > .active {
     display: block;
 }
@@ -8789,3 +8797,19 @@ a.dropdown-toggle.count-info {
   background-color: #09142D;
 }
 
+
+ul.dropdown-menu.animated.fadeInRight.m-t-xs.user-option.show {
+    background-color: #09142d;
+}
+
+li a.dropdown-user-option {
+    text-align: center;
+    color: white;
+}
+
+
+h4.name-user {
+  margin-top: 12px;
+  text-align: center;
+  color: white;
+}

@@ -22,6 +22,28 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
   link_img = "https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg"
   imgUser <- if (is.null(imgUser)) link_img else imgUser
 
+  if (!is.null(userOptions)) {
+    userOptions <- shiny::tags$ul(
+      class="dropdown-menu animated fadeInRight m-t-xs user-option show",
+      `x-placement`="bottom-start",
+      style="position: absolute; top: 51px; left: 20px; will-change: top, left;",
+
+      shiny::tags$div(
+        class="text-center m-t-xs",
+        shiny::tags$img(
+          alt="image",
+          class="rounded-circle img-user-options",
+          src=imgUser,
+          width = "30px"
+        )
+      ),
+
+      shiny::tags$h4(class="name-user", "Welcome"),
+
+      userOptions
+    )
+  }
+
   shiny::tags$nav(
     class="navbar-default navbar-static-side",
     role="navigation",
@@ -78,12 +100,17 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
 #' @export
 
 userOptions <- function(...) {
-  shiny::tags$ul(
-    class="dropdown-menu animated fadeInRight m-t-xs user-option show",
-    `x-placement`="bottom-start",
-    style="position: absolute; top: 51px; left: 20px; will-change: top, left;",
+
+  tagList(
     ...
   )
+
+  # shiny::tags$ul(
+  #   class="dropdown-menu animated fadeInRight m-t-xs user-option show",
+  #   `x-placement`="bottom-start",
+  #   style="position: absolute; top: 51px; left: 20px; will-change: top, left;",
+  #   ...
+  # )
 }
 
 
@@ -96,7 +123,7 @@ userOptions <- function(...) {
 itemUser <- function(label = NULL, icon = NULL, tabName = NULL) {
   shiny::tags$li(
     shiny::tags$a(
-      class="dropdown-item",
+      class="dropdown-item dropdown-user-option",
       id = paste0("#shiny-tab-", tabName, "_tab_id"),
       href = "javascript:void(0)",
       onclick = paste0(
