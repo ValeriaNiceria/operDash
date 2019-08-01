@@ -2,10 +2,10 @@
 % Please edit documentation in R/sidebarDash.R
 \name{sidebarItem}
 \alias{sidebarItem}
-\title{SidebarItem}
+\title{Sidebar Item}
 \usage{
-sidebarItem(label = NULL, icon = NULL, tabName = NULL)
+sidebarItem(label = NULL, icon = NULL, tabName = NULL, ...)
 }
 \description{
-SidebarItem
+Sidebar Item
 }

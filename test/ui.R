@@ -119,14 +119,14 @@ body <- bodyDash(
 )
 
 
-
+#
 # ui <- operPage(
 #   title = "operDash",
 #   navbar = navbar,
 #   body = body
 # )
-
-
+#
+#
 
 
 
@@ -135,8 +135,10 @@ ui =  operPage(
   title = "Dashboard Oper",
 
   sidebar = sidebarDash(
+    userOptions = userOptions(itemUser('Logout', tabName = 'logout')),
     brand = h1('testando'),
-    sidebarItem(label = "Box", icon = icon("box"), tabName = "box"),
+    sidebarDropdown(label = "Box", icon = icon("box"),
+                sidebarDropdownItem(label = "Box", tabName = "box")),
     sidebarItem(label = "Teste", tabName = "teste")
   ),
 

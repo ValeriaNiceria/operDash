@@ -4,7 +4,7 @@
 \alias{sidebarDash}
 \title{Sidebar}
 \usage{
-sidebarDash(..., imgSrc = NULL, brand = NULL)
+sidebarDash(..., imgUser = NULL, userOptions = NULL, brand = NULL)
 }
 \description{
 Sidebar
