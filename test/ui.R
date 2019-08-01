@@ -138,7 +138,11 @@ ui =  operPage(
     userOptions = userOptions(itemUser('Logout', tabName = 'logout')),
     brand = h1('testando'),
     sidebarDropdown(label = "Box", icon = icon("box"),
-                sidebarDropdownItem(label = "Box", tabName = "box")),
+                sidebarDropdownItem(label = "Box", tabName = "box"),
+                sidebarDropdownItem(label = "Teste", tabName = "testando")),
+    sidebarDropdown(label = "Box", icon = icon("box"),
+                    sidebarDropdownItem(label = "Box", tabName = "box"),
+                    sidebarDropdownItem(label = "Teste", tabName = "testando")),
     sidebarItem(label = "Teste", tabName = "teste")
   ),
 

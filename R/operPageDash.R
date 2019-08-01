@@ -145,6 +145,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
       system.file("js/shiny-oper-user-options.js",
                   package = "operDash")
     ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-dropdown.js",
+                  package = "operDash")
+    ),
 
     footerScript
   )
