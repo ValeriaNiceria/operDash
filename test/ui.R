@@ -136,7 +136,8 @@ ui =  operPage(
 
   sidebar = sidebarDash(
     brand = h1('testando'),
-    sidebarItem(label = "Box", icon = icon("box"), tabName = "box", h1('teste'), h1('teste')),
+    sidebarItem(label = "Box", icon = icon("box"), tabName = "box",
+                sidebarSubItem(label = "Ola", tabName = "ola")),
     sidebarItem(label = "Teste", tabName = "teste")
   ),
 
