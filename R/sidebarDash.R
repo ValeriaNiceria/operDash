@@ -1,6 +1,10 @@
 #' @title Sidebar
 #' @name sidebarDash
 #'
+#' @param ... Itens adicionais
+#' @param imgUser Caminho da imagem
+#' @param userOptions Box de opções do usuário \code{userOptions}
+#' @param brand utilizar texto ou imagem
 #'
 #' @export
 
@@ -12,7 +16,7 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
     lapply(1:length(itens), FUN = function(i) {
 
       shiny::tags$li(
-        class = if (i == 1) "oper-link active" else "oper-link",
+        class = if (i == 1) "active" else NULL,
         itens[[i]]
       )
 
@@ -21,6 +25,28 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
 
   link_img = "https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg"
   imgUser <- if (is.null(imgUser)) link_img else imgUser
+
+  if (!is.null(userOptions)) {
+    userOptions <- shiny::tags$ul(
+      class="dropdown-menu animated fadeInRight m-t-xs user-option show",
+      `x-placement`="bottom-start",
+      style="position: absolute; top: 51px; left: 20px; will-change: top, left;",
+
+      shiny::tags$div(
+        class="text-center m-t-xs",
+        shiny::tags$img(
+          alt="image",
+          class="rounded-circle img-user-options",
+          src=imgUser,
+          width = "30px"
+        )
+      ),
+
+      shiny::tags$h4(class="name-user", "Welcome"),
+
+      userOptions
+    )
+  }
 
   shiny::tags$nav(
     class="navbar-default navbar-static-side",
@@ -74,21 +100,31 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
 #' @title User Options group
 #' @name userOptions
 #'
+#' @param ... Itens adicionais
 #'
 #' @export
 
 userOptions <- function(...) {
-  shiny::tags$ul(
-    class="dropdown-menu animated fadeInRight m-t-xs user-option show",
-    `x-placement`="bottom-start",
-    style="position: absolute; top: 51px; left: 20px; will-change: top, left;",
+
+  tagList(
     ...
   )
+
+  # shiny::tags$ul(
+  #   class="dropdown-menu animated fadeInRight m-t-xs user-option show",
+  #   `x-placement`="bottom-start",
+  #   style="position: absolute; top: 51px; left: 20px; will-change: top, left;",
+  #   ...
+  # )
 }
 
 
 #' @title User item
 #' @name itemUser
+#'
+#' @param label Texto que será exibido
+#' @param icon icone
+#' @param tabName
 #'
 #'
 #' @export
@@ -96,7 +132,7 @@ userOptions <- function(...) {
 itemUser <- function(label = NULL, icon = NULL, tabName = NULL) {
   shiny::tags$li(
     shiny::tags$a(
-      class="dropdown-item",
+      class="dropdown-item dropdown-user-option",
       id = paste0("#shiny-tab-", tabName, "_tab_id"),
       href = "javascript:void(0)",
       onclick = paste0(
@@ -115,10 +151,23 @@ itemUser <- function(label = NULL, icon = NULL, tabName = NULL) {
   )
 }
 
+#' @title itemUserDivider
+#' @name itemUserDivider
+#'
+#'
+#' @export
+itemUserDivider <- function() {
+  shiny::tags$li(class="dropdown-divider")
+}
+
 
 
 #' @title Sidebar Item
 #' @name sidebarItem
+#'
+#' @param label
+#' @param icon
+#' @param tabName
 #'
 #'
 #' @export
@@ -151,6 +200,8 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, ...) {
 #' @title sidebar dropdown group
 #' @name sidebarDropdown
 #'
+#' @param label
+#' @param icon
 #'
 #' @export
 #'
@@ -176,6 +227,9 @@ sidebarDropdown <- function(label = NULL, icon = NULL, ...) {
 #' @title Sidebar item dropdown
 #' @name sidebarDropdownItem
 #'
+#' @param label
+#' @param icon
+#' @param tabName
 #'
 #' @export
 
