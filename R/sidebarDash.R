@@ -57,7 +57,15 @@ sidebarDash <- function(..., imgSrc = NULL, brand = NULL) {
               src=imgSrc,
               width = "35px"
             )
-          )
+          ),
+
+          HTML('<ul class="dropdown-menu animated fadeInRight m-t-xs user-option show" x-placement="bottom-start" style="position: absolute; top: 91px; left: 0px; will-change: top, left;">
+               <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+               <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+               <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+               <li class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="login.html">Logout</a></li>
+               </ul>')
         ),
 
         generateItensMenu(itens)
@@ -76,57 +84,61 @@ sidebarDash <- function(..., imgSrc = NULL, brand = NULL) {
 
 sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, ...) {
 
-  subItem <- list(...)
-  tamanhoSubItem <- length(subItem)
-
-  if (tamanhoSubItem > 0) {
-    tagList(
-      shiny::tags$a(class="tab-link",
-                    icon,
-                    shiny::tags$span(
-                      class="nav-label",
-                      label
-                    ),
-                    shiny::tags$span(class="fa arrow")
-      ),
-
-      shiny::tags$ul(class="nav nav-second-level", subItem)
-    )
-
-  } else {
-
-    shiny::tags$a(class="tab-link",
-                  id = paste0("#shiny-tab-", tabName, "_tab_id"),
-                  href = "javascript:void(0)",
-                  onclick = paste0(
-                    "$('.shiny-oper-tab-content').hide();",
-                    "$('.shiny-oper-tab-content').trigger('hide');",
-                    "$('.shiny-oper-tab-content').trigger('hidden');",
-                    "$('.tab-link').removeClass('active');",
-                    "$('#shiny-tab-", tabName, "').show();",
-                    "$('#shiny-tab-", tabName, "').trigger('show');",
-                    "$('#shiny-tab-", tabName, "').trigger('shown');",
-                    "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
-                  ),
-                  if (is.null(icon)) icon("link") else icon,
-                  shiny::tags$span(
-                    class="nav-label",
-                    label
-                  )
-    )
-
-  }
+  shiny::tags$a(class="tab-link",
+                id = paste0("#shiny-tab-", tabName, "_tab_id"),
+                href = "javascript:void(0)",
+                onclick = paste0(
+                  "$('.shiny-oper-tab-content').hide();",
+                  "$('.shiny-oper-tab-content').trigger('hide');",
+                  "$('.shiny-oper-tab-content').trigger('hidden');",
+                  "$('.tab-link').removeClass('active');",
+                  "$('#shiny-tab-", tabName, "').show();",
+                  "$('#shiny-tab-", tabName, "').trigger('show');",
+                  "$('#shiny-tab-", tabName, "').trigger('shown');",
+                  "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
+                ),
+                if (is.null(icon)) icon("link") else icon,
+                shiny::tags$span(
+                  class="nav-label",
+                  label
+                )
+  )
 
 }
 
 
-#' @title Sidebar SubItem
-#' @name sibebarSubItem
+#' @title sidebar dropdown group
+#' @name sidebarDropdown
 #'
 #'
 #' @export
 #'
-sidebarSubItem <- function(label = NULL, icon = NULL, tabName = NULL) {
+sidebarDropdown <- function(label = NULL, icon = NULL, ...) {
+
+  subItem <- list(...)
+
+  tagList(
+    shiny::tags$a(class="tab-link",
+                  icon,
+                  shiny::tags$span(
+                    class="nav-label",
+                    label
+                  ),
+                  shiny::tags$span(class="fa arrow")
+    ),
+
+    shiny::tags$ul(class="nav nav-second-level", subItem)
+  )
+}
+
+
+#' @title Sidebar item dropdown
+#' @name sidebarDropdownItem
+#'
+#'
+#' @export
+
+sidebarDropdownItem <- function(label = NULL, icon = NULL, tabName = NULL) {
   shiny::tags$li(
     shiny::tags$a(
       id = paste0("#shiny-tab-", tabName, "_tab_id"),
