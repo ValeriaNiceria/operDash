@@ -142,6 +142,15 @@ itemUser <- function(label = NULL, icon = NULL, tabName = NULL) {
   )
 }
 
+#' @title itemUserDivider
+#' @name itemUserDivider
+#'
+#'
+#' @export
+itemUserDivider <- function() {
+  shiny::tags$li(class="dropdown-divider")
+}
+
 
 
 #' @title Sidebar Item
