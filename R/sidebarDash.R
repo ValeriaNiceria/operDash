@@ -1,6 +1,10 @@
 #' @title Sidebar
 #' @name sidebarDash
 #'
+#' @param ... Itens adicionais
+#' @param imgUser Caminho da imagem
+#' @param userOptions Box de opções do usuário \code{userOptions}
+#' @param brand utilizar texto ou imagem
 #'
 #' @export
 
@@ -96,6 +100,7 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
 #' @title User Options group
 #' @name userOptions
 #'
+#' @param ... Itens adicionais
 #'
 #' @export
 
@@ -116,6 +121,10 @@ userOptions <- function(...) {
 
 #' @title User item
 #' @name itemUser
+#'
+#' @param label Texto que será exibido
+#' @param icon icone
+#' @param tabName
 #'
 #'
 #' @export
@@ -156,6 +165,10 @@ itemUserDivider <- function() {
 #' @title Sidebar Item
 #' @name sidebarItem
 #'
+#' @param label
+#' @param icon
+#' @param tabName
+#'
 #'
 #' @export
 
@@ -187,6 +200,8 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, ...) {
 #' @title sidebar dropdown group
 #' @name sidebarDropdown
 #'
+#' @param label
+#' @param icon
 #'
 #' @export
 #'
@@ -212,6 +227,9 @@ sidebarDropdown <- function(label = NULL, icon = NULL, ...) {
 #' @title Sidebar item dropdown
 #' @name sidebarDropdownItem
 #'
+#' @param label
+#' @param icon
+#' @param tabName
 #'
 #' @export
 

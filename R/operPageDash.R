@@ -63,9 +63,7 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
       shiny::tags$div(
         id="wrapper",
 
-
         sidebar,
-
 
         shiny::tags$div(
           id="page-wrapper",
@@ -154,7 +152,6 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
   )
 
 }
-
 
 
 
@@ -256,7 +253,6 @@ navbarPage <- function(title = NULL, navbar = NULL, headScript = NULL, content =
       system.file("js/shiny-oper-logo-element.js",
                   package = "operDash")
     ),
-
 
     footerScript
 
