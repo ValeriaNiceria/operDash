@@ -78,17 +78,23 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, ...) {
 
   subItem <- list(...)
   tamanhoSubItem <- length(subItem)
-  dropdown_icon <- NULL
-  dropdown_list <- NULL
 
   if (tamanhoSubItem > 0) {
-    dropdown_icon <- shiny::tags$span(class="fa arrow")
-    dropdown_list <- shiny::tags$ul(class="nav nav-second-level", subItem)
-  }
+    tagList(
+      shiny::tags$a(class="tab-link",
+                    icon,
+                    shiny::tags$span(
+                      class="nav-label",
+                      label
+                    ),
+                    shiny::tags$span(class="fa arrow")
+      ),
 
-  icon <- if (is.null(icon)) icon("link") else icon
+      shiny::tags$ul(class="nav nav-second-level", subItem)
+    )
 
-  tagList(
+  } else {
+
     shiny::tags$a(class="tab-link",
                   id = paste0("#shiny-tab-", tabName, "_tab_id"),
                   href = "javascript:void(0)",
@@ -102,16 +108,14 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, ...) {
                     "$('#shiny-tab-", tabName, "').trigger('shown');",
                     "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
                   ),
-                  icon,
+                  if (is.null(icon)) icon("link") else icon,
                   shiny::tags$span(
                     class="nav-label",
                     label
-                  ),
-                  dropdown_icon
-                ),
+                  )
+    )
 
-    dropdown_list
-  )
+  }
 
 }
 
