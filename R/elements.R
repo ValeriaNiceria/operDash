@@ -1,3 +1,16 @@
+#' @title Button
+#' @name appButton
+#'
+#'
+#' @param id Identificador do botão
+#' @param label Texto que será exibido no botão
+#' @param icon icone
+#' @param status status do botão
+#'
+#'
+#'
+#' @export
+
 appButton <- function(id = NULL, label = "label", icon = NULL, status = "default", ...) {
   statusButton <- paste0("btn btn-w-m btn-lg btn-", status)
 
@@ -12,6 +25,18 @@ appButton <- function(id = NULL, label = "label", icon = NULL, status = "default
               )
 }
 
+#' @title appCircleButton
+#' @name appCircleButton
+#'
+#'
+#' @param id
+#' @param icon
+#' @param status
+#' @param lg
+#' @param ...
+#'
+#'
+#' @export
 
 appCircleButton <- function(id = NULL, icon = NULL, status = "default", lg = FALSE, ...) {
   size <- ifelse(lg, "btn-lg", "")
@@ -21,6 +46,13 @@ appCircleButton <- function(id = NULL, icon = NULL, status = "default", lg = FAL
 }
 
 
+#' @title jumbotron
+#' @name jumbotron
+#'
+#' @param ...
+#'
+#' @export
+
 jumbotron <- function(...) {
   shiny::tags$div(class="jumbotron",
 
@@ -29,6 +61,16 @@ jumbotron <- function(...) {
            )
 }
 
+#' @title alert
+#' @name alert
+#'
+#'
+#' @param message
+#' @param status
+#' @param ...
+#'
+#'
+#' @export
 
 alert <- function(..., message = NULL, status = "success") {
   # type = success - info - warning - danger
@@ -45,6 +87,20 @@ alert <- function(..., message = NULL, status = "success") {
 }
 
 
+#' @title progressBar
+#' @name progressBar
+#'
+#'
+#' @param status
+#' @param animated
+#' @param min
+#' @param value
+#' @param max
+#' @param max
+#' @param ...
+#'
+#'
+#' @export
 
 progressBar <- function(status = "success", animated = FALSE, min = "0", value = "45", max = "100", ...) {
   classProgress = paste0("progress-bar ", if (animated) "progress-bar-striped progress-bar-animate", " progress-bar-", status)
