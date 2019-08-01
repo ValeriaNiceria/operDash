@@ -135,6 +135,7 @@ ui =  operPage(
   title = "Dashboard Oper",
 
   sidebar = sidebarDash(
+    userOptions = userOptions(itemUser('Logout', tabName = 'logout')),
     brand = h1('testando'),
     sidebarDropdown(label = "Box", icon = icon("box"),
                 sidebarDropdownItem(label = "Box", tabName = "box")),
