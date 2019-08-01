@@ -12,7 +12,7 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
     lapply(1:length(itens), FUN = function(i) {
 
       shiny::tags$li(
-        class = if (i == 1) "oper-link active" else "oper-link",
+        class = if (i == 1) "active" else NULL,
         itens[[i]]
       )
 
