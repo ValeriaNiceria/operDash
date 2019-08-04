@@ -110,12 +110,6 @@ userOptions <- function(...) {
     ...
   )
 
-  # shiny::tags$ul(
-  #   class="dropdown-menu animated fadeInRight m-t-xs user-option show",
-  #   `x-placement`="bottom-start",
-  #   style="position: absolute; top: 51px; left: 20px; will-change: top, left;",
-  #   ...
-  # )
 }
 
 

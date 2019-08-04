@@ -6,6 +6,13 @@
 \usage{
 itemUser(label = NULL, icon = NULL, tabName = NULL)
 }
+\arguments{
+\item{label}{Texto que será exibido}
+
+\item{icon}{icone}
+
+\item{tabName}{}
+}
 \description{
 User item
 }

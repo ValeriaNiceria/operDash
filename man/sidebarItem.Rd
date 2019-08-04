@@ -6,6 +6,9 @@
 \usage{
 sidebarItem(label = NULL, icon = NULL, tabName = NULL, ...)
 }
+\arguments{
+\item{tabName}{}
+}
 \description{
 Sidebar Item
 }

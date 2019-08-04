@@ -6,6 +6,9 @@
 \usage{
 sidebarDropdownItem(label = NULL, icon = NULL, tabName = NULL)
 }
+\arguments{
+\item{tabName}{}
+}
 \description{
 Sidebar item dropdown
 }

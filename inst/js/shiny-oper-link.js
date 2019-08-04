@@ -1,6 +1,13 @@
 $(document).ready(function(){
   $(document).on("click", "ul.nav.metismenu li", function() {
-    $('ul.nav.metismenu li').removeClass('active');
-    $(this).addClass('active');
+
+    link = $('ul.nav.metismenu li')
+
+    if (link).hasClass(':not(nav-header)') {
+      $('ul.nav.metismenu li').removeClass('active');
+      $(this).addClass('active');
+    }
+
+
   })
 });

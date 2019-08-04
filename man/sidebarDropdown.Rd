@@ -6,6 +6,9 @@
 \usage{
 sidebarDropdown(label = NULL, icon = NULL, ...)
 }
+\arguments{
+\item{icon}{}
+}
 \description{
 sidebar dropdown group
 }
