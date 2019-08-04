@@ -5,7 +5,8 @@
 \title{Dashboard Page}
 \usage{
 operPage(title = "", sidebar = NULL, navbar = NULL,
-  headScript = NULL, body = NULL, footerScript = NULL)
+  contentNavbarRight = NULL, body = NULL, headScript = NULL,
+  footerScript = NULL)
 }
 \arguments{
 \item{title}{Um título que será utilizado no display do browser}
@@ -14,9 +15,9 @@ operPage(title = "", sidebar = NULL, navbar = NULL,
 
 \item{navbar}{Um menu Top \code{navbarDash}}
 
-\item{headScript}{Script que será adicionado no head da página}
-
 \item{body}{O conteúdo da página \code{bodyDash}}
+
+\item{headScript}{Script que será adicionado no head da página}
 
 \item{footerScript}{Script que será adicionado no footer da página}
 }
