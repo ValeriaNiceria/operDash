@@ -146,6 +146,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, contentNavbarRight = NULL,
                   package = "operDash")
     ),
     shiny::includeScript(
+      system.file("js/shiny-oper-tab-content.js",
+                  package = "operDash")
+    ),
+    shiny::includeScript(
       system.file("js/shiny-oper-user-options.js",
                   package = "operDash")
     ),
@@ -258,6 +262,11 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL, headScript =
       system.file("js/shiny-oper-logo-element.js",
                   package = "operDash")
     ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-tab-content.js",
+                  package = "operDash")
+    ),
+
 
     footerScript
 
