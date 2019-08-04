@@ -28,7 +28,7 @@ operPage <- function(title = "", sidebar = NULL, navbar = NULL, headScript = NUL
 
 
 
-sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content = NULL, footerScript = NULL) {
+sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, contentMenuTop = NULL, content = NULL, footerScript = NULL) {
 
   shiny::tags$html(
 
@@ -81,6 +81,12 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
                   href="#",
                   shiny::icon("bars")
                 )
+              ),
+              shiny::tags$ul(
+                class="nav navbar-top-links navbar-right",
+
+                contentMenuTop
+
               )
             )
           ),
