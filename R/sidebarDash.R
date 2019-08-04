@@ -16,7 +16,7 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
     lapply(1:length(itens), FUN = function(i) {
 
       shiny::tags$li(
-        class = if (i == 1) "active" else NULL,
+        class = if (i == 1) "active nav-oper" else "nav-oper",
         itens[[i]]
       )
 
