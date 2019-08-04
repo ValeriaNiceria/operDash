@@ -28,7 +28,7 @@ operPage <- function(title = "", sidebar = NULL, navbar = NULL, headScript = NUL
 
 
 
-sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, contentMenuTop = NULL, content = NULL, footerScript = NULL) {
+sidebarPage <- function(title = NULL, sidebar = NULL, content = NULL, contentMenuTop = NULL, headScript = NULL, footerScript = NULL) {
 
   shiny::tags$html(
 
@@ -161,7 +161,7 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
 
 
 
-navbarPage <- function(title = NULL, navbar = NULL, headScript = NULL, content = NULL, footerScript = NULL) {
+navbarPage <- function(title = NULL, navbar = NULL, content = NULL, headScript = NULL, footerScript = NULL) {
 
   shiny::tags$html(
 
