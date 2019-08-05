@@ -156,6 +156,7 @@ ui =  operPage(
                     sidebarDropdownItem(text = "panel", tabName = "codePanel"),
                     sidebarDropdownItem(text = "timeline", tabName = "codeTimeline")
                     ),
+    sidebarItem(text = "Box", tabName = "box"),
 
     userOptions = userOptions(
       itemUser('Informações', tabName = 'info'),

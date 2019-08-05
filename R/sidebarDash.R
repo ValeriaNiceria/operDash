@@ -15,8 +15,9 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
   generateItensMenu <- function(itens) {
     lapply(1:length(itens), FUN = function(i) {
 
+      # class = if (i == 1) "active nav-oper" else "nav-oper",
+
       shiny::tags$li(
-        class = if (i == 1) "active nav-oper" else "nav-oper",
         itens[[i]]
       )
 
@@ -166,11 +167,9 @@ sidebarItem <- function(text = NULL, icon = NULL, tabName = NULL, ...) {
                   "$('.shiny-oper-tab-content').hide();",
                   "$('.shiny-oper-tab-content').trigger('hide');",
                   "$('.shiny-oper-tab-content').trigger('hidden');",
-                  "$('.tab-link').removeClass('active');",
                   "$('#shiny-tab-", tabName, "').show();",
                   "$('#shiny-tab-", tabName, "').trigger('show');",
-                  "$('#shiny-tab-", tabName, "').trigger('shown');",
-                  "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
+                  "$('#shiny-tab-", tabName, "').trigger('shown');"
                 ),
                 if (is.null(icon)) icon("link") else icon,
                 shiny::tags$span(
@@ -227,11 +226,9 @@ sidebarDropdownItem <- function(text = NULL, icon = NULL, tabName = NULL) {
         "$('.shiny-oper-tab-content').hide();",
         "$('.shiny-oper-tab-content').trigger('hide');",
         "$('.shiny-oper-tab-content').trigger('hidden');",
-        "$('.tab-link').removeClass('active');",
         "$('#shiny-tab-", tabName, "').show();",
         "$('#shiny-tab-", tabName, "').trigger('show');",
-        "$('#shiny-tab-", tabName, "').trigger('shown');",
-        "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
+        "$('#shiny-tab-", tabName, "').trigger('shown');"
       ),
       icon,
       text
