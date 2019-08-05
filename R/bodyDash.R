@@ -10,7 +10,7 @@
 
 bodyDash <- function(...) {
 
-  shiny::tags$div(class = "col-lg-12",
+  shiny::tags$div(class = "col-lg-12 gray-bg",
 
       ...
 
