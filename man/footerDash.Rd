@@ -7,9 +7,9 @@
 footerDash(textLeft = "textLeft", textRight = "textRight")
 }
 \arguments{
-\item{textLeft}{A text footer by left bar}
+\item{textLeft}{Um texto que será adicionado do lado esquerdo da barra}
 
-\item{textRight}{A text footer by right bar#'}
+\item{textRight}{Um texto que será adicionado do lado direito da barra}
 }
 \description{
 Dashboard Footer

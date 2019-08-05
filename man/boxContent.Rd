@@ -3,7 +3,7 @@
 \name{boxContent}
 \alias{boxContent}
 \alias{boxTitle}
-\title{Dashboard boxContent}
+\title{BoxContent}
 \usage{
 boxTitle(..., info = NULL, title = "iboxTitle", background = NULL,
   colorText = NULL)
@@ -11,12 +11,12 @@ boxTitle(..., info = NULL, title = "iboxTitle", background = NULL,
 boxContent(...)
 }
 \arguments{
-\item{...}{Items to put in the dashboard.}
+\item{...}{Itens adicionais.}
 
 \item{...}{Items to put in the dashboard.}
 }
 \description{
-Dashboard boxContent
+BoxContent
 
 Dashboard boxContent
 }

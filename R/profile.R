@@ -1,3 +1,15 @@
+#' @title Profile
+#' @name profile
+#'
+#' @param width
+#' @param title
+#' @param subTitle
+#' @param src
+#' @param content
+#'
+#'
+#' @export
+
 profile <- function(width = 12, title = NULL, subTitle = NULL, src = NULL, content = NULL, ...) {
   width = paste0("col-lg-", width)
   shiny::tags$div(class=width,

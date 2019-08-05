@@ -2,13 +2,12 @@
 #' @name footerDash
 #'
 #'
-#' @param textLeft A text footer by left bar
-#' @param textRight A text footer by right bar#'
+#' @param textLeft Um texto que será adicionado do lado esquerdo da barra
+#' @param textRight Um texto que será adicionado do lado direito da barra
 #'
 #'
 #'
 #' @export
-
 
 
 footerDash <- function(textLeft = "textLeft", textRight = "textRight") {

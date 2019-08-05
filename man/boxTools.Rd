@@ -2,13 +2,13 @@
 % Please edit documentation in R/box.R
 \name{boxTools}
 \alias{boxTools}
-\title{Dashboard boxTools}
+\title{BoxTools}
 \usage{
 boxTools(...)
 }
 \arguments{
-\item{...}{Items to put in the dashboard page.}
+\item{...}{Itens adicionais.}
 }
 \description{
-Dashboard boxTools
+BoxTools
 }

@@ -75,15 +75,6 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
               width = "60px"
             )
           ),
-          # shiny::tags$div(
-          #   class="logo-element",
-          #   shiny::tags$img(
-          #     alt="image",
-          #     class="rounded-circle",
-          #     src=imgUser,
-          #     width = "35px"
-          #   )
-          # ),
 
           userOptions
 

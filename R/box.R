@@ -1,10 +1,10 @@
-#' @title Dashboard label
+#' @title Label
 #' @name label
 #'
 #'
-#' @param label A label.
-#' @param status A status.
-#' @param float A float.
+#' @param label O texto que será exibido.
+#' @param status O status do label que pode ser success, danger, info ou warning.
+#' @param float A posição do label que pode ser right ou left.
 #'
 #'
 #'
@@ -19,7 +19,7 @@ label <- function(label = "label", status = "success", float = "right", ...) {
   shiny::tags$span(class=classValue, label, ...)
 }
 
-#' @title Dashboard collapseLink
+#' @title CollapseLink
 #' @name collapseLink
 #'
 #'
@@ -30,7 +30,7 @@ collapseLink <- function() {
                 shiny::tags$i(class="fa fa-chevron-up"))
 }
 
-#' @title Dashboard closeLink
+#' @title CloseLink
 #' @name closeLink
 #'
 #'
@@ -40,14 +40,14 @@ closeLink <- function() {
                 shiny::tags$i(class="fa fa-times"))
 }
 
-#' @title Dashboard infoLink
+#' @title InfoLink
 #' @name infoLink
 #'
 #'
-#' @param icon A icon
-#' @param message A message
-#' @param position A position
-#' @param ... Items to put in the dashboard page.
+#' @param icon O ícone que será exibido.
+#' @param message A mensagem que será exibida no balão de informação.
+#' @param position A posição do balão de informação, podendo utilizar left ou right.
+#' @param ... Itens adicionais.
 #'
 #'
 #' @export
@@ -62,11 +62,11 @@ infoLink <- function(icon = NULL, message = NULL, position = "right", ...) {
 }
 
 
-#' @title Dashboard boxTools
+#' @title BoxTools
 #' @name boxTools
 #'
 #'
-#' @param ... Items to put in the dashboard page.
+#' @param ... Itens adicionais.
 #'
 #'
 #' @export
@@ -76,11 +76,15 @@ boxTools <- function(...) {
            )
 }
 
-#' @title Dashboard boxContent
+#' @title BoxContent
 #' @name boxContent
 #'
 #'
-#' @param ... Items to put in the dashboard.
+#' @param info
+#' @param title
+#' @param background
+#' @param colorText
+#' @param ... Itens adicionais.
 #'
 #'
 #' @export boxTitle

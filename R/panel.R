@@ -1,3 +1,16 @@
+#' @title Panel
+#' @name panel
+#'
+#'
+#' @param title
+#' @param body
+#' @param footer
+#' @param status
+#'
+#'
+#'
+#' @export
+
 panel <- function(title = NULL, body = NULL, footer = NULL, status = "default", ...) {
   # type = default - primary - success - info - warning - danger
   classPanel = paste0("panel panel-", status)
@@ -13,6 +26,18 @@ panel <- function(title = NULL, body = NULL, footer = NULL, status = "default", 
            )
 }
 
+
+#' @title AccordionItem
+#' @name accordionItem
+#'
+#'
+#' @param width
+#' @param title
+#' @param content
+#'
+#'
+#'
+#' @export
 
 accordionItem <- function(width = 12, title = NULL, content = NULL, ...) {
   width = paste0("col-lg-", width)
