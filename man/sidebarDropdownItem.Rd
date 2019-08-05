@@ -4,7 +4,7 @@
 \alias{sidebarDropdownItem}
 \title{Sidebar item dropdown}
 \usage{
-sidebarDropdownItem(label = NULL, icon = NULL, tabName = NULL)
+sidebarDropdownItem(text = NULL, icon = NULL, tabName = NULL)
 }
 \arguments{
 \item{tabName}{}

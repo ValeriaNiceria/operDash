@@ -135,20 +135,36 @@ ui =  operPage(
   title = "Dashboard Oper",
 
   sidebar = sidebarDash(
+    sidebarItem(text = "Box", tabName = "box"),
+    sidebarDropdown(text = "Elements", icon = icon("flask"),
+                    sidebarDropdownItem(text = "valueBox", tabName = "valueBoxElement"),
+                    sidebarDropdownItem(text = "Buttons", tabName = "buttonsElement"),
+                    sidebarDropdownItem(text = "Jumbotron", tabName = "jumbotronElement"),
+                    sidebarDropdownItem(text = "Alert", tabName = "alertElement"),
+                    sidebarDropdownItem(text = "progressBar", tabName = "progressBarElement"),
+                    sidebarDropdownItem(text = "Carousel", tabName = "carouselElement"),
+                    sidebarDropdownItem(text = "Panel", tabName = "panelElement"),
+                    sidebarDropdownItem(text = "Timeline", tabName = "timelineElement")
+                ),
+    sidebarDropdown(text = "Dash", icon = icon("laptop-code"),
+                    sidebarDropdownItem(text = "pageDash", tabName = "codePageDash"),
+                    sidebarDropdownItem(text = "navbarDash", tabName = "codeNavbarDash"),
+                    sidebarDropdownItem(text = "bodyDash", tabName = "codeBodyDash"),
+                    sidebarDropdownItem(text = "box", tabName = "codeBox"),
+                    sidebarDropdownItem(text = "valueBox", tabName = "codeValueBox"),
+                    sidebarDropdownItem(text = "elements", tabName = "codeElements"),
+                    sidebarDropdownItem(text = "panel", tabName = "codePanel"),
+                    sidebarDropdownItem(text = "timeline", tabName = "codeTimeline")
+                    ),
+    sidebarItem(text = "Box", tabName = "box"),
+
     userOptions = userOptions(
       itemUser('Informações', tabName = 'info'),
       itemUserDivider(),
       itemUser('Logout', tabName = 'logout')
-      ),
+    ),
 
-    brand = h1('testando'),
-    sidebarDropdown(label = "Box", icon = icon("box"),
-                sidebarDropdownItem(label = "Box", tabName = "box"),
-                sidebarDropdownItem(label = "Teste", tabName = "testando")),
-    sidebarDropdown(label = "Box", icon = icon("box"),
-                    sidebarDropdownItem(label = "Box", tabName = "box"),
-                    sidebarDropdownItem(label = "Teste", tabName = "testando")),
-    sidebarItem(label = "Teste", tabName = "teste")
+    brand = h1('testando')
   ),
 
 

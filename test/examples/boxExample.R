@@ -1,4 +1,4 @@
-boxExample <- 
+boxExample <-
   tabItem(tabName = "box",
           fluidRow(
             column(
@@ -13,8 +13,8 @@ boxExample <-
                            label(label = "testando"))
                 ),
                 boxContent(
-                  numericInput(inputId ='n', 
-                               label = 'Number of obs', 
+                  numericInput(inputId ='n',
+                               label = 'Number of obs',
                                value = 100)
                 )
               )
@@ -55,8 +55,8 @@ fluidRow(
       ),
       boxContent(
         numericInput(
-          inputId = "n", 
-          label = "Number of obs", 
+          inputId = "n",
+          label = "Number of obs",
           value = 100
         )
       )
@@ -83,17 +83,5 @@ fluidRow(
 ')
               )
             )
-          
-          # fluidRow(
-          #   column(
-          #     width = 12,
-          #     box(
-          #       boxContent(
-          #         # tabsetPanel(
-          #         #   tabPanel("barChart", highchartOutput("barChart"))
-          #         # )
-          #       )
-          #     )
-          #   )
-          # )
+
   )

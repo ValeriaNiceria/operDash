@@ -1,13 +1,14 @@
 $(document).ready(function(){
   $(document).on("click", "ul.nav.metismenu li", function() {
+    tamanho = $(this).has("ul").length
 
-    link = $('ul.nav.metismenu li')
-
-    if (link).hasClass(':not(nav-header)') {
-      $('ul.nav.metismenu li').removeClass('active');
-      $(this).addClass('active');
+    if (tamanho === 0) {
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+      } else {
+        $(this).addClass('active');
+      }
     }
-
-
   })
 });
+
