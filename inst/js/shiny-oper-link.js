@@ -3,11 +3,13 @@ $(document).ready(function(){
 
     link = $('ul.nav.metismenu li')
 
-    if (link).hasClass(':not(nav-header)') {
+    if ($(this).hasClass('nav-header')) {
+    } else {
       $('ul.nav.metismenu li').removeClass('active');
       $(this).addClass('active');
     }
-
-
   })
 });
+
+
+
