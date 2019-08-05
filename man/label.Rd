@@ -2,17 +2,17 @@
 % Please edit documentation in R/box.R
 \name{label}
 \alias{label}
-\title{Dashboard label}
+\title{Label}
 \usage{
 label(label = "label", status = "success", float = "right", ...)
 }
 \arguments{
-\item{label}{A label.}
+\item{label}{O texto que será exibido.}
 
-\item{status}{A status.}
+\item{status}{O status do label que pode ser success, danger, info ou warning.}
 
-\item{float}{A float.}
+\item{float}{A posição do label que pode ser right ou left.}
 }
 \description{
-Dashboard label
+Label
 }

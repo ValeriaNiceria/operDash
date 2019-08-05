@@ -6,6 +6,15 @@
 \usage{
 sidebarDash(..., imgUser = NULL, userOptions = NULL, brand = NULL)
 }
+\arguments{
+\item{...}{Itens adicionais}
+
+\item{imgUser}{Caminho da imagem}
+
+\item{userOptions}{Box de opções do usuário \code{userOptions}}
+
+\item{brand}{utilizar texto ou imagem}
+}
 \description{
 Sidebar
 }

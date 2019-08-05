@@ -16,7 +16,7 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
     lapply(1:length(itens), FUN = function(i) {
 
       shiny::tags$li(
-        class = if (i == 1) "active" else NULL,
+        class = if (i == 1) "active nav-oper" else "nav-oper",
         itens[[i]]
       )
 
@@ -75,15 +75,6 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
               width = "60px"
             )
           ),
-          shiny::tags$div(
-            class="logo-element",
-            shiny::tags$img(
-              alt="image",
-              class="rounded-circle",
-              src=imgUser,
-              width = "35px"
-            )
-          ),
 
           userOptions
 
@@ -110,12 +101,6 @@ userOptions <- function(...) {
     ...
   )
 
-  # shiny::tags$ul(
-  #   class="dropdown-menu animated fadeInRight m-t-xs user-option show",
-  #   `x-placement`="bottom-start",
-  #   style="position: absolute; top: 51px; left: 20px; will-change: top, left;",
-  #   ...
-  # )
 }
 
 

@@ -2,10 +2,10 @@
 % Please edit documentation in R/box.R
 \name{closeLink}
 \alias{closeLink}
-\title{Dashboard closeLink}
+\title{CloseLink}
 \usage{
 closeLink()
 }
 \description{
-Dashboard closeLink
+CloseLink
 }

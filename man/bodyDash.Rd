@@ -7,7 +7,7 @@
 bodyDash(...)
 }
 \arguments{
-\item{...}{Items to put in the dashboard body.}
+\item{...}{Itens adicionais}
 }
 \description{
 Dashboard Body

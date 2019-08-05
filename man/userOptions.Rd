@@ -6,6 +6,9 @@
 \usage{
 userOptions(...)
 }
+\arguments{
+\item{...}{Itens adicionais}
+}
 \description{
 User Options group
 }

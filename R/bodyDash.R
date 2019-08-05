@@ -2,7 +2,7 @@
 #' @name bodyDash
 #'
 #'
-#' @param ... Items to put in the dashboard body.
+#' @param ... Itens adicionais
 #'
 #'
 #' @export

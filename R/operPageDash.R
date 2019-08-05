@@ -16,10 +16,10 @@
 #' @export
 
 
-operPage <- function(title = "", sidebar = NULL, navbar = NULL, headScript = NULL, body = NULL, footerScript = NULL) {
+operPage <- function(title = "", sidebar = NULL, navbar = NULL, contentNavbarRight = NULL, body = NULL, headScript = NULL, footerScript = NULL) {
 
   if (!is.null(sidebar)) {
-    sidebarPage(title, sidebar, headScript, body, footerScript)
+    sidebarPage(title, sidebar, contentNavbarRight, body, headScript, footerScript)
   } else {
     navbarPage(title, navbar, headScript, body, footerScript)
   }
@@ -28,7 +28,7 @@ operPage <- function(title = "", sidebar = NULL, navbar = NULL, headScript = NUL
 
 
 
-sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content = NULL, footerScript = NULL) {
+sidebarPage <- function(title = NULL, sidebar = NULL, contentNavbarRight = NULL, content = NULL, headScript = NULL, footerScript = NULL) {
 
   shiny::tags$html(
 
@@ -81,6 +81,12 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
                   href="#",
                   shiny::icon("bars")
                 )
+              ),
+              shiny::tags$ul(
+                class="nav navbar-top-links navbar-right",
+
+                contentNavbarRight
+
               )
             )
           ),
@@ -140,6 +146,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
                   package = "operDash")
     ),
     shiny::includeScript(
+      system.file("js/shiny-oper-tab-content.js",
+                  package = "operDash")
+    ),
+    shiny::includeScript(
       system.file("js/shiny-oper-user-options.js",
                   package = "operDash")
     ),
@@ -154,8 +164,7 @@ sidebarPage <- function(title = NULL, sidebar = NULL, headScript = NULL, content
 }
 
 
-
-navbarPage <- function(title = NULL, navbar = NULL, headScript = NULL, content = NULL, footerScript = NULL) {
+navbarPage <- function(title = NULL, navbar = NULL, content = NULL, headScript = NULL, footerScript = NULL) {
 
   shiny::tags$html(
 
@@ -253,6 +262,11 @@ navbarPage <- function(title = NULL, navbar = NULL, headScript = NULL, content =
       system.file("js/shiny-oper-logo-element.js",
                   package = "operDash")
     ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-tab-content.js",
+                  package = "operDash")
+    ),
+
 
     footerScript
 

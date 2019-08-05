@@ -2,10 +2,10 @@
 % Please edit documentation in R/box.R
 \name{collapseLink}
 \alias{collapseLink}
-\title{Dashboard collapseLink}
+\title{CollapseLink}
 \usage{
 collapseLink()
 }
 \description{
-Dashboard collapseLink
+CollapseLink
 }

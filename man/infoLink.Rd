@@ -2,19 +2,19 @@
 % Please edit documentation in R/box.R
 \name{infoLink}
 \alias{infoLink}
-\title{Dashboard infoLink}
+\title{InfoLink}
 \usage{
 infoLink(icon = NULL, message = NULL, position = "right", ...)
 }
 \arguments{
-\item{icon}{A icon}
+\item{icon}{O ícone que será exibido.}
 
-\item{message}{A message}
+\item{message}{A mensagem que será exibida no balão de informação.}
 
-\item{position}{A position}
+\item{position}{A posição do balão de informação, podendo utilizar left ou right.}
 
-\item{...}{Items to put in the dashboard page.}
+\item{...}{Itens adicionais.}
 }
 \description{
-Dashboard infoLink
+InfoLink
 }
