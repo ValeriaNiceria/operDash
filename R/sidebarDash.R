@@ -107,14 +107,14 @@ userOptions <- function(...) {
 #' @title User item
 #' @name itemUser
 #'
-#' @param label Texto que será exibido
+#' @param text Texto que será exibido
 #' @param icon icone
 #' @param tabName
 #'
 #'
 #' @export
 
-itemUser <- function(label = NULL, icon = NULL, tabName = NULL) {
+itemUser <- function(text = NULL, icon = NULL, tabName = NULL) {
   shiny::tags$li(
     shiny::tags$a(
       class="dropdown-item dropdown-user-option",
@@ -131,7 +131,7 @@ itemUser <- function(label = NULL, icon = NULL, tabName = NULL) {
         "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
       ),
       icon,
-      label
+      text
     )
   )
 }
@@ -150,14 +150,14 @@ itemUserDivider <- function() {
 #' @title Sidebar Item
 #' @name sidebarItem
 #'
-#' @param label
+#' @param text
 #' @param icon
 #' @param tabName
 #'
 #'
 #' @export
 
-sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, ...) {
+sidebarItem <- function(text = NULL, icon = NULL, tabName = NULL, ...) {
 
   shiny::tags$a(class="tab-link",
                 id = paste0("#shiny-tab-", tabName, "_tab_id"),
@@ -175,7 +175,7 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, ...) {
                 if (is.null(icon)) icon("link") else icon,
                 shiny::tags$span(
                   class="nav-label",
-                  label
+                  text
                 )
   )
 
@@ -185,12 +185,12 @@ sidebarItem <- function(label = NULL, icon = NULL, tabName = NULL, ...) {
 #' @title sidebar dropdown group
 #' @name sidebarDropdown
 #'
-#' @param label
+#' @param text
 #' @param icon
 #'
 #' @export
 #'
-sidebarDropdown <- function(label = NULL, icon = NULL, ...) {
+sidebarDropdown <- function(text = NULL, icon = NULL, ...) {
 
   subItem <- list(...)
 
@@ -199,7 +199,7 @@ sidebarDropdown <- function(label = NULL, icon = NULL, ...) {
                   icon,
                   shiny::tags$span(
                     class="nav-label",
-                    label
+                    text
                   ),
                   shiny::tags$span(class="fa arrow")
     ),
@@ -212,13 +212,13 @@ sidebarDropdown <- function(label = NULL, icon = NULL, ...) {
 #' @title Sidebar item dropdown
 #' @name sidebarDropdownItem
 #'
-#' @param label
+#' @param text
 #' @param icon
 #' @param tabName
 #'
 #' @export
 
-sidebarDropdownItem <- function(label = NULL, icon = NULL, tabName = NULL) {
+sidebarDropdownItem <- function(text = NULL, icon = NULL, tabName = NULL) {
   shiny::tags$li(
     shiny::tags$a(
       id = paste0("#shiny-tab-", tabName, "_tab_id"),
@@ -234,7 +234,7 @@ sidebarDropdownItem <- function(label = NULL, icon = NULL, tabName = NULL) {
         "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
       ),
       icon,
-      label
+      text
     )
   )
 }

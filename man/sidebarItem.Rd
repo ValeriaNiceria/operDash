@@ -4,7 +4,7 @@
 \alias{sidebarItem}
 \title{Sidebar Item}
 \usage{
-sidebarItem(label = NULL, icon = NULL, tabName = NULL, ...)
+sidebarItem(text = NULL, icon = NULL, tabName = NULL, ...)
 }
 \arguments{
 \item{tabName}{}

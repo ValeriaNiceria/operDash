@@ -4,7 +4,7 @@
 \alias{sidebarDropdown}
 \title{sidebar dropdown group}
 \usage{
-sidebarDropdown(label = NULL, icon = NULL, ...)
+sidebarDropdown(text = NULL, icon = NULL, ...)
 }
 \arguments{
 \item{icon}{}

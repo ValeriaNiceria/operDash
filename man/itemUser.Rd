@@ -4,10 +4,10 @@
 \alias{itemUser}
 \title{User item}
 \usage{
-itemUser(label = NULL, icon = NULL, tabName = NULL)
+itemUser(text = NULL, icon = NULL, tabName = NULL)
 }
 \arguments{
-\item{label}{Texto que será exibido}
+\item{text}{Texto que será exibido}
 
 \item{icon}{icone}
 
