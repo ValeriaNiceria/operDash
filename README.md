@@ -1,6 +1,15 @@
-# operDash <img src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/operDash.png" width="200px" align="right"/>
+# operDash <img src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/operDash.png" width="150px" align="right"/>
 
-### Instalação
-- `library(devtools)`
-- `devtools::install_github("ValeriaNiceria/operDash")`
-- `library(operDash)`
+> operDash é um dashboard para o shiny
+
+## Instalação
+```R
+# Carregando o pacote 'devtools'
+library(devtools)
+
+# Instalando o pacote via github
+devtools::install_github("ValeriaNiceria/operDash")
+
+# Carregando o pacote 'operDash'
+library(operDash)
+```
