@@ -5,11 +5,51 @@
 \title{Panel}
 \usage{
 panel(title = NULL, body = NULL, footer = NULL, status = "default",
-  ...)
+  width = 12)
 }
 \arguments{
-\item{status}{}
+\item{title}{Um título para o paínel.}
+
+\item{body}{Um conteúdo para o corpo do paínel.}
+
+\item{footer}{Um conteúdo para o rodapé do paínel.}
+
+\item{status}{Um status para o paínel, sendo usado como padrão o valor default,
+podendo ser utilizado os valores \strong{default}, \strong{primary}, \strong{success}, \strong{info}, \strong{warning} e \strong{danger}.}
+
+\item{width}{O tamanho do paínel, usando o grid do Bootstrap.
+Tendo como padrão o valor 12, podendo ser utilizado os valores de 1 à 12.}
 }
 \description{
 Panel
+}
+\examples{
+if(interactive()){
+ library(shiny)
+ library(operDash)
+
+ shiny::shinyApp(
+   ui = operPage(
+    title = "operDash",
+    navbar = NULL,
+    sidebar = NULL,
+    footer = NULL,
+    body = bodyDash(
+        panel(
+             title = "Título exemplo",
+             body = "Conteúdo do corpo do paínel",
+             footer = "Conteúdo do rodapé do paínel",
+             status = "info",
+             width = 4
+       )
+    )
+   ),
+   server = function(input, output) {
+  }
+ )
+}
+
+}
+\author{
+Valéria Nicéria, \email{valerianiceria@gmail.com}
 }

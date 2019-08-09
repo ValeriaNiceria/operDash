@@ -7,7 +7,12 @@
 accordionItem(width = 12, title = NULL, content = NULL, ...)
 }
 \arguments{
-\item{content}{}
+\item{width}{O tamanho do accordionItem, usando o grid do Bootstrap.
+Tendo como padrão o valor 12, podendo ser utilizado os valores de 1 à 12.}
+
+\item{title}{Um título para o accordionItem.}
+
+\item{content}{O conteúdo para o accordionItem.}
 }
 \description{
 AccordionItem
