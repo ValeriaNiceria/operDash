@@ -1434,7 +1434,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   margin-top: 0;
 }
 .top-navigation .navbar-brand {
-  background: #57b952;
+  background-color: #283B4F;
   color: #fff;
   padding: 15px 25px;
   font-size: 18px;
@@ -7947,7 +7947,7 @@ body.landing-page {
 }
 .landing-page .navbar-default .navbar-brand:hover,
 .landing-page .navbar-default .navbar-brand:focus {
-  background: #179d82;
+  background: #283b4f;
   color: #fff;
 }
 .landing-page .navbar-default .navbar-brand {
@@ -9611,3 +9611,8 @@ body.md-skin {
   border: 2px solid #fff;
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
 }
+
+nav.navbar.navbar-expand-lg.navbar-static-top.navbar-fixed-top {
+  background-color: #283b4f;
+}
+
