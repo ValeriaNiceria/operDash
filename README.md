@@ -20,4 +20,4 @@ library(operDash)
 ```
 
 
-<h3 style="color:#0B1C2B">Pacote em construção!</h3>
+<h3 style="background-color:#0B1C2B; color:#4CB848">Pacote em construção!</h3>
