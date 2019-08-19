@@ -18,3 +18,6 @@ devtools::install_github("ValeriaNiceria/operDash")
 # Carregando o pacote 'operDash'
 library(operDash)
 ```
+
+
+<h3 style="color:#0B1C2B">Pacote em construção!</h3>
