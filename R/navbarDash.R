@@ -2,10 +2,10 @@
 #' @name menuItem
 #'
 #'
-#' @param text The menu text.
-#' @param icon The menu icon.
-#' @param tabName A name the tabItem.
-#' @param href A link.
+#' @param text O texto que será exibido.
+#' @param icon Um ícone para o item do menu.
+#' @param tabName O nome do tabItem que o menuItem está relacionado.
+#' @param href Um endereço externo.
 #'
 #'
 #' @examples
@@ -56,7 +56,7 @@ menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
 #' @name menuLeft
 #'
 #'
-#' @param ... Items to put in the left menu.
+#' @param ... Itens que serão adicionados a esquerda do menu.
 #'
 #'
 #' @export
@@ -72,7 +72,7 @@ menuLeft <- function(...) {
 #' @name menuRight
 #'
 #'
-#' @param ... Items to put in the left menu.
+#' @param ... Itens que serão adicionados a direita do menu.
 #'
 #'
 #' @export
@@ -88,9 +88,9 @@ menuRight <- function(...) {
 #' @name menuDropdown
 #'
 #'
-#' @param text The menu text.
-#' @param icon The menu icon.
-#' @param ... Items to put in the dropdown menu, using menuItem.
+#' @param text O texto que será exibido.
+#' @param icon Um ícone para o item do menu.
+#' @param ... Itens que serão adicionados dentro do menu dropdown, usar o \code{\link{menuItem}}
 #'
 #'
 #' @examples
@@ -121,7 +121,7 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 #' @title Dashboard navbarDash
 #' @name navbarDash
 #'
-#' @param brandText The brand text
+#' @param brandText Um texto ou imagem que será utilizado como brand
 #' @param brandImg The brand image
 #' @param linkBrand A link to brand
 #' @param ... Items to put in the menu.
