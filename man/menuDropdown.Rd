@@ -7,11 +7,11 @@
 menuDropdown(text = "Link", icon = NULL, ...)
 }
 \arguments{
-\item{text}{The menu text.}
+\item{text}{O texto que será exibido.}
 
-\item{icon}{The menu icon.}
+\item{icon}{Um ícone para o item do menu.}
 
-\item{...}{Items to put in the dropdown menu, using menuItem.}
+\item{...}{Itens que serão adicionados dentro do menu dropdown, usar o \code{\link{menuItem}}}
 }
 \description{
 Dashboard Menu Dropdown

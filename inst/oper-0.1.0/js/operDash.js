@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     Popper.Defaults.modifiers.computeStyle.gpuAcceleration = false;
 
 
@@ -11,10 +12,6 @@ $(document).ready(function () {
 
     // MetisMenu
     var sideMenu = $('#side-menu').metisMenu();
-
-    sideMenu.on('shown.metisMenu', function (e) {
-        fix_height();
-    });
 
     // Collapse ibox function
     $('.collapse-link').on('click', function (e) {
@@ -99,6 +96,14 @@ $(document).ready(function () {
         return false;
     });
 
+    // Append config box / Only for demo purpose
+    // Uncomment on server mode to enable XHR calls
+    $.get("skin-config.html", function (data) {
+       if (!$('body').hasClass('no-skin-config'))
+           $('body').append(data);
+    });
+
+    // Minimalize menu
     $('.navbar-minimalize').on('click', function (event) {
         event.preventDefault();
         $("body").toggleClass("mini-navbar");
@@ -131,7 +136,14 @@ $(document).ready(function () {
     })
 });
 
-
+// Minimalize menu when screen is less than 768px
+$(window).bind(" resize", function () {
+    if ($(this).width() < 769) {
+        $('body').addClass('body-small')
+    } else {
+        $('body').removeClass('body-small')
+    }
+});
 
 // Fixed Sidebar
 $(window).bind("load", function () {
@@ -143,44 +155,10 @@ $(window).bind("load", function () {
     }
 });
 
-function fix_height() {
-    var heightWithoutNavbar = $("body > #wrapper").height() - 62;
-    $(".sidebar-panel").css("min-height", heightWithoutNavbar + "px");
 
-    var navbarheight = $('nav.navbar-default').height();
-    var wrapperHeight = $('#page-wrapper').height();
-
-    if (navbarheight > wrapperHeight) {
-        $('#page-wrapper').css("min-height", navbarheight + "px");
-    }
-
-    if (navbarheight < wrapperHeight) {
-        $('#page-wrapper').css("min-height", $(window).height() + "px");
-    }
-
-    if ($('body').hasClass('fixed-nav')) {
-        if (navbarheight > wrapperHeight) {
-            $('#page-wrapper').css("min-height", navbarheight + "px");
-        } else {
-            $('#page-wrapper').css("min-height", $(window).height() - 60 + "px");
-        }
-    }
-
-}
-
-$(window).bind("load resize scroll", function () {
-
-    // Full height of sidebar
-    setTimeout(function(){
-        if (!$("body").hasClass('body-small')) {
-            fix_height();
-        }
-    })
-
-});
 
 // Minimalize menu when screen is less than 768px
-$(window).bind("resize", function () {
+$(window).bind("load resize", function () {
     if ($(this).width() < 769) {
         $('body').addClass('body-small')
     } else {
@@ -188,7 +166,8 @@ $(window).bind("resize", function () {
     }
 });
 
-
+// Local Storage functions
+// Set proper body class and plugins based on user configuration
 $(document).ready(function () {
     if (localStorageSupport()) {
 
@@ -236,10 +215,12 @@ $(document).ready(function () {
     }
 });
 
+// check if browser support HTML5 local storage
 function localStorageSupport() {
     return (('localStorage' in window) && window['localStorage'] !== null)
 }
 
+// For demo purpose - animation css script
 function animationHover(element, animation) {
     element = $(element);
     element.hover(
@@ -290,5 +271,4 @@ function WinMove() {
         })
         .disableSelection();
 }
-
 

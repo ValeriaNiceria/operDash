@@ -9,7 +9,7 @@ navbarDash(..., brandText = NULL, brandImg = NULL, linkBrand = "#")
 \arguments{
 \item{...}{Items to put in the menu.}
 
-\item{brandText}{The brand text}
+\item{brandText}{Um texto ou imagem que será utilizado como brand}
 
 \item{brandImg}{The brand image}
 

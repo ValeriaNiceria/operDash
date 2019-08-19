@@ -119,17 +119,20 @@ body <- bodyDash(
 )
 
 
-#
+###################
+# Navbar exemplo #
+###################
 # ui <- operPage(
 #   title = "operDash",
 #   navbar = navbar,
 #   body = body
 # )
-#
-#
 
 
 
+###################
+# Sidebar exemplo #
+###################
 ui =  operPage(
 
   title = "Dashboard Oper",
