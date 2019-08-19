@@ -1,4 +1,4 @@
-# operDash <img src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/operDash.png" width="150px" align="right"/>
+# operDash - Pacote em contrução! <img src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/operDash.png" width="150px" align="right"/>
 
 > operDash é um dashboard para o shiny
 
@@ -18,6 +18,3 @@ devtools::install_github("ValeriaNiceria/operDash")
 # Carregando o pacote 'operDash'
 library(operDash)
 ```
-
-
-<h3 style="background-color:#0B1C2B; color:#4CB848">Pacote em construção!</h3>
