@@ -1,4 +1,4 @@
-# operDash - Pacote em contrução! <img src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/operDash.png" width="150px" align="right"/>
+# operDash - Pacote em construção! <img src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/operDash.png" width="150px" align="right"/>
 
 > operDash é um dashboard para o shiny
 
