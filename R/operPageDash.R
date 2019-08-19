@@ -90,12 +90,8 @@ sidebarPage <- function(title = NULL, sidebar = NULL, contentNavbarRight = NULL,
               )
             )
           ),
-          shiny::tags$div(
-            class="wrapper wrapper-content gray-bg",
 
             content
-
-          )
         )
       )
     ),

@@ -144,7 +144,7 @@ $(window).bind("load", function () {
 });
 
 function fix_height() {
-    var heightWithoutNavbar = $("body > #wrapper").height() - 62;
+    var heightWithoutNavbar = $("body > #wrapper").height() - 12;
     $(".sidebar-panel").css("min-height", heightWithoutNavbar + "px");
 
     var navbarheight = $('nav.navbar-default').height();
