@@ -8777,6 +8777,10 @@ a.dropdown-toggle.count-info {
     display: block;
 }
 
+.col-lg-12.shiny-oper-tab-content {
+  margin-top: 4%;
+}
+
 .oper-brand {
     text-align: center;
     font-size: 18px;

@@ -7,7 +7,7 @@
 menuLeft(...)
 }
 \arguments{
-\item{...}{Items to put in the left menu.}
+\item{...}{Itens que serão adicionados a esquerda do menu.}
 }
 \description{
 Menu Left Base

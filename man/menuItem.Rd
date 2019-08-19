@@ -7,13 +7,13 @@
 menuItem(text = "Link", icon = NULL, tabName = NULL, href = NULL)
 }
 \arguments{
-\item{text}{The menu text.}
+\item{text}{O texto que será exibido.}
 
-\item{icon}{The menu icon.}
+\item{icon}{Um ícone para o item do menu.}
 
-\item{tabName}{A name the tabItem.}
+\item{tabName}{O nome do tabItem que o menuItem está relacionado.}
 
-\item{href}{A link.}
+\item{href}{Um endereço externo.}
 }
 \description{
 Dashboard Menu Item
