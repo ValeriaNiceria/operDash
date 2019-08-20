@@ -10,10 +10,6 @@ sidebarDash(..., brand = NULL)
 \item{...}{Itens adicionais}
 
 \item{brand}{utilizar texto ou imagem}
-
-\item{imgUser}{Caminho da imagem}
-
-\item{userOptions}{Box de opções do usuário \code{userOptions}}
 }
 \description{
 Sidebar

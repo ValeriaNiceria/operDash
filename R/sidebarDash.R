@@ -5,7 +5,6 @@
 #' @param brand utilizar texto ou imagem
 #'
 #' @export
-
 sidebarDash <- function(..., brand = NULL) {
 
   itens <- list(...)
@@ -48,64 +47,6 @@ sidebarDash <- function(..., brand = NULL) {
 }
 
 
-#' @title User Options group
-#' @name userOptions
-#'
-#' @param ... Itens adicionais
-#'
-#' @export
-
-userOptions <- function(...) {
-
-  tagList(
-    ...
-  )
-
-}
-
-
-#' @title User item
-#' @name itemUser
-#'
-#' @param text Texto que será exibido
-#' @param icon icone
-#' @param tabName
-#'
-#'
-#' @export
-
-itemUser <- function(text = NULL, icon = NULL, tabName = NULL) {
-  shiny::tags$li(
-    shiny::tags$a(
-      class="dropdown-item dropdown-user-option",
-      id = paste0("#shiny-tab-", tabName, "_tab_id"),
-      href = "javascript:void(0)",
-      onclick = paste0(
-        "$('.shiny-oper-tab-content').hide();",
-        "$('.shiny-oper-tab-content').trigger('hide');",
-        "$('.shiny-oper-tab-content').trigger('hidden');",
-        "$('.tab-link').removeClass('active');",
-        "$('#shiny-tab-", tabName, "').show();",
-        "$('#shiny-tab-", tabName, "').trigger('show');",
-        "$('#shiny-tab-", tabName, "').trigger('shown');",
-        "$('#shiny-tab-", tabName, "_tab_id", "').addClass('active');"
-      ),
-      icon,
-      text
-    )
-  )
-}
-
-#' @title itemUserDivider
-#' @name itemUserDivider
-#'
-#'
-#' @export
-itemUserDivider <- function() {
-  shiny::tags$li(class="dropdown-divider")
-}
-
-
 
 #' @title Sidebar Item
 #' @name sidebarItem
@@ -116,7 +57,6 @@ itemUserDivider <- function() {
 #'
 #'
 #' @export
-
 sidebarItem <- function(text = NULL, icon = NULL, tabName = NULL, ...) {
 
   shiny::tags$a(class="tab-link",
@@ -147,7 +87,6 @@ sidebarItem <- function(text = NULL, icon = NULL, tabName = NULL, ...) {
 #' @param icon
 #'
 #' @export
-#'
 sidebarDropdown <- function(text = NULL, icon = NULL, ...) {
 
   subItem <- list(...)
@@ -175,7 +114,6 @@ sidebarDropdown <- function(text = NULL, icon = NULL, ...) {
 #' @param tabName
 #'
 #' @export
-
 sidebarDropdownItem <- function(text = NULL, icon = NULL, tabName = NULL) {
   shiny::tags$li(
     shiny::tags$a(
