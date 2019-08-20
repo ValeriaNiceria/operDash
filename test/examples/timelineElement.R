@@ -1,8 +1,8 @@
-timelineElement <- 
+timelineElement <-
 tabItem(tabName = "timelineElement",
         box(
           boxTitle(title = "Timeline",
-                   background = "#1ab394",
+                   background = "#55B750",
                    colorText = "white"),
           boxContent(
             timelineBlock(
@@ -11,14 +11,14 @@ tabItem(tabName = "timelineElement",
                            content = tags$div(p("conteúdo teste timeline"), br(),
                                               appButton(label = "mais...", icon = icon("plus"), status = "info")),
                            time = "20/06/2019"),
-              
+
               timelineItem(icon = icon("briefcase"),
                            title = "Título2 ",
                            content = tags$div(p("conteúdo teste timeline 2"), br(),
                                               appButton(label = "mais...", icon = icon("plus"), status = "info")),
-                           time = tags$div("Today", 
-                                           br(), 
-                                           icon("clock"), 
+                           time = tags$div("Today",
+                                           br(),
+                                           icon("clock"),
                                            tags$small("11:40")))
             )
           )
@@ -41,8 +41,8 @@ box(
         title = "Título",
         content = tags$div(
                     p("conteúdo teste timeline"), br(),
-                    appButton(label = "mais...", 
-                              icon = icon("plus"), 
+                    appButton(label = "mais...",
+                              icon = icon("plus"),
                               status = "info"
                     )
                   ),
@@ -53,14 +53,14 @@ box(
         title = "Título2 ",
         content = tags$div(
                     p("conteúdo teste timeline 2"), br(),
-                    appButton(label = "mais...", 
-                              icon = icon("plus"), 
+                    appButton(label = "mais...",
+                              icon = icon("plus"),
                               status = "info"
                     )
                   ),
-        time = tags$div("Today", 
-                  br(), 
-                  icon("clock"), 
+        time = tags$div("Today",
+                  br(),
+                  icon("clock"),
                   tags$small("11:40")
                 )
       )
