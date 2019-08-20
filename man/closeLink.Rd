@@ -7,5 +7,5 @@
 closeLink()
 }
 \description{
-CloseLink
+descricao
 }

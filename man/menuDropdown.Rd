@@ -14,7 +14,7 @@ menuDropdown(text = "Link", icon = NULL, ...)
 \item{...}{Itens que serão adicionados dentro do menu dropdown, usar o \code{\link{menuItem}}}
 }
 \description{
-Dashboard Menu Dropdown
+descricao
 }
 \examples{
 menuDropdown(

@@ -14,5 +14,5 @@ label(label = "label", status = "success", float = "right", ...)
 \item{float}{A posição do label que pode ser right ou left.}
 }
 \description{
-Label
+descricao
 }

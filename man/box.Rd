@@ -10,5 +10,5 @@ box(...)
 \item{...}{Items to put in the dashboard.}
 }
 \description{
-Dashboard box
+descricao
 }

@@ -16,7 +16,7 @@ navbarDash(..., brandText = NULL, brandImg = NULL, linkBrand = "#")
 \item{linkBrand}{A link to brand}
 }
 \description{
-Dashboard navbarDash
+descricao
 }
 \examples{
 

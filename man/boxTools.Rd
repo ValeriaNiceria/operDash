@@ -10,5 +10,5 @@ boxTools(...)
 \item{...}{Itens adicionais.}
 }
 \description{
-BoxTools
+descricao
 }

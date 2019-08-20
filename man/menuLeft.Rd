@@ -10,5 +10,5 @@ menuLeft(...)
 \item{...}{Itens que serão adicionados a esquerda do menu.}
 }
 \description{
-Menu Left Base
+descricao
 }

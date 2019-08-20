@@ -13,10 +13,18 @@ timelineItem(icon = NULL, statusIcon = "primary", title = NULL,
 \arguments{
 \item{...}{Itens adicionais.}
 
-\item{time}{}
+\item{icon}{icon}
+
+\item{statusIcon}{statusIcon}
+
+\item{title}{title}
+
+\item{content}{content}
+
+\item{time}{time}
 }
 \description{
-TimelineBlock
+descricao
 
-TimelineBlock
+descricao
 }

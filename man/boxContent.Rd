@@ -13,10 +13,18 @@ boxContent(...)
 \arguments{
 \item{...}{Itens adicionais.}
 
+\item{info}{info}
+
+\item{title}{title}
+
+\item{background}{background}
+
+\item{colorText}{colorText}
+
 \item{...}{Items to put in the dashboard.}
 }
 \description{
-BoxContent
+descricao
 
-Dashboard boxContent
+descricao
 }

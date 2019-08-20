@@ -16,5 +16,5 @@ infoLink(icon = NULL, message = NULL, position = "right", ...)
 \item{...}{Itens adicionais.}
 }
 \description{
-InfoLink
+descricao
 }

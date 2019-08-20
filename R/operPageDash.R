@@ -1,6 +1,8 @@
 #' @title Dashboard Page
 #' @name operPage
 #'
+#' @description descricao
+#'
 #'
 #' @param title Um título que será utilizado no display do browser
 #' @param sidebar Um menu lateral \code{sidebarDash}

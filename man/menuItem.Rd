@@ -16,7 +16,7 @@ menuItem(text = "Link", icon = NULL, tabName = NULL, href = NULL)
 \item{href}{Um endereço externo.}
 }
 \description{
-Dashboard Menu Item
+descricao
 }
 \examples{
 menuItem(

@@ -22,7 +22,7 @@ operPage(title = "", sidebar = NULL, navbar = NULL,
 \item{footerScript}{Script que será adicionado no footer da página}
 }
 \description{
-Dashboard Page
+descricao
 }
 \seealso{
 \code{\link{sidebarDash}}, \code{\link{navbarDash}}, \code{\link{bodyDash}}.
