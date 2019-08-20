@@ -3,12 +3,11 @@
 #########################
 library(shiny)
 library(devtools)
+library(roxygen2)
+load_all()
+document()
 # devtools::install_github("ValeriaNice ria/operDash", force = TRUE)
 library(operDash)
-# library(shinyWidgets)
-# library(htmltools)
-# library(magrittr)
-# library(htmlwidgets)
 library(dplyr)
 library(highcharter)
 
