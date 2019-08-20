@@ -4,10 +4,10 @@
 \alias{label}
 \title{Label}
 \usage{
-label(label = "label", status = "success", float = "right", ...)
+label(text = "label", status = "success", float = "right", ...)
 }
 \arguments{
-\item{label}{O texto que será exibido.}
+\item{text}{O texto que será exibido.}
 
 \item{status}{O status do label que pode ser success, danger, info ou warning.}
 

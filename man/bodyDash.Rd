@@ -2,13 +2,13 @@
 % Please edit documentation in R/bodyDash.R
 \name{bodyDash}
 \alias{bodyDash}
-\title{Dashboard Body}
+\title{bodyDash}
 \usage{
 bodyDash(...)
 }
 \arguments{
-\item{...}{Itens adicionais}
+\item{...}{Onde sera passado o \code{\link{tabItem}}.}
 }
 \description{
-descricao
+O corpo do dashboard, onde serao adicionados os conteudos \code{\link{tabItem}}.
 }
