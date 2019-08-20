@@ -1,6 +1,6 @@
 # operDash - Pacote em construção! <img src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/operDash.png" width="150px" align="right"/>
 
-> operDash é um dashboard para o shiny. **[Site do pacote](https://valerianiceria.com.br/operDash/)**
+> operDash é um dashboard para o shiny. **[Site do pacote.](https://valerianiceria.com.br/operDash/)**
 
 ## Instalação
 ```R
