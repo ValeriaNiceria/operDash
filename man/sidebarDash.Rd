@@ -4,16 +4,16 @@
 \alias{sidebarDash}
 \title{Sidebar}
 \usage{
-sidebarDash(..., imgUser = NULL, userOptions = NULL, brand = NULL)
+sidebarDash(..., brand = NULL)
 }
 \arguments{
 \item{...}{Itens adicionais}
 
+\item{brand}{utilizar texto ou imagem}
+
 \item{imgUser}{Caminho da imagem}
 
 \item{userOptions}{Box de opções do usuário \code{userOptions}}
-
-\item{brand}{utilizar texto ou imagem}
 }
 \description{
 Sidebar

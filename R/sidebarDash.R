@@ -2,13 +2,11 @@
 #' @name sidebarDash
 #'
 #' @param ... Itens adicionais
-#' @param imgUser Caminho da imagem
-#' @param userOptions Box de opções do usuário \code{userOptions}
 #' @param brand utilizar texto ou imagem
 #'
 #' @export
 
-sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
+sidebarDash <- function(..., brand = NULL) {
 
   itens <- list(...)
 
@@ -24,30 +22,6 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
     })
   }
 
-  link_img = "https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/www/img/user.jpeg"
-  imgUser <- if (is.null(imgUser)) link_img else imgUser
-
-  if (!is.null(userOptions)) {
-    userOptions <- shiny::tags$ul(
-      class="dropdown-menu animated fadeInRight m-t-xs user-option show",
-      `x-placement`="bottom-start",
-      style="position: absolute; top: 51px; left: 20px; will-change: top, left;",
-
-      shiny::tags$div(
-        class="text-center m-t-xs",
-        shiny::tags$img(
-          alt="image",
-          class="rounded-circle img-user-options",
-          src=imgUser,
-          width = "30px"
-        )
-      ),
-
-      shiny::tags$h4(class="name-user", "Welcome"),
-
-      userOptions
-    )
-  }
 
   shiny::tags$nav(
     class="navbar-default navbar-static-side",
@@ -65,21 +39,6 @@ sidebarDash <- function(..., imgUser = NULL, userOptions = NULL, brand = NULL) {
       shiny::tags$ul(
         class="nav metismenu",
         id="side-menu",
-        shiny::tags$li(
-          class="nav-header",
-          shiny::tags$div(
-            class="dropdown profile-element avatar-menu",
-            shiny::tags$img(
-              alt="image",
-              class="rounded-circle",
-              src=imgUser,
-              width = "60px"
-            )
-          ),
-
-          userOptions
-
-        ),
 
         generateItensMenu(itens)
 

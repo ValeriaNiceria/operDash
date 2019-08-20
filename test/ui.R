@@ -161,11 +161,6 @@ ui =  operPage(
                     ),
     sidebarItem(text = "Box", tabName = "box"),
 
-    userOptions = userOptions(
-      itemUser('Informações', tabName = 'info'),
-      itemUserDivider(),
-      itemUser('Logout', tabName = 'logout')
-    ),
 
     brand = h1('testando')
   ),
