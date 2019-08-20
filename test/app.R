@@ -1,6 +1,6 @@
-  source("./imports.R")
+source("./imports.R")
 
-  source("./ui.R")
-  source("./server.R")
+source("./ui.R")
+source("./server.R")
 
-  shinyApp(ui, server)
+shinyApp(ui, server)
