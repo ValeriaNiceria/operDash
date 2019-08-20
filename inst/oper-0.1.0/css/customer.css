@@ -9622,3 +9622,10 @@ nav.navbar.navbar-expand-lg.navbar-static-top.navbar-fixed-top {
     background: #0B2032;
     color: #e5e5e5;
 }
+
+.shiny-oper-margin-top-navbar {
+  margin-top: 4%;
+}
+.shiny-oper-margin-top-sidebar {
+  margin-top: 2%;
+}

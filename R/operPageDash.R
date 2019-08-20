@@ -145,6 +145,10 @@ sidebarPage <- function(title = NULL, sidebar = NULL, contentNavbarRight = NULL,
       system.file("js/shiny-oper-dropdown.js",
                   package = "operDash")
     ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-margin-top.js",
+                  package = "operDash")
+    ),
 
     footerScript
   )
@@ -244,6 +248,10 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL, headScript =
     ),
     shiny::includeScript(
       system.file("js/shiny-oper-tab-content.js",
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file("js/shiny-oper-margin-top.js",
                   package = "operDash")
     ),
 
