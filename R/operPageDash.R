@@ -19,9 +19,9 @@
 operPage <- function(title = "", sidebar = NULL, navbar = NULL, contentNavbarRight = NULL, body = NULL, headScript = NULL, footerScript = NULL) {
 
   if (!is.null(sidebar)) {
-    sidebarPage(title, sidebar, contentNavbarRight, body, headScript, footerScript)
+    sidebarPage(title = title, sidebar = sidebar, contentNavbarRight = contentNavbarRight, content = body, headScript = headScript, footerScript = footerScript)
   } else {
-    navbarPage(title, navbar, headScript, body, footerScript)
+    navbarPage(title = title, navbar = navbar, content = body, headScript = headScript, footerScript = footerScript)
   }
 
 }
@@ -145,10 +145,6 @@ sidebarPage <- function(title = NULL, sidebar = NULL, contentNavbarRight = NULL,
       system.file("js/shiny-oper-dropdown.js",
                   package = "operDash")
     ),
-    shiny::includeScript(
-      system.file("js/shiny-oper-margin-top.js",
-                  package = "operDash")
-    ),
 
     footerScript
   )
@@ -248,10 +244,6 @@ navbarPage <- function(title = NULL, navbar = NULL, content = NULL, headScript =
     ),
     shiny::includeScript(
       system.file("js/shiny-oper-tab-content.js",
-                  package = "operDash")
-    ),
-    shiny::includeScript(
-      system.file("js/shiny-oper-margin-top.js",
                   package = "operDash")
     ),
 
