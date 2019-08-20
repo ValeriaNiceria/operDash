@@ -3,21 +3,19 @@
 #'
 #' @description descricao
 #'
-#' @param label O texto que será exibido.
+#' @param text O texto que será exibido.
 #' @param status O status do label que pode ser success, danger, info ou warning.
 #' @param float A posição do label que pode ser right ou left.
 #'
 #'
 #'
 #' @export
-
-
-label <- function(label = "label", status = "success", float = "right", ...) {
+label <- function(text = "label", status = "success", float = "right", ...) {
   labelType = paste0("label-", status)
   labelFloat = paste0("float-", float)
   classValue = paste("label", labelType, labelFloat)
 
-  shiny::tags$span(class=classValue, label, ...)
+  shiny::tags$span(class=classValue, text, ...)
 }
 
 #' @title CollapseLink
