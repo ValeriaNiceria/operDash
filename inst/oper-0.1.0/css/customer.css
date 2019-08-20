@@ -1405,7 +1405,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 .top-navigation .nav > li > a {
   padding: 15px 20px;
-  color: #676a6c;
+  color: #e5e5e5;
 }
 .top-navigation .nav > li a:hover,
 .top-navigation .nav > li a:focus {
@@ -5004,6 +5004,7 @@ table.table-mail tr td {
 }
 .dropdown-item {
   width: auto;
+  color: #e5e5e5;
 }
 .dropdown-item.active,
 .dropdown-item:active {
@@ -6085,6 +6086,7 @@ a.compose-mail {
 .dropdown-messages-box .dropdown-item:focus,
 .dropdown-messages-box .dropdown-item:hover {
   background-color: inherit;
+  color: #33A052;
 }
 .feed-photo {
   max-height: 180px;
@@ -9618,5 +9620,5 @@ nav.navbar.navbar-expand-lg.navbar-static-top.navbar-fixed-top {
 
 .dropdown-menu.show {
     background: #0B2032;
-    color: #676a6c;
+    color: #e5e5e5;
 }
