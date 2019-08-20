@@ -1,6 +1,8 @@
 #' @title Panel
 #' @name panel
 #'
+#' @description descricao
+#'
 #'
 #' @param title Um título para o paínel.
 #' @param body Um conteúdo para o corpo do paínel.
@@ -64,6 +66,8 @@ panel <- function(title = NULL, body = NULL, footer = NULL, status = "default", 
 
 #' @title AccordionItem
 #' @name accordionItem
+#'
+#' @description descricao
 #'
 #'
 #' @param width O tamanho do accordionItem, usando o grid do Bootstrap.

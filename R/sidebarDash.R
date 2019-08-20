@@ -3,6 +3,7 @@
 #'
 #' @description descricao
 #'
+#'
 #' @param ... Itens adicionais
 #' @param brand utilizar texto ou imagem
 #'

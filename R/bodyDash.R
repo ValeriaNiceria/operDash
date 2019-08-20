@@ -1,6 +1,8 @@
 #' @title Dashboard Body
 #' @name bodyDash
 #'
+#' @description descricao
+#'
 #'
 #' @param ... Itens adicionais
 #'

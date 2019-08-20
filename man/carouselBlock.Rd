@@ -12,7 +12,7 @@ carouselBlock(..., id = "myCarousel")
 \item{id}{idetificação para o bloco}
 }
 \description{
-Carousel Block
+descricao
 }
 \seealso{
 \code{\link{carouselItem}}

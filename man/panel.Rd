@@ -21,7 +21,7 @@ podendo ser utilizado os valores \strong{default}, \strong{primary}, \strong{suc
 Tendo como padrão o valor 12, podendo ser utilizado os valores de 1 à 12.}
 }
 \description{
-Panel
+descricao
 }
 \examples{
 if(interactive()){

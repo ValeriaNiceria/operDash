@@ -14,5 +14,5 @@ carouselItem(imgSrc = NULL, title = NULL, subTitle = NULL)
 \item{subTitle}{subtitulo para o item do carousel}
 }
 \description{
-Carousel Item
+descricao
 }

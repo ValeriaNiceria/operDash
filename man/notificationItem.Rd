@@ -19,5 +19,5 @@ notificationItem(icon = NULL, title = NULL, message = NULL,
 \item{...}{Items to put in the notification item.}
 }
 \description{
-Dashboard notification item
+descricao
 }

@@ -16,7 +16,7 @@ notification(..., icon = NULL, label = NULL, status = "warning")
 \item{status}{A message.}
 }
 \description{
-Dashboard notification
+descricao
 }
 \examples{
 # Basic dashboard page template

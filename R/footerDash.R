@@ -1,6 +1,8 @@
 #' @title Dashboard Footer
 #' @name footerDash
 #'
+#' @description descricao
+#'
 #'
 #' @param textLeft Um texto que será adicionado do lado esquerdo da barra
 #' @param textRight Um texto que será adicionado do lado direito da barra
