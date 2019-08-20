@@ -3,7 +3,7 @@
 #########################
 library(shiny)
 library(devtools)
-# devtools::install_github("ValeriaNiceria/operDash", force = TRUE)
+# devtools::install_github("ValeriaNice ria/operDash", force = TRUE)
 library(operDash)
 # library(shinyWidgets)
 # library(htmltools)
