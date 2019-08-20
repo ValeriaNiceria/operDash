@@ -15,8 +15,6 @@ sidebarDash <- function(..., brand = NULL) {
   generateItensMenu <- function(itens) {
     lapply(1:length(itens), FUN = function(i) {
 
-      # class = if (i == 1) "active nav-oper" else "nav-oper",
-
       shiny::tags$li(
         itens[[i]]
       )
