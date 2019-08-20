@@ -1,6 +1,8 @@
 #' @title Button
 #' @name appButton
 #'
+#' @description descricao
+#'
 #'
 #' @param id Identificador do botão
 #' @param label Texto que será exibido no botão
@@ -28,12 +30,14 @@ appButton <- function(id = NULL, label = "label", icon = NULL, status = "default
 #' @title appCircleButton
 #' @name appCircleButton
 #'
+#' @description descricao
 #'
-#' @param id
-#' @param icon
-#' @param status
-#' @param lg
-#' @param ...
+#'
+#' @param id id
+#' @param icon icon
+#' @param status status
+#' @param lg lg
+#' @param ... itens
 #'
 #'
 #' @export
@@ -49,7 +53,9 @@ appCircleButton <- function(id = NULL, icon = NULL, status = "default", lg = FAL
 #' @title jumbotron
 #' @name jumbotron
 #'
-#' @param ...
+#' @description descricao
+#'
+#' @param ... itens
 #'
 #' @export
 
@@ -64,10 +70,12 @@ jumbotron <- function(...) {
 #' @title alert
 #' @name alert
 #'
+#' @description descricao
 #'
-#' @param message
-#' @param status
-#' @param ...
+#'
+#' @param message message
+#' @param status status
+#' @param ... itens
 #'
 #'
 #' @export
@@ -91,13 +99,14 @@ alert <- function(..., message = NULL, status = "success") {
 #' @name progressBar
 #'
 #'
-#' @param status
-#' @param animated
-#' @param min
-#' @param value
-#' @param max
-#' @param max
-#' @param ...
+#' @description descricao
+#'
+#' @param status status
+#' @param animated animated
+#' @param min min
+#' @param value value
+#' @param max max
+#' @param ... itens
 #'
 #'
 #' @export

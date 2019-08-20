@@ -1,13 +1,15 @@
 #' @title InfoMetric
 #' @name infoMetric
 #'
+#' @description descricao
 #'
-#' @param width
-#' @param title
-#' @param subTitle
-#' @param percent
-#' @param colorPercent
-#' @param icon
+#'
+#' @param width width
+#' @param title title
+#' @param subTitle subTitle
+#' @param percent percent
+#' @param colorPercent colorPercent
+#' @param icon icon
 #'
 #'
 #' @export
@@ -37,12 +39,14 @@ infoMetric <- function(width = 12, title = NULL, subTitle = NULL, value = NULL, 
 #' @title InfoProgress
 #' @name infoProgress
 #'
+#' @description descricao
 #'
-#' @param width
-#' @param title
-#' @param subTitle
-#' @param value
-#' @param status
+#'
+#' @param width width
+#' @param title title
+#' @param subTitle subTitle
+#' @param value value
+#' @param status status
 #'
 #'
 #' @export
@@ -73,13 +77,15 @@ infoProgress <- function(width = 12, title = NULL, subTitle = NULL, value = "33"
 #' @title ValueBox
 #' @name valueBox
 #'
+#' @description descricao
 #'
-#' @param width
-#' @param icon
-#' @param textTop
-#' @param textSub
-#' @param status
-#' @param ...
+#'
+#' @param width width
+#' @param icon icon
+#' @param textTop textTop
+#' @param textSub textSub
+#' @param status status
+#' @param ... itens
 #'
 #'
 #' @export

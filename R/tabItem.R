@@ -1,4 +1,7 @@
+#' @title tabItem
 #' @name tabItem
+#'
+#' @description descricao
 #'
 #' @param tabName name to tab.
 #' @param ... Items to put in the dashboard body.

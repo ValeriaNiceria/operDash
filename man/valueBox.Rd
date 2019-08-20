@@ -8,8 +8,18 @@ valueBox(width = 12, icon = NULL, textTop = "textTop",
   textSub = "textSub", status = "default", ...)
 }
 \arguments{
-\item{...}{}
+\item{width}{width}
+
+\item{icon}{icon}
+
+\item{textTop}{textTop}
+
+\item{textSub}{textSub}
+
+\item{status}{status}
+
+\item{...}{itens}
 }
 \description{
-ValueBox
+descricao
 }

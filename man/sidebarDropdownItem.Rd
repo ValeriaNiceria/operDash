@@ -7,8 +7,12 @@
 sidebarDropdownItem(text = NULL, icon = NULL, tabName = NULL)
 }
 \arguments{
-\item{tabName}{}
+\item{text}{text}
+
+\item{icon}{icon}
+
+\item{tabName}{tabName}
 }
 \description{
-Sidebar item dropdown
+descricao
 }

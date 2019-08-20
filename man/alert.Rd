@@ -7,8 +7,12 @@
 alert(..., message = NULL, status = "success")
 }
 \arguments{
-\item{...}{}
+\item{...}{itens}
+
+\item{message}{message}
+
+\item{status}{status}
 }
 \description{
-alert
+descricao
 }

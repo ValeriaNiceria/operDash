@@ -7,8 +7,8 @@
 jumbotron(...)
 }
 \arguments{
-\item{...}{}
+\item{...}{itens}
 }
 \description{
-jumbotron
+descricao
 }

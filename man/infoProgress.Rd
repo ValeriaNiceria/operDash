@@ -8,8 +8,16 @@ infoProgress(width = 12, title = NULL, subTitle = NULL,
   value = "33", status = NULL, ...)
 }
 \arguments{
-\item{status}{}
+\item{width}{width}
+
+\item{title}{title}
+
+\item{subTitle}{subTitle}
+
+\item{value}{value}
+
+\item{status}{status}
 }
 \description{
-InfoProgress
+descricao
 }

@@ -12,5 +12,5 @@ sidebarDash(..., brand = NULL)
 \item{brand}{utilizar texto ou imagem}
 }
 \description{
-Sidebar
+descricao
 }

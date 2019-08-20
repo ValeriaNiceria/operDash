@@ -8,8 +8,16 @@ appCircleButton(id = NULL, icon = NULL, status = "default",
   lg = FALSE, ...)
 }
 \arguments{
-\item{...}{}
+\item{id}{id}
+
+\item{icon}{icon}
+
+\item{status}{status}
+
+\item{lg}{lg}
+
+\item{...}{itens}
 }
 \description{
-appCircleButton
+descricao
 }

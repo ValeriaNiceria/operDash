@@ -8,8 +8,18 @@ infoMetric(width = 12, title = NULL, subTitle = NULL, value = NULL,
   percent = "0\%", colorPercent = "text-navy", icon = NULL, ...)
 }
 \arguments{
-\item{icon}{}
+\item{width}{width}
+
+\item{title}{title}
+
+\item{subTitle}{subTitle}
+
+\item{percent}{percent}
+
+\item{colorPercent}{colorPercent}
+
+\item{icon}{icon}
 }
 \description{
-InfoMetric
+descricao
 }
