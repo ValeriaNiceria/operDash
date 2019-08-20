@@ -1,6 +1,8 @@
 #' @title Dashboard notification item
 #' @name notificationItem
 #'
+#' @description descricao
+#'
 #'
 #' @param icon A icon.
 #' @param title A title.
@@ -30,6 +32,8 @@ notificationItem <- function(icon = NULL, title = NULL, message = NULL, time = N
 
 #' @title Dashboard notification
 #' @name notification
+#'
+#' @description descricao
 #'
 #'
 #' @param icon A icon.

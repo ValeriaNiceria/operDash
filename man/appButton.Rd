@@ -17,5 +17,5 @@ appButton(id = NULL, label = "label", icon = NULL,
 \item{status}{status do botão}
 }
 \description{
-Button
+descricao
 }

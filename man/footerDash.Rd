@@ -12,5 +12,5 @@ footerDash(textLeft = "textLeft", textRight = "textRight")
 \item{textRight}{Um texto que será adicionado do lado direito da barra}
 }
 \description{
-Dashboard Footer
+descricao
 }

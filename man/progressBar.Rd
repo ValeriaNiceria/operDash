@@ -8,8 +8,18 @@ progressBar(status = "success", animated = FALSE, min = "0",
   value = "45", max = "100", ...)
 }
 \arguments{
-\item{...}{}
+\item{status}{status}
+
+\item{animated}{animated}
+
+\item{min}{min}
+
+\item{value}{value}
+
+\item{max}{max}
+
+\item{...}{itens}
 }
 \description{
-progressBar
+descricao
 }

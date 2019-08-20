@@ -10,5 +10,5 @@ bodyDash(...)
 \item{...}{Itens adicionais}
 }
 \description{
-Dashboard Body
+descricao
 }

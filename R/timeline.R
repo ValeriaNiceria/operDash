@@ -1,6 +1,8 @@
 #' @title TimelineBlock
 #' @name timelineBlock
 #'
+#' @description descricao
+#'
 #' @param ... Itens adicionais.
 #'
 #'
@@ -17,11 +19,13 @@ timelineBlock <- function(...) {
 #' @title TimelineBlock
 #' @name timelineBlock
 #'
-#' @param icon
-#' @param statusIcon
-#' @param title
-#' @param content
-#' @param time
+#' @description descricao
+#'
+#' @param icon icon
+#' @param statusIcon statusIcon
+#' @param title title
+#' @param content content
+#' @param time time
 #'
 #'
 #' @export

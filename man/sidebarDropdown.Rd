@@ -7,8 +7,10 @@
 sidebarDropdown(text = NULL, icon = NULL, ...)
 }
 \arguments{
-\item{icon}{}
+\item{text}{text}
+
+\item{icon}{icon}
 }
 \description{
-sidebar dropdown group
+descricao
 }

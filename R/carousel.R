@@ -1,6 +1,8 @@
 #' @title Carousel Block
 #' @name carouselBlock
 #'
+#' @description descricao
+#'
 #'
 #' @param id idetificação para o bloco
 #' @param ... itens que serão adicionados \code{carouselItem}
@@ -69,6 +71,8 @@ carouselBlock <- function(..., id = "myCarousel") {
 
 #' @title Carousel Item
 #' @name carouselItem
+#'
+#' @description descricao
 #'
 #'
 #' @param imgSrc caminho da imagem

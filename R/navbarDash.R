@@ -1,6 +1,7 @@
 #' @title Dashboard Menu Item
 #' @name menuItem
 #'
+#' @description descricao
 #'
 #' @param text O texto que será exibido.
 #' @param icon Um ícone para o item do menu.
@@ -55,6 +56,8 @@ menuItem <- function(text = "Link", icon = NULL, tabName = NULL, href = NULL) {
 #' @title Menu Left Base
 #' @name menuLeft
 #'
+#' @description descricao
+#'
 #'
 #' @param ... Itens que serão adicionados a esquerda do menu.
 #'
@@ -71,6 +74,8 @@ menuLeft <- function(...) {
 #' @title Menu Right Base
 #' @name menuRight
 #'
+#' @description descricao
+#'
 #'
 #' @param ... Itens que serão adicionados a direita do menu.
 #'
@@ -86,6 +91,8 @@ menuRight <- function(...) {
 
 #' @title Dashboard Menu Dropdown
 #' @name menuDropdown
+#'
+#' @description descricao
 #'
 #'
 #' @param text O texto que será exibido.
@@ -120,6 +127,9 @@ menuDropdown <- function(text = "Link", icon = NULL, ...) {
 
 #' @title Dashboard navbarDash
 #' @name navbarDash
+#'
+#' @description descricao
+#'
 #'
 #' @param brandText Um texto ou imagem que será utilizado como brand
 #' @param brandImg The brand image

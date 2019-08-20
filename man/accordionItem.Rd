@@ -15,5 +15,5 @@ Tendo como padrão o valor 12, podendo ser utilizado os valores de 1 à 12.}
 \item{content}{O conteúdo para o accordionItem.}
 }
 \description{
-AccordionItem
+descricao
 }

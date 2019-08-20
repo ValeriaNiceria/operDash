@@ -1,6 +1,7 @@
 #' @title Label
 #' @name label
 #'
+#' @description descricao
 #'
 #' @param label O texto que será exibido.
 #' @param status O status do label que pode ser success, danger, info ou warning.
@@ -22,6 +23,8 @@ label <- function(label = "label", status = "success", float = "right", ...) {
 #' @title CollapseLink
 #' @name collapseLink
 #'
+#' @description descricao
+#'
 #'
 #' @export
 
@@ -33,6 +36,7 @@ collapseLink <- function() {
 #' @title CloseLink
 #' @name closeLink
 #'
+#' @description descricao
 #'
 #' @export
 closeLink <- function() {
@@ -42,6 +46,8 @@ closeLink <- function() {
 
 #' @title InfoLink
 #' @name infoLink
+#'
+#' @description descricao
 #'
 #'
 #' @param icon O ícone que será exibido.
@@ -66,6 +72,8 @@ infoLink <- function(icon = NULL, message = NULL, position = "right", ...) {
 #' @name boxTools
 #'
 #'
+#' @description descricao
+#'
 #' @param ... Itens adicionais.
 #'
 #'
@@ -80,10 +88,12 @@ boxTools <- function(...) {
 #' @name boxContent
 #'
 #'
-#' @param info
-#' @param title
-#' @param background
-#' @param colorText
+#' @description descricao
+#'
+#' @param info info
+#' @param title title
+#' @param background background
+#' @param colorText colorText
 #' @param ... Itens adicionais.
 #'
 #'
@@ -104,6 +114,8 @@ boxTitle <- function(..., info = NULL, title = "iboxTitle", background = NULL, c
 #' @name boxContent
 #'
 #'
+#' @description descricao
+#'
 #' @param ... Items to put in the dashboard.
 #'
 #'
@@ -118,6 +130,8 @@ boxContent <- function(...) {
 #' @title Dashboard box
 #' @name box
 #'
+#'
+#' @description descricao
 #'
 #' @param ... Items to put in the dashboard.
 #'

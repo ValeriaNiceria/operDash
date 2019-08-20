@@ -7,5 +7,5 @@
 collapseLink()
 }
 \description{
-CollapseLink
+descricao
 }

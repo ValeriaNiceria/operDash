@@ -1,6 +1,9 @@
 #' @title Sidebar
 #' @name sidebarDash
 #'
+#' @description descricao
+#'
+#'
 #' @param ... Itens adicionais
 #' @param brand utilizar texto ou imagem
 #'
@@ -11,8 +14,6 @@ sidebarDash <- function(..., brand = NULL) {
 
   generateItensMenu <- function(itens) {
     lapply(1:length(itens), FUN = function(i) {
-
-      # class = if (i == 1) "active nav-oper" else "nav-oper",
 
       shiny::tags$li(
         itens[[i]]
@@ -51,9 +52,11 @@ sidebarDash <- function(..., brand = NULL) {
 #' @title Sidebar Item
 #' @name sidebarItem
 #'
-#' @param text
-#' @param icon
-#' @param tabName
+#' @description descricao
+#'
+#' @param text text
+#' @param icon icon
+#' @param tabName tabName
 #'
 #'
 #' @export
@@ -83,8 +86,10 @@ sidebarItem <- function(text = NULL, icon = NULL, tabName = NULL, ...) {
 #' @title sidebar dropdown group
 #' @name sidebarDropdown
 #'
-#' @param text
-#' @param icon
+#' @description descricao
+#'
+#' @param text text
+#' @param icon icon
 #'
 #' @export
 sidebarDropdown <- function(text = NULL, icon = NULL, ...) {
@@ -109,9 +114,11 @@ sidebarDropdown <- function(text = NULL, icon = NULL, ...) {
 #' @title Sidebar item dropdown
 #' @name sidebarDropdownItem
 #'
-#' @param text
-#' @param icon
-#' @param tabName
+#' @description descricao
+#'
+#' @param text text
+#' @param icon icon
+#' @param tabName tabName
 #'
 #' @export
 sidebarDropdownItem <- function(text = NULL, icon = NULL, tabName = NULL) {
