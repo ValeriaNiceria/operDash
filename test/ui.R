@@ -14,19 +14,7 @@ navbar <- navbarDash(brandText = "operDash",
                                    menuItem(text = "Carousel", tabName = "carouselElement"),
                                    menuItem(text = "Panel", tabName = "panelElement"),
                                    menuItem(text = "Timeline", tabName = "timelineElement")
-                                   ),
-
-                      menuDropdown(text = "Dash", icon = icon("laptop-code"),
-                                   menuItem(text = "pageDash", tabName = "codePageDash"),
-                                   menuItem(text = "navbarDash", tabName = "codeNavbarDash"),
-                                   menuItem(text = "bodyDash", tabName = "codeBodyDash"),
-                                   menuItem(text = "box", tabName = "codeBox"),
-                                   menuItem(text = "valueBox", tabName = "codeValueBox"),
-                                   menuItem(text = "elements", tabName = "codeElements"),
-                                   menuItem(text = "panel", tabName = "codePanel"),
-                                   menuItem(text = "timeline", tabName = "codeTimeline")),
-                      menuDropdown(text = "Graphs", icon = icon("chart-line"))),
-
+                                   )),
 
                     menuRight(
                       # Notification dropdown
@@ -149,16 +137,6 @@ ui =  operPage(
                     sidebarDropdownItem(text = "Panel", tabName = "panelElement"),
                     sidebarDropdownItem(text = "Timeline", tabName = "timelineElement")
                 ),
-    sidebarDropdown(text = "Dash", icon = icon("laptop-code"),
-                    sidebarDropdownItem(text = "pageDash", tabName = "codePageDash"),
-                    sidebarDropdownItem(text = "navbarDash", tabName = "codeNavbarDash"),
-                    sidebarDropdownItem(text = "bodyDash", tabName = "codeBodyDash"),
-                    sidebarDropdownItem(text = "box", tabName = "codeBox"),
-                    sidebarDropdownItem(text = "valueBox", tabName = "codeValueBox"),
-                    sidebarDropdownItem(text = "elements", tabName = "codeElements"),
-                    sidebarDropdownItem(text = "panel", tabName = "codePanel"),
-                    sidebarDropdownItem(text = "timeline", tabName = "codeTimeline")
-                    ),
     sidebarItem(text = "Box", tabName = "box"),
 
 
