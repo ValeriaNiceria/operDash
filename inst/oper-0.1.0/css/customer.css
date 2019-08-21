@@ -9591,27 +9591,13 @@ body.md-skin {
   }
 }
 
-
-
 .oper-brand {
     text-align: center;
     font-size: 18px;
     font-weight: 600;
     color: white;
     display: none;
-}
-
-
-.avatar-menu {
-  text-align: center;
-}
-
-.avatar-menu img {
-  width: 70px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+    margin-bottom: 5%;
 }
 
 nav.navbar.navbar-expand-lg.navbar-static-top.navbar-fixed-top {
