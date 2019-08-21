@@ -140,7 +140,7 @@ ui =  operPage(
     sidebarItem(text = "Box", tabName = "box"),
 
 
-    brand = img(src="https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/img/logo.png", width = "150")
+    brand = img(src="./logo.png", width = "150")
   ),
 
 
