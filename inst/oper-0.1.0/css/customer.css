@@ -9670,3 +9670,7 @@ nav.navbar.navbar-expand-lg.navbar-static-top.navbar-fixed-top {
   -webkit-transform: translateX(10%) translateY(0);
           transform: translateX(10%) translateY(0);
 }
+
+.nav li a.tab-link {
+    color: #F3F3F4;
+}
