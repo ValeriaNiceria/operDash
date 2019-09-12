@@ -79,31 +79,6 @@ body <- bodyDash(
   # Elements - Timeline
   timelineElement
 
-  # Dash - Code
-  # code pageDash
-  # codePageDashExample,
-
-  # code navbarDash
-  # codeNavbarDashExample,
-
-  # code bodyDash
-  # codeBodyDashExample,
-
-  # code box
-  # codeBoxExample,
-
-  # valueBox
-  # codeValueBoxExample,
-
-  # code Elements
-  # codeElementsExample,
-
-  # code Panel
-  # codePanelExample,
-
-  # code Timeline
-  # codeTimelineExample
-
 )
 
 
