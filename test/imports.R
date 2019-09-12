@@ -2,7 +2,7 @@
 # Carregando os pacotes #
 #########################
 library(shiny)
-# library(devtools)
+library(devtools)
 # library(roxygen2)
 # load_all()
 # document()
