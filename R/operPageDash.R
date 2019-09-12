@@ -18,10 +18,10 @@
 #' @export
 
 
-operPage <- function(title = "", sidebar = NULL, navbar = NULL, contentNavbarRight = NULL, body = NULL, headScript = NULL, footerScript = NULL) {
+operPage <- function(title = "", sidebar = NULL, navbar = NULL, contentNavbarSidebar = NULL, body = NULL, headScript = NULL, footerScript = NULL) {
 
   if (!is.null(sidebar)) {
-    sidebarPage(title = title, sidebar = sidebar, contentNavbarRight = contentNavbarRight, content = body, headScript = headScript, footerScript = footerScript)
+    sidebarPage(title = title, sidebar = sidebar, contentNavbarSidebar = contentNavbarSidebar, content = body, headScript = headScript, footerScript = footerScript)
   } else {
     navbarPage(title = title, navbar = navbar, content = body, headScript = headScript, footerScript = footerScript)
   }
@@ -30,7 +30,7 @@ operPage <- function(title = "", sidebar = NULL, navbar = NULL, contentNavbarRig
 
 
 
-sidebarPage <- function(title = NULL, sidebar = NULL, contentNavbarRight = NULL, content = NULL, headScript = NULL, footerScript = NULL) {
+sidebarPage <- function(title = NULL, sidebar = NULL, contentNavbarSidebar = NULL, content = NULL, headScript = NULL, footerScript = NULL) {
 
   shiny::tags$html(
 
@@ -87,7 +87,7 @@ sidebarPage <- function(title = NULL, sidebar = NULL, contentNavbarRight = NULL,
               shiny::tags$ul(
                 class="nav navbar-top-links navbar-right",
 
-                contentNavbarRight
+                contentNavbarSidebar
 
               )
             )

@@ -50,7 +50,7 @@ fluidRow(
         background = "#00a7d0",
         boxTools(
                 collapseLink(),
-                label(label = "testando")
+                label(text = "testando")
         )
       ),
       boxContent(

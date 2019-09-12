@@ -140,7 +140,7 @@ ui =  operPage(
     sidebarItem(text = "Box", tabName = "box"),
 
 
-    brand = h1('testando')
+    brand = img(src="./logo.png", width = "150")
   ),
 
 

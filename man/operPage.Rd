@@ -5,7 +5,7 @@
 \title{Dashboard Page}
 \usage{
 operPage(title = "", sidebar = NULL, navbar = NULL,
-  contentNavbarRight = NULL, body = NULL, headScript = NULL,
+  contentNavbarSidebar = NULL, body = NULL, headScript = NULL,
   footerScript = NULL)
 }
 \arguments{
