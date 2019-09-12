@@ -77,32 +77,32 @@ body <- bodyDash(
   panelElement,
 
   # Elements - Timeline
-  timelineElement,
+  timelineElement
 
   # Dash - Code
   # code pageDash
-  codePageDashExample,
+  # codePageDashExample,
 
   # code navbarDash
-  codeNavbarDashExample,
+  # codeNavbarDashExample,
 
   # code bodyDash
-  codeBodyDashExample,
+  # codeBodyDashExample,
 
   # code box
-  codeBoxExample,
+  # codeBoxExample,
 
   # valueBox
-  codeValueBoxExample,
+  # codeValueBoxExample,
 
   # code Elements
-  codeElementsExample,
+  # codeElementsExample,
 
   # code Panel
-  codePanelExample,
+  # codePanelExample,
 
   # code Timeline
-  codeTimelineExample
+  # codeTimelineExample
 
 )
 
