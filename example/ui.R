@@ -86,7 +86,11 @@ source("./imports.R")
 # Navbar exemplo #
 ###################
 ui <- operDashPage(
-  title = "operDash"
+  title = "operDash",
+  header = operDashHeader(
+    title = "operDash",
+    logo = icon("rocket")
+    )
 )
 
 

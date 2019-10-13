@@ -1,5 +1,6 @@
 # importFrom("utils", "capture.output")
 export(operDashPage)
+export(operDashHeader)
 export(bodyDash)
 export(footerDash)
 export(menuItem)

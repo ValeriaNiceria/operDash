@@ -1,23 +1,28 @@
 #' @title Dashboard Page
 #' @name operDashPage
 #'
-#' @description descricao
-#'
+#' @description A função operDashPage é a função principal do pacote,
+#' ela engloba todos os elementos que serão adicionados na página.
 #'
 #' @param title Um título que será utilizado no display do browser
-#' @param sidebar Um menu lateral \code{sidebar}
-#' @param headScript Script que será adicionado no head da página
-#' @param body O conteúdo da página \code{body}
-#' @param footer Script que será adicionado no footer da página
+#' @param header Barra superior da página \code{operDashHeader}
+#' @param sidebar Menu lateral \code{operDashSidebar}
+#' @param body O conteúdo da página \code{operDashBody}
+#' @param footer Barra inferior da página \code{operDashFooter}
 #'
 #'
-#' @seealso \code{\link{sidebar}}, \code{\link{body}}.
+#' @seealso \code{\link{operDashHeader}}, \code{\link{operDashSidebar}},
+#' \code{\link{operDashBody}}, \code{\link{operDashFooter}}.
 #'
 #'
 #' @export
 
 
-operDashPage <- function(title = NULL, header = NULL, sidebar = NULL, body = NULL, footer = NULL) {
+operDashPage <- function(title = NULL,
+                         header = NULL,
+                         sidebar = NULL,
+                         body = NULL,
+                         footer = NULL) {
 
   shiny::tags$html(
 
@@ -79,28 +84,8 @@ operDashPage <- function(title = NULL, header = NULL, sidebar = NULL, body = NUL
         class="wrapper",
 
         # Header -----------------------------------
-        shiny::tags$header(
-          class="main-header",
-          # Logo
-          shiny::tags$a(href="#", class="logo",
-                tags$span(class="logo-mini", tags$strong("A"), "LT"),
-                tags$span(class="logo-lg", tags$strong("A"), "LT")
-                ),
+        header
 
-          # Header Navbar
-          shiny::tags$nav(class="navbar navbar-static-top",
-                   # Sidebar toggle button
-                   shiny::tags$a(
-                     href="#",
-                     class="sidebar-toggle",
-                     `data-toggle`="push-menu",
-                     role="button",
-                     shiny::icon("bars")
-                    )
-
-                   )
-
-        )
 
       )
     ),

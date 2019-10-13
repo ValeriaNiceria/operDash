@@ -10,17 +10,19 @@ operDashPage(title = NULL, header = NULL, sidebar = NULL,
 \arguments{
 \item{title}{Um título que será utilizado no display do browser}
 
-\item{sidebar}{Um menu lateral \code{sidebar}}
+\item{header}{Barra superior da página \code{operDashHeader}}
 
-\item{body}{O conteúdo da página \code{body}}
+\item{sidebar}{Menu lateral \code{operDashSidebar}}
 
-\item{footer}{Script que será adicionado no footer da página}
+\item{body}{O conteúdo da página \code{operDashBody}}
 
-\item{headScript}{Script que será adicionado no head da página}
+\item{footer}{Barra inferior da página \code{operDashFooter}}
 }
 \description{
-descricao
+A função operDashPage é a função principal do pacote,
+ela engloba todos os elementos que serão adicionados na página.
 }
 \seealso{
-\code{\link{sidebar}}, \code{\link{body}}.
+\code{\link{operDashHeader}}, \code{\link{operDashSidebar}},
+\code{\link{operDashBody}}, \code{\link{operDashFooter}}.
 }
