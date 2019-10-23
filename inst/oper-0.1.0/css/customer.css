@@ -7,7 +7,7 @@
 }
 
 .skin-blue .main-header .logo:hover {
-  background: #21384f;
+  background: #1d2e3f;
 }
 
 .skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper {
@@ -87,3 +87,22 @@
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
     background-color: #283B4F;
 }
+
+
+.skin-blue .sidebar-menu>li>a:hover {
+    background: #1d2e3f;
+}
+
+.skin-blue .sidebar-menu>li>a:focus {
+    background: #1d2e3f;
+}
+
+.skin-blue .sidebar-menu>li>.treeview-menu {
+    background: #283B4F;
+}
+
+/*
+.skin-blue .sidebar-menu>li>.treeview-menu>li>a:hover {
+  font-weight: bold;
+}
+*/

@@ -89,21 +89,10 @@ sidebarUserPanel <- function(name = NULL, info = NULL, image = NULL) {
 #' @export
 sidebarMenu <- function(...) {
 
-  itens <- list(...)
-
-  generateItensMenu <- function(itens) {
-    lapply(1:length(itens), FUN = function(i) {
-
-      shiny::tags$li(
-        itens[[i]]
-      )
-
-    })
-  }
-
   shiny::tags$ul(
     class="sidebar-menu",
     `data-widget`="tree",
+    ...
   )
 
 
@@ -123,7 +112,9 @@ sidebarMenu <- function(...) {
 #'
 #'
 #' @export
-sidebarItem <- function(text = NULL, icon = NULL, tabName = NULL, href = NULL, sidebarSubItem = NULL) {
+sidebarItem <- function(text = NULL, ..., icon = NULL, tabName = NULL, href = NULL) {
+
+  itens <- list(...)
 
   onclick_item = paste0(
     "$('.shiny-oper-tab-content').hide();",
@@ -135,7 +126,8 @@ sidebarItem <- function(text = NULL, icon = NULL, tabName = NULL, href = NULL, s
   )
 
 
-  if (is.null(sidebarSubItem)) {
+  if (length(itens) == 0) {
+
     shiny::tags$li(
       shiny::tags$a(
         id = if (!is.null(tabName)) paste0("#shiny-tab-", tabName, "_tab_id"),
@@ -146,8 +138,6 @@ sidebarItem <- function(text = NULL, icon = NULL, tabName = NULL, href = NULL, s
       )
     )
   } else {
-
-    itens <- list(sidebarSubItem)
 
     generateItensMenu <- function(itens) {
       lapply(1:length(itens), FUN = function(i) {
@@ -167,7 +157,7 @@ sidebarItem <- function(text = NULL, icon = NULL, tabName = NULL, href = NULL, s
         shiny::tags$span(text),
         shiny::tags$span(
           class="pull-right-container",
-          shiny::tags$icon("angle-left", class="pull-right")
+          shiny::icon("angle-left", class="pull-right")
         )
       ),
       shiny::tags$ul(

@@ -92,7 +92,25 @@ ui <- operDashPage(
     logo = icon("rocket")
     ),
   sidebar = operDashSidebar(
-    sidebarUserPanel = sidebarUserPanel(name = "Valéria", info = "Testando")
+    # sidebarUserPanel = sidebarUserPanel(name = "Valéria", info = "Testando")
+    sidebarMenu = sidebarMenu(
+      sidebarItem(text = "Teste",
+                  icon = icon("link"),
+                  tabName = "teste"),
+
+      sidebarItem(text = "Teste2",
+                  icon = icon("link"),
+                  sidebarSubItem(
+                    text = "Text1",
+                    icon = icon("link"),
+                    tabName = "teste1"
+                  ),
+                  sidebarSubItem(
+                    text = "Text2",
+                    icon = icon("link"),
+                    tabName = "teste2"
+                  ))
+    )
   )
 )
 

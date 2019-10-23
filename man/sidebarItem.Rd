@@ -4,8 +4,8 @@
 \alias{sidebarItem}
 \title{Sidebar Item}
 \usage{
-sidebarItem(text = NULL, icon = NULL, tabName = NULL, href = NULL,
-  sidebarSubItem = NULL)
+sidebarItem(text = NULL, ..., icon = NULL, tabName = NULL,
+  href = NULL)
 }
 \arguments{
 \item{text}{O texto que será exibido}
