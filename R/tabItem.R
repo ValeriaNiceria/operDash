@@ -1,10 +1,11 @@
 #' @title tabItem
 #' @name tabItem
 #'
-#' @description descricao
+#' @description Função responsável por agrupar conteúdos que serão exibidos no corpo da página.
 #'
-#' @param tabName name to tab.
-#' @param ... Items to put in the dashboard body.
+#' @param tabName Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}
+#' ou \code{sidebarSubItem}.
+#' @param ... Conteúdo que será adicionado no corpo da página.
 #'
 #' @export
 
