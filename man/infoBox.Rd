@@ -4,9 +4,12 @@
 \alias{infoBox}
 \title{infoBox}
 \usage{
-infoBox(bg = "aqua", icon = NULL, text = NULL, value = NULL)
+infoBox(width = 12, bg = "aqua", icon = NULL, text = NULL,
+  value = NULL)
 }
 \arguments{
+\item{width}{Largura da box, podendo ser utilizados os valores entre 1 e 12.}
+
 \item{bg}{Cor de fundo do ícone, podendo ser utilizado os valores: aqua, green, yellow e red.}
 
 \item{icon}{Ícone}

@@ -46,11 +46,12 @@ ui <- operDashPage(
       tabName = "widgets",
       h2("Widgets"),
 
+      h3("infoBox"),
       fluidRow(
-        column(
-          width = 3,
-          infoBox(icon = icon("envelope-o"), text = "Message", value = "500")
-        )
+        infoBox(width = 3, icon = icon("envelope-o"), text = "Message", value = "500"),
+        infoBox(width = 3, bg ="red", icon = icon("envelope-o"), text = "Message", value = "500"),
+        infoBox(width = 3, bg ="green", icon = icon("envelope-o"), text = "Message", value = "500"),
+        infoBox(width = 3, bg ="yellow", icon = icon("envelope-o"), text = "Message", value = "500")
       )
     )
   )
