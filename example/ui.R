@@ -38,5 +38,13 @@ ui <- operDashPage(
         )
       )
     )
+  ),
+  # Body ----
+  body = operDashBody(
+    # Widgets -----
+    tabItem(
+      tabName = "widgets",
+      h2("Widgets")
+    )
   )
 )

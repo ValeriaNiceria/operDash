@@ -26,7 +26,7 @@ tabItem <- function(tabName = NULL, ...) {
 
     shiny::singleton(
       shiny::includeScript(
-        system.file("js/shiny-oper-tabs.js",
+        system.file("oper-0.1.0/js/shiny-oper-tabs.js",
                     package = "operDash")
       )
     )

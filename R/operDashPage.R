@@ -95,9 +95,10 @@ operDashPage <- function(title = NULL,
         # Sidebar ----------------------------------
         sidebar,
 
-        # conteúdo ---------------------------------
+        # Conteúdo - Body ---------------------------------
         shiny::tags$div(
-          class="content-wrapper"
+          class="content-wrapper",
+          body
         )
 
       )
@@ -175,6 +176,10 @@ operDashPage <- function(title = NULL,
 
     shiny::includeScript(
       system.file("oper-0.1.0/js/shiny-oper-link.js",
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file("oper-0.1.0/js/shiny-oper-tab-content.js",
                   package = "operDash")
     ),
 

@@ -7,10 +7,11 @@
 tabItem(tabName = NULL, ...)
 }
 \arguments{
-\item{tabName}{name to tab.}
+\item{tabName}{Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}
+ou \code{sidebarSubItem}.}
 
-\item{...}{Items to put in the dashboard body.}
+\item{...}{Conteúdo que será adicionado no corpo da página.}
 }
 \description{
-descricao
+Função responsável por agrupar conteúdos que serão exibidos no corpo da página.
 }
