@@ -8,6 +8,7 @@ export(sidebarItem)
 export(sidebarSubItem)
 export(operDashBody)
 export(tabItem)
+export(infoBox)
 
 export(footerDash)
 export(menuItem)

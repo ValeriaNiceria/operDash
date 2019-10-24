@@ -44,7 +44,14 @@ ui <- operDashPage(
     # Widgets -----
     tabItem(
       tabName = "widgets",
-      h2("Widgets")
+      h2("Widgets"),
+
+      fluidRow(
+        column(
+          width = 3,
+          infoBox(icon = icon("envelope-o"), text = "Message", value = "500")
+        )
+      )
     )
   )
 )
