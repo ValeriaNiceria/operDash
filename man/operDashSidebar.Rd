@@ -12,8 +12,8 @@ operDashSidebar(sidebarUserPanel = NULL, sidebarMenu = NULL)
 \item{sidebarMenu}{Responsável por agrupar os itens do menu. \code{sidebarMenu}}
 }
 \description{
-A função operDashSidebar é a função responsável por agrupar os elementos que ficaram
-a esquerda da página.
+A função operDashSidebar é a função responsável por agrupar os
+elementos que ficaram a esquerda da página.
 }
 \seealso{
 \code{\link{sidebarUserPanel}}, \code{\link{sidebarMenu}}.

@@ -8,14 +8,15 @@ sidebarSubItem(text = NULL, icon = NULL, tabName = NULL,
   href = NULL)
 }
 \arguments{
-\item{text}{text}
+\item{text}{O texto que será exibido}
 
-\item{icon}{icon}
+\item{icon}{Icone que será exibido antes do texto}
 
-\item{tabName}{tabName}
+\item{tabName}{Aqui deverá ser colocado o mesmo nome do tabItem que será
+ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)}
 
-\item{href}{href}
+\item{href}{Link - Endereço externo}
 }
 \description{
-descricao
+Essa função será responsável por criar sub menu.
 }

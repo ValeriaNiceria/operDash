@@ -9,9 +9,9 @@ sidebarUserPanel(name = NULL, info = NULL, image = NULL)
 \arguments{
 \item{name}{Nome do usuário}
 
-\item{info}{Informações sobre o usuário, como o status.}
+\item{info}{Informações sobre o usuário, como por exemplo o status.}
 
-\item{image}{Endereço da imagem do usuário}
+\item{image}{Endereço da imagem}
 }
 \description{
 A função sidebarUserPanel irá criar um paínel com informações sobre o usuário.

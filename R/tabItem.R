@@ -11,7 +11,7 @@
 
 tabItem <- function(tabName = NULL, ...) {
   if (is.null(tabName))
-    stop("Need tabName")
+    stop("É necessário adicionar o tabName")
 
   shiny::tagList(
     tags$div(

@@ -7,7 +7,7 @@
 }
 
 .skin-blue .main-header .logo:hover {
-  background: #1d2e3f;
+  background: #283B4F;
 }
 
 .skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper {
@@ -90,19 +90,34 @@
 
 
 .skin-blue .sidebar-menu>li>a:hover {
-    background: #1d2e3f;
+    background: #22323f;
 }
 
 .skin-blue .sidebar-menu>li>a:focus {
-    background: #1d2e3f;
+    background: #22323f;
 }
+
+.skin-blue .sidebar-menu>li>a:active {
+    background: #22323f;
+}
+
 
 .skin-blue .sidebar-menu>li>.treeview-menu {
     background: #283B4F;
 }
 
-/*
-.skin-blue .sidebar-menu>li>.treeview-menu>li>a:hover {
-  font-weight: bold;
+.skin-blue .sidebar-menu > li.active > a {
+  background: #22323f;
 }
-*/
+
+.sidebar {
+  padding-top: 20px;
+}
+
+.user-panel {
+  padding-top: 5px;
+}
+
+.sidebar-menu.tree {
+  margin-top: 2px;
+}

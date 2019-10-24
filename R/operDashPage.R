@@ -173,6 +173,11 @@ operDashPage <- function(title = NULL,
                   package = "operDash")
     ),
 
+    shiny::includeScript(
+      system.file("oper-0.1.0/js/shiny-oper-link.js",
+                  package = "operDash")
+    ),
+
     footer
   )
 

@@ -1,8 +1,8 @@
 #' @title Dashboard Sidebar
 #' @name operDashSidebar
 #'
-#' @description A função operDashSidebar é a função responsável por agrupar os elementos que ficaram
-#' a esquerda da página.
+#' @description A função operDashSidebar é a função responsável por agrupar os
+#' elementos que ficaram a esquerda da página.
 #
 #' @param sidebarUserPanel Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}
 #' @param sidebarMenu Responsável por agrupar os itens do menu. \code{sidebarMenu}
@@ -11,7 +11,6 @@
 #'
 #' @export
 operDashSidebar <- function(sidebarUserPanel = NULL, sidebarMenu = NULL) {
-
   shiny::tags$aside(
     class="main-sidebar",
     shiny::tags$section(
@@ -20,30 +19,6 @@ operDashSidebar <- function(sidebarUserPanel = NULL, sidebarMenu = NULL) {
       sidebarMenu
     )
   )
-
-
-  # shiny::tags$nav(
-  #   class="navbar-default navbar-static-side",
-  #   role="navigation",
-  #   shiny::tags$div(
-  #     class="sidebar-collapse",
-  #
-  #     shiny::tags$div(
-  #       class="oper-brand",
-  #
-  #       brand
-  #
-  #     ),
-  #
-  #     shiny::tags$ul(
-  #       class="nav metismenu",
-  #       id="side-menu",
-  #
-  #       generateItensMenu(itens)
-  #
-  #     )
-  #   )
-  # )
 }
 
 
@@ -53,8 +28,8 @@ operDashSidebar <- function(sidebarUserPanel = NULL, sidebarMenu = NULL) {
 #' @description A função sidebarUserPanel irá criar um paínel com informações sobre o usuário.
 #'
 #' @param name Nome do usuário
-#' @param info Informações sobre o usuário, como o status.
-#' @param image Endereço da imagem do usuário
+#' @param info Informações sobre o usuário, como por exemplo o status.
+#' @param image Endereço da imagem
 #'
 #' @seealso \code{\link{operDashSidebar}}.
 #'
@@ -88,28 +63,27 @@ sidebarUserPanel <- function(name = NULL, info = NULL, image = NULL) {
 #'
 #' @export
 sidebarMenu <- function(...) {
-
   shiny::tags$ul(
     class="sidebar-menu",
     `data-widget`="tree",
     ...
   )
-
-
 }
 
 
 #' @title Sidebar Item
 #' @name sidebarItem
 #'
-#' @description descricao
+#' @description Essa função é responsável por criar itens do menu.
 #'
 #' @param text O texto que será exibido
 #' @param icon Icone que será exibido antes do texto
-#' @param tabName tabName
-#' @param href href
-#' @param sidebarSubItem sidebarSubItem
+#' @param tabName Aqui deverá ser colocado o mesmo nome do tabItem que será
+#' ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)
+#' @param href Link - Endereço externo
+#' @param sidebarSubItem sidebarSubItem \code{sidebarSubItem}
 #'
+#' @seealso \code{\link{sidebarSubItem}}.
 #'
 #' @export
 sidebarItem <- function(text = NULL, ..., icon = NULL, tabName = NULL, href = NULL) {
@@ -129,6 +103,7 @@ sidebarItem <- function(text = NULL, ..., icon = NULL, tabName = NULL, href = NU
   if (length(itens) == 0) {
 
     shiny::tags$li(
+      class="link-sidebar",
       shiny::tags$a(
         id = if (!is.null(tabName)) paste0("#shiny-tab-", tabName, "_tab_id"),
         href = if (!is.null(href)) href else "javascript:void(0)",
@@ -150,7 +125,7 @@ sidebarItem <- function(text = NULL, ..., icon = NULL, tabName = NULL, href = NU
     }
 
     shiny::tags$li(
-      class="treeview",
+      class="treeview link-sidebar",
       shiny::tags$a(
         href="#",
         icon,
@@ -173,12 +148,13 @@ sidebarItem <- function(text = NULL, ..., icon = NULL, tabName = NULL, href = NU
 #' @title Sidebar SubItem
 #' @name sidebarSubItem
 #'
-#' @description descricao
+#' @description Essa função será responsável por criar sub menu.
 #'
-#' @param text text
-#' @param icon icon
-#' @param tabName tabName
-#' @param href href
+#' @param text O texto que será exibido
+#' @param icon Icone que será exibido antes do texto
+#' @param tabName Aqui deverá ser colocado o mesmo nome do tabItem que será
+#' ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)
+#' @param href Link - Endereço externo
 #'
 #'
 #' @export

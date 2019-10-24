@@ -19,8 +19,8 @@ operDashHeader <- function(..., title = NULL, logo = NULL, left_menu = NULL, rig
     class="main-header",
     # Logo
     shiny::tags$a(href="#", class="logo",
-                  tags$span(class="logo-mini", if (is.null(logo)) "logo" else logo),
-                  tags$span(class="logo-lg", if (is.null(title)) "title" else title)
+                  if (!is.null(logo)) shiny::tags$span(class="logo-mini", logo),
+                  if (!is.null(title)) shiny::tags$span(class="logo-lg", title)
     ),
 
     # Header Navbar

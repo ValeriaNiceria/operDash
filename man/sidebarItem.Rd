@@ -12,12 +12,16 @@ sidebarItem(text = NULL, ..., icon = NULL, tabName = NULL,
 
 \item{icon}{Icone que será exibido antes do texto}
 
-\item{tabName}{tabName}
+\item{tabName}{Aqui deverá ser colocado o mesmo nome do tabItem que será
+ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)}
 
-\item{href}{href}
+\item{href}{Link - Endereço externo}
 
-\item{sidebarSubItem}{sidebarSubItem}
+\item{sidebarSubItem}{sidebarSubItem \code{sidebarSubItem}}
 }
 \description{
-descricao
+Essa função é responsável por criar itens do menu.
+}
+\seealso{
+\code{\link{sidebarSubItem}}.
 }
