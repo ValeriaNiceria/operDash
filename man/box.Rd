@@ -4,10 +4,23 @@
 \alias{box}
 \title{Dashboard box}
 \usage{
-box(...)
+box(..., width = 12, title = NULL, color = "default",
+  minimize = FALSE, message = NULL, close = FALSE)
 }
 \arguments{
-\item{...}{Items to put in the dashboard.}
+\item{...}{Conteúdo da box.}
+
+\item{width}{Largura da box, podendo passar os valores de 1 à 12}
+
+\item{title}{Título da box}
+
+\item{color}{Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.}
+
+\item{minimize}{Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para minimizar a mesma.}
+
+\item{message}{Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.}
+
+\item{close}{Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para fechar a mesma.}
 }
 \description{
 descricao

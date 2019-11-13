@@ -62,7 +62,11 @@ ui <- operDashPage(
         )
       )
     ),
+
+    # Box - Exemplo ----
+    boxElement,
+
     # Widgets - Exemplo -----
-    widgets
+    widgetsElement
   )
 )

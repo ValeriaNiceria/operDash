@@ -1,5 +1,5 @@
 .skin-blue .main-header .navbar {
-  background: #f3f3f4;
+  background: #FFF;
 }
 
 .skin-blue .main-header .logo {
@@ -16,7 +16,7 @@
 
 
 .content-wrapper {
-  background: #fff;
+  background: #f3f3f4;
 }
 
 .skin-blue .main-header .navbar .nav > li > a {
@@ -124,9 +124,9 @@
 
 
 .col-lg-12 {
-  background: #FFF;
+  background: #f3f3f4;
 }
 
 .row {
-  background: #FFF;
+  background: #f3f3f4;
 }
