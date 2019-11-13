@@ -44,6 +44,18 @@ ui <- operDashPage(
 
   # Body ----
   body = operDashBody(
+    tags$head(
+      tags$link(rel="stylesheet",
+                href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css"),
+      tags$script(src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"),
+      tags$script(
+        HTML(
+          '$(document).ready(function() {
+          hljs.initHighlightingOnLoad();
+          })'
+        )
+      )
+    ),
     # Widgets - Exemplo -----
     widgets
   )
