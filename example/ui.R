@@ -49,6 +49,7 @@ ui <- operDashPage(
 
   # Body ----
   body = operDashBody(
+    # Carregando as bibliotecas do highlightjs, que será utilizado para mostrar os exemplos de código formatado.
     tags$head(
       tags$link(
         rel="stylesheet",
@@ -63,6 +64,7 @@ ui <- operDashPage(
       )
     ),
 
+    # Exemplos ----------
     # Box - Exemplo ----
     boxElement,
 
