@@ -9,8 +9,8 @@
 #' @param title Título da box.
 #' @param color Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.
 #' @param message Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.
-#' @param minimize Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para minimizar a mesma.
-#' @param close Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para fechar a mesma.
+#' @param minimize Podendo ser passado o valor TRUE e assim será adicionado um botão na box, para minimizar a mesma.
+#' @param close Podendo ser passado o valor TRUE e assim será adicionado um botão na box, para fechar a mesma.
 #'
 #'
 #' @export

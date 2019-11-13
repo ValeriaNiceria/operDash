@@ -10,18 +10,19 @@ box(..., width = 12, title = NULL, color = "default",
 \arguments{
 \item{...}{Conteúdo da box.}
 
-\item{width}{Largura da box, podendo passar os valores de 1 à 12}
+\item{width}{Largura da box, podendo passar os valores de 1 à 12.}
 
-\item{title}{Título da box}
+\item{title}{Título da box.}
 
 \item{color}{Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.}
 
 \item{message}{Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.}
 
-\item{minimize}{Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para minimizar a mesma.}
+\item{minimize}{Podendo ser passado o valor TRUE e assim será adicionado um botão na box, para minimizar a mesma.}
 
-\item{close}{Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para fechar a mesma.}
+\item{close}{Podendo ser passado o valor TRUE e assim será adicionado um botão na box, para fechar a mesma.}
 }
 \description{
-descricao
+Uma caixa de informações, onde poderá ser adicionado um título e um conteúdo. Assim, organizando as
+informações no dashboard.
 }

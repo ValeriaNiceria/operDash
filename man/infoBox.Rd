@@ -23,7 +23,7 @@ infoBox(width = 12, bg_color = "aqua", icon = NULL, text = NULL,
 
 \item{progress_desc}{Descrição que será adicionado abaixo da linha de progresso.}
 
-\item{bg_all}{Pode-se passar o valor TRUE ou FALSE, se deseja que a box inteira fique colorida.}
+\item{bg_all}{Pode-se passar o valor TRUE, se deseja que a box inteira fique colorida.}
 }
 \description{
 Uma caixa de informação.

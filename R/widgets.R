@@ -10,7 +10,7 @@
 #' @param value Valor
 #' @param progress Número da linha de progresso, podendo ser de 1 à 100.
 #' @param progress_desc Descrição que será adicionado abaixo da linha de progresso.
-#' @param bg_all Pode-se passar o valor TRUE ou FALSE, se deseja que a box inteira fique colorida.
+#' @param bg_all Pode-se passar o valor TRUE, se deseja que a box inteira fique colorida.
 #'
 #' @export
 infoBox <- function(width = 12, bg_color = "aqua", icon = NULL, text = NULL, value = NULL, progress = NULL, progress_desc = NULL, bg_all = FALSE) {
