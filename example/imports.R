@@ -16,7 +16,7 @@ library(highcharter)
 ####################################
 ###     Caminho dos exemplos     ###
 ####################################
-# source("./elements/boxExample.R", encoding = "UTF-8")
+source("./elements/widgetsElement.R", encoding = "UTF-8")
 # source("./elements/valueBoxElement.R", encoding = "UTF-8")
 # source("./elements/buttonsElements.R", encoding = "UTF-8")
 # source("./elements/jumbotronElement.R", encoding = "UTF-8")
