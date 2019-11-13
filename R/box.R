@@ -1,12 +1,12 @@
 #' @title Dashboard box
 #' @name box
 #'
-#'
-#' @description descricao
+#' @description Uma caixa de informações, onde poderá ser adicionado um título e um conteúdo. Assim, organizando as
+#' informações no dashboard.
 #'
 #' @param ... Conteúdo da box.
-#' @param width Largura da box, podendo passar os valores de 1 à 12
-#' @param title Título da box
+#' @param width Largura da box, podendo passar os valores de 1 à 12.
+#' @param title Título da box.
 #' @param color Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.
 #' @param message Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.
 #' @param minimize Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para minimizar a mesma.
