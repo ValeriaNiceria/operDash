@@ -31,6 +31,11 @@ ui <- operDashPage(
         tabName = "element_widgets"
       ),
       sidebarItem(
+        text = "UI Elements",
+        icon =  icon("laptop"),
+        tabName = "element_ui"
+      ),
+      sidebarItem(
         text = "Teste2",
         icon = icon("link"),
         sidebarSubItem(
