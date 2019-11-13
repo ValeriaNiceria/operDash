@@ -1,5 +1,5 @@
 widgets <- tabItem(
-  tabName = "widgets",
+  tabName = "element_widgets",
   h2("Widgets"),
 
   h3("infoBox"),
@@ -10,7 +10,7 @@ widgets <- tabItem(
     infoBox(width = 3, bg_color ="yellow", bg_all = TRUE, icon = icon("envelope-o"), text = "Message", value = "500", progress = "45", progress_desc = "descrição progresso")
   ),
 
-  # Code - Start
+  # Code - Start ----
   fluidRow(
     column(
       width = 12,
@@ -26,7 +26,7 @@ widgets <- tabItem(
     ')
     )
   ),
-  # Code - End
+  # Code - End ----
 
   h3("valueBox"),
   fluidRow(
@@ -36,7 +36,7 @@ widgets <- tabItem(
     valueBox(width = 3, bg_color ="yellow",icon = icon("envelope-o"), text = "Message", value = "500")
   ),
 
-  # Code
+  # Code - Start ----
   fluidRow(
     column(width = 12,
            HTML('
@@ -51,5 +51,5 @@ widgets <- tabItem(
     ')
     )
   )
-  # Code - End
+  # Code - End ----
 )

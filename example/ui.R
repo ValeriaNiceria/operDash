@@ -21,9 +21,14 @@ ui <- operDashPage(
     ),
     sidebarMenu = sidebarMenu(
       sidebarItem(
+        text = "Box",
+        icon = icon("th-large"),
+        tabName = "element_box"
+      ),
+      sidebarItem(
         text = "Widgets",
         icon = icon("th"),
-        tabName = "widgets"
+        tabName = "element_widgets"
       ),
       sidebarItem(
         text = "Teste2",
@@ -45,8 +50,9 @@ ui <- operDashPage(
   # Body ----
   body = operDashBody(
     tags$head(
-      tags$link(rel="stylesheet",
-                href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css"),
+      tags$link(
+        rel="stylesheet",
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css"),
       tags$script(src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"),
       tags$script(
         HTML(
