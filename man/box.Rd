@@ -5,7 +5,7 @@
 \title{Dashboard box}
 \usage{
 box(..., width = 12, title = NULL, color = "default",
-  minimize = FALSE, message = NULL, close = FALSE)
+  message = NULL, minimize = FALSE, close = FALSE)
 }
 \arguments{
 \item{...}{Conteúdo da box.}
@@ -16,9 +16,9 @@ box(..., width = 12, title = NULL, color = "default",
 
 \item{color}{Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.}
 
-\item{minimize}{Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para minimizar a mesma.}
-
 \item{message}{Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.}
+
+\item{minimize}{Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para minimizar a mesma.}
 
 \item{close}{Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para fechar a mesma.}
 }

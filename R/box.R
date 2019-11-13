@@ -8,13 +8,13 @@
 #' @param width Largura da box, podendo passar os valores de 1 à 12
 #' @param title Título da box
 #' @param color Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.
-#' @param minimize Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para minimizar a mesma.
 #' @param message Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.
+#' @param minimize Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para minimizar a mesma.
 #' @param close Podendo ser passados os valores TRUE ou FALSE, onde será adicionado um botão na box, para fechar a mesma.
 #'
 #'
 #' @export
-box <- function(..., width = 12, title = NULL, color = "default", minimize = FALSE, message = NULL, close = FALSE) {
+box <- function(..., width = 12, title = NULL, color = "default", message = NULL, minimize = FALSE, close = FALSE) {
   width = paste0("col-sm-", width)
   content_box = list(...)
   color_box = paste0("box-", color)
@@ -22,15 +22,6 @@ box <- function(..., width = 12, title = NULL, color = "default", minimize = FAL
   message_content = NULL
   close_content = NULL
   tools = NULL
-
-  if (isTRUE(minimize)) {
-    minimize_content = shiny::tags$button(
-      type = "button",
-      class = "btn btn-box-tool",
-      `data-widget` = "collapse",
-      shiny::icon("minus")
-    )
-  }
 
   if (!is.null(message)) {
     message_content = shiny::tags$button(
@@ -40,6 +31,15 @@ box <- function(..., width = 12, title = NULL, color = "default", minimize = FAL
       `data-widget` = "chat-pane-toggle",
       `data-original-title` = message,
       shiny::icon("comments")
+    )
+  }
+
+  if (isTRUE(minimize)) {
+    minimize_content = shiny::tags$button(
+      type = "button",
+      class = "btn btn-box-tool",
+      `data-widget` = "collapse",
+      shiny::icon("minus")
     )
   }
 
@@ -53,11 +53,11 @@ box <- function(..., width = 12, title = NULL, color = "default", minimize = FAL
   }
 
 
-  if (isTRUE(minimize) | !is.null(message) | isTRUE(close)) {
+  if (!is.null(message) | isTRUE(minimize) | isTRUE(close)) {
     tools = shiny::tags$div(
       class="box-tools pull-right",
-      minimize_content,
       message_content,
+      minimize_content,
       close_content
     )
   }
