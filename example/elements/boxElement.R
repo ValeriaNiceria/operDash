@@ -40,7 +40,7 @@ boxElement <- tabItem(
   fluidRow(
     box(
       width = 6,
-      icon_box = icon("signal"),
+      icon_box = icon("chart-line"),
       title = "Exemplo Plot",
       message = "Exemplo de plot usando o pacote highcharter",
 
@@ -61,7 +61,7 @@ boxElement <- tabItem(
   fluidRow(
     box(
       width = 6,
-      icon_box = icon("signal"),
+      icon_box = icon("chart-line"),
       title = "Exemplo Plot",
       message = "Exemplo de plot usando o pacote highcharter",
 

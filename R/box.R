@@ -6,7 +6,7 @@
 #'
 #' @param ... Conteúdo da box.
 #' @param width Largura da box, podendo passar os valores de 1 à 12.
-#' @param icon_box Icone
+#' @param icon_box Ícone que será adicionado no título da box.
 #' @param title Título da box.
 #' @param color Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.
 #' @param message Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.

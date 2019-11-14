@@ -13,7 +13,7 @@ box(..., width = 12, icon_box = NULL, title = NULL,
 
 \item{width}{Largura da box, podendo passar os valores de 1 à 12.}
 
-\item{icon_box}{Icone}
+\item{icon_box}{Ícone que será adicionado no título da box.}
 
 \item{title}{Título da box.}
 
