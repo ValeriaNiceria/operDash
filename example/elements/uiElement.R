@@ -237,5 +237,68 @@ uiElement <- tabItem(
     ')
     )
     # Code - End
+  ),
+
+
+  # Collapsible Accordion
+  fluidRow(
+    box(
+      width = 6,
+      title = "Collapsible Accordion",
+      collapsible(
+        collapsibleItem(
+          id = "item1",
+          title = "Testando collapsible",
+          "Essa é uma mensagem que ficará dentro do box do collapsibleItem"
+        ),
+        collapsibleItem(
+          id = "item2",
+          title = "Testando collapsible",
+          color = "danger",
+          "Essa é uma mensagem que ficará dentro do box do collapsibleItem"
+        ),
+        collapsibleItem(
+          id = "item3",
+          title = "Testando collapsible",
+          color = "primary",
+          "Essa é uma mensagem que ficará dentro do box do collapsibleItem"
+        )
+      )
+    ),
+
+    # Code - Start
+    column(
+      width = 6,
+      HTML('
+<pre><code class="R">
+  fluidRow(
+    box(
+      width = 6,
+      title = "Collapsible Accordion",
+      collapsible(
+        collapsibleItem(
+          id = "item1",
+          title = "Testando collapsible",
+          "Essa é uma mensagem que ficará dentro do box do collapsibleItem"
+        ),
+        collapsibleItem(
+          id = "item2",
+          title = "Testando collapsible",
+          color = "danger",
+          "Essa é uma mensagem que ficará dentro do box do collapsibleItem"
+        ),
+        collapsibleItem(
+          id = "item3",
+          title = "Testando collapsible",
+          color = "primary",
+          "Essa é uma mensagem que ficará dentro do box do collapsibleItem"
+        )
+      )
+    )
+  )
+</code></pre>
+    ')
+    )
+    # Code - End
   )
 )

@@ -225,3 +225,84 @@ progressBar <- function(width = 12, value = 100, status = "success", animated = 
   )
 
 }
+
+
+
+#' @title Collapsible
+#' @name collapsible
+#'
+#' @description descrição
+#'
+#' @param width Largura da mensagem.
+#' @param ... Itens que serão adicionados ao collapsible.
+#'
+#'
+#' @export
+collapsible <- function(..., width = 12) {
+  width = paste0("col-sm-", width)
+
+  shiny::tags$div(
+    class=width,
+    shiny::tags$div(
+      class="box-group",
+      id="accordion",
+
+      ...
+
+    )
+  )
+
+}
+
+
+
+#' @title Collapsible Item
+#' @name collapsibleItem
+#'
+#' @description descrição
+#'
+#' @param id Um identificador para o collapsibleItem, esse identificador deverá ser único e não poderá ter carácter especial.
+#' @param title Um título para o collapsibleItem.
+#' @param color Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.
+#' @param ... Conteúdo do collapsibleItem.
+#'
+#' @export
+collapsibleItem <- function(..., id = NULL, title = NULL, color = "default") {
+  if (is.null(id))
+    stop("É necessário informar um id para o collapsibleItem")
+
+  color = paste0("box-", color)
+  class_box = paste("panel box", color)
+  id_item <- iconv(id, from = 'UTF-8', to = 'ASCII//TRANSLIT')
+  id_item <- str_replace_all(trimws(tolower(id)), " ", "_")
+
+  shiny::tags$div(
+    class=class_box,
+    shiny::tags$div(
+      class="box-header with-border",
+      # Título
+      shiny::tags$h4(
+        class="box-title",
+        shiny::tags$a(
+          `data-toggle`="collapse",
+          `data-parent`="#accordion",
+          href=paste0("#",id_item),
+          `aria-expanded`="false",
+          class="collapsed",
+          title
+        )
+      ),
+      # Conteúdo
+      shiny::tags$div(
+        id=id_item,
+        class="panel-collapse collapse",
+        `aria-expanded`="false",
+        style="height: 0px;",
+        shiny::tags$div(
+          class="box-body",
+          ...
+        )
+      )
+    )
+  )
+}
