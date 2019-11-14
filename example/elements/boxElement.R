@@ -48,9 +48,9 @@ boxElement <- tabItem(
         column(
           width = 12,
           numericInput(inputId ="n", label = "Número de observações", value = 100)
-        )
-      ),
-      fluidRow(column(width = 12, highchartOutput("plot")))
+        ),
+        column(width = 12, highchartOutput("plot"))
+      )
     ),
 
     # Code - Start
@@ -73,9 +73,12 @@ boxElement <- tabItem(
             label = "Número de observações",
             value = 100
           )
+        ),
+        column(
+          width = 12,
+          highchartOutput("plot")
         )
-      ),
-      fluidRow(column(width = 12, highchartOutput("plot")))
+      )
     )
   )
 </code></pre>
