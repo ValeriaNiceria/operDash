@@ -4,12 +4,12 @@
 \alias{carouselItem}
 \title{Carousel Item}
 \usage{
-carouselItem(imgSrc = NULL, title = NULL, subTitle = NULL)
+carouselItem(title = NULL, src = NULL)
 }
 \arguments{
-\item{imgSrc}{caminho da imagem}
-
 \item{title}{título para o item do carousel}
+
+\item{imgSrc}{caminho da imagem}
 
 \item{subTitle}{subtitulo para o item do carousel}
 }
