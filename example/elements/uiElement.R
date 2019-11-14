@@ -175,5 +175,67 @@ uiElement <- tabItem(
     ')
     )
     # Code - End
+  ),
+
+  # Progress Bar -----------------
+  fluidRow(
+    box(
+      width = 6,
+      title = "ProgressBar",
+      progressBar(
+        value = 60,
+        status = "danger",
+        animated = TRUE
+      ),
+      progressBar(
+        value = 45,
+        status = "primary"
+      ),
+      progressBar(
+        value = 90,
+        status = "warning",
+        animated = TRUE
+      ),
+      progressBar(
+        value = 30,
+        status = "success",
+        animated = TRUE
+      )
+    ),
+
+    # Code - Start
+    column(
+      width = 6,
+      HTML('
+<pre><code class="R">
+  fluidRow(
+    box(
+      width = 6,
+      title = "ProgressBar",
+      progressBar(
+        value = 60,
+        status = "danger",
+        animated = TRUE
+      ),
+      progressBar(
+        value = 45,
+        status = "primary"
+      ),
+      progressBar(
+        value = 90,
+        status = "warning",
+        animated = TRUE
+      ),
+      progressBar(
+        value = 30,
+        status = "success",
+        animated = TRUE
+      )
+    )
+  )
+</code></pre>
+    ')
+    )
+    # Code - End
   )
 )

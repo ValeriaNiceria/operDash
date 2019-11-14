@@ -181,3 +181,47 @@ callout <- function(width = 12, status = "success", title = NULL, message = NULL
     )
   )
 }
+
+
+
+#' @title Progress Bar
+#' @name progressBar
+#'
+#' @description Uma barra de progresso.
+#'
+#' @param width Largura da mensagem.
+#' @param value O valor da barra de progresso, esse valor deverá ser entre 0 e 100.
+#' @param status O status da barra de progresso, podendo ser utilizado os valores: primary, success, warning, danger.
+#' @param animated Caso seja passado o valor TRUE, a barra de progresso ficará animada.
+#'
+#'
+#' @export
+progressBar <- function(width = 12, value = 100, status = "success", animated = FALSE) {
+  width = paste0("col-sm-", width)
+  status = paste0("progress-bar-", status)
+  striped = if (isTRUE(animated)) "progress-bar-striped"
+
+  if (is.null(animated) | isFALSE(animated)) {
+    progress_bar = "progress"
+  } else {
+    progress_bar = "progress active"
+  }
+
+
+  shiny::tags$div(
+    class=width,
+    shiny::tags$div(
+      class=progress_bar,
+
+      shiny::tags$div(
+        class=paste("progress-bar", status, striped),
+        role="progressbar",
+        `aria-valuenow`=value,
+        `aria-valuemin`=0,
+        `aria-valuemax`=100,
+        style=paste0("width:", value, "%")
+      )
+    )
+  )
+
+}

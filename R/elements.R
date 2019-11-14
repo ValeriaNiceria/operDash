@@ -67,35 +67,3 @@ jumbotron <- function(...) {
            )
 }
 
-
-#' @title progressBar
-#' @name progressBar
-#'
-#'
-#' @description descricao
-#'
-#' @param status status
-#' @param animated animated
-#' @param min min
-#' @param value value
-#' @param max max
-#' @param ... itens
-#'
-#'
-#' @export
-
-progressBar <- function(status = "success", animated = FALSE, min = "0", value = "45", max = "100", ...) {
-  classProgress = paste0("progress-bar ", if (animated) "progress-bar-striped progress-bar-animate", " progress-bar-", status)
-  stypeProgress = paste0("width:", value, "%")
-  shiny::tags$div(class="progress",
-                  shiny::tags$div(class=classProgress,
-                    style=stypeProgress,
-                    role="progressbar",
-                    `aria-valuenow`=value,
-                    `aria-valuemin`=min,
-                    `aria-valuemax`=max
-                    ),
-           ...
-
-           )
-}
