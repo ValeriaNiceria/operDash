@@ -1,6 +1,6 @@
 widgetsElement <- tabItem(
   tabName = "element_widgets",
-  h2("Widgets - Exemplos"),
+  title = "Widgets - Exemplos",
 
   h3("infoBox"),
   fluidRow(

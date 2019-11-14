@@ -4,13 +4,16 @@
 \alias{box}
 \title{Dashboard box}
 \usage{
-box(..., width = 12, title = NULL, color = "default",
-  message = NULL, minimize = FALSE, close = FALSE)
+box(..., width = 12, icon_box = NULL, title = NULL,
+  color = "default", message = NULL, minimize = FALSE,
+  close = FALSE)
 }
 \arguments{
 \item{...}{Conteúdo da box.}
 
 \item{width}{Largura da box, podendo passar os valores de 1 à 12.}
+
+\item{icon_box}{Icone}
 
 \item{title}{Título da box.}
 

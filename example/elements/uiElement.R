@@ -1,3 +1,4 @@
 uiElement <- tabItem(
-  tabName = "element_ui"
+  tabName = "element_ui",
+  title = "UI Elements"
 )

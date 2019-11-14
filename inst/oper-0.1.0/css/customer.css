@@ -123,10 +123,10 @@
 }
 
 
-.col-lg-12 {
+.content-wrapper > .col-lg-12 {
   background: #f3f3f4;
 }
 
-.row {
+.content-wrapper > .row {
   background: #f3f3f4;
 }

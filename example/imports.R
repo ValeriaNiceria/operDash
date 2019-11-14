@@ -10,6 +10,7 @@ library(devtools)
 library(operDash)
 library(tidyverse)
 library(highcharter)
+library(htmlwidgets)
 
 
 
@@ -18,7 +19,7 @@ library(highcharter)
 ####################################
 source("./elements/boxElement.R", encoding = "UTF-8")
 source("./elements/widgetsElement.R", encoding = "UTF-8")
-# source("./elements/buttonsElements.R", encoding = "UTF-8")
+source("./elements/uiElement.R", encoding = "UTF-8")
 # source("./elements/jumbotronElement.R", encoding = "UTF-8")
 # source("./elements/alertElement.R", encoding = "UTF-8")
 # source("./elements/progressBarElement.R", encoding = "UTF-8")

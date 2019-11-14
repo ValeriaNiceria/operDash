@@ -10,15 +10,25 @@
 #' @export
 
 
-tabItem <- function(tabName = NULL, ...) {
+tabItem <- function(tabName = NULL, title = NULL, ...) {
   if (is.null(tabName))
     stop("É necessário adicionar o tabName")
+
+  if (!is.null(title)) {
+    title = shiny::tags$section(
+      class="content-header",
+      shiny::tags$h1(title)
+    )
+  }
 
   shiny::tagList(
     tags$div(
       class="shiny-oper-tab-content",
       id = paste0("shiny-tab-", tabName),
       style = "visibility:hidden; display: none;",
+
+      title,
+
       tags$section(
         class="content",
 

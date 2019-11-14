@@ -4,7 +4,7 @@
 \alias{tabItem}
 \title{tabItem}
 \usage{
-tabItem(tabName = NULL, ...)
+tabItem(tabName = NULL, title = NULL, ...)
 }
 \arguments{
 \item{tabName}{Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}

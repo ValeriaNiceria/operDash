@@ -37,15 +37,15 @@ ui <- operDashPage(
       ),
       sidebarItem(
         text = "Teste2",
-        icon = icon("link"),
+        icon = icon("circle-o"),
         sidebarSubItem(
           text = "Text1",
-          icon = icon("link"),
+          icon = icon("circle-o"),
           tabName = "teste1"
         ),
         sidebarSubItem(
           text = "Text2",
-          icon = icon("link"),
+          icon = icon("circle-o"),
           tabName = "teste2"
         )
       )
@@ -74,6 +74,9 @@ ui <- operDashPage(
     boxElement,
 
     # Widgets - Exemplo -----
-    widgetsElement
+    widgetsElement,
+
+    # UI Elements - Exemplo ----
+    uiElement
   )
 )

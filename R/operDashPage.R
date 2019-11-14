@@ -105,10 +105,10 @@ operDashPage <- function(title = NULL,
     ),
 
     # Footer script ---------------------------
-    shiny::includeScript(
-      system.file("jquery-3.4.1/dist/jquery.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-3.4.1/dist/jquery.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("jquery-ui-1.12.1/jquery-ui.min.js",
                   package = "operDash")

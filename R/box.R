@@ -6,6 +6,7 @@
 #'
 #' @param ... Conteúdo da box.
 #' @param width Largura da box, podendo passar os valores de 1 à 12.
+#' @param icon_box Icone
 #' @param title Título da box.
 #' @param color Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.
 #' @param message Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.
@@ -14,7 +15,7 @@
 #'
 #'
 #' @export
-box <- function(..., width = 12, title = NULL, color = "default", message = NULL, minimize = FALSE, close = FALSE) {
+box <- function(..., width = 12, icon_box = NULL, title = NULL, color = "default", message = NULL, minimize = FALSE, close = FALSE) {
   width = paste0("col-sm-", width)
   content_box = list(...)
   color_box = paste0("box-", color)
@@ -70,6 +71,7 @@ box <- function(..., width = 12, title = NULL, color = "default", message = NULL
       # Header - Box
       shiny::tags$div(
         class="box-header with-border",
+        icon_box,
         shiny::tags$h3(
           class="box-title",
           title
