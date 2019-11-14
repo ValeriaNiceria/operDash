@@ -37,7 +37,7 @@ uiElement <- tabItem(
   fluidRow(
     box(
       width = 6,
-      title = "Alert",
+      title = "Alerts",
       icon_box = icon("warning"),
       alert(
         status = "danger",
@@ -75,7 +75,7 @@ uiElement <- tabItem(
   fluidRow(
     box(
       width = 6,
-      title = "Alert",
+      title = "Alerts",
       icon_box = icon("warning"),
       alert(
         status = "danger",
@@ -102,6 +102,72 @@ uiElement <- tabItem(
         title = "Mensagem de alerta!",
         message = "Essa é uma mensagem de alerta.",
         close = T
+      )
+    )
+  )
+</code></pre>
+    ')
+    )
+    # Code - End
+  ),
+
+  # Callout - Exemplo ----------------
+  fluidRow(
+    box(
+      width = 6,
+      title = "Callouts",
+      icon_box = icon("bullhorn"),
+      callout(
+        status = "danger",
+        title = "Título da mensagem",
+        message = "Esse é um exemplo de mensagem"
+      ),
+      callout(
+        status = "info",
+        title = "Título da mensagem",
+        message = "Esse é um exemplo de mensagem"
+      ),
+      callout(
+        status = "warning",
+        title = "Título da mensagem",
+        message = "Esse é um exemplo de mensagem"
+      ),
+      callout(
+        status = "success",
+        title = "Título da mensagem",
+        message = "Esse é um exemplo de mensagem"
+      )
+    ),
+
+    # Code - Start
+    column(
+      width = 6,
+      HTML('
+<pre><code class="R">
+  fluidRow(
+    box(
+      width = 6,
+      title = "Callouts",
+      icon_box = icon("bullhorn"),
+      callout(
+        status = "danger",
+        title = "Título da mensagem",
+        message = "Esse é um exemplo de mensagem"
+      ),
+      callout(
+        status = "info",
+        title = "Título da mensagem",
+        message = "Esse é um exemplo de mensagem"
+      ),
+      callout(
+        status = "warning",
+        title = "Título da mensagem",
+        message = "Esse é um exemplo de mensagem"
+      ),
+      callout(
+        status = "success",
+        title = "Título da mensagem",
+        message = "Esse é um exemplo de mensagem"
       )
     )
   )

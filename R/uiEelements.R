@@ -143,3 +143,41 @@ alert <- function(width = 12, status = "success", icon = NULL, title = NULL, mes
     )
   )
 }
+
+
+
+
+#' @title Callout
+#' @name callout
+#'
+#' @description Uma mensagem.
+#'
+#' @param width Largura da mensagem.
+#' @param status O status da mensagem, podendo utilizar os valores: danger, info, warning, success.
+#' @param title Título da mensagem.
+#' @param message Mensagem que será exibida, na caixa de mensagem.
+#'
+#'
+#' @export
+callout <- function(width = 12, status = "success", title = NULL, message = NULL) {
+  width = paste0("col-sm-", width)
+  status = paste0("callout-", status)
+  class_callout = paste("callout", status)
+
+  if (!is.null(title)) {
+    title = shiny::tags$h4(title)
+  }
+
+  if (!is.null(message)) {
+    message = shiny::tags$p(message)
+  }
+
+  shiny::div(
+    class=width,
+    shiny::div(
+      class=class_callout,
+      title,
+      message
+    )
+  )
+}
