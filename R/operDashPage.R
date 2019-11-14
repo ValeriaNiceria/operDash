@@ -59,10 +59,10 @@ operDashPage <- function(title = NULL,
         system.file("morris.js-0.5.0/morris.css",
                     package = "operDash")
       ),
-      shiny::includeCSS(
-        system.file("jvectormap-1.2.2/jquery-jvectormap.css",
-                    package = "operDash")
-      ),
+      # shiny::includeCSS(
+      #   system.file("jvectormap-1.2.2/jquery-jvectormap.css",
+      #               package = "operDash")
+      # ),
       shiny::includeCSS(
         system.file("bootstrap-datepicker-1.9.0/css/bootstrap-datepicker.min.css",
                     package = "operDash")
@@ -98,6 +98,9 @@ operDashPage <- function(title = NULL,
         # Conteúdo - Body ---------------------------------
         shiny::tags$div(
           class="content-wrapper",
+          htmltools::htmlDependency("jquery", "3.3.1",
+                                    src = c(href = "https://code.jquery.com/"),
+                                    script = "jquery-3.3.1.min.js"),
           body
         )
 
@@ -109,10 +112,10 @@ operDashPage <- function(title = NULL,
     #   system.file("jquery-3.4.1/dist/jquery.min.js",
     #               package = "operDash")
     # ),
-    shiny::includeScript(
-      system.file("jquery-ui-1.12.1/jquery-ui.min.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jquery-ui-1.12.1/jquery-ui.min.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("bootstrap-3.4.1/js/bootstrap.min.js",
                   package = "operDash")
@@ -129,14 +132,14 @@ operDashPage <- function(title = NULL,
       system.file("jquery-sparkline-2.1.3/jquery.sparkline.min.js",
                   package = "operDash")
     ),
-    shiny::includeScript(
-      system.file("jvectormap-1.2.2/jquery-jvectormap-1.2.2.min.js",
-                  package = "operDash")
-    ),
-    shiny::includeScript(
-      system.file("jvectormap-1.2.2/jquery-jvectormap-world-mill-en.js",
-                  package = "operDash")
-    ),
+    # shiny::includeScript(
+    #   system.file("jvectormap-1.2.2/jquery-jvectormap-1.2.2.min.js",
+    #               package = "operDash")
+    # ),
+    # shiny::includeScript(
+    #   system.file("jvectormap-1.2.2/jquery-jvectormap-world-mill-en.js",
+    #               package = "operDash")
+    # ),
     shiny::includeScript(
       system.file("jquery-knob/jquery.knob.min.js",
                   package = "operDash")
