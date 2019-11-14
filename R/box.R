@@ -12,10 +12,11 @@
 #' @param message Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.
 #' @param minimize Podendo ser passado o valor TRUE e assim será adicionado um botão na box, para minimizar a mesma.
 #' @param close Podendo ser passado o valor TRUE e assim será adicionado um botão na box, para fechar a mesma.
+#' @param footer Texto que será exibido na parte inferior da box.
 #'
 #'
 #' @export
-box <- function(..., width = 12, icon_box = NULL, title = NULL, color = "default", message = NULL, minimize = FALSE, close = FALSE) {
+box <- function(..., width = 12, color = "default", icon_box = NULL, title = NULL, message = NULL, minimize = FALSE, close = FALSE, footer = NULL) {
   width = paste0("col-sm-", width)
   content_box = list(...)
   color_box = paste0("box-", color)
@@ -82,6 +83,11 @@ box <- function(..., width = 12, icon_box = NULL, title = NULL, color = "default
       shiny::tags$div(
         class="box-body",
         content_box
+      ),
+      # Footer - Box
+      shiny::tags$div(
+        class="box-footer",
+        footer
       )
     )
   )

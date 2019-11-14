@@ -11,7 +11,9 @@ boxElement <- tabItem(
       minimize = TRUE,
       close = TRUE,
 
-      h3("olá")
+      h3("olá"),
+
+      footer = h5("Testando footer")
     ),
 
     # Code - Start
@@ -28,7 +30,9 @@ boxElement <- tabItem(
       minimize = TRUE,
       close = TRUE,
 
-      h3("olá")
+      h3("olá"),
+
+      footer = h5("Testando footer")
     )
   )
 </code></pre>
