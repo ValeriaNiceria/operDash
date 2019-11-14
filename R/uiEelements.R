@@ -1,5 +1,5 @@
 #' @title Carousel
-#' @name Carousel
+#' @name carousel
 #'
 #' @description descrição
 #'
@@ -72,7 +72,7 @@ carousel <- function(...) {
 
 
 #' @title Carousel Item
-#' @name CarouselItem
+#' @name carouselItem
 #'
 #' @description descrição
 #'
@@ -90,6 +90,56 @@ carouselItem <- function(title = NULL, src = NULL) {
     shiny::tags$div(
       class="carousel-caption",
       title
+    )
+  )
+}
+
+
+#' @title Alert
+#' @name alert
+#'
+#' @description Uma mensagem de alerta.
+#'
+#' @param width Largura do alerta.
+#' @param status O status do alerta, podendo utilizar os valores: danger, info, warning, success.
+#' @param icon Ícone que será utilizado no título do alerta.
+#' @param title Título do alerta.
+#' @param message Mensagem do alerta.
+#' @param close Um botão para fechar o alerta.
+#'
+#'
+#' @export
+alert <- function(width = 12, status = "success", icon = NULL, title = NULL, message = NULL, close = FALSE) {
+  width = paste0("col-sm-", width)
+  status = paste0("alert-", status)
+  class_alert = paste("alert", status, "alert-dismissible")
+
+  if (isTRUE(close)) {
+    close = shiny::tags$button(
+      type="button",
+      class="close",
+      `data-dismiss`="alert",
+      `aria-hidden`="true",
+      "×"
+    )
+  } else {
+    close = NULL
+  }
+
+  if (!is.null(icon) | !is.null(title)) {
+    title = shiny::tags$h4(
+      icon,
+      title
+    )
+  }
+
+  shiny::div(
+    class=width,
+    shiny::div(
+      class=class_alert,
+      close,
+      title,
+      message
     )
   )
 }

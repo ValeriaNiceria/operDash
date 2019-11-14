@@ -56,9 +56,6 @@ ui <- operDashPage(
   body = operDashBody(
     # Carregando as bibliotecas do highlightjs, que será utilizado para mostrar os exemplos de código formatado.
     tags$head(
-      # htmltools::htmlDependency("jquery", "3.3.1",
-      #                           src = c(href = "https://code.jquery.com/"),
-      #                           script = "jquery-3.3.1.min.js"),
       tags$link(
         rel="stylesheet",
         href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css"),

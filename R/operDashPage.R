@@ -98,9 +98,6 @@ operDashPage <- function(title = NULL,
         # Conteúdo - Body ---------------------------------
         shiny::tags$div(
           class="content-wrapper",
-          htmltools::htmlDependency("jquery", "3.3.1",
-                                    src = c(href = "https://code.jquery.com/"),
-                                    script = "jquery-3.3.1.min.js"),
           body
         )
 
@@ -108,6 +105,9 @@ operDashPage <- function(title = NULL,
     ),
 
     # Footer script ---------------------------
+    htmltools::htmlDependency("jquery", "3.3.1",
+                              src = c(href = "https://code.jquery.com/"),
+                              script = "jquery-3.3.1.min.js"),
     # shiny::includeScript(
     #   system.file("jquery-3.4.1/dist/jquery.min.js",
     #               package = "operDash")

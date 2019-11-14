@@ -67,33 +67,6 @@ jumbotron <- function(...) {
            )
 }
 
-#' @title alert
-#' @name alert
-#'
-#' @description descricao
-#'
-#'
-#' @param message message
-#' @param status status
-#' @param ... itens
-#'
-#'
-#' @export
-
-alert <- function(..., message = NULL, status = "success") {
-  # type = success - info - warning - danger
-  classAlert = paste0("alert alert-", status, " alert-dismissable")
-  shiny::tags$div(class=classAlert,
-                  shiny::tags$button(`aria-hidden`="true",
-                       `data-dismiss`="alert",
-                       class="close",
-                       type="button", "×"),
-           message,
-
-           ...
-  )
-}
-
 
 #' @title progressBar
 #' @name progressBar
