@@ -306,3 +306,100 @@ collapsibleItem <- function(..., id = NULL, title = NULL, color = "default") {
     )
   )
 }
+
+
+
+#' @title Timeline
+#' @name timeline
+#'
+#' @description descricao
+#'
+#' @param ... Itens adicionais.
+#' @param width Largura da timeline
+#'
+#'
+#' @export
+timeline <- function(..., width = 12) {
+  width = paste0("col-sm-", width)
+
+  shiny::tags$div(
+    class=width,
+    shiny::tags$ul(
+      class="timeline",
+      ...
+    )
+  )
+
+}
+
+
+#' @title Timeline Label
+#' @name timelineLabel
+#'
+#' @description descricao
+#'
+#' @param color Cor da label, podendo utilizar os valores: red, green, blue, yellow.
+#' @param text Texto que será exibido na label.
+#'
+#'
+#' @export
+timelineLabel <- function(color = "green", text = NULL) {
+  color = paste0("bg-", color)
+
+  shiny::tags$li(
+    class="time-label",
+    shiny::tags$span(
+      class=color,
+      text
+    )
+  )
+}
+
+
+#' @title Timeline Item
+#' @name timelineItem
+#'
+#' @description descricao
+#'
+#' @param icon Ícone que será utilizado para marcar o tempo na timeline.
+#' @param icon_color Cor do ícone, podendo utilizar os valores: blue, red, green, yellow.
+#' @param time Tempo que será exibido na timeline Item.
+#' @param title Título da timelineItem.
+#' @param content Conteúdo da timelineItem.
+#' @param footer Conteúdo que será adicionado na parte inferior do item da timeline.
+#'
+#'
+#' @export
+timelineItem <- function(icon = NULL, icon_color = NULL, time = NULL, title = NULL, content = NULL, footer = NULL) {
+  icon_color = paste0("bg-", icon_color)
+
+  shiny::tags$li(
+    shiny::tags$span(
+      class=paste("timeline-icon-color", icon_color),
+      icon
+    ),
+    shiny::tags$div(
+      class="timeline-item",
+      shiny::tags$span(
+        class="time",
+        icon("clock-o"),
+        time
+      ),
+
+      shiny::tags$h3(
+        class="timeline-header",
+        title
+      ),
+
+      shiny::tags$div(
+        class="timeline-body",
+        content
+      ),
+
+      shiny::tags$div(
+        class="timeline-footer",
+        footer
+      )
+    )
+  )
+}
