@@ -64,6 +64,13 @@ box <- function(..., width = 12, color = "default", icon_box = NULL, title = NUL
     )
   }
 
+  if (!is.null(footer)) {
+    footer = shiny::tags$div(
+      class="box-footer",
+      footer
+    )
+  }
+
 
   shiny::tags$div(
     class=width,
@@ -85,10 +92,7 @@ box <- function(..., width = 12, color = "default", icon_box = NULL, title = NUL
         content_box
       ),
       # Footer - Box
-      shiny::tags$div(
-        class="box-footer",
-        footer
-      )
+      footer
     )
   )
 }
