@@ -1,7 +1,7 @@
 #' @title Carousel
 #' @name carousel
 #'
-#' @description descrição
+#' @description Função principal do carousel, onde poderá ser adicionado \code{carouselItem}.
 #'
 #' @param ... Itens que serão adicionados no carousel
 #'
@@ -74,7 +74,7 @@ carousel <- function(...) {
 #' @title Carousel Item
 #' @name carouselItem
 #'
-#' @description descrição
+#' @description Item do carousel, podendo passar uma imagem e um título.
 #'
 #' @param title Título que será adicionado em cada slide.
 #' @param src Caminho da imagem.
@@ -150,7 +150,7 @@ alert <- function(width = 12, status = "success", icon = NULL, title = NULL, mes
 #' @title Callout
 #' @name callout
 #'
-#' @description Uma mensagem.
+#' @description Um caixa com alguma mensagem.
 #'
 #' @param width Largura da mensagem.
 #' @param status O status da mensagem, podendo utilizar os valores: danger, info, warning, success.
@@ -231,7 +231,7 @@ progressBar <- function(width = 12, value = 100, status = "success", animated = 
 #' @title Collapsible
 #' @name collapsible
 #'
-#' @description descrição
+#' @description Função principal, responsável por agrupar o \code{collapsibleItem}.
 #'
 #' @param width Largura da mensagem.
 #' @param ... Itens que serão adicionados ao collapsible.
@@ -259,7 +259,7 @@ collapsible <- function(..., width = 12) {
 #' @title Collapsible Item
 #' @name collapsibleItem
 #'
-#' @description descrição
+#' @description Box de informação, onde o seu conteúdo poderá ser colapsado.
 #'
 #' @param id Um identificador para o collapsibleItem, esse identificador deverá ser único e não poderá ter carácter especial.
 #' @param title Um título para o collapsibleItem.
@@ -312,7 +312,8 @@ collapsibleItem <- function(..., id = NULL, title = NULL, color = "default") {
 #' @title Timeline
 #' @name timeline
 #'
-#' @description descricao
+#' @description Função principal da timeline, onde as outras funções \code{timelineLabel} e
+#' \code{timelineItem} poderam ser adicionadas à timeline.
 #'
 #' @param ... Itens adicionais.
 #' @param width Largura da timeline
@@ -336,7 +337,7 @@ timeline <- function(..., width = 12) {
 #' @title Timeline Label
 #' @name timelineLabel
 #'
-#' @description descricao
+#' @description Um caixa de texto.
 #'
 #' @param color Cor da label, podendo utilizar os valores: red, green, blue, yellow.
 #' @param text Texto que será exibido na label.
@@ -359,7 +360,7 @@ timelineLabel <- function(color = "green", text = NULL) {
 #' @title Timeline Item
 #' @name timelineItem
 #'
-#' @description descricao
+#' @description Item que será adicionado à timeline.
 #'
 #' @param icon Ícone que será utilizado para marcar o tempo na timeline.
 #' @param icon_color Cor do ícone, podendo utilizar os valores: blue, red, green, yellow.
