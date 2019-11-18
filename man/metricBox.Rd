@@ -10,9 +10,13 @@ metricBox(title = NULL, value = NULL, percent = NULL,
 \arguments{
 \item{title}{Título para o metric.}
 
-\item{percent}{}
+\item{value}{Valor principal do metric.}
 
-\item{status}{Status do progress, podendo utilizar os valores success e danger.}
+\item{percent}{Valor que será exibido como porcentagem.}
+
+\item{subtitle}{Subtítulo para o metric.}
+
+\item{status}{Status do valor da porcentagem, podendo utilizar os valores success e danger.}
 }
 \description{
 descrição

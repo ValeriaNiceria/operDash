@@ -5,7 +5,7 @@
 #'
 #' @param title Título para o metric.
 #' @param status Status do metric, podendo utilizar os valores up e down.
-#' @param subtitle
+#' @param subtitle Subtítulo para o metric.
 #'
 #'
 #' @export
@@ -52,7 +52,8 @@ metric <- function(title = NULL, status = "up", subtitle = NULL) {
 #'
 #' @param title Título para o metric.
 #' @param status Status do progress, podendo utilizar os valores success e danger.
-#' @param subtitle
+#' @param subtitle Subtítulo para o metric.
+#' @param value Valor da barra de progresso, podendo utilizar os valores de 0 à 100.
 #'
 #'
 #' @export
@@ -103,11 +104,10 @@ metricProgress <- function(title = NULL, value = 100, subtitle = NULL, status = 
 #' @description descrição
 #'
 #' @param title Título para o metric.
-#' @param status Status do progress, podendo utilizar os valores success e danger.
-#' @param subtitle
-#' @param value
-#' @param percent
-#'
+#' @param subtitle Subtítulo para o metric.
+#' @param value Valor principal do metric.
+#' @param percent Valor que será exibido como porcentagem.
+#' @param status Status do valor da porcentagem, podendo utilizar os valores success e danger.
 #'
 #' @export
 metricBox <- function(title = NULL, value = NULL, percent = NULL, subtitle = NULL, status = "success") {

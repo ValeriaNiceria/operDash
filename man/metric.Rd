@@ -11,7 +11,7 @@ metric(title = NULL, status = "up", subtitle = NULL)
 
 \item{status}{Status do metric, podendo utilizar os valores up e down.}
 
-\item{subtitle}{}
+\item{subtitle}{Subtítulo para o metric.}
 }
 \description{
 descrição

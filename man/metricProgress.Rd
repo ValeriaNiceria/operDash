@@ -10,7 +10,9 @@ metricProgress(title = NULL, value = 100, subtitle = NULL,
 \arguments{
 \item{title}{Título para o metric.}
 
-\item{subtitle}{}
+\item{value}{Valor da barra de progresso, podendo utilizar os valores de 0 à 100.}
+
+\item{subtitle}{Subtítulo para o metric.}
 
 \item{status}{Status do progress, podendo utilizar os valores success e danger.}
 }
