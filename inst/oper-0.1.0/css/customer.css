@@ -139,3 +139,19 @@
   font-size: 16px;
   text-align: center;
 }
+
+.timeline-seta {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -1em;
+  border-right: 10px solid #f5f5f5;
+}
+
+.timeline>li>.timeline-item {
+  background: #f5f5f5;
+}

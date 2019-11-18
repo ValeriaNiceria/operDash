@@ -320,6 +320,35 @@ uiElement <- tabItem(
           content = "Conteúdo"
         )
       )
+    ),
+
+    # Code - Start
+    column(
+      width = 6,
+      HTML('
+<pre><code class="R">
+  fluidRow(
+    box(
+      width = 6,
+      title = "Timeline",
+      timeline(
+        timelineLabel(
+          color = "red",
+          text = "14 Nov. 2019"
+        ),
+        timelineItem(
+          icon = icon("clock"),
+          icon_color = "blue",
+          time = "15 minutos atrás",
+          title = "Título",
+          content = "Conteúdo"
+        )
+      )
     )
+  )
+</code></pre>
+    ')
+    )
+    # Code - End
   )
 )

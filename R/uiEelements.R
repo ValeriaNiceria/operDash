@@ -380,6 +380,7 @@ timelineItem <- function(icon = NULL, icon_color = NULL, time = NULL, title = NU
     ),
     shiny::tags$div(
       class="timeline-item",
+      shiny::tags$div(class="timeline-seta"),
       shiny::tags$span(
         class="time",
         icon("clock-o"),
@@ -403,3 +404,6 @@ timelineItem <- function(icon = NULL, icon_color = NULL, time = NULL, title = NU
     )
   )
 }
+
+
+
