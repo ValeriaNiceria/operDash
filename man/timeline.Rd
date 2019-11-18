@@ -12,5 +12,6 @@ timeline(..., width = 12)
 \item{width}{Largura da timeline}
 }
 \description{
-descricao
+Função principal da timeline, onde as outras funções \code{timelineLabel} e
+\code{timelineItem} poderam ser adicionadas à timeline.
 }

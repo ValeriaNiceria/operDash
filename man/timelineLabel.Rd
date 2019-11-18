@@ -12,5 +12,5 @@ timelineLabel(color = "green", text = NULL)
 \item{text}{Texto que será exibido na label.}
 }
 \description{
-descricao
+Um caixa de texto.
 }

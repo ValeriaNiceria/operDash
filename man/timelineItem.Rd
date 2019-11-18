@@ -21,5 +21,5 @@ timelineItem(icon = NULL, icon_color = NULL, time = NULL,
 \item{footer}{Conteúdo que será adicionado na parte inferior do item da timeline.}
 }
 \description{
-descricao
+Item que será adicionado à timeline.
 }

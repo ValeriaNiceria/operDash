@@ -12,5 +12,5 @@ carouselItem(title = NULL, src = NULL)
 \item{src}{Caminho da imagem.}
 }
 \description{
-descrição
+Item do carousel, podendo passar uma imagem e um título.
 }

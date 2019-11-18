@@ -12,5 +12,5 @@ collapsible(..., width = 12)
 \item{width}{Largura da mensagem.}
 }
 \description{
-descrição
+Função principal, responsável por agrupar o \code{collapsibleItem}.
 }

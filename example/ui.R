@@ -36,6 +36,11 @@ ui <- operDashPage(
         tabName = "element_ui"
       ),
       sidebarItem(
+        text = "Metrics",
+        icon =  icon("chart-pie"),
+        tabName = "metricElement"
+      ),
+      sidebarItem(
         text = "Teste2",
         icon = icon("circle-o"),
         sidebarSubItem(
@@ -54,7 +59,8 @@ ui <- operDashPage(
 
   # Body ----
   body = operDashBody(
-    # Carregando as bibliotecas do highlightjs, que será utilizado para mostrar os exemplos de código formatado.
+    # Carregando as bibliotecas do highlightjs,
+    # que será utilizado para mostrar os exemplos de código formatado.
     tags$head(
       tags$link(
         rel="stylesheet",
@@ -77,6 +83,9 @@ ui <- operDashPage(
     widgetsElement,
 
     # UI Elements - Exemplo ----
-    uiElement
+    uiElement,
+
+    # Metric Elements - Exemplo ----
+    metricElement
   )
 )

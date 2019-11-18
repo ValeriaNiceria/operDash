@@ -16,5 +16,5 @@ collapsibleItem(..., id = NULL, title = NULL, color = "default")
 \item{color}{Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.}
 }
 \description{
-descrição
+Box de informação, onde o seu conteúdo poderá ser colapsado.
 }

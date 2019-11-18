@@ -10,5 +10,5 @@ carousel(...)
 \item{...}{Itens que serão adicionados no carousel}
 }
 \description{
-descrição
+Função principal do carousel, onde poderá ser adicionado \code{carouselItem}.
 }

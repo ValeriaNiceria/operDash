@@ -17,5 +17,5 @@ callout(width = 12, status = "success", title = NULL,
 \item{message}{Mensagem que será exibida, na caixa de mensagem.}
 }
 \description{
-Uma mensagem.
+Um caixa com alguma mensagem.
 }
