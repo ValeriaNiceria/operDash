@@ -182,4 +182,5 @@
 
 .stat-percent {
   float: right;
+  font-weight: bold;
 }

@@ -113,10 +113,10 @@ metricProgress <- function(title = NULL, value = 100, subtitle = NULL, status = 
 metricBox <- function(title = NULL, value = NULL, percent = NULL, subtitle = NULL, status = "success") {
 
   if (tolower(status) == "success") {
-    class_percent = "stat-percent font-bold text-green"
+    class_percent = "stat-percent text-green"
     icon_percent = shiny::icon("bolt")
   } else {
-    class_percent = "stat-percent font-bold text-red"
+    class_percent = "stat-percent text-red"
     icon_percent = shiny::icon("level-down")
   }
 
