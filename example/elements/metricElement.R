@@ -2,6 +2,7 @@ metricElement <- tabItem(
   tabName = "metricElement",
   title = "Metrics",
 
+  # Exemplo função - 'metric' ----
   fluidRow(
     metric(
       title = "Teste metric"
@@ -34,6 +35,7 @@ metricElement <- tabItem(
   ),
 
 
+  # Exemplo função - 'metricProgress' ----
   fluidRow(
     metricProgress(
       title = "Teste",
@@ -71,6 +73,8 @@ metricElement <- tabItem(
     # Code - End
   ),
 
+
+  # Exemplo função - 'metricBox' ----
   fluidRow(
     metricBox(
       title = "Testando",
