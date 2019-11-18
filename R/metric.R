@@ -137,6 +137,7 @@ metricBox <- function(title = NULL, value = NULL, percent = NULL, subtitle = NUL
         icon_percent
       ),
       shiny::tags$small(
+        class="subtitle-metric",
         subtitle
       )
     )

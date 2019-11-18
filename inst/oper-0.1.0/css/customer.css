@@ -158,7 +158,7 @@
 
 .metric-content {
   background-color: #ffffff;
-  color: inherit;
+  color: #4c4b4b;
   padding: 15px 20px 20px 20px;
   border-color: #e7eaec;
   border-image: none;
@@ -169,11 +169,11 @@
 .title-metric {
   font-size: 12px;
   font-weight: bold;
-  color: #4c4c4c;
+  color: #676a6c;
 }
 
 .subtitle-metric {
-  color: #4c4c4c;
+  color: #676a6c;
 }
 
 .status-metric {
@@ -183,4 +183,9 @@
 .stat-percent {
   float: right;
   font-weight: bold;
+}
+
+.small-box {
+  border-radius: 12px;
+}
 }
