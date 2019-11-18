@@ -62,28 +62,3 @@ panel <- function(title = NULL, body = NULL, footer = NULL, status = "default", 
   )
 
 }
-
-
-#' @title AccordionItem
-#' @name accordionItem
-#'
-#' @description descricao
-#'
-#'
-#' @param width O tamanho do accordionItem, usando o grid do Bootstrap.
-#' Tendo como padrão o valor 12, podendo ser utilizado os valores de 1 à 12.
-#' @param title Um título para o accordionItem.
-#' @param content O conteúdo para o accordionItem.
-#'
-#'
-#'
-#' @export
-
-accordionItem <- function(width = 12, title = NULL, content = NULL, ...) {
-  width = paste0("col-lg-", width)
-  shiny::tags$div(class=width,
-                  shiny::tags$button(class="accordion font-bold", title),
-                  shiny::tags$div(class="panel-accordion", content)
-  )
-
-}
