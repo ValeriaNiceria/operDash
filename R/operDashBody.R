@@ -1,7 +1,7 @@
 #' @title Dashboard Body
 #' @name operDashBody
 #'
-#' @description O corpo do dashboard, onde serao adicionados os conteudos \code{\link{tabItem}}.
+#' @description O corpo do dashboard, onde serão adicionados os conteudos \code{\link{tabItem}}.
 #'
 #' @param ... Onde será adicionado o \code{\link{tabItem}}.
 #'

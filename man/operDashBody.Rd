@@ -10,5 +10,5 @@ operDashBody(...)
 \item{...}{Onde será adicionado o \code{\link{tabItem}}.}
 }
 \description{
-O corpo do dashboard, onde serao adicionados os conteudos \code{\link{tabItem}}.
+O corpo do dashboard, onde serão adicionados os conteudos \code{\link{tabItem}}.
 }

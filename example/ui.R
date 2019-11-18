@@ -87,5 +87,11 @@ ui <- operDashPage(
 
     # Metric Elements - Exemplo ----
     metricElement
+  ),
+
+
+  footer = operDashFooter(
+    text_left = strong("Texto a esquerda"),
+    text_right = "Texto a direita"
   )
 )

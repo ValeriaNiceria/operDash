@@ -99,7 +99,9 @@ operDashPage <- function(title = NULL,
         shiny::tags$div(
           class="content-wrapper",
           body
-        )
+        ),
+
+        footer
 
       )
     ),
@@ -184,9 +186,7 @@ operDashPage <- function(title = NULL,
     shiny::includeScript(
       system.file("oper-0.1.0/js/shiny-oper-tab-content.js",
                   package = "operDash")
-    ),
-
-    footer
+    )
   )
 
 }
