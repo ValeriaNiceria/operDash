@@ -267,7 +267,7 @@ collapsible <- function(..., width = 12) {
 #' @param ... Conteúdo do collapsibleItem.
 #'
 #' @export
-collapsibleItem <- function(..., id = NULL, title = NULL, color = "default") {
+collapsibleItem <- function(..., id = NULL, title = NULL, icon = NULL, color = "default") {
   if (is.null(id))
     stop("É necessário informar um id para o collapsibleItem")
 
@@ -275,6 +275,13 @@ collapsibleItem <- function(..., id = NULL, title = NULL, color = "default") {
   class_box = paste("panel box", color)
   id_item <- iconv(id, from = 'UTF-8', to = 'ASCII//TRANSLIT')
   id_item <- str_replace_all(trimws(tolower(id)), " ", "_")
+
+  if (!is.null(icon)) {
+    icon = shiny::tags$span(
+      class="collapse-icon",
+      icon
+    )
+  }
 
   shiny::tags$div(
     class=class_box,
@@ -289,6 +296,7 @@ collapsibleItem <- function(..., id = NULL, title = NULL, color = "default") {
           href=paste0("#",id_item),
           `aria-expanded`="false",
           class="collapsed",
+          icon,
           title
         )
       ),

@@ -191,64 +191,69 @@
 
 
 .bg-red, .callout.callout-danger, .alert-danger, .alert-error, .label-danger, .modal-danger .modal-body {
-    background-color: #EC4859 !important;
+  background-color: #EC4859 !important;
 }
 
 .bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
-    background-color: #22B9BB !important;
+  background-color: #22B9BB !important;
 }
 
 .bg-green, .callout.callout-success, .alert-success, .label-success, .modal-success .modal-body {
-    background-color: #19A689 !important;
+  background-color: #19A689 !important;
 }
 
 .bg-yellow, .callout.callout-warning, .alert-warning, .label-warning, .modal-warning .modal-body {
-    background-color: #F7A54B !important;
+  background-color: #F7A54B !important;
 }
 
 
 .progress-bar-red, .progress-bar-danger {
-    background-color: #EC4859;
+  background-color: #EC4859;
 }
 .progress-bar-danger {
-    background-color: #EC4859;
+  background-color: #EC4859;
 }
 .progress-bar-light-blue, .progress-bar-primary {
     background-color: #22B9BB;
 }
 .progress-bar-warning {
-    background-color: #F7A54B;
+  background-color: #F7A54B;
 }
 .progress-bar-success {
-    background-color: #19A689;
+  background-color: #19A689;
 }
 
 
 .text-green {
-    color: #19A689 !important;
+  color: #19A689 !important;
 }
 .text-red {
-    color: #EC4859 !important;
+  color: #EC4859 !important;
 }
 
 .bg-red, .callout.callout-danger, .alert-danger, .alert-error, .label-danger, .modal-danger .modal-body {
-    background-color: #EC4859 !important;
+  background-color: #EC4859 !important;
 }
 
 .bg-blue {
-    background-color: #22B9BB !important;
+  background-color: #22B9BB !important;
 }
 
 
 .box.box-primary {
-    border-top-color: #22B9BB;
+  border-top-color: #22B9BB;
 }
 .box.box-danger {
-    border-top-color: #EC4859;
+  border-top-color: #EC4859;
 }
 .box.box-success {
-    border-top-color: #19A689;
+  border-top-color: #19A689;
 }
 .box.box-warning {
-    border-top-color: #F7A54B;
+  border-top-color: #F7A54B;
+}
+
+span.collapse-icon {
+  font-size: 14px;
+  margin-right: 5px;
 }

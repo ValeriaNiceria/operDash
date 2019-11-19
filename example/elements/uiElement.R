@@ -254,6 +254,7 @@ uiElement <- tabItem(
         collapsibleItem(
           id = "item2",
           title = "Testando collapsible",
+          icon = icon("cube"),
           color = "danger",
           "Essa é uma mensagem que ficará dentro do box do collapsibleItem"
         ),
@@ -284,6 +285,7 @@ uiElement <- tabItem(
         collapsibleItem(
           id = "item2",
           title = "Testando collapsible",
+          icon = icon("cube"),
           color = "danger",
           "Essa é uma mensagem que ficará dentro do box do collapsibleItem"
         ),

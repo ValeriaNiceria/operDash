@@ -4,7 +4,8 @@
 \alias{collapsibleItem}
 \title{Collapsible Item}
 \usage{
-collapsibleItem(..., id = NULL, title = NULL, color = "default")
+collapsibleItem(..., id = NULL, title = NULL, icon = NULL,
+  color = "default")
 }
 \arguments{
 \item{...}{Conteúdo do collapsibleItem.}
