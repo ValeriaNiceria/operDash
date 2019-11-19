@@ -257,3 +257,24 @@ span.collapse-icon {
   font-size: 14px;
   margin-right: 5px;
 }
+.info-box {
+  border-radius: 5px;
+}
+
+.bg-c-blue {
+  background: linear-gradient(45deg,#1dadad,#559eed);
+}
+.bg-c-green {
+    background: linear-gradient(45deg,#19A689,#33b79d);
+}
+.bg-c-yellow {
+    background: linear-gradient(45deg,#ef9c43,#fcbb5f);
+}
+.bg-c-red {
+    background: linear-gradient(45deg,#EC4859,#fc6c7f);
+}
+
+.small-box {
+  color: #fff;
+}
+

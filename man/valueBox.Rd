@@ -4,13 +4,13 @@
 \alias{valueBox}
 \title{valueBox}
 \usage{
-valueBox(width = 12, bg_color = "aqua", value = NULL, text = NULL,
+valueBox(width = 12, bg_color = "blue", value = NULL, text = NULL,
   icon = NULL)
 }
 \arguments{
 \item{width}{Largura da box, podendo ser utilizados os valores entre 1 e 12.}
 
-\item{bg_color}{Cor de fundo do ícone, podendo ser utilizado os valores: aqua, green, yellow e red.}
+\item{bg_color}{Cor de fundo da box, podendo ser utilizado os valores: blue, green, yellow e red.}
 
 \item{value}{Valor}
 

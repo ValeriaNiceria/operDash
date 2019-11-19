@@ -76,15 +76,15 @@ infoBox <- function(width = 12, bg_color = "aqua", icon = NULL, text = NULL, val
 #' @description Uma caixa de informação.
 #'
 #' @param width Largura da box, podendo ser utilizados os valores entre 1 e 12.
-#' @param bg_color Cor de fundo do ícone, podendo ser utilizado os valores: aqua, green, yellow e red.
+#' @param bg_color Cor de fundo da box, podendo ser utilizado os valores: blue, green, yellow e red.
 #' @param icon Ícone
 #' @param text Texto
 #' @param value Valor
 #'
 #' @export
-valueBox <- function(width = 12, bg_color = "aqua", value = NULL, text = NULL, icon = NULL) {
+valueBox <- function(width = 12, bg_color = "blue", value = NULL, text = NULL, icon = NULL) {
   width = paste0("col-sm-", width)
-  bg_color = paste0("bg-", bg_color)
+  bg_color = paste0("bg-c-", tolower(bg_color))
 
   shiny::tags$div(
     class=width,
@@ -105,8 +105,4 @@ valueBox <- function(width = 12, bg_color = "aqua", value = NULL, text = NULL, i
   )
 
 }
-
-
-
-
 

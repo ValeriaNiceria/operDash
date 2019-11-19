@@ -16,13 +16,13 @@
 #'
 #'
 #' @export
-
-
 operDashPage <- function(title = NULL,
                          header = NULL,
                          sidebar = NULL,
+                         # navbar = NULL,
                          body = NULL,
                          footer = NULL) {
+
 
   shiny::tags$html(
 
@@ -190,3 +190,10 @@ operDashPage <- function(title = NULL,
   )
 
 }
+
+
+
+createPageWithSidebar <- function() {}
+
+
+createPageWithNavbar <- function() {}
