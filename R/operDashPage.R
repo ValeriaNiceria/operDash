@@ -19,10 +19,29 @@
 operDashPage <- function(title = NULL,
                          header = NULL,
                          sidebar = NULL,
-                         # navbar = NULL,
+                         navbar = NULL,
                          body = NULL,
                          footer = NULL) {
 
+  # Verificando os atributos e assim definindo o tipo de dashboard que será criado.
+  if (!is.null(navbar)) {
+    createPageWithNavbar(title = title,
+                         navbar = navbar,
+                         body = body,
+                         footer = footer)
+  } else {
+    createPageWithSidebar(title = title,
+                          header = header,
+                          sidebar = sidebar,
+                          body = body,
+                          footer = footer)
+  }
+
+}
+
+
+
+createPageWithSidebar <- function(title, header, sidebar, body, footer) {
 
   shiny::tags$html(
 
@@ -59,10 +78,10 @@ operDashPage <- function(title = NULL,
         system.file("morris.js-0.5.0/morris.css",
                     package = "operDash")
       ),
-      # shiny::includeCSS(
-      #   system.file("jvectormap-1.2.2/jquery-jvectormap.css",
-      #               package = "operDash")
-      # ),
+      shiny::includeCSS(
+        system.file("jvectormap-1.2.2/jquery-jvectormap.css",
+                    package = "operDash")
+      ),
       shiny::includeCSS(
         system.file("bootstrap-datepicker-1.9.0/css/bootstrap-datepicker.min.css",
                     package = "operDash")
@@ -107,9 +126,13 @@ operDashPage <- function(title = NULL,
     ),
 
     # Footer script ---------------------------
-    htmltools::htmlDependency("jquery", "3.3.1",
+    htmltools::htmlDependency("jquery", "3.4.1",
                               src = c(href = "https://code.jquery.com/"),
-                              script = "jquery-3.3.1.min.js"),
+                              script = "jquery-3.4.1.min.js"),
+    htmltools::htmlDependency("jquery-ui", "1.12.1",
+                              src = c(href = "https://code.jquery.com/ui/1.12.1/"),
+                              script = "jquery-ui.min.js"),
+
     # shiny::includeScript(
     #   system.file("jquery-3.4.1/dist/jquery.min.js",
     #               package = "operDash")
@@ -134,14 +157,14 @@ operDashPage <- function(title = NULL,
       system.file("jquery-sparkline-2.1.3/jquery.sparkline.min.js",
                   package = "operDash")
     ),
-    # shiny::includeScript(
-    #   system.file("jvectormap-1.2.2/jquery-jvectormap-1.2.2.min.js",
-    #               package = "operDash")
-    # ),
-    # shiny::includeScript(
-    #   system.file("jvectormap-1.2.2/jquery-jvectormap-world-mill-en.js",
-    #               package = "operDash")
-    # ),
+    shiny::includeScript(
+      system.file("jvectormap-1.2.2/jquery-jvectormap-1.2.2.min.js",
+                  package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file("jvectormap-1.2.2/jquery-jvectormap-world-mill-en.js",
+                  package = "operDash")
+    ),
     shiny::includeScript(
       system.file("jquery-knob/jquery.knob.min.js",
                   package = "operDash")
@@ -192,8 +215,30 @@ operDashPage <- function(title = NULL,
 }
 
 
+createPageWithNavbar <- function(title, navbar, body, footer) {
 
-createPageWithSidebar <- function() {}
+  shiny::tags$html(
 
+    # Head ----------------------
+    shiny::tags$head(
+      shiny::tags$meta(
+        charset="utf-8"
+      ),
+      shiny::tags$meta(
+        `http-equiv`="X-UA-Compatible",
+        content="IE=edge"
+      ),
+      shiny::tags$meta(
+        name="viewport",
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+      ),
+      shiny::includeCSS(
+        system.file("bootstrap-3.4.1/css/bootstrap.min.css",
+                    package = "operDash")
+      )
+    )
 
-createPageWithNavbar <- function() {}
+    # Body ----------------------
+  )
+
+}

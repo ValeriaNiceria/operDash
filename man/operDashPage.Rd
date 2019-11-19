@@ -5,7 +5,7 @@
 \title{Dashboard Page}
 \usage{
 operDashPage(title = NULL, header = NULL, sidebar = NULL,
-  body = NULL, footer = NULL)
+  navbar = NULL, body = NULL, footer = NULL)
 }
 \arguments{
 \item{title}{Um título que será utilizado no display do browser}
