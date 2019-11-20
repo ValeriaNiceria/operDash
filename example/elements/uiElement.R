@@ -1,5 +1,5 @@
 uiElement <- tabItem(
-  tabName = "element_ui",
+  tab_name = "element_ui",
   title = "UI Elements",
 
   # Carousel - Exemplo ----------------

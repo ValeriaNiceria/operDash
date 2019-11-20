@@ -4,19 +4,19 @@
 #' @description A função operDashSidebar é a função responsável por agrupar os
 #' elementos que ficaram a esquerda da página.
 #
-#' @param sidebarUserPanel Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}
-#' @param sidebarMenu Responsável por agrupar os itens do menu. \code{sidebarMenu}
+#' @param sidebar_user_panel Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}
+#' @param sidebar_menu Responsável por agrupar os itens do menu. \code{sidebarMenu}
 #'
 #' @seealso \code{\link{sidebarUserPanel}}, \code{\link{sidebarMenu}}.
 #'
 #' @export
-operDashSidebar <- function(sidebarUserPanel = NULL, sidebarMenu = NULL) {
+operDashSidebar <- function(sidebar_user_panel = NULL, sidebar_menu = NULL) {
   shiny::tags$aside(
     class="main-sidebar",
     shiny::tags$section(
       class="sidebar",
-      sidebarUserPanel,
-      sidebarMenu
+      sidebar_user_panel,
+      sidebar_menu
     )
   )
 }
@@ -78,7 +78,7 @@ sidebarMenu <- function(...) {
 #'
 #' @param text O texto que será exibido
 #' @param icon Icone que será exibido antes do texto
-#' @param tabName Aqui deverá ser colocado o mesmo nome do tabItem que será
+#' @param tab_name Aqui deverá ser colocado o mesmo nome do tabItem que será
 #' ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)
 #' @param href Link - Endereço externo
 #' @param sidebarSubItem sidebarSubItem \code{sidebarSubItem}
@@ -86,7 +86,7 @@ sidebarMenu <- function(...) {
 #' @seealso \code{\link{sidebarSubItem}}.
 #'
 #' @export
-sidebarItem <- function(text = NULL, ..., icon = NULL, tabName = NULL, href = NULL) {
+sidebarItem <- function(text = NULL, ..., icon = NULL, tab_name = NULL, href = NULL) {
 
   itens <- list(...)
 
@@ -94,9 +94,9 @@ sidebarItem <- function(text = NULL, ..., icon = NULL, tabName = NULL, href = NU
     "$('.shiny-oper-tab-content').hide();",
     "$('.shiny-oper-tab-content').trigger('hide');",
     "$('.shiny-oper-tab-content').trigger('hidden');",
-    "$('#shiny-tab-", tabName, "').show();",
-    "$('#shiny-tab-", tabName, "').trigger('show');",
-    "$('#shiny-tab-", tabName, "').trigger('shown');"
+    "$('#shiny-tab-", tab_name, "').show();",
+    "$('#shiny-tab-", tab_name, "').trigger('show');",
+    "$('#shiny-tab-", tab_name, "').trigger('shown');"
   )
 
 
@@ -105,7 +105,7 @@ sidebarItem <- function(text = NULL, ..., icon = NULL, tabName = NULL, href = NU
     shiny::tags$li(
       class="link-sidebar",
       shiny::tags$a(
-        id = if (!is.null(tabName)) paste0("#shiny-tab-", tabName, "_tab_id"),
+        id = if (!is.null(tab_name)) paste0("#shiny-tab-", tab_name, "_tab_id"),
         href = if (!is.null(href)) href else "javascript:void(0)",
         onclick = if (is.null(href)) onclick_item,
         icon,
@@ -152,25 +152,25 @@ sidebarItem <- function(text = NULL, ..., icon = NULL, tabName = NULL, href = NU
 #'
 #' @param text O texto que será exibido
 #' @param icon Icone que será exibido antes do texto
-#' @param tabName Aqui deverá ser colocado o mesmo nome do tabItem que será
+#' @param tab_name Aqui deverá ser colocado o mesmo nome do tabItem que será
 #' ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)
 #' @param href Link - Endereço externo
 #'
 #'
 #' @export
-sidebarSubItem <- function(text = NULL, icon = NULL, tabName = NULL, href = NULL) {
+sidebarSubItem <- function(text = NULL, icon = NULL, tab_name = NULL, href = NULL) {
 
   onclick_item = paste0(
     "$('.shiny-oper-tab-content').hide();",
     "$('.shiny-oper-tab-content').trigger('hide');",
     "$('.shiny-oper-tab-content').trigger('hidden');",
-    "$('#shiny-tab-", tabName, "').show();",
-    "$('#shiny-tab-", tabName, "').trigger('show');",
-    "$('#shiny-tab-", tabName, "').trigger('shown');"
+    "$('#shiny-tab-", tab_name, "').show();",
+    "$('#shiny-tab-", tab_name, "').trigger('show');",
+    "$('#shiny-tab-", tab_name, "').trigger('shown');"
   )
 
   shiny::tags$a(
-    id = if (!is.null(tabName)) paste0("#shiny-tab-", tabName, "_tab_id"),
+    id = if (!is.null(tab_name)) paste0("#shiny-tab-", tab_name, "_tab_id"),
     href = if (!is.null(href)) href else "javascript:void(0)",
     onclick = if (is.null(href)) onclick_item,
     icon,

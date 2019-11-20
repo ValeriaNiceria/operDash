@@ -1,5 +1,5 @@
 widgetsElement <- tabItem(
-  tabName = "element_widgets",
+  tab_name = "element_widgets",
   title = "Widgets - Exemplos",
 
   h3("infoBox"),

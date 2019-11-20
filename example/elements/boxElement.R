@@ -1,5 +1,5 @@
 boxElement <- tabItem(
-  tabName = "element_box",
+  tab_name = "element_box",
   title = "Box - Exemplo",
 
   fluidRow(

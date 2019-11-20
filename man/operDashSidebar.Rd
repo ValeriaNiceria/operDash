@@ -4,12 +4,12 @@
 \alias{operDashSidebar}
 \title{Dashboard Sidebar}
 \usage{
-operDashSidebar(sidebarUserPanel = NULL, sidebarMenu = NULL)
+operDashSidebar(sidebar_user_panel = NULL, sidebar_menu = NULL)
 }
 \arguments{
-\item{sidebarUserPanel}{Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}}
+\item{sidebar_user_panel}{Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}}
 
-\item{sidebarMenu}{Responsável por agrupar os itens do menu. \code{sidebarMenu}}
+\item{sidebar_menu}{Responsável por agrupar os itens do menu. \code{sidebarMenu}}
 }
 \description{
 A função operDashSidebar é a função responsável por agrupar os

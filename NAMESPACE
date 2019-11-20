@@ -2,6 +2,7 @@
 export(operDashPage)
 export(operDashHeader)
 export(operDashSidebar)
+export(operDashNavbar)
 export(operDashBody)
 export(operDashFooter)
 export(sidebarUserPanel)

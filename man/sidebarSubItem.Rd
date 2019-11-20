@@ -4,7 +4,7 @@
 \alias{sidebarSubItem}
 \title{Sidebar SubItem}
 \usage{
-sidebarSubItem(text = NULL, icon = NULL, tabName = NULL,
+sidebarSubItem(text = NULL, icon = NULL, tab_name = NULL,
   href = NULL)
 }
 \arguments{
@@ -12,7 +12,7 @@ sidebarSubItem(text = NULL, icon = NULL, tabName = NULL,
 
 \item{icon}{Icone que será exibido antes do texto}
 
-\item{tabName}{Aqui deverá ser colocado o mesmo nome do tabItem que será
+\item{tab_name}{Aqui deverá ser colocado o mesmo nome do tabItem que será
 ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)}
 
 \item{href}{Link - Endereço externo}

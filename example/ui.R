@@ -15,30 +15,30 @@ ui <- operDashPage(
 
   # Sidebar ----
   sidebar = operDashSidebar(
-    sidebarUserPanel = sidebarUserPanel(
+    sidebar_user_panel = sidebarUserPanel(
       name = "Valéria",
       info = tags$a(href="#", icon("circle", class="text-success"), "Online")
     ),
-    sidebarMenu = sidebarMenu(
+    sidebar_menu = sidebarMenu(
       sidebarItem(
         text = "Box",
         icon = icon("th-large"),
-        tabName = "element_box"
+        tab_name = "element_box"
       ),
       sidebarItem(
         text = "Widgets",
         icon = icon("th"),
-        tabName = "element_widgets"
+        tab_name = "element_widgets"
       ),
       sidebarItem(
         text = "UI Elements",
         icon =  icon("laptop"),
-        tabName = "element_ui"
+        tab_name = "element_ui"
       ),
       sidebarItem(
         text = "Metrics",
         icon =  icon("chart-pie"),
-        tabName = "metricElement"
+        tab_name = "metricElement"
       ),
       sidebarItem(
         text = "Teste2",
@@ -46,12 +46,12 @@ ui <- operDashPage(
         sidebarSubItem(
           text = "Text1",
           icon = icon("circle-o"),
-          tabName = "teste1"
+          tab_name = "teste1"
         ),
         sidebarSubItem(
           text = "Text2",
           icon = icon("circle-o"),
-          tabName = "teste2"
+          tab_name = "teste2"
         )
       )
     )

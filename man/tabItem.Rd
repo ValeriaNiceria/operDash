@@ -4,10 +4,10 @@
 \alias{tabItem}
 \title{tabItem}
 \usage{
-tabItem(tabName = NULL, title = NULL, ...)
+tabItem(tab_name = NULL, title = NULL, ...)
 }
 \arguments{
-\item{tabName}{Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}
+\item{tab_name}{Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}
 ou \code{sidebarSubItem}.}
 
 \item{...}{Conteúdo que será adicionado no corpo da página.}

@@ -1,5 +1,5 @@
 metricElement <- tabItem(
-  tabName = "metricElement",
+  tab_name = "metricElement",
   title = "Metrics",
 
   # Exemplo função - 'metric' ----
