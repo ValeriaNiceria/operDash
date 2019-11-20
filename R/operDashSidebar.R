@@ -81,12 +81,12 @@ sidebarMenu <- function(...) {
 #' @param tab_name Aqui deverá ser colocado o mesmo nome do tabItem que será
 #' ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)
 #' @param href Link - Endereço externo
-#' @param sidebarSubItem sidebarSubItem \code{sidebarSubItem}
+#' @param ... sidebarSubItem \code{sidebarSubItem}
 #'
 #' @seealso \code{\link{sidebarSubItem}}.
 #'
 #' @export
-sidebarItem <- function(text = NULL, ..., icon = NULL, tab_name = NULL, href = NULL) {
+sidebarItem <- function(..., text = NULL, icon = NULL, tab_name = NULL, href = NULL) {
 
   itens <- list(...)
 
