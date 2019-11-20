@@ -15,10 +15,12 @@ ui <- operDashPage(
 
   # Sidebar ----
   sidebar = operDashSidebar(
+    # Sidebar - Paínel do usuário ----
     sidebar_user_panel = sidebarUserPanel(
       name = "Valéria",
       info = tags$a(href="#", icon("circle", class="text-success"), "Online")
     ),
+    # Sidebar - Menu ----
     sidebar_menu = sidebarMenu(
       sidebarItem(
         text = "Box",
@@ -89,7 +91,7 @@ ui <- operDashPage(
     metricElement
   ),
 
-
+  # Footer ----
   footer = operDashFooter(
     text_left = strong("Texto a esquerda"),
     text_right = "Texto a direita"
