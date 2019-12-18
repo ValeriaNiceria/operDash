@@ -278,4 +278,11 @@ span.collapse-icon {
 .small-box {
   color: #fff;
 }
+.float-right {
+  float: right;
+}
+
+.mt-f {
+  margin-top: 14px
+}
 

@@ -14,10 +14,22 @@ operDashFooter <- function(text_left = NULL, text_right = NULL) {
   shiny::tags$footer(
     class = "main-footer",
     shiny::tags$div(
-      class="pull-right hidden-xs",
-      text_right
-    ),
-    text_left
+      class="row",
+      shiny::tags$div(
+        class="col-sm-6",
+        shiny::tags$div(
+          class="float-left mt-f",
+          text_left
+        )
+      ),
+      shiny::tags$div(
+        class="col-sm-6",
+        shiny::tags$div(
+          class="float-right mt-f",
+          text_right
+        )
+      )
+    )
   )
 
 }
