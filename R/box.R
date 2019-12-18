@@ -41,7 +41,7 @@ box <- function(..., width = 12, color = "default", icon_box = NULL, title = NUL
       type = "button",
       class = "btn btn-box-tool",
       `data-widget` = "collapse",
-      shiny::icon("minus")
+      shiny::icon("chevron-up")
     )
   }
 

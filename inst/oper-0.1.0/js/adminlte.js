@@ -154,8 +154,8 @@ throw new Error('AdminLTE requires jQuery')
     animationSpeed : 500,
     collapseTrigger: '[data-widget="collapse"]',
     removeTrigger  : '[data-widget="remove"]',
-    collapseIcon   : 'fa-minus',
-    expandIcon     : 'fa-plus',
+    collapseIcon   : 'fa-chevron-up',
+    expandIcon     : 'fa-chevron-down',
     removeIcon     : 'fa-times'
   };
 
@@ -178,7 +178,7 @@ throw new Error('AdminLTE requires jQuery')
         expanding: 'expanding.boxwidget',
         expanded: 'expanded.boxwidget',
         removing: 'removing.boxwidget',
-        removed: 'removed.boxwidget'        
+        removed: 'removed.boxwidget'
     };
 
   // BoxWidget Class Definition
