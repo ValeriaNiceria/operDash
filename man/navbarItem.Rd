@@ -4,7 +4,8 @@
 \alias{navbarItem}
 \title{Navbar Item}
 \usage{
-navbarItem(text = NULL, icon = NULL, tab_name = NULL, href = NULL)
+navbarItem(text = NULL, icon = NULL, tab_name = NULL, href = NULL,
+  divider = NULL)
 }
 \arguments{
 \item{text}{O texto que será exibido}
