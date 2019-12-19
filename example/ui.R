@@ -56,7 +56,9 @@ ui <- operDashPage(
           tab_name = "teste2"
         )
       )
-    )
+    ),
+    # posição do sidebar
+    fixed = TRUE
   ),
 
   # Body ----

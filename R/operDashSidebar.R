@@ -10,9 +10,15 @@
 #' @seealso \code{\link{sidebarUserPanel}}, \code{\link{sidebarMenu}}.
 #'
 #' @export
-operDashSidebar <- function(sidebar_user_panel = NULL, sidebar_menu = NULL) {
+operDashSidebar <- function(sidebar_user_panel = NULL, sidebar_menu = NULL, fixed = FALSE) {
+
+  class_aside = "main-sidebar"
+  if (fixed) {
+    class_aside = "main-sidebar position-fixed"
+  }
+
   shiny::tags$aside(
-    class="main-sidebar",
+    class=class_aside,
     shiny::tags$section(
       class="sidebar",
       sidebar_user_panel,
