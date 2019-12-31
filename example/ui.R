@@ -12,8 +12,6 @@ ui <- operDashPage(
 
   # Sidebar ----
   sidebar = operDashSidebar(
-    sidebar_title = "operDash",
-    sidebar_logo = icon("rocket"),
     # Sidebar - Paínel do usuário ----
     sidebar_user_panel = sidebarUserPanel(
       name = "Valéria",

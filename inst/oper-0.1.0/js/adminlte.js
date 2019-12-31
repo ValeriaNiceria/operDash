@@ -1007,7 +1007,7 @@ throw new Error('AdminLTE requires jQuery')
     controlSidebar: '.control-sidebar',
     fixed         : '.fixed',
     sidebarMenu   : '.sidebar-menu',
-    logo          : '.main-header .logo'
+    logo          : '.logo'
   };
 
   var ClassName = {
