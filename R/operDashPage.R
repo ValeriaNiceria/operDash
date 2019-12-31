@@ -108,15 +108,16 @@ createPageWithSidebar <- function(title, header, sidebar, body, footer) {
       shiny::tags$div(
         class="wrapper",
 
-        # Header -----------------------------------
-        header,
-
         # Sidebar ----------------------------------
         sidebar,
 
         # Conteúdo - Body ---------------------------------
         shiny::tags$div(
           class="content-wrapper",
+
+          # Header -----------------------------------
+          header,
+
           body
         ),
 

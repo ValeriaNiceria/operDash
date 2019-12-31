@@ -4,17 +4,16 @@
 \alias{operDashHeader}
 \title{Dashboard Header}
 \usage{
-operDashHeader(..., title = NULL, logo = NULL, left_menu = NULL,
-  righ_menu = NULL)
+operDashHeader(..., left_menu = NULL, righ_menu = NULL)
 }
 \arguments{
-\item{title}{Título que será exibido quando a barra superior estiver expandida.}
-
-\item{logo}{Um ícone ou imagem que será exibida quando a barra superior estiver comprimida.}
-
 \item{left_menu}{Itens que serão adicionados a esquerda da barra superior.}
 
 \item{righ_menu}{Itens que serão adicionados a direita da barra superior.}
+
+\item{title}{Título que será exibido quando a barra superior estiver expandida.}
+
+\item{logo}{Um ícone ou imagem que será exibida quando a barra superior estiver comprimida.}
 }
 \description{
 A função operDashHeader é a função reponsável por adicionar

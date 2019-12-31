@@ -13,20 +13,10 @@
 #'
 #' @export
 
-operDashHeader <- function(..., title = NULL, logo = NULL, left_menu = NULL, righ_menu = NULL) {
-
-  if (!is.null(logo)) {
-    logo =  shiny::tags$a(href="#", class="logo",
-                          if (!is.null(logo)) shiny::tags$span(class="logo-mini", logo),
-                          if (!is.null(title)) shiny::tags$span(class="logo-lg", title)
-    )
-  }
+operDashHeader <- function(..., left_menu = NULL, righ_menu = NULL) {
 
   shiny::tags$header(
     class="main-header",
-
-    # Logo
-    logo,
 
     # Header Navbar
     shiny::tags$nav(
