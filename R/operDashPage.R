@@ -210,6 +210,10 @@ createPageWithSidebar <- function(title, header, sidebar, body, footer) {
     shiny::includeScript(
       system.file("oper-0.1.0/js/shiny-oper-tab-content.js",
                   package = "operDash")
+    ),
+    shiny::includeScript(
+      system.file("oper-0.1.0/js/shiny-oper-sidebar.js",
+                  package = "operDash")
     )
   )
 

@@ -111,10 +111,6 @@
   background: #22323f;
 }
 
-.sidebar {
-  padding-top: 10px;
-}
-
 .user-panel {
   padding-top: 5px;
 }
@@ -300,5 +296,13 @@ label {
 }
 
 .position-fixed {
-  position: fixed;
+  position: 0px;
+}
+
+.user-panel-none {
+  display: none;
+}
+
+.user-panel-block {
+  display: block;
 }
