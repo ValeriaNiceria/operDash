@@ -4,8 +4,8 @@
 \alias{operDashSidebar}
 \title{Dashboard Sidebar}
 \usage{
-operDashSidebar(sidebar_user_panel = NULL, sidebar_menu = NULL,
-  fixed = FALSE)
+operDashSidebar(icon = NULL, title = NULL, sidebar_user_panel = NULL,
+  sidebar_menu = NULL, fixed = FALSE)
 }
 \arguments{
 \item{sidebar_user_panel}{Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}}

@@ -10,7 +10,7 @@
 #' @seealso \code{\link{sidebarUserPanel}}, \code{\link{sidebarMenu}}.
 #'
 #' @export
-operDashSidebar <- function(sidebar_user_panel = NULL, sidebar_menu = NULL, fixed = FALSE) {
+operDashSidebar <- function(icon = NULL, title = NULL, sidebar_user_panel = NULL, sidebar_menu = NULL, fixed = FALSE) {
 
   class_aside = "main-sidebar"
   if (fixed) {
@@ -21,6 +21,17 @@ operDashSidebar <- function(sidebar_user_panel = NULL, sidebar_menu = NULL, fixe
     class=class_aside,
     shiny::tags$section(
       class="sidebar",
+      shiny::tags$div(
+        class="oper-brand",
+        shiny::tags$div(
+          class="brand-icon",
+          icon
+        ),
+        shiny::tags$div(
+          class="brand-title",
+          title
+        )
+      ),
       sidebar_user_panel,
       sidebar_menu
     )

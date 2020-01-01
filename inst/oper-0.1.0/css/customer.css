@@ -51,10 +51,6 @@
     margin-top: 17px;
 }
 
-.sidebar-menu {
-    margin-top: 14px;
-}
-
 .skin-blue .sidebar-menu > li.active > a {
     border-left-color: #57b952;
 }
@@ -114,11 +110,6 @@
 .user-panel {
   padding-top: 5px;
 }
-
-.sidebar-menu.tree {
-  margin-top: 2px;
-}
-
 
 .content-wrapper > .col-lg-12 {
   background: #f3f3f4;
@@ -299,10 +290,28 @@ label {
   position: 0px;
 }
 
-.user-panel-none {
+.brand-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding: 15px 0;
   display: none;
 }
 
-.user-panel-block {
-  display: block;
+.brand-icon {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 13px 0;
+}
+
+.oper-brand {
+    background: #213242;
+}
+
+.user-panel {
+  display: none;
+  padding: 15px;
 }
