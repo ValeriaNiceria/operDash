@@ -12,8 +12,8 @@ ui <- operDashPage(
 
   # Sidebar ----
   sidebar = operDashSidebar(
-    icon = icon("chart-line"),
-    title = "operDash",
+    icon = img(src="logo_computer.png", width = "80%"),
+    title = img(src="logo.png", width = "70%"),
 
     # Sidebar - Paínel do usuário ----
     sidebar_user_panel = sidebarUserPanel(
