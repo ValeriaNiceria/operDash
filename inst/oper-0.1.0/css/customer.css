@@ -297,6 +297,7 @@ label {
   color: white;
   height: 55px;
   display: none;
+  padding: 5px;
 }
 
 .brand-icon {
