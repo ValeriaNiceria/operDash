@@ -4,13 +4,14 @@
 \alias{tabItem}
 \title{tabItem}
 \usage{
-tabItem(tabName = NULL, ...)
+tabItem(tab_name = NULL, title = NULL, ...)
 }
 \arguments{
-\item{tabName}{name to tab.}
+\item{tab_name}{Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}
+ou \code{sidebarSubItem}.}
 
-\item{...}{Items to put in the dashboard body.}
+\item{...}{Conteúdo que será adicionado no corpo da página.}
 }
 \description{
-descricao
+Função responsável por agrupar conteúdos que serão exibidos no corpo da página.
 }

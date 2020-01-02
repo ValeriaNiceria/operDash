@@ -4,11 +4,30 @@
 \alias{box}
 \title{Dashboard box}
 \usage{
-box(...)
+box(..., width = 12, color = "default", icon_box = NULL,
+  title = NULL, message = NULL, minimize = FALSE, close = FALSE,
+  footer = NULL)
 }
 \arguments{
-\item{...}{Items to put in the dashboard.}
+\item{...}{Conteúdo da box.}
+
+\item{width}{Largura da box, podendo passar os valores de 1 à 12.}
+
+\item{color}{Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.}
+
+\item{icon_box}{Ícone que será adicionado no título da box.}
+
+\item{title}{Título da box.}
+
+\item{message}{Uma mensagem, que será exibida ao se passar o mouse em cima do ícone.}
+
+\item{minimize}{Podendo ser passado o valor TRUE e assim será adicionado um botão na box, para minimizar a mesma.}
+
+\item{close}{Podendo ser passado o valor TRUE e assim será adicionado um botão na box, para fechar a mesma.}
+
+\item{footer}{Texto que será exibido na parte inferior da box.}
 }
 \description{
-descricao
+Uma caixa de informações, onde poderá ser adicionado um título e um conteúdo. Assim, organizando as
+informações no dashboard.
 }
