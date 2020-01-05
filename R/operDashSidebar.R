@@ -4,6 +4,8 @@
 #' @description A função operDashSidebar é a função responsável por agrupar os
 #' elementos que ficaram a esquerda da página.
 #
+#' @param icon Elemento que ficará visível quando a sidebar estiver colapsada.
+#' @param title ELemento que ficará visível quando a sidebar estiver aberta.
 #' @param sidebar_user_panel Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}
 #' @param sidebar_menu Responsável por agrupar os itens do menu. \code{sidebarMenu}
 #'
@@ -15,6 +17,10 @@ operDashSidebar <- function(icon = NULL, title = NULL, sidebar_user_panel = NULL
   class_aside = "main-sidebar"
   if (fixed) {
     class_aside = "main-sidebar position-fixed"
+  }
+
+  if (is.null(icon)) {
+    icon = img("https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/img/logo_computer.png")
   }
 
   shiny::tags$aside(
@@ -52,7 +58,7 @@ operDashSidebar <- function(icon = NULL, title = NULL, sidebar_user_panel = NULL
 #'
 #' @export
 sidebarUserPanel <- function(name = NULL, info = NULL, image = NULL) {
-  image_link = if (!is.null(image)) image else "https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/img/user.jpeg"
+  image_link = if (!is.null(image)) image else "https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/img/user.png"
   shiny::tags$div(
     class="user-panel",
     shiny::tags$div(
