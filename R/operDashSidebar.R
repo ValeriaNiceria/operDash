@@ -100,7 +100,7 @@ sidebarMenu <- function(...) {
 #' @description Essa função é responsável por criar itens do menu.
 #'
 #' @param text O texto que será exibido
-#' @param icon Icone que será exibido antes do texto
+#' @param icon Ícone que será exibido antes do texto
 #' @param tab_name Aqui deverá ser colocado o mesmo nome do tabItem que será
 #' ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)
 #' @param href Link - Endereço externo
@@ -174,7 +174,7 @@ sidebarItem <- function(..., text = NULL, icon = NULL, tab_name = NULL, href = N
 #' @description Essa função será responsável por criar sub menu.
 #'
 #' @param text O texto que será exibido
-#' @param icon Icone que será exibido antes do texto
+#' @param icon Ícone que será exibido antes do texto
 #' @param tab_name Aqui deverá ser colocado o mesmo nome do tabItem que será
 #' ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)
 #' @param href Link - Endereço externo
