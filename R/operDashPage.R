@@ -288,7 +288,7 @@ createPageWithNavbar <- function(title, navbar, body, footer) {
       style="height: auto; min-height: 100%;",
       shiny::tags$div(
         class="wrapper",
-        style="height: auto; min-height: 100%;",
+        # style="height: auto; min-height: 100%;",
 
         # Navbar -----------------------------------
         shiny::tags$header(

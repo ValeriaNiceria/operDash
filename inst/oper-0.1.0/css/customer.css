@@ -316,3 +316,27 @@ label {
   display: none;
   padding: 15px;
 }
+
+
+.navbar-brand {
+ padding-top: 10px;
+}
+.navbar-brand > img {
+  height: 35px;
+}
+
+.skin-blue .main-header .navbar .nav > li > a {
+    color: #e2e2e2 !important;
+    font-weight: 600;
+}
+.skin-blue .main-header .navbar .nav > li > a:hover,
+.skin-blue .main-header .navbar .nav > li > a:focus,
+.skin-blue .main-header .navbar .nav > li > a:active {
+    background: none;
+    color: #57B952 !important;
+}
+.skin-blue .main-header .navbar .nav > li > a.active {
+    background: none;
+    color: #57B952 !important;
+}
+

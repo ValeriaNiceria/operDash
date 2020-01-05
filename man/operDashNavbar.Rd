@@ -5,10 +5,10 @@
 \title{Dashboard Navbar}
 \usage{
 operDashNavbar(brand = NULL, brand_link = NULL, navbar_left = NULL,
-  navbar_right = NULL)
+  navbar_right = NULL, color = "#283B4F")
 }
 \arguments{
-\item{...}{dados}
+\item{color}{}
 }
 \description{
 descricao
