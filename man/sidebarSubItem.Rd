@@ -10,7 +10,7 @@ sidebarSubItem(text = NULL, icon = NULL, tab_name = NULL,
 \arguments{
 \item{text}{O texto que será exibido}
 
-\item{icon}{Icone que será exibido antes do texto}
+\item{icon}{Ícone que será exibido antes do texto}
 
 \item{tab_name}{Aqui deverá ser colocado o mesmo nome do tabItem que será
 ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)}

@@ -8,6 +8,10 @@ operDashSidebar(icon = NULL, title = NULL, sidebar_user_panel = NULL,
   sidebar_menu = NULL, fixed = FALSE)
 }
 \arguments{
+\item{icon}{Elemento que ficará visível quando a sidebar estiver colapsada.}
+
+\item{title}{ELemento que ficará visível quando a sidebar estiver aberta.}
+
 \item{sidebar_user_panel}{Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}}
 
 \item{sidebar_menu}{Responsável por agrupar os itens do menu. \code{sidebarMenu}}
