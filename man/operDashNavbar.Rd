@@ -8,7 +8,15 @@ operDashNavbar(brand = NULL, brand_link = NULL, navbar_left = NULL,
   navbar_right = NULL, color = "#283B4F")
 }
 \arguments{
-\item{color}{}
+\item{brand}{brand}
+
+\item{brand_link}{brand_link}
+
+\item{navbar_left}{navbar_left}
+
+\item{navbar_right}{navbar_right}
+
+\item{color}{color}
 }
 \description{
 descricao
