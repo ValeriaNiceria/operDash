@@ -3,11 +3,11 @@
 #'
 #' @description descricao
 #'
-#' @param brand
-#' @param brand_link
-#' @param navbar_left
-#' @param navbar_right
-#' @param color
+#' @param brand brand
+#' @param brand_link brand_link
+#' @param navbar_left navbar_left
+#' @param navbar_right navbar_right
+#' @param color color
 #'
 #'
 #' @export
