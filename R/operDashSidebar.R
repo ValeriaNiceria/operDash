@@ -20,7 +20,7 @@ operDashSidebar <- function(icon = NULL, title = NULL, sidebar_user_panel = NULL
   }
 
   if (is.null(icon)) {
-    icon = shiny::tags$img("https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/img/logo_computer.png")
+    icon = shiny::tags$img("https://raw.githubusercontent.com/ValeriaNiceria/operDash/master/inst/img/logo_computer.png", width = "80%")
   }
 
   shiny::tags$aside(
