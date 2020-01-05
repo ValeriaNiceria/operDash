@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dashboard Menu Dropdown — menuDropdown • operDash</title>
+<title>Dashboard Page — operDashPage • operDash</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,9 @@
 
 
 
-<meta property="og:title" content="Dashboard Menu Dropdown — menuDropdown" />
-<meta property="og:description" content="descricao" />
+<meta property="og:title" content="Dashboard Page — operDashPage" />
+<meta property="og:description" content="A função operDashPage é a função principal do pacote,
+ela engloba todos os elementos que serão adicionados na página." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -100,50 +101,55 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Dashboard Menu Dropdown</h1>
+    <h1>Dashboard Page</h1>
     
-    <div class="hidden name"><code>menuDropdown.Rd</code></div>
+    <div class="hidden name"><code>operDashPage.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>descricao</p>
+    <p>A função operDashPage é a função principal do pacote,
+ela engloba todos os elementos que serão adicionados na página.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>menuDropdown</span>(<span class='kw'>text</span> <span class='kw'>=</span> <span class='st'>"Link"</span>, <span class='kw'>icon</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>operDashPage</span>(<span class='kw'>title</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>header</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>sidebar</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>navbar</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>body</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>footer</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>text</th>
-      <td><p>O texto que será exibido.</p></td>
+      <th>title</th>
+      <td><p>Um título que será utilizado no display do browser</p></td>
     </tr>
     <tr>
-      <th>icon</th>
-      <td><p>Um ícone para o item do menu.</p></td>
+      <th>header</th>
+      <td><p>Barra superior da página <code>operDashHeader</code></p></td>
     </tr>
     <tr>
-      <th>...</th>
-      <td><p>Itens que serão adicionados dentro do menu dropdown, usar o <code><a href='menuItem.html'>menuItem</a></code></p></td>
+      <th>sidebar</th>
+      <td><p>Menu lateral <code>operDashSidebar</code></p></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td><p>O conteúdo da página <code>operDashBody</code></p></td>
+    </tr>
+    <tr>
+      <th>footer</th>
+      <td><p>Barra inferior da página <code>operDashFooter</code></p></td>
     </tr>
     </table>
 
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>menuDropdown</span>(
- <span class='kw'>text</span> <span class='kw'>=</span> <span class='st'>"List"</span>,
- <span class='fu'><a href='menuItem.html'>menuItem</a></span>(
-   <span class='kw'>text</span> <span class='kw'>=</span> <span class='st'>"Link1"</span>,
-   <span class='kw'>tabName</span> <span class='kw'>=</span> <span class='st'>"link1"</span>
- )
-)</div><div class='output co'>#&gt; <span class='error'>Error in menuDropdown(text = "List", menuItem(text = "Link1", tabName = "link1")): não foi possível encontrar a função "menuDropdown"</span></div><div class='input'>
-</div></pre>
+    <div class='dont-index'><p><code><a href='operDashHeader.html'>operDashHeader</a></code>, <code><a href='operDashSidebar.html'>operDashSidebar</a></code>,
+<code><a href='operDashBody.html'>operDashBody</a></code>, <code><a href='operDashFooter.html'>operDashFooter</a></code>.</p></div>
+
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      <li><a href="#examples">Examples</a></li>
+      <li><a href="#see-also">See also</a></li>
     </ul>
 
   </div>

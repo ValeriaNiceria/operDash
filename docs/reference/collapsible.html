@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dashboard Menu Dropdown — menuDropdown • operDash</title>
+<title>Collapsible — collapsible • operDash</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,8 @@
 
 
 
-<meta property="og:title" content="Dashboard Menu Dropdown — menuDropdown" />
-<meta property="og:description" content="descricao" />
+<meta property="og:title" content="Collapsible — collapsible" />
+<meta property="og:description" content="Função principal, responsável por agrupar o collapsibleItem." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -100,50 +100,36 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Dashboard Menu Dropdown</h1>
+    <h1>Collapsible</h1>
     
-    <div class="hidden name"><code>menuDropdown.Rd</code></div>
+    <div class="hidden name"><code>collapsible.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>descricao</p>
+    <p>Função principal, responsável por agrupar o <code>collapsibleItem</code>.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>menuDropdown</span>(<span class='kw'>text</span> <span class='kw'>=</span> <span class='st'>"Link"</span>, <span class='kw'>icon</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>collapsible</span>(<span class='no'>...</span>, <span class='kw'>width</span> <span class='kw'>=</span> <span class='fl'>12</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>text</th>
-      <td><p>O texto que será exibido.</p></td>
-    </tr>
-    <tr>
-      <th>icon</th>
-      <td><p>Um ícone para o item do menu.</p></td>
-    </tr>
-    <tr>
       <th>...</th>
-      <td><p>Itens que serão adicionados dentro do menu dropdown, usar o <code><a href='menuItem.html'>menuItem</a></code></p></td>
+      <td><p>Itens que serão adicionados ao collapsible.</p></td>
+    </tr>
+    <tr>
+      <th>width</th>
+      <td><p>Largura da mensagem.</p></td>
     </tr>
     </table>
 
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>menuDropdown</span>(
- <span class='kw'>text</span> <span class='kw'>=</span> <span class='st'>"List"</span>,
- <span class='fu'><a href='menuItem.html'>menuItem</a></span>(
-   <span class='kw'>text</span> <span class='kw'>=</span> <span class='st'>"Link1"</span>,
-   <span class='kw'>tabName</span> <span class='kw'>=</span> <span class='st'>"link1"</span>
- )
-)</div><div class='output co'>#&gt; <span class='error'>Error in menuDropdown(text = "List", menuItem(text = "Link1", tabName = "link1")): não foi possível encontrar a função "menuDropdown"</span></div><div class='input'>
-</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      <li><a href="#examples">Examples</a></li>
     </ul>
 
   </div>
