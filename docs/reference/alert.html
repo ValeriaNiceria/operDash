@@ -6,13 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>alert — alert • operDash</title>
+<title>Alert — alert • operDash</title>
+
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -32,10 +34,11 @@
 
 
 
-<meta property="og:title" content="alert — alert" />
 
-<meta property="og:description" content="descricao" />
+<meta property="og:title" content="Alert — alert" />
+<meta property="og:description" content="Uma mensagem de alerta." />
 <meta name="twitter:card" content="summary" />
+
 
 
 
@@ -82,7 +85,6 @@
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         
       </ul>
@@ -98,43 +100,54 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>alert</h1>
+    <h1>Alert</h1>
     
     <div class="hidden name"><code>alert.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
-    <p>descricao</p>
-    
+    <p>Uma mensagem de alerta.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>alert</span>(<span class='no'>...</span>, <span class='kw'>message</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>status</span> <span class='kw'>=</span> <span class='st'>"success"</span>)</pre>
-    
+    <pre class="usage"><span class='fu'>alert</span>(<span class='kw'>width</span> <span class='kw'>=</span> <span class='fl'>12</span>, <span class='kw'>status</span> <span class='kw'>=</span> <span class='st'>"success"</span>, <span class='kw'>icon</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>title</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>message</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>close</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>...</th>
-      <td><p>itens</p></td>
-    </tr>
-    <tr>
-      <th>message</th>
-      <td><p>message</p></td>
+      <th>width</th>
+      <td><p>Largura do alerta.</p></td>
     </tr>
     <tr>
       <th>status</th>
-      <td><p>status</p></td>
+      <td><p>O status do alerta, podendo utilizar os valores: danger, info, warning, success.</p></td>
+    </tr>
+    <tr>
+      <th>icon</th>
+      <td><p>Ícone que será utilizado no título do alerta.</p></td>
+    </tr>
+    <tr>
+      <th>title</th>
+      <td><p>Título do alerta.</p></td>
+    </tr>
+    <tr>
+      <th>message</th>
+      <td><p>Mensagem do alerta.</p></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td><p>Um botão para fechar o alerta.</p></td>
     </tr>
     </table>
-    
+
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-                </ul>
+    </ul>
 
   </div>
 </div>
@@ -146,7 +159,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
 </div>
 
       </footer>
