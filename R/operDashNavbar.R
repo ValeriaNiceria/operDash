@@ -1,13 +1,13 @@
 #' @title Dashboard Navbar
 #' @name operDashNavbar
 #'
-#' @description descricao
+#' @description Função responsável por criar o menu top.
 #'
-#' @param brand brand
-#' @param brand_link brand_link
-#' @param navbar_left navbar_left
-#' @param navbar_right navbar_right
-#' @param color color
+#' @param brand Elemento que será utilizado como marca do site, podendo utilizar imagem ou texto.
+#' @param brand_link Link ao clicar na marca.
+#' @param navbar_left Agrupa os elementos do lado esquerdo da navbar. \code{navbarLeft}
+#' @param navbar_right Agrupa os elementos do lado direito da navbar. \code{navbarRight}
+#' @param color Cor da navbar, utilizar o valor da cor em hexadecimal.
 #'
 #'
 #' @export
