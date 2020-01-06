@@ -270,7 +270,7 @@ collapsible <- function(..., width = 12) {
 #' @export
 collapsibleItem <- function(..., id = NULL, title = NULL, icon = NULL, color = "default") {
   if (is.null(id))
-    stop("É necessário informar um id para o collapsibleItem")
+    stop("E necessario informar um id para o collapsibleItem")
 
   color = paste0("box-", color)
   class_box = paste("panel box", color)
