@@ -121,12 +121,12 @@ navbarGroup <- function(..., text = NULL) {
       href="#",
       class="dropdown-toggle",
       `data-toggle`="dropdown",
-      text,
-      shiny::tags$ul(
-        class="dropdown-menu",
-        role="menu",
-        ...
-      )
+      text
+    ),
+    shiny::tags$ul(
+      class="dropdown-menu",
+      role="menu",
+      ...
     )
   )
 }
