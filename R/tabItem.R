@@ -5,6 +5,7 @@
 #'
 #' @param tab_name Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}
 #' ou \code{sidebarSubItem}.
+#' @param title Um título para o tabItem.
 #' @param ... Conteúdo que será adicionado no corpo da página.
 #'
 #' @export

@@ -10,6 +10,8 @@ tabItem(tab_name = NULL, title = NULL, ...)
 \item{tab_name}{Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}
 ou \code{sidebarSubItem}.}
 
+\item{title}{Um título para o tabItem.}
+
 \item{...}{Conteúdo que será adicionado no corpo da página.}
 }
 \description{
