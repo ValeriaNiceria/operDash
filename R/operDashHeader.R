@@ -5,8 +5,6 @@
 #' elementos na barra superior da página.
 #'
 #'
-#' @param title Título que será exibido quando a barra superior estiver expandida.
-#' @param logo Um ícone ou imagem que será exibida quando a barra superior estiver comprimida.
 #' @param left_menu Itens que serão adicionados a esquerda da barra superior.
 #' @param righ_menu Itens que serão adicionados a direita da barra superior.
 #'
