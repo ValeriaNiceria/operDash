@@ -7,8 +7,7 @@
 tabItem(tab_name = NULL, title = NULL, ...)
 }
 \arguments{
-\item{tab_name}{Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}
-ou \code{sidebarSubItem}.}
+\item{tab_name}{Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem} ou \code{sidebarSubItem}.}
 
 \item{title}{Um título para o tabItem.}
 

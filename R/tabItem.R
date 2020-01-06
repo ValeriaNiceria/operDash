@@ -3,8 +3,7 @@
 #'
 #' @description Função responsável por agrupar conteúdos que serão exibidos no corpo da página.
 #'
-#' @param tab_name Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem}
-#' ou \code{sidebarSubItem}.
+#' @param tab_name Um nome para o tabItem o mesmo nome deverá ser informado no \code{sidebarItem} ou \code{sidebarSubItem}.
 #' @param title Um título para o tabItem.
 #' @param ... Conteúdo que será adicionado no corpo da página.
 #'
@@ -13,7 +12,7 @@
 
 tabItem <- function(tab_name = NULL, title = NULL, ...) {
   if (is.null(tab_name))
-    stop("É necessário adicionar o tab_name")
+    stop("E necessario adicionar o tab_name")
 
   if (!is.null(title)) {
     title = shiny::tags$section(
