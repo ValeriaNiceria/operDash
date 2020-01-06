@@ -47,7 +47,15 @@ operDashNavbar <- function(brand = NULL, brand_link = NULL, navbar_left = NULL, 
 }
 
 
-
+#' @title Navbar Left
+#' @name navbarLeft
+#'
+#' @description Função responsável por agrupar os elementos do navbar do lado esquerdo.
+#'
+#' @param ... Elementos, como por exemplo. \code{navbarItem}
+#'
+#'
+#' @export
 navbarLeft <- function(...) {
   shiny::tags$div(
     class="navbar-collapse pull-left collapse",
@@ -61,6 +69,15 @@ navbarLeft <- function(...) {
 }
 
 
+#' @title Navbar Right
+#' @name navbarRight
+#'
+#' @description Função responsável por agrupar os elementos do navbar do lado direito.
+#'
+#' @param ... Elementos, como por exemplo. \code{navbarItem}
+#'
+#'
+#' @export
 navbarRight <- function(...) {
   shiny::tags$div(
     class="navbar-custom-menu",
@@ -113,7 +130,16 @@ navbarItem <- function(text = NULL, icon = NULL, tab_name = NULL, href = NULL) {
 }
 
 
-
+#' @title Navbar Group
+#' @name navbarGroup
+#'
+#' @description Função responsável por agrupar os elementos e assim criar um dropdown.
+#'
+#' @param ... Elementos, como por exemplo. \code{navbarItem}
+#' @param text Título do grupo ou dropdown.
+#'
+#'
+#' @export
 navbarGroup <- function(..., text = NULL) {
   shiny::tags$li(
     class="dropdown",

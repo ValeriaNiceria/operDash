@@ -263,6 +263,7 @@ collapsible <- function(..., width = 12) {
 #'
 #' @param id Um identificador para o collapsibleItem, esse identificador deverá ser único e não poderá ter carácter especial.
 #' @param title Um título para o collapsibleItem.
+#' @param icon Ícone que será exibido no título.
 #' @param color Cor da borda superior da box, podendo utilizar os valores: primary, success, warning, danger.
 #' @param ... Conteúdo do collapsibleItem.
 #'
@@ -274,7 +275,7 @@ collapsibleItem <- function(..., id = NULL, title = NULL, icon = NULL, color = "
   color = paste0("box-", color)
   class_box = paste("panel box", color)
   id_item <- iconv(id, from = 'UTF-8', to = 'ASCII//TRANSLIT')
-  id_item <- str_replace_all(trimws(tolower(id)), " ", "_")
+  id_item <- stringr::str_replace_all(trimws(tolower(id)), " ", "_")
 
   if (!is.null(icon)) {
     icon = shiny::tags$span(
