@@ -15,6 +15,8 @@ operDashSidebar(icon = NULL, title = NULL, sidebar_user_panel = NULL,
 \item{sidebar_user_panel}{Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}}
 
 \item{sidebar_menu}{Responsável por agrupar os itens do menu. \code{sidebarMenu}}
+
+\item{fixed}{Definindo se os elementos do sidebar ficarão fixos. Podendo passar os valores TRUE ou FALSE.}
 }
 \description{
 A função operDashSidebar é a função responsável por agrupar os

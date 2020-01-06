@@ -8,6 +8,7 @@
 #' @param title ELemento que ficará visível quando a sidebar estiver aberta.
 #' @param sidebar_user_panel Um paínel de informações do usuário conectado no sistema. \code{sidebarUserPanel}
 #' @param sidebar_menu Responsável por agrupar os itens do menu. \code{sidebarMenu}
+#' @param fixed Definindo se os elementos do sidebar ficarão fixos. Podendo passar os valores TRUE ou FALSE.
 #'
 #' @seealso \code{\link{sidebarUserPanel}}, \code{\link{sidebarMenu}}.
 #'

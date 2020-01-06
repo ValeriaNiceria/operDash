@@ -15,8 +15,6 @@ navbarItem(text = NULL, icon = NULL, tab_name = NULL, href = NULL)
 ativado ao clicar nesse item (não podendo utilizar espaço nesse nome)}
 
 \item{href}{Link - Endereço externo}
-
-\item{sidebarSubItem}{sidebarSubItem \code{sidebarSubItem}}
 }
 \description{
 Essa função é responsável por criar itens do menu.

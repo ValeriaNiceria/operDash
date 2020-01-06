@@ -14,6 +14,8 @@ operDashPage(title = NULL, header = NULL, sidebar = NULL,
 
 \item{sidebar}{Menu lateral \code{operDashSidebar}}
 
+\item{navbar}{Menu top \code{operDashNavbar}}
+
 \item{body}{O conteúdo da página \code{operDashBody}}
 
 \item{footer}{Barra inferior da página \code{operDashFooter}}

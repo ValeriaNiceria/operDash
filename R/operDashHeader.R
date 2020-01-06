@@ -11,7 +11,7 @@
 #'
 #' @export
 
-operDashHeader <- function(..., left_menu = NULL, righ_menu = NULL) {
+operDashHeader <- function(left_menu = NULL, righ_menu = NULL) {
 
   shiny::tags$header(
     class="main-header",
