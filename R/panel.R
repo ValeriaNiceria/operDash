@@ -12,36 +12,7 @@
 #' @param width O tamanho do paínel, usando o grid do Bootstrap.
 #' Tendo como padrão o valor 12, podendo ser utilizado os valores de 1 à 12.
 #'
-#'
-#' @examples
-#' if(interactive()){
-#'  library(shiny)
-#'  library(operDash)
-#'
-#'  shiny::shinyApp(
-#'    ui = operPage(
-#'     title = "operDash",
-#'     navbar = NULL,
-#'     sidebar = NULL,
-#'     footer = NULL,
-#'     body = bodyDash(
-#'         panel(
-#'              title = "Título exemplo",
-#'              body = "Conteúdo do corpo do paínel",
-#'              footer = "Conteúdo do rodapé do paínel",
-#'              status = "info",
-#'              width = 4
-#'        )
-#'     )
-#'    ),
-#'    server = function(input, output) {
-#'   }
-#'  )
-#' }
-#'
-#' @author Valéria Nicéria, \email{valerianiceria@@gmail.com}
-#'
-
+#' @export
 
 panel <- function(title = NULL, body = NULL, footer = NULL, status = "default", width = 12) {
   # type = default - primary - success - info - warning - danger

@@ -4,7 +4,7 @@
 \alias{operDashHeader}
 \title{Dashboard Header}
 \usage{
-operDashHeader(..., left_menu = NULL, righ_menu = NULL)
+operDashHeader(left_menu = NULL, righ_menu = NULL)
 }
 \arguments{
 \item{left_menu}{Itens que serão adicionados a esquerda da barra superior.}

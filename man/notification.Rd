@@ -18,22 +18,6 @@ notification(..., icon = NULL, label = NULL, status = "warning")
 \description{
 descricao
 }
-\examples{
-# Basic dashboard page template
-notification(icon = icon("envelope"), label = "1",
-notificationItem(
- icon = icon("user", class="fa-3x"),
- title = "novo usuário",
- message = "Foi um criado novo usuário",
- time = "14:41"),
-notificationItem(
- icon = icon("user", class="fa-3x"),
- title = "novo usuário",
- message = "Foi um criado novo usuário",
- time = "14:41")
-)
-
-}
 \seealso{
 \code{\link{notificationItem}}.
 }

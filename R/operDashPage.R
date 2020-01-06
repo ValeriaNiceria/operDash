@@ -7,6 +7,7 @@
 #' @param title Um título que será utilizado no display do browser
 #' @param header Barra superior da página \code{operDashHeader}
 #' @param sidebar Menu lateral \code{operDashSidebar}
+#' @param navbar Menu top \code{operDashNavbar}
 #' @param body O conteúdo da página \code{operDashBody}
 #' @param footer Barra inferior da página \code{operDashFooter}
 #'
