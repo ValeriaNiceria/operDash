@@ -8,16 +8,16 @@ operDashNavbar(brand = NULL, brand_link = NULL, navbar_left = NULL,
   navbar_right = NULL, color = "#283B4F")
 }
 \arguments{
-\item{brand}{brand}
+\item{brand}{Elemento que será utilizado como marca do site, podendo utilizar imagem ou texto.}
 
-\item{brand_link}{brand_link}
+\item{brand_link}{Link ao clicar na marca.}
 
-\item{navbar_left}{navbar_left}
+\item{navbar_left}{Agrupa os elementos do lado esquerdo da navbar. \code{navbarLeft}}
 
-\item{navbar_right}{navbar_right}
+\item{navbar_right}{Agrupa os elementos do lado direito da navbar. \code{navbarRight}}
 
-\item{color}{color}
+\item{color}{Cor da navbar, utilizar o valor da cor em hexadecimal.}
 }
 \description{
-descricao
+Função responsável por criar o menu top.
 }
