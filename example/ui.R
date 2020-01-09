@@ -17,7 +17,7 @@ ui <- operDashPage(
 
     # Sidebar - Paínel do usuário ----
     sidebar_user_panel = sidebarUserPanel(
-      name = "Valéria",
+      name = "Usuário",
       info = tags$a(href="#", icon("circle", class="text-success"), "Online")
     ),
     # Sidebar - Menu ----
