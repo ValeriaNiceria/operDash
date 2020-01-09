@@ -305,7 +305,8 @@ label {
   font-size: 20px;
   font-weight: 600;
   color: white;
-  padding: 13px 0;
+  padding: 10px 0;
+  max-height: 55px;
 }
 
 .oper-brand {
@@ -340,3 +341,12 @@ label {
     color: #57B952 !important;
 }
 
+.brand-icon > img {
+    width: 40px;
+    max-height: 50px;
+    padding: 5px 0px;
+}
+
+.brand-title > img {
+    width: 70%;
+}
