@@ -12,12 +12,12 @@ ui <- operDashPage(
 
   # Sidebar ----
   sidebar = operDashSidebar(
-    icon = img(src="img/logo_computer.png", width = "80%"),
-    title = img(src="img/logo.png", width = "70%"),
+    icon = img(src="img/logo_computer.png"),
+    title = img(src="img/logo.png"),
 
     # Sidebar - Paínel do usuário ----
     sidebar_user_panel = sidebarUserPanel(
-      name = "Valéria",
+      name = "Usuário",
       info = tags$a(href="#", icon("circle", class="text-success"), "Online")
     ),
     # Sidebar - Menu ----
