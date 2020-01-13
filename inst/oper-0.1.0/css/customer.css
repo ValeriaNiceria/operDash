@@ -341,12 +341,12 @@ label {
     color: #57B952 !important;
 }
 
-.brand-icon > img {
+.oper-brand > .brand-icon > img {
     width: 40px;
     max-height: 50px;
     padding: 5px 0px;
 }
 
-.brand-title > img {
+.oper-brand > .brand-title > img {
     width: 70%;
 }
