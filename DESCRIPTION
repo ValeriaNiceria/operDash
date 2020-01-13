@@ -1,10 +1,13 @@
 Package: operDash
 Type: Package
-Title: operDash
+Title: Dashboard operDash
 Version: 0.1.0
 Author: Valéria Nicéria
 Maintainer: Valéria Nicéria <valerianiceria@gmail.com>
 Description: Dashboard shiny
+URL: https://valerianiceria.github.io/operDash/
+Depends:
+    R (>= 3.0)
 License: GPL-2
 Imports:
     shiny (>= 1.0.0),
