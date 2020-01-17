@@ -112,7 +112,10 @@ carouselItem <- function(title = NULL, src = NULL) {
 #'
 #'
 #' @export
-alert <- function(width = 12, status = "success", icon = NULL, title = NULL, message = NULL, close = FALSE) {
+alert <- function(width = 12, status = "success",
+                  icon = NULL, title = NULL,
+                  message = NULL, close = FALSE) {
+
   width = paste0("col-sm-", width)
   status = paste0("alert-", status)
   class_alert = paste("alert", status, "alert-dismissible")
@@ -392,7 +395,10 @@ timelineLabel <- function(color = "green", text = NULL) {
 #'
 #'
 #' @export
-timelineItem <- function(icon = NULL, icon_color = NULL, time = NULL, title = NULL, content = NULL, footer = NULL) {
+timelineItem <- function(icon = NULL, icon_color = NULL,
+                         time = NULL, title = NULL,
+                         content = NULL, footer = NULL) {
+
   icon_color = paste0("bg-", icon_color)
 
   shiny::tags$li(

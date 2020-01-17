@@ -13,7 +13,9 @@
 #' @seealso \code{\link{sidebarUserPanel}}, \code{\link{sidebarMenu}}.
 #'
 #' @export
-operDashSidebar <- function(icon = NULL, title = NULL, sidebar_user_panel = NULL, sidebar_menu = NULL, fixed = FALSE) {
+operDashSidebar <- function(icon = NULL, title = NULL,
+                            sidebar_user_panel = NULL,
+                            sidebar_menu = NULL, fixed = FALSE) {
 
   class_aside = "main-sidebar"
   if (fixed) {

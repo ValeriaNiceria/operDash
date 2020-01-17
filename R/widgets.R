@@ -13,7 +13,11 @@
 #' @param bg_all Pode-se passar o valor TRUE, se deseja que a box inteira fique colorida.
 #'
 #' @export
-infoBox <- function(width = 12, bg_color = "aqua", icon = NULL, text = NULL, value = NULL, progress = NULL, progress_desc = NULL, bg_all = FALSE) {
+infoBox <- function(width = 12, bg_color = "aqua",
+                    icon = NULL, text = NULL,
+                    value = NULL, progress = NULL,
+                    progress_desc = NULL, bg_all = FALSE) {
+
   width = paste0("col-sm-", width)
   bg_color = paste0("bg-", bg_color)
   progress = if (!is.null(progress)) paste0("width: ", progress, "%")

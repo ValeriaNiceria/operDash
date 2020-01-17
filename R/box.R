@@ -16,7 +16,11 @@
 #'
 #'
 #' @export
-box <- function(..., width = 12, color = "default", icon_box = NULL, title = NULL, message = NULL, minimize = FALSE, close = FALSE, footer = NULL) {
+box <- function(..., width = 12, color = "default",
+                icon_box = NULL, title = NULL,
+                message = NULL, minimize = FALSE,
+                close = FALSE, footer = NULL) {
+
   width = paste0("col-sm-", width)
   content_box = list(...)
   color_box = paste0("box-", color)
