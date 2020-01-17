@@ -101,6 +101,7 @@
 
 .skin-blue .sidebar-menu>li>.treeview-menu {
     background: #283B4F;
+    margin-top: -3px;
 }
 
 .skin-blue .sidebar-menu > li.active > a {
