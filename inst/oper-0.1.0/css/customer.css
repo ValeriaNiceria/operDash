@@ -18,6 +18,8 @@
 
 .content-wrapper {
   background: #f3f3f4;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .skin-blue .main-header .navbar .nav > li > a {

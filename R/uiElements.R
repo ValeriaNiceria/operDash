@@ -1,6 +1,5 @@
 #' @title Carousel
 #' @name carousel
-#' @encoding UTF-8
 #'
 #' @description Função principal do carousel, onde poderá ser adicionado \code{carouselItem}.
 #'
@@ -74,7 +73,6 @@ carousel <- function(...) {
 
 #' @title Carousel Item
 #' @name carouselItem
-#' @encoding UTF-8
 #'
 #' @description Item do carousel, podendo passar uma imagem e um título.
 #'
@@ -99,7 +97,6 @@ carouselItem <- function(title = NULL, src = NULL) {
 
 #' @title Alert
 #' @name alert
-#' @encoding UTF-8
 #'
 #' @description Uma mensagem de alerta.
 #'
@@ -155,7 +152,6 @@ alert <- function(width = 12, status = "success",
 
 #' @title Callout
 #' @name callout
-#' @encoding UTF-8
 #'
 #' @description Um caixa com alguma mensagem.
 #'
@@ -193,7 +189,6 @@ callout <- function(width = 12, status = "success", title = NULL, message = NULL
 
 #' @title Progress Bar
 #' @name progressBar
-#' @encoding UTF-8
 #'
 #'
 #' @description Uma barra de progresso.
@@ -239,7 +234,6 @@ progressBar <- function(width = 12, value = 100, status = "success", animated = 
 
 #' @title Collapsible
 #' @name collapsible
-#' @encoding UTF-8
 #'
 #' @description Função principal, responsável por agrupar o \code{collapsibleItem}.
 #'
@@ -268,7 +262,6 @@ collapsible <- function(..., width = 12) {
 
 #' @title Collapsible Item
 #' @name collapsibleItem
-#' @encoding UTF-8
 #'
 #' @description Box de informação, onde o seu conteúdo poderá ser colapsado.
 #'
@@ -332,7 +325,6 @@ collapsibleItem <- function(..., id = NULL, title = NULL, icon = NULL, color = "
 
 #' @title Timeline
 #' @name timeline
-#' @encoding UTF-8
 #'
 #' @description Função principal da timeline, onde as outras funções \code{timelineLabel} e
 #' \code{timelineItem} poderam ser adicionadas à timeline.
@@ -358,7 +350,6 @@ timeline <- function(..., width = 12) {
 
 #' @title Timeline Label
 #' @name timelineLabel
-#' @encoding UTF-8
 #'
 #' @description Um caixa de texto.
 #'
@@ -382,7 +373,6 @@ timelineLabel <- function(color = "green", text = NULL) {
 
 #' @title Timeline Item
 #' @name timelineItem
-#' @encoding UTF-8
 #'
 #' @description Item que será adicionado à timeline.
 #'

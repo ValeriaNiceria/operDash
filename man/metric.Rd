@@ -14,5 +14,6 @@ metric(title = NULL, status = "up", subtitle = NULL)
 \item{subtitle}{Subtítulo para o metric.}
 }
 \description{
-descrição
+Uma caixa de informação, onde será exibido um valor e poderá classificar esse valor como
+alto ou baixo.
 }

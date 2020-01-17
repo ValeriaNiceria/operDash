@@ -1,7 +1,8 @@
 #' @title Metric
 #' @name metric
 #'
-#' @description descrição
+#' @description Uma caixa de informação, onde será exibido um valor e poderá classificar esse valor como
+#' alto ou baixo.
 #'
 #' @param title Título para o metric.
 #' @param status Status do metric, podendo utilizar os valores up e down.
@@ -48,7 +49,7 @@ metric <- function(title = NULL, status = "up", subtitle = NULL) {
 #' @title Metric progress
 #' @name metricProgress
 #'
-#' @description descrição
+#' @description Uma caixa de informação, onde será exibido um valor, com uma barra de progresso.
 #'
 #' @param title Título para o metric.
 #' @param status Status do progress, podendo utilizar os valores success e danger.
@@ -101,7 +102,8 @@ metricProgress <- function(title = NULL, value = 100, subtitle = NULL, status = 
 #' @title Metric box
 #' @name metricBox
 #'
-#' @description descrição
+#' @description Uma caixa de informação, onde será passado um valor, com um título, subtítulo,
+#' uma porcentagem e um status que definirá a cor da porcentagem.
 #'
 #' @param title Título para o metric.
 #' @param subtitle Subtítulo para o metric.

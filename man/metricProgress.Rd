@@ -17,5 +17,5 @@ metricProgress(title = NULL, value = 100, subtitle = NULL,
 \item{status}{Status do progress, podendo utilizar os valores success e danger.}
 }
 \description{
-descrição
+Uma caixa de informação, onde será exibido um valor, com uma barra de progresso.
 }

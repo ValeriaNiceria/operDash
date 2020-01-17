@@ -19,5 +19,6 @@ metricBox(title = NULL, value = NULL, percent = NULL,
 \item{status}{Status do valor da porcentagem, podendo utilizar os valores success e danger.}
 }
 \description{
-descrição
+Uma caixa de informação, onde será passado um valor, com um título, subtítulo,
+uma porcentagem e um status que definirá a cor da porcentagem.
 }
