@@ -288,7 +288,7 @@ collapsibleItem <- function(..., id = NULL, title = NULL, icon = NULL, color = "
     class=class_box,
     shiny::tags$div(
       class="box-header with-border",
-      # Título
+      # Titulo
       shiny::tags$h4(
         class="box-title",
         shiny::tags$a(
@@ -301,7 +301,7 @@ collapsibleItem <- function(..., id = NULL, title = NULL, icon = NULL, color = "
           title
         )
       ),
-      # Conteúdo
+      # Conteudo
       shiny::tags$div(
         id=id_item,
         class="panel-collapse collapse",
