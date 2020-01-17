@@ -2,16 +2,12 @@
 # Carregando os pacotes #
 #########################
 library(shiny)
-library(devtools)
+# library(devtools)
 # library(roxygen2)
 # load_all()
 # document()
 # devtools::install_github("ValeriaNiceria/operDash", force = TRUE)
 library(operDash)
-library(tidyverse)
-library(highcharter)
-library(htmlwidgets)
-
 
 
 ####################################

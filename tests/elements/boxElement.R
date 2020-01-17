@@ -53,7 +53,7 @@ boxElement <- tabItem(
           width = 12,
           numericInput(inputId ="n", label = "Número de observações", value = 100)
         ),
-        column(width = 12, highchartOutput("plot"))
+        column(width = 12, plotOutput("plot"))
       )
     ),
 
